@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.subtitle {
+  font-family: 'Caveat', sans-serif;
+  color: #3f7bf2;
+  font-size: 40px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* @import url(‘’https://fonts.google.com/share?selection.family=Protest+Revolution'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.App {
+  text-align: center;
+}
+/* App.css */
+body {
+  background-color: #090d27;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #b3d0f0;
+  text-shadow: 1px 1px 2px rgb(90, 174, 243);
+  font-size: 70px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  color: #b3d0f0;
+  text-shadow: 1px 1px 2px rgb(27, 64, 232);
+  font-size: 50px;
+  text-align: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  padding: 10px 20px; /* spacing */
+  color: #fff;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+}
