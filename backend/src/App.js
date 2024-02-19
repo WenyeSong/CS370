@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
+import Error from './pages/Error'
 
 
 
@@ -15,10 +16,10 @@ function App () {
             } >
           </Route>
           <Route path='/login' element={<Login />}></Route>
-          <Route path='*' element={<h1>Not Found</h1>} />
+          <Route path='*' element={<Error />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
   )
 }
 export default App

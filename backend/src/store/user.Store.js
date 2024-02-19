@@ -1,4 +1,3 @@
-// 用户模块
 import { makeAutoObservable } from "mobx"
 import { http } from '@/utils'
 
