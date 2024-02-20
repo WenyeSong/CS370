@@ -16,7 +16,7 @@ function Voctest () {
 
   // Function to check the user's answer
   const checkAnswer = () => {
-    alert(userChoice === vocabulary[currentQuestion].definition ? 'Correct!' : 'Wrong!')
+    alert(userChoice === vocabulary[currentQuestion].word ? 'Correct!' : 'Wrong!')
     // Move to the next question
     setCurrentQuestion((prevCurrent) => (prevCurrent + 1) % vocabulary.length)
     // Reset user choice
@@ -36,7 +36,7 @@ function Voctest () {
           <div className="question-count">
             <span>Question {currentQuestion + 1}</span>/{vocabulary.length}
           </div>
-          <div className="question-text">{vocabulary[currentQuestion].word}</div>
+          <div className="question-text">{vocabulary[currentQuestion].definition}</div>
         </div>
         <div className="answer-section">
           <input
