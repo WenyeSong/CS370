@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
-function Navbar () {
+import Voctest from '../Voctest'
+
+function Main () {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
@@ -29,7 +31,7 @@ function Navbar () {
                             </Link>
                         </li>
                         <li className='nav-time'>
-                            <Link to='/Vocabulary Test' className='nav-links subtitle' onClick={closeMobileMenu}>
+                            <Link to='/Voctest' className='nav-links subtitle' onClick={closeMobileMenu}>
                                 Vocabulary Test
                             </Link>
                         </li>
@@ -45,4 +47,4 @@ function Navbar () {
     )
 }
 
-export default Navbar
+export default Main

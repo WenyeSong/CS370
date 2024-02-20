@@ -1,6 +1,6 @@
 import { Form, Input, Button, Checkbox } from "antd"
 import { Card } from 'antd'
-// import './index.scss'
+import './index.scss'
 // import { useStore } from "@/store"
 import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
@@ -20,8 +20,10 @@ function Login () {
     // }
   }
   return (
+
     <div className="login">
-      <Card title="Login" bordered={true}>
+      <h1>Login</h1>
+      <Card title="" bordered={true}>
         <Form validateTrigger={['onBlur', 'onChange']}
           onFinish={onFinish} >
           <Form.Item name="account"
@@ -45,7 +47,7 @@ function Login () {
             <Checkbox>I have already read the agreement and blah blah blah</Checkbox>
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType='submit' size="large">Login</Button>
+            <Button type="primary" htmlType='submit' size="large" >Login</Button>
           </Form.Item>
         </Form>
       </Card>
