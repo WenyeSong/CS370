@@ -25,7 +25,7 @@ function Main () {
                             </Link>
                         </li>
                         <li className='nav-time'>
-                            <Link to='/Vocabulary Test' className='nav-links subtitle' onClick={closeMobileMenu}>
+                            <Link to='/TypeGo' className='nav-links subtitle' onClick={closeMobileMenu}>
                                 Typing go!
                             </Link>
                         </li>
@@ -35,7 +35,7 @@ function Main () {
                             </Link>
                         </li>
                         <li className='nav-time'>
-                            <Link to='/Saved Words List' className='nav-links subtitle' onClick={closeMobileMenu}>
+                            <Link to='/SavedList' className='nav-links subtitle' onClick={closeMobileMenu}>
                                 Saved Words List
                             </Link>
                         </li>
