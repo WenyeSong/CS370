@@ -10,8 +10,8 @@ function Login () {
   // const { loginStore } = useStore()
   const navigate = useNavigate()
   const onFinish = async values => {
-    const { mobile, code } = values
-    console.log(mobile, code)
+    // const { mobile, code } = values
+    // console.log(mobile, code)
     // try {
     //   await loginStore.login({ mobile, code })
     //   navigate('/')

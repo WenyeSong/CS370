@@ -14,14 +14,13 @@ function Main () {
                     <h1>VocabGrow</h1>
                     <h2>Welcome! Study fun!</h2>
                     <Link to='/' className='nacbar-logo'>
-                        Menu <i className='fab fa-typo3' />
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-time'>
-                            <Link to='/Account' className='nav-links subtitle' onClick={closeMobileMenu}>
+                            <Link to='/Login' className='nav-links subtitle' onClick={closeMobileMenu}>
                                 Account
                             </Link>
                         </li>

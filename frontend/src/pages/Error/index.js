@@ -12,6 +12,8 @@ function Login () {
   return (
     //create the error page
     <div className="Error">
+      <h1>
+      </h1>
       this page is not found
       <br />
       <Button type="primary" size="large">return to main page</Button>
