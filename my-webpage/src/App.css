@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -13,7 +9,8 @@
   color: white;
 }
 
-.question-section, .answer-section {
+.question-section,
+.answer-section {
   margin-bottom: 20px;
 }
 
