@@ -18,7 +18,6 @@ function App () {
           <Route path='/TypeGo' element={<TypeGo />} />
           <Route path='/Voctest' element={<Voctest />} />
           <Route path='/SavedList' element={<SavedList />} />
-
           <Route path='/error' element={<Error />} />
           <Route path='*' element={<Error />} />
         </Routes>
