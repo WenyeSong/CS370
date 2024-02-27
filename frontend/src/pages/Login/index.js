@@ -33,15 +33,15 @@ function Login () {
               //   message: 'wrong format',
               //   validateTrigger: 'onBlur'
               // },
-              { required: true, message: "please input your account" }
+              { required: true, message: "please Enter your account" }
             ]}>
-            <Input size="large" placeholder="please input your account" />
+            <Input size="large" placeholder="please Enter your account" />
           </Form.Item>
           <Form.Item name="password"
             rules={[
-              { required: true, message: 'please input your password' }
+              { required: true, message: 'please Enter your password' }
             ]}>
-            <Input size="large" placeholder="please input your password" />
+            <Input size="large" placeholder="please Enter your password" />
           </Form.Item>
           <Form.Item>
             <Checkbox>I have already read the agreement and blah blah blah</Checkbox>
