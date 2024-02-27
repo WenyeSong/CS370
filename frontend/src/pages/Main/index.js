@@ -21,7 +21,7 @@ function Main () {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-time'>
                             <Link to='/Login' className='nav-links subtitle' onClick={closeMobileMenu}>
-                                Account
+                                Login
                             </Link>
                         </li>
                         <li className='nav-time'>
@@ -37,6 +37,11 @@ function Main () {
                         <li className='nav-time'>
                             <Link to='/SavedList' className='nav-links subtitle' onClick={closeMobileMenu}>
                                 Saved Words List
+                            </Link>
+                        </li>
+                        <li className='nav-time'>
+                            <Link to='/Register' className='nav-links subtitle' onClick={closeMobileMenu}>
+                                Register
                             </Link>
                         </li>
                     </ul>
