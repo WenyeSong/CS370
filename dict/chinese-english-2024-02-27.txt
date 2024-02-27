@@ -1,0 +1,1362 @@
+一 [yī]	one  ; 1  ; i  ; ane	number
+一个	a  ; an	article
+一会儿 [yī huì r] ; 一段时间	while  ; piece  ; spell  ; patch	time
+一切 [yī qiè] ; 所有 [suǒ yǒu]	everything	pronoun
+一千	thousand  ; one thousand  ; 1000  ; M  ; K  ; chiliad  ; G  ; grand  ; thou  ; yard	number
+一定	surely  ; certainly  ; sure  ; for sure  ; for certain  ; sure enough  ; sure as shooting	adverb
+一对 [yī duì] ; 一双	couple  ; pair  ; twosome  ; twain  ; brace  ; span  ; yoke  ; couplet  ; distich  ; duo  ; duet  ; dyad  ; duad	number
+一月 [yī yuè]	January  ; Jan	time
+一次	once  ; one time  ; in one case	adverb
+一般	general	adjective
+一起	together	adverb
+一餐一顿饭	meal  ; repast	food
+七 [qī]	seven  ; 7  ; vii	number
+七十 [qī shí]	seventy  ; 70  ; lxx	number
+七月 [qī yuè]	July	time
+丈夫 [zhàng fu]	husband  ; hubby  ; married man	family
+三 [sān]	three  ; 3  ; iii	number
+三十 (sānshí)	thirty  ; 30  ; xxx	number
+三明治 [sān míng zhì]	sandwich	food
+上	above  ; higher up  ; in a higher place  ; to a higher place	adverb
+上升	rise  ; rising  ; ascent  ; ascension	abstract
+上午 [shàng wǔ]	morning  ; morn  ; morning time  ; forenoon	time
+下一个	following  ; next	adjective
+下午 [xià wǔ]	afternoon	time
+下巴 [xià ba] ; 下颔 [xià hàn]	chin  ; mentum	anatomy
+不 (bu)	not  ; non	adverb
+不 [bù]	no	conversation
+不一样	different  ; unlike  ; dissimilar	adjective
+不久	soon  ; shortly  ; presently  ; before long	adverb
+不客气 [bù kè qi]	you're welcome	conversation
+专业人员	professional  ; professional person	profession
+专业的	professional	adjective
+专家 [zhuān jiā]	expert	profession
+世界 [shì jiè]	world	nature
+世纪 [shì jì]	century	time
+东方 [dōng fāng]	east  ; due east  ; eastward  ; E	geography
+丝绸 [sī chóu]	silk	material
+个人 [gè rén]	person  ; individual  ; someone  ; somebody  ; mortal  ; soul	family
+个人的	personal	adjective
+个体 [gè tǐ]	individual	society
+中国 [Zhōng guó]	China  ; People's Republic of China  ; mainland China  ; Communist China  ; Red China  ; PRC  ; Cathay	country
+中央	central	adjective
+中心 [zhōng xīn]	center  ; centre  ; midpoint	mathematics
+中文 [Zhōng wén] ; 汉语 [Hàn yǔ]	Chinese	language
+为了 [wèi le] ; 对于 [duì yú]	for	conjunction
+为了 [wèi le] ; 对于 [duì yú] ; 因为 [yīn wèi]	for	preposition
+为什么 [wèi shén me]	why	adverb
+主管 [zhǔ guǎn] ; 经理 [jīng lǐ] ; 管理员 [guǎn lǐ yuán]	director  ; manager  ; managing director	business
+主题 [zhǔ tí]	subject  ; topic  ; theme	communication
+举起	lift  ; raise  ; elevate  ; get up  ; bring up	verb
+乏味	boring  ; deadening  ; dull  ; ho-hum  ; irksome  ; slow  ; tedious  ; tiresome  ; wearisome	adjective
+乐队 [yue4 dui4] ; 伴舞乐队	band  ; dance band  ; dance orchestra	art
+乐队 [yuè duì] ; 管弦乐队 [guǎn xián yuè duì]	orchestra	art
+乘客 [chéng kè]	passenger  ; rider	transport
+九 [jiǔ]	nine  ; 9  ; ix	number
+九十 [jiǔ shí]	ninety  ; 90  ; xc	number
+九月 [jiǔ yuè]	September  ; Sep  ; Sept	time
+也	too  ; besides  ; also  ; likewise  ; as well	adverb
+乡村 [xiāng cūn] ; 村庄 [cūn zhuāng]	village  ; small town  ; settlement	city
+书 [shū]	book  ; volume	communication
+书桌 [shū zhuō]	desk	furniture
+买	buy  ; purchase	verb-basic
+了解	understand	verb-basic
+争论 [zhēng lùn]	argument  ; controversy  ; contention  ; contestation  ; disputation  ; disceptation  ; tilt  ; arguing	communication
+事件	event	science
+事件	matter  ; affair  ; thing	abstract
+事实 [shì shí]	fact	science
+事故 [shì gù]	accident	transport
+二 [èr] ; 两 [liǎng]	two  ; 2  ; ii	number
+二十 [èr shí]	twenty  ; 20  ; xx	number
+二月 [èr yuè]	February  ; Feb	time
+云 [yún]	cloud	weather
+互联网	internet  ; net  ; cyberspace	abstract
+五 [wǔ]	five  ; 5  ; v	number
+五十 (wǔ shí)	fifty  ; 50  ; l	number
+五月 [wǔ yuè]	May	time
+井 [jǐng]	well	house
+产品 [chǎn pǐn]	product  ; production	business
+亲爱的 [qīn ài de]	dear  ; beloved  ; dearest  ; honey  ; love	relations
+人口 [rén kǒu]	population	society
+人民 [rén mín]	public  ; populace  ; world	society
+人的	human	adjective-people
+人类 [rén lèi]	human  ; homo  ; man  ; human being	family
+人群 [rén qún] ; 群体 [qún tǐ]	people	society
+什么 [shén me]	what	pronoun
+什么时候 [shén me shí hou] ; 何时 [hé shí]	when	pronoun
+仅仅	simply  ; merely  ; just  ; only  ; but	adverb
+仆人 [pú rén] ; 佣人 [yōng rén]	servant  ; retainer	profession
+今天	today	adverb
+今天 [jīn tiān]	today	time
+今晚 (jīnwǎn)	tonight  ; this evening  ; this night	adverb
+仍然	however  ; nevertheless  ; withal  ; still  ; yet  ; all the same  ; even so  ; nonetheless  ; notwithstanding	adverb
+仍然	still	adverb
+从 [zòng] ; 来自 [lái zì]	from	preposition
+从 [zòng] ; 来自 [lái zì]	from	preposition
+从不	never	adverb
+他 [tā]	he	pronoun
+他 [tā]	him	pronoun
+他们 [tā men]	them	pronoun
+他们 [tā men]	they	pronoun
+他们的 [tā men de]	their	pronoun
+他的	his	pronoun
+他自己 [tā zì jǐ]	himself	pronoun
+付款 [fù kuǎn]	payment	business
+代价 [dài jià]	price  ; cost  ; toll	business
+代表 [dài biǎo]	representative	profession
+以前 (yǐqián)	ago  ; agone	adjective
+价值 [jià zhí]	value	business
+任何事	anything	pronoun
+任何人 [rèn hé rén]	anyone	pronoun
+企图	attempt  ; effort  ; endeavor  ; endeavour  ; try	abstract
+企图	try  ; seek  ; attempt  ; essay  ; assay	verb
+休假 [xiū jià] ; 缺席 [quē xí]	leave  ; leave of absence	business
+休息	rest  ; ease  ; repose  ; relaxation	abstract
+休息室 [xiū xī shì]	hall  ; anteroom  ; antechamber  ; entrance hall  ; foyer  ; lobby  ; vestibule	house
+优势 [yōu shì]	advantage  ; vantage	business
+会晤	meet  ; run into  ; encounter  ; run across  ; come across  ; see	verb-basic
+会议 [huì yì]	meeting  ; coming together	business
+伟大的	great	adjective-basic
+伤害	injure  ; wound	verb
+位置	seat  ; place	abstract
+作家 [zuò jiā]	writer  ; author	profession
+你 [nǐ] ; 您 [nín]	you	pronoun
+你会说英语吗	do you speak English	conversation
+你叫什么名字	what is your name	conversation
+你好 [nǐ hǎo]	hello  ; hullo  ; hi  ; howdy  ; how-do-you-do	conversation
+你好吗 [nǐ hǎo ma]	how are you	conversation
+你的 [nǐ de]	your	pronoun
+你自己 [nǐ zì jǐ]	yourself	pronoun
+使惊奇	surprise	verb
+使用	use  ; utilize  ; utilise  ; apply  ; employ	verb-basic
+使自由	free  ; complimentary  ; costless  ; gratis  ; gratuitous	adjective
+使高兴	please  ; delight	verb
+例子 [lì zi]	example  ; illustration  ; instance  ; representative	science
+侦听	listen  ; hear  ; take heed	verb-basic
+便宜	cheap  ; inexpensive	adjective
+俄语 [É yǔ]	Russian	language
+保险 [bǎo xiǎn]	insurance	business
+信 [xìn] ; 信函 [xìn hán]	letter  ; missive	communication
+信仰 [xìn yǎng]	religion  ; faith  ; religious belief	society
+信封 [xìn fēng]	envelope	container
+信息 [xìn xī]	information  ; info	communication
+俱乐部 [jù lè bù]	club  ; social club  ; society  ; guild  ; gild  ; lodge  ; order	society
+假期 [jià qī]	holiday  ; vacation	business
+做 (zuò)	make  ; do	verb-basic
+健康 [jiàn kāng]	health  ; wellness	medicine
+偷窃	steal	verb
+傍晚 [bàng wǎn]	evening  ; eve  ; even  ; eventide	time
+儿子 [ér zi]	son  ; boy	family
+兄弟 [xiōng dì]	brother  ; blood brother	family
+充满的	full	adjective
+光 [guāng]	light  ; visible light  ; visible radiation	physics
+光滑的	smooth	adjective
+全球变暖 [quán qiú biàn nuǎn]	global warming	environment
+全部	all	adjective
+八 [bā]	eight  ; 8  ; viii	number
+八十 [bā shí]	eighty  ; 80  ; lxxx  ; fourscore	number
+八月 [bā yuè]	August  ; Aug	time
+公共汽车 [gōng gòng qì chē]	bus  ; autobus  ; coach  ; charabanc  ; double-decker  ; jitney  ; motorbus  ; motorcoach  ; omnibus  ; passenger vehicle	transport
+公共的	public	adjective
+公司 [gōng sī]	company	business
+公司 [gōng sī] ; 企业 [qǐ yè]	firm  ; house  ; business firm	business
+公告 [gōng gào] ; 宣布 [xuān bù]	announcement  ; proclamation  ; annunciation  ; declaration	communication
+公园 [gōng yuán]	park  ; commons  ; common  ; green	city
+公寓 [gōng yù]	flat  ; apartment	city
+六 [liù]	six  ; 6  ; vi  ; half dozen  ; half-dozen	number
+六十 [liù shí]	sixty  ; 60  ; lx  ; threescore	number
+六月 [liù yuè]	June	time
+关系 [guān xì]	relation	communication
+关系 [guān xì]	relationship  ; human relationship	family
+关闭	close  ; shut	verb-basic
+兴趣 [xìng qu]	interest  ; involvement	communication
+具有	have  ; have got  ; hold	verb-basic
+内核	center  ; kernel  ; substance  ; core  ; centre  ; essence  ; gist  ; heart  ; heart and soul  ; inwardness  ; marrow  ; meat  ; nub  ; pith  ; sum  ; nitty-gritty	science
+再循环再利用 [zài lì yòng]	recycling	environment
+写	write	verb-basic
+军事基地 [jūn shì jī dì]	base  ; base of operations	society
+军队 [jūn duì]	army  ; regular army  ; ground forces	society
+农场 [nóng chǎng]	farm	nature
+冠军 [guàn jūn]	championship  ; title	sports
+冬天 [dōng tiān]	winter  ; wintertime	time
+冰 [bīng]	ice  ; water ice	material
+冷的	cold	adjective-basic
+准备	prepare  ; fix  ; set up  ; ready  ; gear up  ; set	verb
+几乎	almost  ; about  ; most  ; nearly  ; near  ; nigh  ; virtually  ; well-nigh	adverb
+出生 [chū shēng]	birth  ; nativity  ; nascency  ; nascence	family
+刀叶 [dāo yè]	blade	object
+分 [fèn] ; 分钟 [fēn zhōng]	minute  ; min	time
+分数 [fēn shù] ; 成绩 [chéng jì]	grade  ; mark  ; score	education
+分枝 [fēn zhī]	branch	nature
+切	cut	verb-basic
+划分 [huà fēn]	division  ; partition  ; partitioning  ; segmentation  ; sectionalization  ; sectionalisation	mathematics
+列表	list  ; listing	abstract
+利息 [lì xī]	interest	business
+利润 [lì rùn]	profit  ; net income  ; net  ; net profit  ; lucre  ; profits  ; earnings	business
+到 [dào]	to	preposition
+到达	arrive  ; make it  ; get in  ; go far	verb
+刷子 [shuā zi]	brush	art
+前面	front  ; front end  ; forepart	abstract
+剧场 [jù chǎng] ; 剧院 [jù yuàn]	theater  ; theatre  ; house	city
+剩余 [shèng yú]	rest  ; remainder  ; balance  ; residual  ; residue  ; residuum	business
+剪刀 [jiǎn dāo]	scissors  ; pair of scissors	tool
+副本 [fù běn] ; 备份 [bèi fèn]	copy	business
+力 [lì]	strength  ; force  ; forcefulness	physics
+办公室 [bàn gōng shì] ; 办事处 [bàn shì chù]	office  ; business office	business
+功能 [gōng néng] ; 作用 [zuò yòng]	function  ; office  ; part  ; role	mathematics
+功能 [gōng néng] ; 用处 [yòng chu]	purpose  ; function  ; role  ; use	mathematics
+加 [jiā]	addition  ; summation  ; plus	mathematics
+动物 [dòng wù]	animal  ; animate being  ; beast  ; brute  ; creature  ; fauna	nature
+势力	power  ; powerfulness	abstract
+勺子 [sháo zi] ; 调羹 [tiáo gēng]	spoon	kitchen
+包 [bāo] ; 包裹 [bāo guǒ]	package  ; bundle  ; packet  ; parcel	business
+化学 [huà xué]	chemistry  ; chemical science	science
+化学元素 [huà xué yuán sù]	chemical element  ; element	material
+化学物质	chemical  ; chemical substance	material
+化学的	chemical  ; chemic	adjective
+化石燃料 [huà shí rán liào]	fossil fuel	environment
+北印度语 [běi Yìn dù yǔ]	Hindi	language
+北方 [běi fāng]	north  ; due north  ; northward  ; N	geography
+区域 [qū yù] ; 面积 [miàn jī]	area  ; expanse  ; surface area	mathematics
+医学的	medical	adjective-people
+医生 [yī shēng]	doctor  ; doc  ; physician  ; MD  ; Dr.  ; medico	medicine
+医院 [yī yuàn]	hospital  ; infirmary	city
+十 [shí]	ten  ; 10  ; x	number
+十一 [shí yī]	eleven  ; 11  ; xi	number
+十一月 [shí yī yuè]	November  ; Nov	time
+十七 (shíqī)	seventeen  ; 17  ; xvii	number
+十三 (shísān)	thirteen  ; 13  ; xiii	number
+十九 [shí jiǔ]	nineteen  ; 19  ; xix	number
+十二月 [shí èr yuè]	December  ; Dec	time
+十五 (shíwǔ)	fifteen  ; 15  ; xv	number
+十八 (shíbā)	eighteen  ; 18  ; xviii	number
+十六 [shí liù]	sixteen  ; 16  ; xvi	number
+十四 [shí sì]	fourteen  ; 14  ; xiv	number
+十月 [shí yuè]	October  ; Oct	time
+千 [qiān]	thousand  ; one thousand  ; 1000  ; m  ; k	number
+午饭 [wǔ fàn]	lunch  ; luncheon  ; tiffin  ; dejeuner	food
+半 [bàn] ; 一半 [yī bàn]	half  ; one-half	mathematics
+半夜 [bàn yè] ; 午夜 [wǔ yè]	midnight	time
+协议 [xié yì]	agreement  ; understanding	business
+协议 [xié yì]	bargain  ; deal	business
+南方 [nán fāng]	south  ; due south  ; southward  ; S	geography
+博物馆 [bó wù guǎn]	museum	art
+卧室 [wò shì]	bedroom  ; sleeping room  ; sleeping accommodation  ; chamber  ; bedchamber	house
+印度 [Yìn dù]	India  ; Republic of India  ; Bharat	country
+印章 [yìn zhāng]	stamp	tool
+危险	danger	abstract
+危险	risk  ; hazard  ; jeopardy  ; peril  ; endangerment	abstract
+危險 ; 危险	dangerous  ; unsafe	adjective
+卷心菜 [juǎn xīn cài]	cabbage  ; chou	vegetable
+历史 [lì shǐ]	history	society
+压力 [yā lì]	pressure  ; pressure level  ; force per unit area	physics
+厕所 [cè suǒ]	toilet  ; lavatory  ; lav  ; can  ; john  ; privy  ; bathroom	house
+原因 [yuán yīn]	cause	science
+原始的	original	adjective
+原料 [yuán liào] ; 材料 [cái liào]	material  ; stuff	business
+原谅	forgive	verb
+厨师 [chú shī]	cook	kitchen
+厨房 [chú fáng]	kitchen	house
+去	travel  ; go  ; move  ; locomote	verb
+参赛者 [cān sài zhě]	player  ; participant	sports
+又	again  ; once again  ; once more  ; over again	adverb
+双方	both	adjective
+反应 [fǎn yìng]	reaction	communication
+反映	reflect  ; reverberate	verb
+发动机 [fā dòng jī] ; 引擎 [yǐn qíng]	engine	device
+发明 [fā míng] ; 创新 [chuàng xīn]	invention  ; innovation  ; excogitation  ; conception  ; design	art
+发现	find  ; detect  ; observe  ; discover  ; notice	verb
+发现 [fā xiàn]	discovery  ; breakthrough  ; find	science
+发现 [fā xiàn]	discovery  ; find  ; uncovering	science
+发音 [fā yīn]	pronunciation	communication
+取	take  ; get hold of	verb-basic
+变化	change  ; alteration  ; modification	abstract
+变成	become  ; go  ; get	verb
+口 [kǒu] ; 嘴 [zuǐ] ; 嘴巴 [zuǐ bā]	mouth  ; oral cavity  ; oral fissure  ; rima oris	anatomy
+句子 [jù zi]	sentence	communication
+另外的	other	adjective
+叫喊	shout  ; shout out  ; cry  ; call  ; yell  ; scream  ; holler  ; hollo  ; squall	verb
+可能	probable  ; likely	adjective
+可靠性	responsibility  ; responsibleness	abstract
+吃	eat	verb-basic
+合同 [hé tong] ; 合约 [hé yuē]	contract	business
+名字 [míng zi]	name	communication
+向上 (xiàngshàng)	up  ; upwards  ; upward  ; upwardly	adverb
+向下	down	adjective
+吩咐	order  ; tell  ; enjoin  ; say	verb
+吻 [wěn]	kiss  ; buss  ; osculation	relations
+周末 [zhōu mò]	weekend	time
+呼吸 [hū xī]	breath	anatomy
+呼喊 [hū hǎn] ; 叫嚷 [jiào rǎng]	cry  ; outcry  ; call  ; yell  ; shout  ; vociferation	communication
+命令 [mìng lìng]	order	society
+命名	name  ; call	verb
+和 [hé] ; 与 [yǔ]	and	conjunction
+和 [hé] ; 有 [yǒu] ; 以 [yǐ] ; 用 [yòng]	with	preposition
+和 [hé] ; 有 [yǒu] ; 以 [yǐ] ; 用 [yòng]	with	preposition
+和平 [hé píng]	peace	society
+和蔼的	kind	adjective-people
+咖啡 [kā fēi]	coffee  ; java	drink
+咳嗽	cough	verb
+咳嗽 [ké sou]	cough  ; coughing	medicine
+品牌 [pǐn pái] ; 标识 [biāo zhì]	brand  ; make	business
+品质	quality	abstract
+哪个 [nǎ ge]	which	pronoun
+哪个 [nǎ ge]	which	pronoun
+哭	cry  ; weep	verb
+唇 [chún] ; 嘴唇 [zuǐ chún]	lip	anatomy
+唱歌	sing	verb-basic
+商人 [shāng rén] ; 老板 [lǎo bǎn]	businessman  ; man of affairs	profession
+商店 [shāng diàn]	shop  ; store	business
+啤酒 [pí jiǔ]	beer	drink
+喉咙 [hóu lóng] ; 咽喉 [yān hóu]	throat  ; pharynx	anatomy
+喙 [huì] ; 鸟嘴 [niǎo zuǐ]	beak  ; bill  ; neb  ; nib  ; pecker	anatomy
+喜欢	like	verb-basic
+喝	drink  ; imbibe	verb-basic
+噪音 [zào yīn]	noise  ; dissonance  ; racket	society
+四 [sì]	four  ; 4  ; iv	number
+四十 [sì shí]	forty  ; 40  ; xl  ; twoscore	number
+四月 [sì yuè]	April  ; Apr	time
+回复 [huí fù]	answer  ; reply  ; response	communication
+回答	reply  ; answer  ; respond	verb
+因为 [yīn wèi]	because	conjunction
+因此	therefore  ; hence  ; thence  ; thus  ; so	adverb
+团队 [tuán duì]	team  ; squad	business
+困难 [kùn nan]	difficulty	business
+国家 [guó jiā]	country  ; state  ; land	society
+国民	national	adjective
+国民 [guó mín]	nation  ; land  ; country	society
+国王 [guó wáng]	king  ; male monarch  ; Rex	society
+国际	international	adjective
+图书馆 [tú shū guǎn] ; 仓库 [cāng kù]	library	city
+图象 [tú xiàng] ; 画面 [huà miàn]	picture  ; image  ; icon  ; ikon	art
+圆形 [yuán xíng]	circle	mathematics
+土地 [tǔ dì]	land  ; dry land  ; earth  ; ground  ; solid ground  ; terra firma	geography
+土壤 [tǔ rǎng] ; 泥土 [ní tǔ]	earth  ; ground	material
+土豆 [tǔ dòu] ; 马铃薯 [mǎ líng shǔ]	potato  ; white potato  ; Irish potato  ; murphy  ; spud  ; tater	vegetable
+在 [zài] ; 于 [yú]	at	preposition
+在 [zài] ; 于 [yú]	at	preposition
+在...下面 (zài...xiàmiàn)	under  ; nether	adjective
+在...里面 (zài...lǐmiàn)	inside  ; within	adverb
+在…之上关于 [guān yú]	on	preposition
+在…之上关于 [guān yú]	on	preposition
+在…之中	among  ; amongst  ; amid  ; amidst	preposition
+在…期间在…时候	during	preposition
+在前	forward  ; forwards  ; frontward  ; frontwards  ; forrad  ; forrard	adverb
+在旁边	beside	preposition
+地位	position  ; place	abstract
+地区 [dì qū] ; 区域 [qū yù]	region  ; part	geography
+地图 [dì tú]	map	geography
+地址 [dì zhǐ]	address	house
+地板 [dì bǎn]	floor  ; flooring	house
+地毯 [dì tǎn]	carpet  ; rug  ; carpeting	furniture
+地球 [dì qiú]	Earth  ; earth  ; world  ; globe	geography
+地铁 [dì tiě]	subway  ; metro  ; tube  ; underground  ; subway system	city
+坏的	bad	adjective-basic
+坐	sit  ; sit down	verb-basic
+坚果 [jiān guǒ]	nut	fruit
+垃圾 [lā jī] ; 废物 [fèi wù]	waste  ; waste material  ; waste matter  ; waste product	environment
+垃圾场	dump  ; garbage dump  ; trash dump  ; rubbish dump  ; wasteyard  ; waste-yard  ; dumpsite	environment
+城堡 [chéng bǎo]	castle	city
+城市 [chéng shì]	city  ; metropolis  ; urban center	city
+城镇 [chéng zhèn]	town	city
+基因 [jī yīn]	gene  ; cistron  ; factor	anatomy
+堤 [dī] ; 岸 [àn]	bank	geography
+墙壁 [qiáng bì]	wall	house
+增加	increase	verb
+增加	increase  ; increment	abstract
+增长	grow	verb
+增高	enhance  ; heighten  ; raise	verb
+墨水 [mò shuǐ]	ink	art
+壁橱 [bì chú]	cupboard  ; closet	furniture
+士兵 [shì bīng]	soldier	profession
+声明 [shēng míng]	statement	communication
+声音 [shēng yīn]	sound	physics
+声音 [shēng yīn]	voice  ; vocalization  ; vocalisation  ; vocalism  ; phonation  ; vox	communication
+处理	treatment  ; handling	abstract
+复制	copy  ; re-create	verb
+夏天 [xià tiān]	summer  ; summertime	time
+外國的 ; 外国的 (wàiguó-de)	foreign  ; strange	adjective
+外套 [wài tào]	coat	clothes
+多数	majority  ; bulk	abstract
+多样性 [duō yàng xìng]	diversity  ; diverseness  ; multifariousness  ; variety	art
+多谢 [duō xiè]	thank you very much	conversation
+夜晚 [yè wǎn]	night  ; nighttime  ; dark	time
+大	big  ; large	adjective-basic
+大学 [dà xué]	university	city
+大家 [dà jiā] ; 每个人 [měi ge rén]	everybody  ; everyone	pronoun
+大小 [dà xiǎo] ; 尺寸 [chǐ cun]	size	physics
+大概	approximately  ; about  ; close to  ; just about  ; some  ; roughly  ; more or less  ; around  ; or so	adverb
+大概	possibly  ; perchance  ; perhaps  ; maybe  ; mayhap  ; peradventure	adverb
+大气 [dà qì] ; 空气 [kōng qì]	atmosphere  ; air	environment
+大海 [dà hǎi]	sea	geography
+大蒜 [dà suàn]	garlic  ; ail	vegetable
+大量 [dà liàng]	mass  ; bulk  ; volume	physics
+天 [tiān]	day  ; twenty-four hours  ; twenty-four hour period  ; 24-hour interval  ; solar day  ; mean solar day	time
+天气 [tiān qì]	weather  ; weather condition  ; conditions  ; atmospheric condition	nature
+天空 [tiān kōng]	sky	nature
+太阳 [tài yáng]	sun  ; Sun	geography
+失去 [shī qù] ; 失败 [shī bài]	loss	business
+头 [tóu] ; 首 [shǒu]	head  ; caput	anatomy
+头发 [tóu fa] ; 毛发 [máo fà]	hair	anatomy
+头脑	mind  ; head  ; brain  ; psyche  ; nous	abstract
+夹克 [jiā kè]	jacket	clothes
+奖品	award  ; accolade  ; honor  ; honour  ; laurels	sports
+奖杯	cup  ; loving cup	sports
+女	female	adjective-people
+女人 [nǚ rén]	woman  ; adult female	family
+女企业家	businesswoman	business
+女儿 [nǚ ér]	daughter  ; girl	family
+女性 [nǚ xìng]	female  ; female person	society
+女朋友 [nǚ péng you]	girlfriend  ; girl  ; lady friend	relations
+女演员 [nǚ yǎn yuán]	actress	profession
+奶昔 [nǎi xī]	milkshake  ; milk shake  ; shake	drink
+奶酪 [nǎi lào]	cheese	food
+她 [tā]	her	pronoun
+她 [tā]	she	pronoun
+她自己 [tā zì jǐ]	herself	pronoun
+好	well  ; good	adverb
+好的	good	adjective-basic
+如果 [rú guǒ]	if	conjunction
+妻子 [qī zi]	wife  ; married woman	family
+姐妹 [jiě mèi]	sister  ; sis	family
+委员会 [wěi yuán huì]	committee  ; commission	business
+娱乐 [yú lè] ; 消遣 [xiāo qiǎn]	entertainment  ; amusement	art
+婚姻 [hūn yīn]	marriage  ; matrimony  ; union  ; spousal relationship  ; wedlock	family
+婚礼 [hūn lǐ]	wedding  ; wedding ceremony  ; nuptials  ; hymeneals	family
+婴儿 [yīng ér]	baby  ; babe  ; infant	family
+字母 [zì mǔ]	letter  ; letter of the alphabet  ; alphabetic character	communication
+存在	exist  ; be	verb
+存在 [cún zài]	existence  ; being  ; beingness	society
+季节 [jì jié]	season	time
+学 (xué)	learn  ; larn  ; acquire	verb-basic
+学校 [xué xiào]	school  ; schoolhouse	city
+学生 [xué sheng]	student  ; pupil  ; educatee	education
+学科 [xué kē]	discipline  ; subject  ; subject area  ; subject field  ; field  ; field of study  ; study  ; bailiwick	science
+孩子 [hái zi]	child  ; kid	family
+學習 ; 学习 (xuéxí) ; 學 ; 学 (xué)	study	verb
+它 [tā]	it	pronoun
+它本身 [tā běn shēn] ; 它自己	itself	pronoun
+安放	put  ; set  ; place  ; pose  ; position  ; lay	verb-basic
+安静	quiet	adjective
+安静	silence  ; quiet	abstract
+完全	complete  ; consummate	adjective
+完成	finish  ; complete	verb
+宗教信仰	religion  ; faith  ; organized religion	society
+官员 [guān yuán] ; 领导 [lǐng dǎo]	officer  ; officeholder	business
+客人 [kè rén]	guest  ; invitee	relations
+客户 [kè hù]	customer  ; client	business
+害怕 [hài pà]	fear  ; fearfulness  ; fright	feeling
+家 [jiā]	home  ; place	house
+家具 [jiā jù]	furniture  ; piece of furniture  ; article of furniture	furniture
+家庭 [jiā tíng]	family  ; family unit	family
+宽 ; 宽广的 ; 宽阔的	wide  ; broad	adjective
+寂寞	alone  ; lone  ; lonely  ; solitary	adjective-people
+富的 ; 富裕的	rich	adjective-people
+对不起 [duì bu qǐ]	sorry	conversation
+对待	treat  ; care for	verb
+将军 [jiāng jūn]	general  ; full general	profession
+将来 [jiāng lái] ; 未来 [wèi lái]	future  ; hereafter  ; futurity  ; time to come	time
+尊敬	respect  ; honor  ; honour  ; abide by  ; observe	verb
+小 (xiǎo)	small  ; little	adjective
+小姐 [xiǎo jie]	girl  ; miss  ; missy  ; young lady  ; young woman  ; fille	family
+小时 [xiǎo shí] ; 钟头 [zhōng tóu]	hour  ; hr  ; 60 minutes	time
+小船 [xiǎo chuán]	boat	transport
+尾巴 [wěi ba]	tail	anatomy
+层 [céng]	floor  ; level  ; storey  ; story	house
+屋顶 [wū dǐng]	roof	house
+展览	show  ; demo  ; exhibit  ; present  ; demonstrate	verb
+属性	property	abstract
+山丘 [shān qiū]	hill	geography
+山羊 [shān yáng]	goat  ; caprine animal	animal
+岛 [dǎo]	island	geography
+工业 [gōng yè] ; 制造业 [zhì zào yè]	industry  ; manufacture	business
+工人 [gōng rén]	worker	business
+工作 [gōng zuò]	job  ; task  ; chore	business
+工作 [gōng zuò] ; 职业 [zhí yè] ; 行业 [háng yè]	occupation  ; business  ; job  ; line of work  ; line	business
+工具 [gōng jù]	instrument	device
+工厂 [gōng chǎng]	factory  ; mill  ; manufacturing plant  ; manufactory	city
+工程	project  ; undertaking  ; task  ; labor	abstract
+左	left	adjective-basic
+巧克力 [qiǎo kè lì]	chocolate	food
+巨大成功	hit  ; smash  ; smasher  ; strike  ; bang	art
+差别 [chā bié] ; 不同 [bù tóng]	difference	mathematics
+已经	already	adverb
+市场 [shì chǎng]	market  ; marketplace  ; market place	business
+市场活动 ; 市场活动	campaign  ; cause  ; crusade  ; drive  ; movement  ; effort	abstract
+帆 [fān]	sail  ; canvas  ; canvass  ; sheet	object
+希望	hope	verb-basic
+帐目	account  ; business relationship	business
+帘子 [lián zi] ; 窗帘 [chuāng lián]	curtain  ; drape  ; drapery  ; mantle  ; pall	furniture
+带领	lead  ; take  ; direct  ; conduct  ; guide	verb
+席位 [xí wèi]	seat	furniture
+帮助	help  ; assist  ; aid	verb-basic
+帮助 [bāng zhù] ; 协助 [xié zhù]	help  ; aid  ; assist  ; assistance	business
+常常	often  ; frequently  ; oftentimes  ; oft  ; ofttimes	adverb
+帽子 [mào zi]	hat  ; chapeau  ; lid	clothes
+干杯 [gān bēi]	cheers	conversation
+干的	dry	adjective
+平原 [píng yuán]	plain  ; field  ; champaign	geography
+平均数 [píng jūn shù]	mean  ; mean value	business
+平方 [píng fāng] ; 二次方 [èr cì fāng]	square  ; second power	mathematics
+平的	flat  ; level  ; plane	adjective
+平行	parallel	adjective
+平衡 [píng héng]	balance	physics
+年 [nián]	year  ; twelvemonth  ; yr	time
+年龄 [nián líng]	age	time
+幸运的	lucky	adjective
+幽默 [yōu mò]	humor  ; humour  ; sense of humor  ; sense of humour	communication
+广告 [guǎng gào]	advertisement  ; ad  ; advertizement  ; advertising  ; advertizing  ; advert	business
+床 [chuáng]	bed	furniture
+度过	spend  ; pass	verb
+建立	establish  ; found  ; plant  ; constitute  ; institute	verb
+建筑物 [jiàn zhù wù]	building  ; edifice	city
+建議 ; 建议 (jiànyì)	suggest  ; propose  ; advise	verb
+建造	build  ; construct  ; make	verb
+开始	begin  ; start  ; get down  ; get  ; start out  ; set about  ; set out  ; commence	verb-basic
+开始 [kāi shǐ] ; 最初 [zuì chū]	beginning  ; commencement  ; first  ; outset  ; get-go  ; start  ; kickoff  ; starting time  ; showtime  ; offset	time
+开枪	fire  ; open fire	verb-basic
+开车	drive	verb
+弯曲 [wān qū]	curve  ; curved shape	mathematics
+強的 ; 强的 (qiángde)	strong	adjective-basic
+弹簧 [tán huáng]	spring	tool
+当地的	local	adjective
+形像 [xíng xiàng] ; 外表 [wài biǎo]	shape  ; form  ; cast	art
+形象 [xíng xiàng] ; 公众形象	image	art
+彩虹 [cǎi hóng]	rainbow	weather
+影片 [yǐng piàn] ; 电影 [diàn yǐng]	movie  ; film  ; picture  ; moving picture  ; moving-picture show  ; motion picture  ; motion-picture show  ; picture show  ; pic  ; flick	art
+微弱 (wēiruò)	weak	adjective-basic
+微笑	smile	verb-basic
+微笑 [wēi xiào]	smile  ; smiling  ; grin  ; grinning	relations
+德国 [Dé guó]	Germany  ; Federal Republic of Germany  ; Deutschland  ; FRG	country
+德语 [Dé yǔ]	German  ; High German  ; German language	language
+心 [xīn] ; 心脏 [xīn zàng]	heart  ; pump  ; ticker	anatomy
+忍受	suffer  ; endure	verb
+忘记	forget	verb-basic
+快乐 [kuài lè] ; 愉快 [yú kuài]	pleasure  ; pleasance	feeling
+快车 [kuài chē]	express  ; limited	transport
+怀疑	doubt	verb
+怀疑 [huái yí] ; 不确定 [bù què dìng]	doubt  ; uncertainty  ; incertitude  ; dubiety  ; doubtfulness  ; dubiousness	communication
+性别 [xìng bié]	sex	nature
+性能	operation  ; functioning  ; performance	abstract
+性行为 [xìng xíng wéi] ; 做爱 [zuò ài]	sex  ; sexual activity  ; sexual practice  ; sex activity	relations
+总和 [zǒng hé]	total  ; sum  ; amount	mathematics
+总是	always  ; ever  ; e'er	adverb
+总统 [zǒng tǒng]	president	profession
+恨 [hèn] ; 憎恨 [zēng hèn]	hate  ; hatred	feeling
+恰恰	exactly  ; precisely  ; just	adverb
+患者	patient	adjective-people
+惊奇 [jīng qí] ; 诧异 [chà yì]	surprise	relations
+惩罚 [chéng fá]	punishment  ; penalty  ; penalization  ; penalisation	society
+想法 [xiǎng fǎ]	idea  ; thought	communication
+意大利 [Yì dà lì]	Italy  ; Italian Republic  ; Italia	country
+意大利语 [Yì dà lì yǔ]	Italian	language
+意志	will  ; volition	abstract
+意志 [yì zhì]	will	society
+愚蠢的	stupid	adjective-people
+感冒 [gǎn mào]	cold  ; common cold	medicine
+感觉 [gǎn jué]	feeling	communication
+愿望	wish  ; wishing  ; want	abstract
+憎恨	hate  ; detest	verb
+成份 [chéng fèn]	component  ; constituent  ; element  ; factor  ; ingredient	mathematics
+成功 [chéng gōng]	success	business
+成员 [chéng yuán]	member  ; fellow member	society
+我 [wǒ]	me	pronoun
+我不明白	I don't understand	conversation
+我不知道	I don't know	conversation
+我们 [wǒ men]	us	pronoun
+我们 [wǒ men]	we	pronoun
+我们的 [wǒ men de]	our	pronoun
+我叫	my name is	conversation
+我的 [wǒ de]	my	pronoun
+戒指 [jiè zhi]	ring  ; band	clothes
+或 [huò]	or	conjunction
+战争 [zhàn zhēng]	war  ; state of war	society
+房子 [fáng zi]	house	house
+房间 [fáng jiān]	room	house
+所有者 [suǒ yǒu zhě] ; 主人 [zhǔ rén]	owner  ; possessor	business
+手 [shǒu] ; 爪 [zhuǎ]	hand  ; manus  ; mitt  ; paw	anatomy
+手指 [shǒu zhǐ]	finger	anatomy
+手提包 [shǒu tí bāo]	bag  ; handbag  ; pocketbook  ; purse	clothes
+手提箱 [shǒu tí xiāng]	suitcase  ; bag  ; traveling bag  ; travelling bag  ; grip	clothes
+手术 [shǒu shù]	operation  ; surgery  ; surgical operation  ; surgical procedure  ; surgical process	medicine
+手机 [shǒu jī]	cellphone  ; cellular telephone  ; cellular phone  ; cell  ; mobile phone	device
+手法	trick	abstract
+手臂 [shǒu bì] ; 胳膊 [gē bo]	arm	anatomy
+手表 [shǒu biǎo]	watch  ; ticker	device
+打	beat  ; beat out  ; crush  ; shell  ; trounce  ; vanquish	verb
+打印	print  ; impress	verb
+打开	open  ; open up	verb-basic
+打电话	call  ; telephone  ; call up  ; phone  ; ring	verb
+扔	throw	verb
+批准 [pī zhǔn] ; 赞成 [zàn chéng]	approval  ; blessing  ; approving	communication
+技能 [jì néng] ; 技巧 [jì qiǎo]	skill  ; science	business
+投 [tóu] ; 扔 [rēng]	throw	sports
+投降	give up  ; surrender	verb
+抗议	protest	verb
+抗议 [kàng yì]	protest  ; protestation	communication
+护士 [hù shi]	nurse	medicine
+护照 [hù zhào]	passport	society
+护理 [hù lǐ] ; 照料 [zhào liào]	care  ; attention  ; aid  ; tending	medicine
+报纸 [bào zhǐ]	newspaper  ; paper	communication
+报道	report	verb
+报酬 [bào chóu] ; 酬劳 [chóu láo]	wages  ; reward  ; payoff	business
+抱歉 [bào qiàn] ; 对不起 [duì bu qǐ]	sorry	conversation
+抽屉 [chōu ti]	drawer	container
+拆分	divide  ; split  ; split up  ; separate  ; dissever  ; carve up	verb
+拇指 [mǔ zhǐ]	thumb  ; pollex	anatomy
+拉	pull  ; draw  ; force	verb-basic
+拐弯 [guǎi wān]	curve  ; bend	transport
+拜访 [bài fǎng] ; 参观 [cān guān]	visit	relations
+拼写 [pīn xiě]	spelling	communication
+指甲 [zhǐ jia]	nail	anatomy
+按	press	verb
+按钮 [àn niǔ]	button  ; push button  ; push	tool
+捷克 [Jié kè]	Czech Republic	country
+掌管	control  ; command	verb
+接受	accept  ; take  ; have	verb
+接吻	kiss  ; snog  ; buss  ; osculate	verb-basic
+控告	accuse  ; charge	verb
+控告 [kòng gào] ; 指控 [zhǐ kòng]	complaint  ; charge	business
+提供	supply  ; provide  ; render  ; furnish	verb
+提议 [tí yì] ; 建议 [jiàn yì]	proposal	communication
+提议 [tí yì] ; 建议 [jiàn yì]	suggestion  ; proposition  ; proffer	communication
+提议 [tí yì] ; 建议 [jiàn yì] ; 忠告 [zhōng gào]	advice	business
+援引	mention  ; advert  ; bring up  ; cite  ; name  ; refer	verb
+摄像机 [shè xiàng jī]	television camera  ; tv camera  ; camera	device
+摄影师 [shè yǐng shī]	photographer  ; lensman	profession
+支付	pay	verb-basic
+支持 [zhī chí] ; 援助 [yuán zhù]	support	business
+支票 [zhī piào]	check  ; bank check  ; cheque	business
+收入 [shōu rù]	income	business
+收到	receive  ; have	verb
+收费 [shōu fèi] ; 费率 [fèi lǜ]	rate  ; charge per unit	business
+改变	change  ; alter  ; modify	verb
+攻打	attack  ; onslaught  ; onset  ; onrush	abstract
+政区	state	society
+政府 [zhèng fǔ]	government  ; authorities  ; regime	society
+政治家 [zhèng zhì jiā]	politician  ; politico  ; pol  ; political leader	profession
+政策 [zhèng cè]	policy	society
+教堂 [jiào táng]	church  ; church building	city
+教育 [jiào yù]	education	education
+教育 [jiào yù] ; 培训 [péi xùn]	education  ; instruction  ; teaching  ; pedagogy  ; didactics  ; educational activity	education
+数据 [shù jù] ; 资料 [zī liào]	data  ; information	communication
+数量	amount	abstract
+整個 ; 整个 (zhěnggè)	whole	adjective
+整理	classify  ; class  ; sort  ; assort  ; sort out  ; separate	verb
+文字 [wén zì]	character  ; grapheme  ; graphic symbol	communication
+文字 [wén zì] ; 书写 [shū xiě]	writing	communication
+文明 [wén míng]	culture  ; civilization  ; civilisation	society
+斗争	fight  ; fighting  ; combat  ; scrap	abstract
+新的	new	adjective-basic
+新闻 [xīn wén]	news  ; intelligence  ; tidings  ; word	society
+方	square	adjective
+方向 [fāng xiàng]	direction	business
+方式	manner  ; mode  ; style  ; way  ; fashion	art
+方法 [fāng fǎ]	method	science
+旁边 [páng biān]	side	mathematics
+旅游 [lǚ yóu]	journey  ; journeying	transport
+旅馆 [lǚ guǎn]	hotel	city
+旗子 [qí zi]	flag	object
+无	no	adjective
+无论何时 [wú lùn hé shí]	whenever	conjunction
+日安	good day	conversation
+日期 [rì qī]	date  ; day of the month	time
+日本 [Rì běn]	Japan  ; Nippon  ; Nihon	country
+日语 [Rì yǔ]	Japanese	language
+旧的	old	adjective-people
+早上好 [zǎo shang hǎo]	good morning  ; morning	conversation
+早的	early	adjective
+早餐 [zǎo cān]	breakfast	food
+时尚 [shí shàng] ; 潮流 [cháo liú] ; 流行 [liú xíng]	vogue  ; trend  ; style	art
+时期 [shí qī]	period  ; time period  ; period of time	time
+时期 [shí qī]	phase  ; stage	science
+时钟 [shí zhōng]	clock	device
+时间 [shí jiān]	time  ; fourth dimension	physics
+明天	tomorrow	adverb
+明天 [míng tiān]	tomorrow	time
+星 [xīng]	star	geography
+星期 [xīng qī]	week  ; calendar week	time
+星期一 [xīng qī yī] ; 周一 [zhōu yī] ; 礼拜一	Monday  ; Mon	time
+星期三 [xīng qī sān]	Wednesday  ; Midweek  ; Wed	time
+星期二 [xīng qī èr]	Tuesday  ; Tues	time
+星期五 [xīng qī wǔ] ; 周五 [zhōu wǔ] ; 礼拜五	Friday  ; Fri	time
+星期六 [xīng qī liù]	Saturday  ; Sabbatum  ; Sat	time
+星期四 [xīng qī sì] ; 周四 [zhōu sì] ; 礼拜四	Thursday  ; Th	time
+星期天 [xīng qī tiān] ; 周日 [zhōu rì] ; 礼拜天 [lǐ bài tiān]	Sunday  ; Lord's Day  ; Dominicus  ; Sun	time
+春天 [chūn tiān]	spring  ; springtime	time
+是	be	verb-basic
+是 [shì]	yes	conversation
+晚 (wǎn) ; 迟 (chí)；迟到 (chí dào)	late	adjective
+暂停 [zàn tíng]	pause  ; intermission  ; break  ; interruption  ; suspension	time
+暴风雨 [bào fēng yǔ]	storm  ; violent storm	weather
+更多	more  ; more than	adjective
+替换 [tì huàn]	substitution  ; exchange  ; commutation	mathematics
+最后的	last	adjective
+最好 (zuì háo)	best	adjective-basic
+最近	recently  ; late  ; lately  ; of late  ; latterly	adverb
+月 [yuè]	month  ; calendar month	time
+月亮 [yuè liang]	Moon  ; moon	geography
+月经 [yuè jīng]	menstruation  ; menses  ; menstruum  ; catamenia  ; period  ; flow	medicine
+有	own  ; have  ; possess	verb
+有时	sometimes	adverb
+有责任的	responsible	adjective
+有趣 (yǒuqù) ; 有意思 (yǒu yìsi)	interesting	adjective
+朋友 [péng you]	friend	family
+服务 [fú wù]	service	business
+服务案例	case  ; instance  ; example	abstract
+期望 [qī wàng]	promise  ; hope	feeling
+木头 [mù tou] ; 木材 [mù cái]	wood	material
+木棍 [mù gùn]	stick	object
+机会	chance  ; opportunity	abstract
+机器 [jī qì]	machine	device
+机构 [jī gòu]	institution  ; establishment	society
+杀	kill	verb
+杂志 [zá zhì]	magazine  ; mag	communication
+权利 [quán lì]	right	business
+权力 [quán lì] ; 权威 [quán wēi]	authority  ; authorization  ; authorisation  ; potency  ; dominance  ; say-so	business
+李子 [lǐ zi]	plum	fruit
+杏 [xìng]	apricot	fruit
+条件	condition  ; status	abstract
+来	come  ; come up	verb-basic
+杯子 [bēi zi] ; 玻璃杯 [bō li bēi]	glass  ; drinking glass	container
+板 [pàn]	board	object
+构造 [gòu zào] ; 结构 [jié gòu]	structure	business
+架子 [jià zi]	shelf	furniture
+柄 [bǐng] ; 把手 [bǎ shǒu]	handle  ; grip  ; handgrip  ; hold	object
+某个	the	article
+柠檬 [níng méng]	lemon	fruit
+标准 [biāo zhǔn]	standard  ; criterion  ; measure  ; touchstone	communication
+标记 [biāo jì]	marker  ; marking  ; mark	business
+标题 [biāo tí]	title	society
+树 [shù]	tree	nature
+树叶 [shù yè] ; 叶子 [yè zi]	leaf  ; leafage  ; foliage	nature
+树莓 [shù méi]	raspberry	fruit
+根 [gēn]	root	nature
+桃子 [táo zi]	peach	fruit
+框架 [kuàng jià]	frame	object
+桌子 [zhuō zi]	table	furniture
+桥 [qiáo]	bridge  ; span	city
+梨子 [lí zi]	pear	fruit
+棉布 [mián bù]	cotton	material
+棍棒 [gùn bàng]	club	object
+棒球 [bàng qiú]	baseball  ; baseball game	sports
+森林 [sēn lín]	forest  ; wood  ; woods	nature
+椅子 [yǐ zi]	chair	furniture
+植物 [zhí wù]	plant  ; flora  ; plant life	nature
+楔子 [xiē zi]	pin	object
+樱桃 [yīng táo]	cherry	fruit
+橄榄 [gǎn lǎn]	olive	vegetable
+橘子 [jú zi] ; 橙子 [chéng zi]	orange	fruit
+橙色 [chéng sè]	orange  ; orangish	color
+欧洲防风草	parsnip  ; Pastinaca sativa	vegetable
+款式 [kuǎn shì] ; 样式 [yàng shì]	style	art
+歌 [gē] ; 歌曲 [gē qǔ]	song  ; vocal	art
+歌手 [gē shǒu]	singer  ; vocalist  ; vocalizer  ; vocaliser	art
+正常的	normal	adjective
+正方形 [zhèng fāng xíng]	square  ; foursquare	mathematics
+死	dead	adjective-people
+死	die  ; decease  ; perish  ; go  ; exit  ; pass away  ; expire  ; pass  ; kick the bucket  ; cash in one's chips  ; buy the farm  ; conk  ; give-up the ghost  ; drop dead  ; pop off  ; choke  ; croak  ; snuff it	verb
+死亡 [sǐ wáng]	death	family
+母亲 [mǔ qīn]	mother  ; female parent	family
+母牛 [mǔ niú]	cow  ; moo-cow	animal
+每	each	adjective
+每一	every	adjective
+毒药 [dú yào]	poison  ; toxicant  ; poisonous substance	material
+比 [bǐ]	than	conjunction
+比赛 [bǐ sài] ; 游戏 [yóu xì]	game	sports
+比较	compare	verb
+比较 [bǐ jiào]	comparison  ; comparing	science
+毛发 [máo fà]	hair  ; pilus	anatomy
+民主共和国	democracy  ; republic  ; commonwealth	society
+气候变化 [qì hòu biàn huà]	climate change  ; global climate change	environment
+气味 [qì wèi]	smell  ; olfactory property  ; aroma  ; odor  ; odour  ; scent	nature
+水 [shuǐ]	water  ; H2O	drink
+水手 [shuǐ shǒu]	sailor  ; crewman	profession
+水果 [shuǐ guǒ]	fruit	food
+水流 [shuǐ liú]	current  ; stream	geography
+水滴	drop  ; drib  ; driblet	abstract
+污染 [wū rǎn]	pollution	environment
+汤 [tāng]	soup	food
+汽车 [qì chē]	car  ; auto  ; automobile  ; machine  ; motorcar	transport
+沉重	difficult  ; hard	adjective-basic
+沉重	heavy	adjective-basic
+沙 [shā]	sand	material
+沙拉 [shā lā]	salad	food
+沙滩 [shā tān]	beach	geography
+没有 [méi yǒu] ; 不 [bù]	without	preposition
+河流 [hé liú]	river	geography
+油 [yóu]	oil	food
+泉 [quán]	spring  ; fountain  ; outflow  ; outpouring  ; natural spring	nature
+法国 [Fǎ guó]	France  ; French Republic	country
+法律 [fǎ lǜ]	law	business
+法律的	legal	adjective
+法语 [Fǎ yǔ]	French	language
+法院 [fǎ yuàn]	court  ; tribunal  ; judicature	society
+波浪 [bō làng]	wave  ; moving ridge	nature
+注意 [zhù yì]	attention  ; attending	business
+注释 [zhù shì] ; 备注 [bèi zhù]	note  ; annotation  ; notation	communication
+泵 [bèng]	pump	tool
+洋葱 [yáng cōng]	onion  ; onion plant  ; Allium cepa	vegetable
+洗	wash  ; launder	verb
+洞 (Mandarin: dong4 ; Cantonese: dong3)	hole	abstract
+活动	activity  ; action  ; activeness	abstract
+活着的	alive  ; live	adjective-people
+流 [liú]	stream  ; flow  ; current	nature
+测量 [cè liáng]	measurement  ; measuring  ; measure  ; mensuration	physics
+浴室 [yù shì]	bathroom  ; bath	house
+海拔	height  ; altitude	geography
+液体 [yè tǐ]	liquid	material
+淋浴器	shower	house
+温室效应 [wēn shì xiào yìng]	greenhouse effect  ; greenhouse warming	environment
+温度 [wēn dù] ; 度数 [dù shù]	degree	mathematics
+游泳 (yóuyǒng)	swim	verb-basic
+湖 [hú]	lake	geography
+滋味	taste  ; gustation  ; sense of taste  ; gustatory modality	abstract
+滑倒 [huá dǎo]	skid  ; slip  ; sideslip	transport
+演奏	play	verb-basic
+潮湿 [cháo shī] ; 湿气 [shī qì]	moisture  ; wet	nature
+濕 (shī)	wet	adjective
+火柴 [huǒ chái]	match  ; lucifer  ; friction match	tool
+火车 [huǒ chē]	train  ; railroad train	transport
+火车站	station	city
+灰尘 [huī chén]	dust	material
+灰色 [huī sè]	gray  ; grey  ; greyish  ; grayish	color
+炉子 [lú zi]	oven	device
+炮 [páo] ; 枪 [qiāng]	gun	tool
+点 [diǎn] ; 圆点 [yuán diǎn]	point  ; dot	communication
+烟 [yān]	smoke  ; fume	nature
+烟雾 [yān wù]	smog  ; smogginess	environment
+烧毁	burn  ; fire  ; burn down	verb
+热	hot	adjective-basic
+煤 [méi]	coal	material
+照相机 [zhào xiàng jī]	camera  ; photographic camera	device
+熊 [xióng]	bear	animal
+燃烧 [rán shāo] ; 火焰 [huǒ yàn]	fire  ; flame  ; flaming	nature
+爱	love	verb-basic
+爱 [ài]	love	feeling
+父亲 [fù qīn] ; 母亲 [mǔ qīn] ; 监护人 [jiān hù rén]	parent	family
+爸爸 [bà ba]	father  ; male parent  ; begetter	family
+牙 [yá] ; 牙齿 [yá chǐ]	tooth	anatomy
+牛奶 [niú nǎi]	milk	drink
+物	thing	abstract
+物质 [wù zhì]	matter	material
+特定的 (tèdìng de)	specific	adjective
+特征	feature  ; characteristic	abstract
+特殊	detail  ; particular  ; item	abstract
+犯罪 [fàn zuì]	crime  ; offense  ; criminal offense  ; criminal offence  ; offence  ; law-breaking	society
+状态	state	abstract
+狗 [gǒu] ; 犬 [quǎn]	dog  ; domestic dog  ; Canis familiaris	animal
+狮子 [shī zi]	lion  ; king of beasts  ; Panthera leo	animal
+猜測 ; 猜测	estimate  ; gauge  ; approximate  ; guess  ; judge	verb
+猪 [zhū]	pig  ; hog  ; grunter  ; squealer  ; Sus scrofa	animal
+猫 [māo]	cat  ; true cat	animal
+猴子 [hóu zi]	monkey	animal
+环境 [huán jìng]	environment	business
+环境 [huán jìng]	environment  ; environs  ; surroundings  ; surround	environment
+现在 (xiànzài)	now  ; at present	adverb
+现在 [xiàn zài]	now	time
+现在 [xiàn zài]	present  ; nowadays	time
+现在的	present	adjective
+玻璃 [bō li]	glass	material
+珠宝 [zhū bǎo]	jewel  ; gem  ; precious stone	clothes
+班级 [bān jí]	class  ; form  ; grade  ; course	education
+球 [qiú]	ball	sports
+球门 [qiú mén]	goal	sports
+理事会 [lǐ shì huì] ; 委员会 [wěi yuán huì]	council	business
+理由 [lǐ yóu] ; 原因 [yuán yīn]	reason  ; ground	communication
+理论 [lǐ lùn]	theory	science
+瓶子 [píng zi]	bottle	container
+甜 [tián]	sweet  ; sweetness  ; sugariness	food
+生产	production	science
+生命 [shēng mìng]	life	family
+生态学 [shēng tài xué]	ecology  ; bionomics  ; environmental science	environment
+生意 [shēng yi] ; 商务 [shāng wù] ; 商业 [shāng yè] ; 企业 [qǐ yè]	business  ; concern  ; business concern  ; business organization  ; business organisation	business
+生日 [shēng rì]	birthday	family
+生日快乐 [shēng rì kuài lè]	happy birthday	conversation
+生活 [shēng huó]	life	nature
+生物学 [shēng wù xué]	biology  ; biological science	science
+生长	increase  ; increment  ; growth	abstract
+用户 [yòng hù]	user	science
+田地 [tián dì]	field	nature
+电影院 [diàn yǐng yuàn]	cinema  ; movie theater  ; movie theatre  ; movie house  ; picture palace	city
+电梯 [diàn tī]	elevator  ; lift	device
+电的	electric  ; electrical	adjective
+电荷 [diàn hé]	charge  ; electric charge	physics
+电视 [diàn shì]	television  ; tv set  ; television receiver  ; television set  ; tv  ; idiot box  ; boob tube  ; telly  ; goggle box	device
+电话 [diàn huà]	call  ; phone call  ; telephone call	communication
+男人 [nán rén]	man  ; adult male	family
+男孩 [nán hái]	boy  ; male child	family
+男性 [nán xìng]	male  ; male person	society
+男朋友 [nán péng you]	boyfriend  ; fellow  ; beau  ; swain  ; young man	relations
+画	trace  ; draw  ; line  ; describe  ; delineate	verb-basic
+画 [huà]	painting  ; picture	art
+疒 ; 病	ill  ; sick	adjective-people
+疾病 [jí bìng]	disease	medicine
+病人 [bìng rén]	patient	medicine
+痛苦 [tòng kǔ]	pain  ; hurting	medicine
+發生 ; 发生	happen  ; hap  ; go on  ; pass off  ; occur  ; pass  ; fall out  ; come about  ; take place	verb
+白色 [bái sè]	white	color
+百 [bǎi]	hundred  ; one hundred  ; 100  ; c	number
+百万 [bǎi wàn]	million  ; 1000000  ; one thousand thousand  ; meg	number
+百分比 [bǎi fēn bǐ]	percent  ; percentage  ; per centum  ; pct	mathematics
+的 [dí]	of	preposition
+皮 [pí] ; 皮肤 [pí fū]	skin  ; tegument  ; cutis	anatomy
+皮革 [pí gé]	leather	material
+盐 [yán]	salt  ; table salt  ; common salt	food
+监狱 [jiān yù]	prison  ; prison house	city
+盖子 [gài zi]	cover  ; screen  ; covert  ; concealment	object
+盘子 [pán zi]	plate	container
+盥洗盆	sink	furniture
+目的地 [mù dì dì]	finish  ; goal  ; destination	sports
+直	straight	adjective
+直到 [zhí dào]	until	conjunction
+直接地	directly  ; straight  ; direct	adverb
+相信	believe	verb
+相反 [xiāng fǎn] ; 靠着	against	preposition
+相同的	same	adjective
+看	look	verb-basic
+看	see	verb
+真实地	really  ; actually	adverb
+真实的	true	adjective
+眼睛 [yǎn jing]	eye  ; oculus  ; optic	anatomy
+睡眠 [shuì mián]	sleep  ; slumber	nature
+瞬间 [shùn jiān]	moment  ; minute  ; second  ; instant	time
+瞬间 [shùn jiān] ; 片刻 [piàn kè]	moment  ; mo  ; minute  ; second  ; bit	time
+知识 [zhī shi] ; 学问 [xué wèn]	education	education
+知道 [zhī dao] ; 认识 [rèn shi]	knowledge  ; cognition  ; noesis	education
+短袜 [duǎn wà]	sock	clothes
+石头 [shí tou]	stone  ; rock	object
+石油 [shí yóu]	oil  ; petroleum  ; crude oil  ; crude  ; rock oil  ; fossil oil	material
+矿 [kuàng]	mine	environment
+研究 [yán jiū]	research	science
+砖 [zhuān]	brick	house
+确实	really  ; truly  ; genuinely	adverb
+碎片	bit  ; chip  ; flake  ; fleck  ; scrap	abstract
+確定 ;  确定 (quèdìng) ; 当然 (dāngrán)	certain  ; sure	adjective
+磨光	polish  ; smooth  ; smoothen  ; shine	verb
+礼物 [lǐ wù]	present	object
+社会 [shè huì]	society	science
+祖父 [zǔ fù]	grandfather  ; gramps  ; granddad  ; grandad  ; granddaddy  ; grandpa	family
+祝你好运	good luck	conversation
+神经 [shén jīng] ; 神经系统 [shén jīng xì tǒng]	nerve  ; nervus	anatomy
+票 [piào]	ticket	object
+私人的	private	adjective
+秋天 [qiū tiān]	autumn  ; fall	time
+种子 [zhǒng zi]	seed	object
+种类	kind  ; sort  ; form  ; variety	abstract
+种类	type	abstract
+科学 [kē xué]	science  ; scientific discipline	science
+科学家 [kē xué jiā]	scientist	profession
+科技 [kē jì] ; 工艺 [gōng yì]	technology  ; engineering	science
+秒 [miǎo]	second  ; sec  ; s	time
+秘书 [mì shū] ; 书记 [shū ji]	secretary  ; secretarial assistant	profession
+秘密 [mì mì]	secret	communication
+程序	program  ; programme  ; computer program  ; computer programme	science
+程度 [chéng dù] ; 等级 [děng jí]	degree  ; grade  ; level	mathematics
+税 [shuì] ; 税收 [shuì shōu]	tax  ; taxation  ; revenue enhancement	business
+稱 (chèng)	weigh	verb
+稻 [dào] ; 米 [mǐ]	rice	food
+穷	poor	adjective-people
+空气 [kōng qì]	air	nature
+空间 [kōng jiān]	space  ; infinite	geography
+突发	outburst  ; burst  ; flare-up	abstract
+突然 (tūrán)	suddenly  ; all of a sudden  ; of a sudden	adverb
+突然的	sudden	adjective
+窄的 (zhǎide)	narrow	adjective
+窗户 [chuāng hu]	window	house
+立刻	immediately  ; instantly  ; straightaway  ; straight off  ; directly  ; now  ; right away  ; at once  ; forthwith  ; like a shot	adverb
+站住	stand  ; stand up	verb
+竞争 [jìng zhēng]	competition	business
+竞争 [jìng zhēng] ; 竞赛 [jìng sài] ; 比赛 [bǐ sài]	contest  ; competition	business
+竞争对手	competitor  ; rival  ; challenger  ; competition  ; contender	sports
+竞赛 [jìng sài] ; 比赛 [bǐ sài]	match	sports
+笑	laugh  ; express joy  ; express mirth	verb-basic
+第一 [dì yī]	first  ; 1st	number
+第三 [dì sān]	third  ; 3rd  ; tertiary	number
+等	expect  ; look  ; await  ; wait	verb
+等 (děng)	wait  ; hold off  ; hold back	verb-basic
+答应提供	offer  ; offering	business
+简单化	simple  ; elementary  ; uncomplicated  ; unproblematic	adjective
+算术符号（加减乘除）	sign	communication
+管子 [guǎn zi]	pipe  ; pipage  ; piping	object
+管理 [guǎn lǐ]	management  ; direction	business
+箱子 [xiāng zi]	box	container
+篮子 [lán zi]	basket  ; handbasket	container
+粉末 [fěn mò]	powder  ; pulverization  ; pulverisation	material
+粉红色 [fěn hóng sè]	pink  ; pinkish	color
+糖 [táng]	sugar  ; refined sugar	food
+系统 [xì tǒng]	system  ; scheme	science
+紫色 [zǐ sè]	violet  ; purple  ; purplish	color
+累 (lèi)	tired	adjective-people
+红色 [hóng sè]	red  ; reddish  ; ruddy  ; blood-red  ; carmine  ; cerise  ; cherry  ; cherry-red  ; crimson  ; ruby  ; ruby-red  ; scarlet	color
+约会 [yuē huì]	date  ; appointment  ; engagement	relations
+约束	limit  ; restrict  ; restrain  ; trammel  ; bound  ; confine  ; throttle	verb
+纸 [zhǐ]	paper	art
+纸币 [zhǐ bì]	banknote  ; bill  ; note  ; government note  ; bank bill  ; banker's bill  ; bank note  ; Federal Reserve note  ; greenback	business
+纸牌 [zhǐ pái] ; 卡片 [kǎ piàn]	card	object
+纺织品 [fǎng zhī pǐn] ; 布料 [bù liào]	cloth  ; fabric  ; material  ; textile	clothes
+线条 [xiàn tiáo]	line	art
+练习	do  ; practice  ; practise  ; exercise	verb-basic
+组织 [zǔ zhī] ; 机构 [jī gòu] ; 团体 [tuán tǐ]	organization  ; organisation	society
+细胞 [xì bāo]	cell	anatomy
+终点 [zhōng diǎn] ; 末端 [mò duān]	end  ; terminal	time
+终端	final  ; last  ; concluding  ; terminal	adjective
+经历 [jīng lì]	experience	business
+经历 [jīng lì]	experience	communication
+经济 [jīng jì]	economy  ; economic system	business
+结	knot	abstract
+结婚 [jié hūn] ; 婚礼 [hūn lǐ]	wedding  ; marriage  ; marriage ceremony	family
+结束	closed  ; shut  ; unopen	adjective
+结构 [jié gòu]	structure  ; construction	city
+结果 [jié guǒ]	consequence  ; effect  ; outcome  ; result  ; event  ; issue  ; upshot	science
+结果 [jié guǒ]	result  ; resultant  ; final result  ; outcome  ; termination	mathematics
+结论 [jié lùn] ; 决定 [jué dìng]	decision  ; determination  ; conclusion	communication
+给予	give	verb-basic
+统治	rule  ; govern	verb
+统治 [tǒng zhì]	dominion  ; rule	society
+继续	continue  ; go on  ; proceed  ; go along  ; keep	verb
+绳子 [shéng zi]	rope	object
+维护	keep  ; maintain  ; hold	verb
+绿色 [lǜ sè]	green  ; greenish  ; light-green  ; dark-green	color
+编号 [biān hào]	number	communication
+罐头 [guàn tou] ; 听头 [tīng tóu]	can  ; tin  ; tin can	container
+网 [wǎng]	net  ; network  ; mesh  ; meshing  ; meshwork	mathematics
+网球 [wǎng qiú]	tennis  ; lawn tennis	sports
+羊 [yáng] ; 绵羊 [mián yáng]	sheep	animal
+羊毛 [yáng máo]	wool	material
+美丽的	beautiful	adjective-basic
+美国 [Měi guó]	United States  ; United States of America  ; America  ; the States  ; US  ; U.S.  ; USA  ; U.S.A.	country
+羽毛 [yǔ máo]	feather  ; plume  ; plumage	object
+翅膀 [chì bǎng] ; 翼 [yì]	wing	anatomy
+老师 [lǎo shī] ; 教师 [jiào shī]	teacher  ; instructor	education
+考试 [kǎo shì] ; 测试 [cè shì]	examination  ; exam  ; test	education
+耳 [ěr] ; 耳朵 [ěr duo]	ear	anatomy
+职员 [zhí yuán]	staff	business
+联合 [lián hé]	union	society
+聚会 [jù huì] ; 派对 [pài duì]	party	relations
+聪 (cōng)	wise	adjective-people
+聪明的	intelligent	adjective-people
+肉 [ròu]	meat	food
+肌肉 [jī ròu]	muscle  ; musculus	anatomy
+股份 [gǔ fèn]	share	business
+肥皂 [féi zào]	soap	material
+胃 [wèi] ; 肚子 [dù zi] ; 腹部 [fù bù]	stomach  ; tummy  ; tum  ; breadbasket	anatomy
+背 [bèi] ; 背部	back  ; dorsum	anatomy
+胡萝卜 [hú luó bo]	carrot  ; cultivated carrot  ; Daucus carota sativa	vegetable
+胶水 [jiāo shuǐ]	glue  ; gum  ; mucilage	material
+胸膛 [xiōng táng] ; 胸腔 [xiōng qiāng]	chest  ; thorax  ; pectus	anatomy
+胸膛 [xiōng táng] ; 胸部 [xiōng bù]	chest  ; breast	anatomy
+能够的	able	adjective-people
+能量 [néng liàng]	energy  ; free energy	physics
+脂肪 [zhī fáng]	fat	material
+脑 [nǎo] ; 头脑 [tóu nǎo] ; 脑髓 [nǎo suǐ]	brain  ; encephalon	anatomy
+脖子 [bó zi] ; 颈部 [jǐng bù]	neck  ; cervix	anatomy
+脚 [jué] ; 足 [zú]	foot  ; human foot  ; pes	anatomy
+脚步	step  ; footstep  ; pace  ; stride	abstract
+脚趾 [jiǎo zhǐ]	toe	anatomy
+脸 [liǎn]	face  ; human face	anatomy
+腿 [tuǐ]	leg	anatomy
+膝 [xī] ; 膝盖 [xī gài]	knee  ; knee joint  ; human knee  ; articulatio genus  ; genu	anatomy
+自从 [zì cóng] ; 自…以来	since	preposition
+自动的 ; 自动的	automatic	adjective
+自己的	own  ; ain	adjective
+自然 [zì rán]	nature	nature
+自然语言 [zì rán yǔ yán]	language  ; natural language  ; tongue	communication
+自由的	free	adjective-people
+自行车 [zì xíng chē]	bike  ; bicycle  ; wheel  ; cycle	sports
+臭氧 [chòu yǎng]	ozone	environment
+舌头 [shé tou]	tongue  ; lingua  ; glossa  ; clapper	anatomy
+舞台 [wǔ tái]	stage	art
+艺人 [yì rén]	actor  ; histrion  ; player  ; thespian  ; role player	profession
+艺术 [yì shù]	art  ; fine art	art
+艺术家 [yì shù jiā]	artist  ; creative person	art
+节奏 [jié zòu] ; 旋律 [xuán lǜ]	rhythm  ; beat  ; musical rhythm	art
+节约	save  ; preserve	verb
+花 [huā]	flower	nature
+花园 [huā yuán]	garden	house
+花环 [huā huán]	coil  ; whorl  ; roll  ; curl  ; curlicue  ; ringlet  ; gyre  ; scroll	object
+苍蝇 [cāng ying]	fly	animal
+苦的	bitter	adjective
+英国 [Yīng guó]	United Kingdom  ; UK  ; U.K.  ; Britain  ; United Kingdom of Great Britain and Northern Ireland  ; Great Britain	country
+英语 [Yīng yǔ]	English  ; English language	language
+苹果 [píng guǒ]	apple	fruit
+范围	range  ; scope  ; reach  ; orbit  ; compass  ; ambit	science
+茎 [jīng]	stem  ; stalk	nature
+茶 [chá]	tea	drink
+茶杯 [chá bēi]	cup	container
+草 [cǎo]	grass	nature
+草莓 [cǎo méi]	strawberry	fruit
+获利	profit  ; turn a profit	verb
+菜单 [cài dān]	menu  ; bill of fare  ; card  ; carte du jour  ; carte	object
+菠萝 [bō luó]	pineapple  ; ananas	fruit
+萝卜 [luó bo]	radish	vegetable
+落下	fall	verb-basic
+落下	fall  ; spill  ; tumble	abstract
+葡萄酒 [pú tao jiǔ]	wine  ; vino	drink
+蒸汽 [zhēng qì]	steam	physics
+蓝色 [lán sè]	blue  ; bluish  ; blueish	color
+虫 [chóng] ; 虫子 [chóng zi] ; 昆虫 [kūn chóng]	insect	animal
+蚂蚁 [mǎ yǐ]	ant  ; emmet  ; pismire	animal
+蛇 [shé]	snake  ; serpent  ; ophidian	animal
+蛋 [dàn]	egg	food
+蛋糕 [dàn gāo]	cake	food
+蜜蜂 [mì fēng]	bee	animal
+螺母 [luó mǔ] ; 螺帽 [luó mào]	nut	object
+血 [xuè] ; 血液 [xuè yè]	blood	anatomy
+行为	behavior  ; demeanor  ; demeanour  ; behaviour  ; conduct  ; deportment	abstract
+行动	act  ; deed  ; human action  ; human activity	abstract
+行动	action	abstract
+行动 [xíng dòng] ; 工作 [gōng zuò]	work	business
+行动 [xíng dòng] ; 操作 [cāo zuò]	operation	business
+街道 [jiē dào]	street	city
+衡量	measure  ; mensurate  ; measure out	verb
+衣服 [yī fu] ; 服装 [fú zhuāng]	clothing  ; article of clothing  ; vesture  ; wear  ; wearable  ; habiliment	clothes
+衣领 [yī lǐng]	collar  ; neckband	clothes
+表情 [biǎo qíng]	expression  ; look  ; aspect  ; facial expression  ; face	communication
+表格 [biǎo gé]	form	business
+表格 [biǎo gé] ; 列表 [liè biǎo]	table  ; tabular array	business
+表演 [biǎo yǎn]	show	business
+表现	act  ; move	verb
+表面 [biǎo miàn]	surface	mathematics
+表面 [biǎo miàn] ; 外面 [wài mian]	outside  ; exterior	mathematics
+衬衫 [chèn shān]	shirt	clothes
+袋子 [dài zi]	bag	container
+被乘数	root	mathematics
+裁判 [cái pàn]	judge  ; justice  ; jurist	profession
+裂缝	crack  ; cleft  ; crevice  ; fissure  ; scissure	abstract
+装满	fill  ; fill up  ; make full	verb
+装饰物	decoration  ; ornament  ; ornamentation	abstract
+裙子 [qún zi]	skirt	clothes
+褐色 [hè sè] ; 棕色 [zōng sè]	brown  ; brownish  ; chocolate-brown  ; dark-brown	color
+西方 [xī fāng]	west  ; due west  ; westward  ; W	geography
+西班牙 [Xī bān yá]	Spain  ; Kingdom of Spain  ; Espana	country
+西班牙语 [Xī bān yá yǔ]	Spanish	language
+西红柿 [xī hóng shì]	tomato	vegetable
+要 ; 想要 ; 缺乏	desire  ; want	verb
+要求	need  ; necessitate  ; ask  ; postulate  ; require  ; take  ; involve  ; call for  ; demand	verb-basic
+观点 [guān diǎn] ; 看法 [kàn fǎ]	opinion  ; sentiment  ; persuasion  ; view  ; thought	communication
+规则 [guī zé]	order	mathematics
+规则 [guī zé] ; 惯例 [guàn lì]	rule  ; regulation	mathematics
+角 [jué]	angle	mathematics
+解釋 ; 解释	explain  ; explicate	verb
+訪問 ; 访问 (fǎngwèn)	visit  ; see	verb
+誰的	whose	pronoun
+警察 [jǐng chá]	policeman  ; police officer  ; officer	profession
+警方 [jǐng fāng] ; 警察机关	police  ; police force  ; constabulary  ; law	society
+计划 [jì huà]	plan  ; program  ; programme	business
+计算机 [jì suàn jī] ; 电脑 [diàn nǎo]	computer  ; computing machine  ; computing device  ; data processor  ; electronic computer  ; information processing system	device
+计量单位 [jì liàng dān wèi]	unit  ; unit of measurement	physics
+讨论	discuss  ; hash out  ; talk over	verb
+讨论 [tǎo lùn]	discussion  ; give-and-take  ; word	communication
+训练 [xùn liàn] ; 培训 [péi xùn]	training  ; preparation  ; grooming	education
+记录 [jì lù]	record	sports
+记忆 [jì yì] ; 回忆 [huí yì]	memory	communication
+记忆力 [jì yì lì]	memory  ; retention  ; retentiveness  ; retentivity	communication
+记者 [jì zhě]	journalist	profession
+讲授	teach  ; learn  ; instruct	verb
+许多的	many	adjective
+论据 [lùn jù]	argument  ; statement	communication
+设计	design  ; plan	verb
+设计 [shè jì] ; 规划 [guī huà]	design  ; designing	art
+证据 [zhèng jù]	evidence	science
+证明	prove  ; testify  ; bear witness  ; evidence  ; show	verb
+识别	identify  ; place	verb
+词 [cí]	word	communication
+词典 [cí diǎn]	dictionary  ; lexicon	communication
+试	test  ; prove  ; try  ; try out  ; examine  ; essay	verb
+诗 [shī] ; 诗歌 [shī gē] ; 韵文 [yùn wén]	poetry  ; poesy  ; verse	art
+诗歌 [shī gē] ; 韵文 [yùn wén]	poem  ; verse form	art
+话语 [huà yǔ]	speech  ; speech communication  ; spoken communication  ; spoken language  ; language  ; voice communication  ; oral communication	communication
+语言 [yǔ yán]	language  ; linguistic communication	communication
+说	say  ; tell  ; state	verb-basic
+说谎 ; 說謊 (shuohuang)	lie	verb-basic
+请 (qǐng)	please	adverb
+请求	request  ; bespeak  ; call for  ; quest	verb
+请求 [qǐng qiú]	request  ; asking	communication
+读	read	verb-basic
+课程 [kè chéng]	course  ; class  ; course of study  ; course of instruction	business
+谁 [shéi]	who	pronoun
+谁 [shéi]	whom	pronoun
+调查 [diào chá]	research  ; inquiry  ; enquiry	science
+谈话	talk  ; speak  ; utter  ; mouth  ; verbalize  ; verbalise	verb-basic
+谎言 [huǎng yán]	lie  ; prevarication	communication
+豆 [dòu]	bean  ; edible bean	vegetable
+豌豆 [wān dòu]	pea	vegetable
+象 [xiàng] ; 大象 [dà xiàng]	elephant	animal
+财产 [cái chǎn] ; 所有物 [suǒ yǒu wù]	property  ; belongings  ; holding	business
+财政的	financial  ; fiscal	adjective
+账单 [zhàng dān] ; 发票 [fā piào]	invoice  ; bill  ; account	business
+质量 [zhì liàng] ; 重量 [zhòng liàng]	mass	physics
+贸易 [mào yì]	trade	business
+费用 [fèi yòng]	cost	business
+资本 [zī běn] ; 资金 [zī jīn]	capital  ; working capital	business
+赌博	risk  ; gamble  ; chance  ; hazard  ; take chances  ; adventure  ; run a risk  ; take a chance	verb
+赢	win	verb
+赢 [yíng] ; 胜利 [shèng lì]	win	sports
+走 (zǒu)	walk	verb
+超级市场 [chāo jí shì chǎng] ; 超市 [chāo shì]	supermarket	city
+趋势 [qū shì]	trend  ; tendency	science
+足够	enough  ; plenty	adverb
+足球 [zú qiú]	football  ; football game	sports
+距离 [jù lí]	distance	mathematics
+跟从	follow	verb-basic
+跳舞	dance  ; trip the light fantastic  ; trip the light fantastic toe	verb-basic
+踢	kick	verb
+踢	kick  ; boot  ; kicking	abstract
+身体 [shēn tǐ]	body  ; torso  ; trunk	anatomy
+身体的	physical	adjective
+躺	lie	verb-basic
+軍事	military	adjective
+較遠的 / 较远的 (jiào yuǎn de) ; 遠 / 远 (yuǎn)	far	adjective
+车库 [chē kù]	garage	house
+转动	turn	verb
+轮子 [lún zi]	wheel	object
+轮船 [lún chuán]	ship	transport
+轻的	light	adjective-basic
+边缘 [biān yuán]	edge  ; border	mathematics
+迅速	fast	adjective-basic
+过去 [guò qu]	past  ; past times  ; yesteryear	time
+过程	procedure  ; process	science
+过程 [guò chéng] ; 进程 [jìn chéng]	process  ; physical process	physics
+运动 [yùn dòng]	movement  ; motion	physics
+运输 [yùn shū]	transport  ; shipping  ; transportation	transport
+这 [zhè] ; 这个 [zhè ge]	this	pronoun
+这些 [zhè xiē]	these	pronoun
+这样	such	adverb
+这里 (zhèlǐ) ; 这儿 (zhèr)	here	adverb
+进入	enter  ; come in  ; get into  ; get in  ; go into  ; go in  ; move into	verb
+进入 [jìn rù] ; 到…里	into	preposition
+进化 [jìn huà] ; 发展 [fā zhǎn]	evolution  ; development	nature
+连接器	connection  ; connexion  ; connector  ; connecter  ; connective	abstract
+逆	opposite  ; reverse  ; contrary	abstract
+选举 [xuǎn jǔ]	election	society
+选择	choice  ; selection  ; option  ; pick	abstract
+选择	choose  ; take  ; select  ; pick out	verb
+通常 (tōngcháng)	usual  ; common	adjective
+通行证 [tōng xíng zhèng] ; 许可证 [xǔ kě zhèng]	pass  ; laissez passer	society
+道路 [dào lù]	road  ; route	city
+遗嘱 [yí zhǔ]	will  ; testament	society
+避开	avoid	verb
+那 [nǎ] ; 那个 [nèi gè]	that	pronoun
+那些 [nà xiē]	those	pronoun
+邮政 [yóu zhèng]	mail  ; mail service  ; postal service  ; post	communication
+邮费 [yóu fèi]	stamp  ; postage  ; postage stamp	object
+邻居 [lín jū]	neighbor  ; neighbour	family
+部分	part  ; portion  ; component part  ; component  ; constituent	abstract
+部分	part  ; share  ; portion  ; percentage	abstract
+部分	piece	abstract
+部长 [bù zhǎng]	minister  ; government minister	profession
+部门 [bù mén]	department  ; section	business
+部门 [bù mén]	part  ; section  ; division	business
+酱 [jiàng]	sauce	food
+酸 [suān]	acid	material
+酸雨 [suān yǔ]	acid rain  ; acid precipitation	environment
+采访 [cǎi fǎng]	interview	communication
+释放	free  ; liberate  ; release  ; unloose  ; unloosen  ; loose	verb
+重力 [zhòng lì]	weight	physics
+重回	return  ; homecoming	abstract
+野蛮的	cruel  ; barbarous  ; brutal  ; fell  ; roughshod  ; savage  ; vicious	adjective
+金属 [jīn shǔ]	metallic element  ; metal	material
+金属丝	wire	object
+针 [zhēn]	needle	tool
+针脚	stitch	medicine
+钉 [dīng] ; 钉子 [dīng zi]	nail	tool
+钟 [zhōng]	bell	tool
+钢 [gāng]	steel	material
+钢笔 [gāng bǐ]	pen	art
+钥匙 [yào shi]	key	tool
+钩 [gōu]	hook  ; claw	tool
+钱 [qián]	money	business
+铁 [tiě]	iron  ; Fe  ; atomic number 26	material
+铁轨 [tiě guǐ]	track  ; rail  ; rails  ; runway	transport
+铅 [qiān]	lead  ; Pb  ; atomic number 82	material
+铅笔 [qiān bǐ]	pencil	art
+银 [yín]	silver  ; Ag  ; atomic number 47	material
+银行 [yín háng]	bank  ; depository financial institution  ; banking concern  ; banking company	city
+链条 [liàn tiáo]	chain	object
+销售	sell	verb-basic
+销售 [xiāo shòu]	sale	business
+锁 [suǒ]	lock	tool
+错误 [cuò wù]	mistake  ; error  ; fault	communication
+锤子 [chuí zi]	hammer	tool
+镜子 [jìng zi]	mirror	physics
+长 (cháng)	long	adjective-basic
+门 [mén]	door	house
+门 [mén]	gate	house
+闪电 [shǎn diàn]	lightning	weather
+问 (wèn) ; 询问 (xúnwèn)	ask  ; inquire  ; enquire	verb
+问题 [wèn tí]	issue	science
+问题 [wèn tí]	problem  ; job	business
+问题 [wèn tí]	trouble  ; problem	science
+问题 [wèn tí] ; 咨询 [zī xún]	question  ; inquiry  ; enquiry  ; query  ; interrogation	communication
+闻	smell	verb
+防御	defense  ; defence  ; defense force  ; defence force	abstract
+阶梯 [jiē tī] ; 台阶 [tái jiē]	step  ; stair	house
+阶段 [jiē duàn] ; 部分 [bù fèn]	section  ; subdivision	business
+附加设备	addition  ; add-on  ; improver	abstract
+限度 [xiàn dù]	limit  ; bound  ; boundary	mathematics
+陪伴 [péi bàn]	company  ; companionship  ; fellowship  ; society	society
+隐瞒	hide  ; conceal	verb
+雄性	male	adjective-people
+集合 [jí hé]	set	mathematics
+集团 [jí tuán] ; 团体 [tuán tǐ]	group  ; grouping	business
+難看 ; 难看 (nánkàn) ; 醜 (chǒu)	ugly	adjective
+雨 [yǔ]	rain  ; rainfall	weather
+雪 [xuě]	snow	weather
+零 [líng]	nothing  ; nil  ; nix  ; nada  ; null  ; aught  ; cipher  ; cypher  ; goose egg  ; naught  ; zero  ; zilch  ; zip  ; zippo	number
+零钱 [líng qián]	change	business
+雷 [léi]	thunder	weather
+雾 [wù]	fog	weather
+需求 [xū qiú]	demand  ; need	business
+震动	shock  ; daze  ; stupor	feeling
+霜 [shuāng]	frost  ; hoar  ; hoarfrost  ; rime	weather
+露水 [lù shuǐ]	dew	weather
+非常	very  ; really  ; real  ; rattling	adverb
+非常感谢 [fēi cháng gǎn xiè]	many thanks	conversation
+面包 [miàn bāo]	bread  ; breadstuff  ; staff of life	food
+靴子 [xuē zi]	boot	clothes
+鞋 [xié]	shoe	clothes
+鞭子 [biān zi]	whip	tool
+音乐 [yīn yuè] ; 乐曲 [yuè qǔ]	music	art
+音乐会 [yīn yuè huì]	concert	art
+音乐家 [yīn yuè jiā]	musician  ; instrumentalist  ; player	profession
+音符 [yīn fú]	note  ; musical note  ; tone	art
+頻繁 ; 频繁	frequent	adjective
+页 [yè]	page	communication
+项目 [xiàng mù]	project  ; projection	science
+领导人 [lǐng dǎo rén] ; 首领 [shǒu lǐng]	leader	society
+领带 [lǐng dài]	tie  ; necktie	clothes
+颗粒 [kē lì]	grain	material
+颜料 [yán liào] ; 涂料 [tú liào] ; 油漆 [yóu qī]	paint  ; pigment	art
+颜色 [yán sè] ; 色彩 [sè cǎi] ; 颜料 [yán liào]	color  ; colour  ; coloring material  ; colouring material	art
+额头 [é tóu]	forehead  ; brow	anatomy
+风 [fēng]	wind  ; air current  ; current of air	weather
+飞	fly  ; wing	verb-basic
+飞机 [fēi jī]	plane  ; airplane  ; aeroplane	transport
+飞机场 [fēi jī chǎng]	airport  ; airdrome  ; aerodrome  ; drome	city
+飞行 [fēi xíng]	flight  ; flying	transport
+飞行员 [fēi xíng yuán]	pilot  ; airplane pilot	profession
+食物 [shí wù]	food  ; nutrient	food
+餐刀	knife	kitchen
+餐厅 [cān tīng] ; 饭店 [fàn diàn]	restaurant  ; eating house  ; eating place  ; eatery	city
+餐叉	fork	kitchen
+餓/饿 è	hungry	adjective-people
+饮料 [yǐn liào]	drink  ; beverage  ; drinkable  ; potable	drink
+首要 (shǒuyào) ; 重要 (zhòngyào)	main  ; chief  ; primary  ; principal  ; master	adjective
+首都 [shǒu dū]	capital	city
+香蕉 [xiāng jiāo]	banana	fruit
+马 [mǎ]	horse  ; Equus caballus	animal
+骨头 [gǔ tou]	bone  ; os	anatomy
+高尔夫球 [gāo ěr fū qiú]	golf  ; golf game	sports
+高的 (gāo-de)	tall	adjective
+高興 (gāoxìng)	happy	adjective-basic
+鱼 [yú]	fish	animal
+鸟 [niǎo]	bird	animal
+黄油 [huáng yóu]	butter	food
+黄瓜 [huáng guā]	cucumber  ; cuke	vegetable
+黄色 [huáng sè]	yellow  ; yellowish  ; xanthous	color
+黄金 [huáng jīn]	gold  ; Au  ; atomic number 79	material
+黑暗的	dark	adjective-basic
+黑色 [hēi sè]	black	color
+黑莓 [hēi méi]	blackberry	fruit
+鼻子 [bí zi]	nose  ; olfactory organ	anatomy
