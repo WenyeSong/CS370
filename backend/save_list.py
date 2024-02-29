@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all domains on all routes
 
 # In-memory storage for simplicity
 words_list = [
