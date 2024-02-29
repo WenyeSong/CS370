@@ -13,6 +13,7 @@ function SavedList() {
       .then((data) => {
         // Assuming the data is the array of objects you want to use as dataSource for the Table
         setDictFlask(data);
+        console.log('Data from Flask: ', data);
       })
       .catch((error) => {
         console.error('Error fetching data: ', error);
