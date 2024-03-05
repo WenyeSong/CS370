@@ -8,9 +8,16 @@ CORS(app)  # Enable CORS for all domains on all routes
 words_list = [
     {"word": "meticulous", "definition": "Showing great attention to detail; very careful and precise."},
     {"word": "vivacious", "definition": "Attractively lively and animated."},
-    {"word": "meticulous", "definition": "Showing great attention to detail; very careful and precise."}
-    # Add the initial words from your frontend here
+    {"word": "serendipity", "definition": "The occurrence and development of events by chance in a happy or beneficial way."},
+    {"word": "ephemeral", "definition": "Lasting for a very short time."},
+    {"word": "quintessential", "definition": "Representing the most perfect or typical example of a quality or class."},
+    {"word": "melancholy", "definition": "A feeling of pensive sadness, typically with no obvious cause."},
+    {"word": "ineffable", "definition": "Too great or extreme to be expressed or described in words."},
+    {"word": "lucid", "definition": "Expressed clearly; easy to understand."},
+    {"word": "ubiquitous", "definition": "Present, appearing, or found everywhere."},
+    {"word": "zenith", "definition": "The time at which something is most powerful or successful."}
 ]
+
 
 @app.route('/words/<int:index>', methods=['DELETE'])
 def delete_word(index):
