@@ -15,7 +15,6 @@ def txt_to_json(txt_file, json_file):
 
     with open(json_file, 'w', encoding='utf-8') as file:
         file.write(json_str)
-    
     return data_dict
 
 txt_file_path = 'dict/chinese-english-2024-02-27.txt'
