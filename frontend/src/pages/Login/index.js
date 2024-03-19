@@ -18,6 +18,34 @@ function Login () {
     // } catch (e) {
     //   message.error(e.response?.data?.message || 'log in failed')
     // }
+    
+
+    //swy 改了这段代码
+    try {
+      const response = await fetch('/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: values.account,
+          password: values.password,
+        }),
+      });
+  
+      const data = await response.json();
+      if (response.ok) {
+        // 登录成功，可以将 token 保存在本地存储或状态管理库中
+        // loginStore.setToken(data.token);
+        navigate('/'); // 导航到其他页面，待添加
+      } else {
+        // 登录失败，显示错误消息
+        message.error(data.message || 'log in failed');
+      }
+    } catch (e) {
+      // 网络或其他错误，显示错误消息
+      message.error('Network error or server is down');
+    } 
   }
   return (
 
