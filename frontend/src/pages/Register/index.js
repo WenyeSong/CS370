@@ -9,7 +9,7 @@ const Register = (props) => {
     const [name, setName] = useState('');
     const navigate = useNavigate();
 
-  // 处理提交表单，swy改了这个handleSubmit function
+  // Wenye has changed this handleSubmit function
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
