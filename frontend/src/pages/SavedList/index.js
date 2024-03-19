@@ -7,17 +7,31 @@ import {
   Space,
   Table,
   Popconfirm,
+  Select,
 } from 'antd';
 import './index.css';
 
-function SavedList() {
-  // State for storing the words list
-  const [words, setWords] = useState([]);
+const { Option } = Select;
 
-  // Function to fetch words from the backend
+function SavedList() {
+  // State for storing the words list and the current directory
+  const [words, setWords] = useState([]);
+  const [directories, setDirectories] = useState([]);
+  const [currentDirectory, setCurrentDirectory] = useState('');
+
+  // Fetch directories
+  const fetchDirectories = async () => {
+    const dirs = ['English', 'French'];
+    setDirectories(dirs);
+    if(dirs.length > 0) {
+      setCurrentDirectory(dirs[0]);
+    }
+  };
+
+  // Function to fetch words from the backend based on the current directory
   const fetchWords = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/words');
+      const response = await fetch(`http://127.0.0.1:5000/words?directory=${currentDirectory}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -28,10 +42,15 @@ function SavedList() {
     }
   };
 
-  // Use useEffect to fetch words when the component mounts
   useEffect(() => {
-    fetchWords();
+    fetchDirectories();
   }, []);
+
+  useEffect(() => {
+    if(currentDirectory) {
+      fetchWords();
+    }
+  }, [currentDirectory]);
 
   const deleteWord = async (index) => {
     try {
@@ -41,30 +60,33 @@ function SavedList() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      // Fetch the updated words list after deletion
-      fetchWords();
+      fetchWords(); // Fetch the updated words list after deletion
     } catch (error) {
       console.log("Delete error: " + error.message);
     }
   };
-  
 
-  // Define your table columns
+  const onChange = (pagination, filters, sorter, extra) => {
+    console.log('params', pagination, filters, sorter, extra);
+  };  
+
   const columns = [
     {
       title: 'Word',
       dataIndex: 'word',
       key: 'word',
+      sorter: (a, b) => a.word.localeCompare(b.word),
+      sortDirections: ['ascend', 'descend', 'ascend'],
+    
     },
     {
       title: 'Definition',
-      dataIndex: 'definition',
+      dataIndex: 'definition',  
       key: 'definition',
     },
     {
       title: 'Action',
       key: 'action',
-      // Correctly use the render method's arguments
       render: (text, record, index) => (
         <Space size="middle">
           <Button type="primary">Edit</Button>
@@ -75,7 +97,6 @@ function SavedList() {
       ),
     },
   ];
-  
 
   return (
     <div>
@@ -83,8 +104,16 @@ function SavedList() {
         <Col span={24}>
           <Card
             title="Saved List"
-            extra={<Button type="primary">Add New</Button>}>
+            extra={
+              <Space>
+                <Select defaultValue={currentDirectory} style={{ width: 120 }} onChange={setCurrentDirectory}>
+                  {directories.map(dir => <Option key={dir} value={dir}>{dir}</Option>)}
+                </Select>
+                <Button type="primary">Add New</Button>
+              </Space>
+            }>
             <Table
+              onChange={onChange}
               pagination={{ pageSize: 5 }}
               columns={columns}
               dataSource={words}
@@ -97,4 +126,3 @@ function SavedList() {
 }
 
 export default SavedList;
-
