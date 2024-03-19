@@ -19,6 +19,7 @@ words_list = [
 ]
 
 
+
 @app.route('/words/<int:index>', methods=['DELETE'])
 def delete_word(index):
     if index < len(words_list):
