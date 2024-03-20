@@ -13,7 +13,7 @@ const Register = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // 发送 POST 请求到后端的注册接口
+      // send POST request to backend
       const response = await fetch('http://127.0.0.1:5000/register', {
         method: 'POST',
         headers: {
@@ -28,14 +28,12 @@ const Register = (props) => {
 
       const data = await response.json();
       if (response.ok) {
-        // 注册成功, 可以重定向到登录页面或主页，待添加
+        // add: where to navigate
         navigate('/');
       } else {
-        // 注册失败，显示错误消息
         message.error(data.message || 'Registration failed');
       }
     } catch (error) {
-      // 网络错误或服务器下线
       message.error('Network error or server is down');
     }
   };

@@ -6,7 +6,6 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from flask_cors import CORS
 
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://test:cs370@localhost/test'
 db = SQLAlchemy(app)
@@ -37,7 +36,7 @@ def login():
     data = request.get_json()
     user = User.query.filter_by(username=data['username']).first()
     if user and check_password_hash(user.password_hash, data['password']):
-        # 生成token的逻辑放在这里
+        # the logic of generate token, put here later? 
         token = 'SOME_GENERATED_TOKEN'
         return jsonify({'token': token}), 200
     else:
