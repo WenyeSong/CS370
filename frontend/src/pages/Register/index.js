@@ -1,23 +1,42 @@
 import React, {useState} from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import { message } from 'antd';
 
 
 const Register = (props) => {
-    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
+    const navigate = useNavigate();
 
-    const handleSubmit = (e)=> {
-        e.preventDefault();
-        console.log(email)
+  // Wenye has changed this handleSubmit function
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      // send POST request to backend
+      const response = await fetch('http://127.0.0.1:5000/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password: pass,
+        }),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        // add: where to navigate
+        navigate('/');
+      } else {
+        message.error(data.message || 'Registration failed');
+      }
+    } catch (error) {
+      message.error('Network error or server is down');
     }
-
-    const handleLoginClick = () => {
-        // Use the navigate function to go to the login page
-        navigate('/login');
-      };
-
+  };
     
     return (
         <div className="auth-form-container">
@@ -31,12 +50,10 @@ const Register = (props) => {
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
             <button type="submit">Log In</button>
         </form>
-        <button className="link-btn" onClick={handleLoginClick}>
-            Already have an account? Login here.
-        </button>
+        <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
     </div>
     )
 
 }
 
-export default Register
+export default Register 
