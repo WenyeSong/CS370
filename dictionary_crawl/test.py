@@ -52,8 +52,6 @@ def get_word_data(word):
         "en_examples": en_example_texts,
     }
     
-    
-    
     for cn_example, en_example in zip(cn_example_texts, en_example_texts):
         if word in cn_example:
             data["chosen_cn_example"] = cn_example

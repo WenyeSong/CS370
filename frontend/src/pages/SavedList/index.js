@@ -60,11 +60,12 @@ function SavedList() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      fetchWords(); // Fetch the updated words list after deletion
+      // Fetch the updated words list after deletion
+      fetchWords();
     } catch (error) {
       console.log("Delete error: " + error.message);
     }
-  };
+  };  
 
   const onChange = (pagination, filters, sorter, extra) => {
     console.log('params', pagination, filters, sorter, extra);
