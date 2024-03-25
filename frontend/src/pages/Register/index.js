@@ -1,7 +1,9 @@
 import React, {useState} from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 const Register = (props) => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
@@ -10,6 +12,11 @@ const Register = (props) => {
         e.preventDefault();
         console.log(email)
     }
+
+    const handleLoginClick = () => {
+        // Use the navigate function to go to the login page
+        navigate('/login');
+      };
 
     
     return (
@@ -24,7 +31,9 @@ const Register = (props) => {
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
             <button type="submit">Log In</button>
         </form>
-        <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
+        <button className="link-btn" onClick={handleLoginClick}>
+            Already have an account? Login here.
+        </button>
     </div>
     )
 
