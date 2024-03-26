@@ -44,6 +44,11 @@ function Main () {
                                 Register
                             </Link>
                         </li>
+                        <li className='nav-time'>
+                            <Link to='/Flashcard' className='nav-links subtitle' onClick={closeMobileMenu}>
+                                Flashcard
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

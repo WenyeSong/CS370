@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.home-page {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-page-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.selected-deck-title {
+  font-size: 24px;
+}
+
+.sidebar-block {
+  width: 400px;
+}
+
+.quiz-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.change-question-button {
+  cursor: pointer;
+  width: 4em;
+  height: 4em;
+  color: gray;
+}
+
+.know-it-button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.know-it-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  height: 2em;
+  width: 20%;
+  margin: 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonCards {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.buttonCards:hover {
+  background-color: lightsteelblue;
+}
