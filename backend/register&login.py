@@ -5,10 +5,14 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import check_password_hash, generate_password_hash
 from flask_cors import CORS
 
+from flask_migrate import Migrate # interface for SQLAlchemy and Alembic
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://test:cs370@localhost/test'
 db = SQLAlchemy(app)
+
+migrate = Migrate(app, db) #initiate Flask-Migrate
+
 CORS(app)
 
 class User(db.Model):
