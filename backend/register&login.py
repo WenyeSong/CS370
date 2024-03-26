@@ -26,11 +26,7 @@ class Word(db.Model):
     word = db.Column(db.String(64), unique=True)
     meaning = db.Column(db.Text)
 
-class UserWord(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    word_id = db.Column(db.Integer, db.ForeignKey('word.id'))
-    mastery_level = db.Column(db.Integer)
+
 
 with app.app_context():
     db.create_all()

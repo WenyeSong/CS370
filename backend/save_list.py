@@ -17,8 +17,15 @@ words_list = [
     {"word": "ubiquitous", "definition": "Present, appearing, or found everywhere."},
     {"word": "zenith", "definition": "The time at which something is most powerful or successful."}
 ]
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://test:cs370@localhost/test'
+db = SQLAlchemy(app)
 
-
+class UserWord(db.Model): #Wenye：我觉得这个后面加
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    word_id = db.Column(db.Integer, db.ForeignKey('word.id'))
+    mastery_level = db.Column(db.Integer)
 
 @app.route('/words/<int:index>', methods=['DELETE'])
 def delete_word(index):
