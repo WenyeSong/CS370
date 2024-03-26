@@ -9,6 +9,7 @@ import {
   Popconfirm,
   Select,
 } from 'antd';
+import { Link} from 'react-router-dom';
 import './index.css';
 
 const { Option } = Select;
@@ -110,6 +111,11 @@ function SavedList() {
                 <Select defaultValue={currentDirectory} style={{ width: 120 }} onChange={setCurrentDirectory}>
                   {directories.map(dir => <Option key={dir} value={dir}>{dir}</Option>)}
                 </Select>
+                {/* Link to FlashcardPage */}
+                <Link to="/flashcards">
+                  <Button type="primary">Go to Flashcard Page</Button>
+                </Link>
+                {/* End of Link to FlashcardPage */}
                 <Button type="primary">Add New</Button>
               </Space>
             }>

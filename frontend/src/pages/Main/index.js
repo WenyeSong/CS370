@@ -45,7 +45,7 @@ function Main () {
                             </Link>
                         </li>
                         <li className='nav-time'>
-                            <Link to='/Flashcard' className='nav-links subtitle' onClick={closeMobileMenu}>
+                            <Link to='/flashcards' className='nav-links subtitle' onClick={closeMobileMenu}>
                                 Flashcard
                             </Link>
                         </li>

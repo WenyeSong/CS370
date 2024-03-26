@@ -9,7 +9,7 @@ import Voctest from './pages/Voctest'
 import SavedList from './pages/SavedList'
 import TypeGo from './pages/TypeGo'
 import Register from './pages/Register';
-import Flashcard  from './pages/Flashcard'
+import FlashcardPage from './pages/FlashcardPage';
 
 function App () {
 
@@ -36,7 +36,7 @@ function App () {
           <Route path='/SavedList' element={<SavedList />} />
           <Route path='/error' element={<Error />} />
           <Route path='*' element={<Error />} />
-          <Route path = '/Flashcard' element = {<Flashcard />} />
+          <Route path="/flashcards" element={<FlashcardPage />} />
         </Routes>
       </div>
     </BrowserRouter >
