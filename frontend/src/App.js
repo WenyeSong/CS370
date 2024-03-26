@@ -9,6 +9,7 @@ import Voctest from './pages/Voctest'
 import SavedList from './pages/SavedList'
 import TypeGo from './pages/TypeGo'
 import Register from './pages/Register';
+import Test from './pages/Login-test';
 
 function App () {
 
@@ -34,6 +35,7 @@ function App () {
           <Route path='/Voctest' element={<Voctest />} />
           <Route path='/SavedList' element={<SavedList />} />
           <Route path='/error' element={<Error />} />
+          <Route path='/test' element={<Test />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </div>
