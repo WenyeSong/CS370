@@ -1,17 +1,19 @@
-body{
+body {
     margin: 0;
+    font-family: 'Changa'; /* Added font family for better cross-browser compatibility */
 }
 
 .container {
     max-width: 900px;
-    margin: 1rem 2rem;
-  }
-  
+    margin: 1rem auto; /* Center the container horizontally */
+}
+
 .card-grid {
-    display:grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increase the minmax value */
     gap: 1rem;
+    padding: 1rem; /* Add padding to the card grid */
+    margin: 0; /* Remove margin */
 }
 
 .card {
@@ -23,31 +25,39 @@ body{
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
     background-color: white;
     transform-style: preserve-3d;
-    transition: 150ms;
+    transition: transform 0.5s;
     cursor: pointer;
-    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+    height: 100%; /* Make the cards fill the entire height of their container */
+}
+
+.card:hover,
+.card.flip {
+    transform: rotateY(180deg); /* Flip the card on hover or when the 'flip' class is applied */
 }
 
 .card .front,
 .card .back {
     position: absolute;
-    padding:1rem;
+    padding: 1rem;
     backface-visibility: hidden;
+    color: #333; /* Change the color of the text */
+    text-align: center; /* Center-align the text */
+    font-family: 'Changa';
 }
 
-.card .back{
-    transform: rotate(180deg);
+
+.card .back {
+    transform: rotateY(180deg); /* Initially hide the back face of the card */
+}
+
+.card .back {
+    transform: rotateY(180deg); /* Simplified transform property */
 }
 
 .flashcard-options {
     margin-top: .5rem;
-}
-
-.flashcard-options {
-    margin-top: .5rem;
-    color: #555
-    font-size 0.75em;
-
+    color: #555;
+    font-size: 0.75em;
 }
 
 .flashcard-option:first-child {
@@ -75,7 +85,7 @@ body{
     font-size: .75rem;
     margin-bottom: .25rem;
 }
-  
+
 .btn {
     background-color: hsl(200, 100%, 50%);
     color: white;
@@ -83,8 +93,9 @@ body{
     border-radius: .3em;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s; /* Added transition for hover effect */
 }
-  
+
 .btn:hover {
     background-color: hsl(200, 100%, 40%);
 }

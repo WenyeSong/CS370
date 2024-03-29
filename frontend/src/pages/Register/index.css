@@ -1,0 +1,80 @@
+/* Register.css */
+
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .register-form {
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .register-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+    display: block;
+  }
+  
+  .register-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Adjust margin-top for the input field */
+.register-form input[type="email"] {
+    margin-top: 5px;
+  }
+  
+  .register-form button {
+    width: 100%;
+    padding: 12px 20px; /* Increase padding for a nicer button appearance */
+    border: none;
+    border-radius: 25px; /* Adjust border-radius for a rounded button */
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px; /* Increase font size for better readability */
+    font-weight: bold; /* Apply bold font weight for emphasis */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .link-btn {
+    width: 100%;
+    padding: 12px 20px; /* Increase padding for a nicer button appearance */
+    border: none;
+    border-radius: 25px; /* Adjust border-radius for a rounded button */
+    background-color: transparent; /* Transparent background */
+    color: #ffcc00;
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Apply bold font weight for emphasis */
+    text-align: center; /* Center align text */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .link-btn:hover {
+    color: #0056b3;
+  }
