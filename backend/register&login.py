@@ -1,3 +1,5 @@
+
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, request, jsonify, make_response
@@ -8,10 +10,11 @@ from flask_cors import CORS
 from flask_migrate import Migrate # interface for SQLAlchemy and Alembic
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://test:cs370@localhost/test'
-db = SQLAlchemy(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:cs370@34.69.154.109/user_information'
 
-migrate = Migrate(app, db) #initiate Flask-Migrate
+
+db = SQLAlchemy(app)  # Define db before using it
+migrate = Migrate(app, db)  # Now db is defined and can be used here
 
 CORS(app)
 
@@ -68,5 +71,4 @@ def testdb():
         return str(e), 500
 
 if __name__ == '__main__':
-    #print("Starting Flask server on port 5000")
-    app.run(debug=True, port = 5000)
+    app.run(debug=True, port=5000)
