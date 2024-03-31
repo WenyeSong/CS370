@@ -1,51 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* Main.css */
 
-.subtitle {
-  font-family: 'Caveat', sans-serif;
-  color: #3f7bf2;
-  font-size: 40px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-/* @import url(‘’https://fonts.google.com/share?selection.family=Protest+Revolution'); */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-.App {
-  text-align: center;
-}
-/* App.css */
+
 body {
-  background-color: #090d27;
+  background-color: #349ad5; /* Set background color for the entire page */
+  font-family: 'Changa';
+  color: #000000; /* Set text color to white */
 }
 
-h1 {
-  font-family: 'Great Vibes', cursive;
-  color: #b3d0f0;
-  text-shadow: 1px 1px 2px rgb(90, 174, 243);
-  font-size: 70px;
-  text-align: center;
+.header, .footer {
+  background-color: #000;
+  color: #fff; /* Set text color to white */
 }
 
-h2 {
-  font-family: 'Caveat', cursive;
-  color: #b3d0f0;
-  text-shadow: 1px 1px 2px rgb(27, 64, 232);
-  font-size: 50px;
-  text-align: center;
+.navbar {
+  background-color: transparent; /* Make the navbar transparent */
 }
 
-.nav-menu {
+.navbar-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 48px; /* Increase font size */
+  text-align: center;
+  margin-bottom: 50px; /* Add space below the h1 */
+}
+
+.navbar h2 {
+  margin: 5px 0;
+  font-size: 36px; /* Increase font size */
+  text-align: center;
+  margin-bottom: 80px; /* Add space below the h2 */
+}
+
+.navbar .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar ul {
   list-style: none;
+  margin: 0;
   padding: 0;
+  display: flex;
 }
 
-.nav-menu li {
-  padding: 10px 20px; /* spacing */
-  color: #fff;
+.navbar ul li {
+  margin-right: 20px;
 }
 
-.nav-menu a {
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
   text-decoration: none;
-  color: #fff;
-  font-size: 40px;
+  color: #000000;
+  font-size: x-large;
+}
+
+.navbar .menu-icon i {
+  font-size: 24px;
+}
+
+.navbar .nav-time {
+  font-size: 30px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar h1 {
+    margin-bottom: 10px;
+  }
+
+  .navbar h2 {
+    display: none;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #0056b3;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
 }

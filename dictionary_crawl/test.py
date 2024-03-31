@@ -52,8 +52,6 @@ def get_word_data(word):
         "en_examples": en_example_texts,
     }
     
-    
-    
     for cn_example, en_example in zip(cn_example_texts, en_example_texts):
         if word in cn_example:
             data["chosen_cn_example"] = cn_example
@@ -73,7 +71,7 @@ def crawl_words(words):
     print("Initializing thread pool...")
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = []
-        for i, word in enumerate(words[:10], start=1):
+        for i, word in enumerate(words[:100], start=1):
             word = word.split()[0]
             print(f"Submitting task {i}/{len(words)}")
             futures.append(executor.submit(get_word_data, word))
@@ -102,10 +100,9 @@ def crawl_words(words):
     return results
 
 if __name__ == "__main__":
-    with open("dictionary_crawl/read_json.py") as f:
-        print("read success")
-    with open("dictionary_crawl/chinese/chinese_list.txt", "r", encoding="utf-8") as f:
+    with open("./chinese/chinese_list.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
-    with open("dictionary_crawl/chinese/chinese_dict.json", "w", encoding="utf-8") as f:
+    with open("./chinese/chinese_dict.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
+        
