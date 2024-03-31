@@ -102,8 +102,10 @@ def crawl_words(words):
     return results
 
 if __name__ == "__main__":
-    with open("./chinese/chinese_list.txt", "r", encoding="utf-8") as f:
+    with open("dictionary_crawl/read_json.py") as f:
+        print("read success")
+    with open("dictionary_crawl/chinese/chinese_list.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
-    with open("./chinese/chinese_dict.json", "w", encoding="utf-8") as f:
+    with open("dictionary_crawl/chinese/chinese_dict.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)

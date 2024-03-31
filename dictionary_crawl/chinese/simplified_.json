@@ -1,0 +1,882 @@
+[
+    {
+        "rank": 156,
+        "word": "次",
+        "frequency": 217
+    },
+    {
+        "rank": 157,
+        "word": "成",
+        "frequency": 215
+    },
+    {
+        "rank": 158,
+        "word": "只",
+        "frequency": 213
+    },
+    {
+        "rank": 159,
+        "word": "地",
+        "frequency": 208
+    },
+    {
+        "rank": 160,
+        "word": "以及",
+        "frequency": 201
+    },
+    {
+        "rank": 161,
+        "word": "两",
+        "frequency": 199
+    },
+    {
+        "rank": 162,
+        "word": "将",
+        "frequency": 199
+    },
+    {
+        "rank": 163,
+        "word": "又",
+        "frequency": 196
+    },
+    {
+        "rank": 164,
+        "word": "使",
+        "frequency": 195
+    },
+    {
+        "rank": 165,
+        "word": "名",
+        "frequency": 194
+    },
+    {
+        "rank": 166,
+        "word": "已",
+        "frequency": 192
+    },
+    {
+        "rank": 167,
+        "word": "主要",
+        "frequency": 190
+    },
+    {
+        "rank": 168,
+        "word": "高",
+        "frequency": 189
+    },
+    {
+        "rank": 169,
+        "word": "会",
+        "frequency": 186
+    },
+    {
+        "rank": 170,
+        "word": "要",
+        "frequency": 186
+    },
+    {
+        "rank": 171,
+        "word": "很",
+        "frequency": 182
+    },
+    {
+        "rank": 172,
+        "word": "其他",
+        "frequency": 181
+    },
+    {
+        "rank": 173,
+        "word": "它",
+        "frequency": 178
+    },
+    {
+        "rank": 174,
+        "word": "自己",
+        "frequency": 173
+    },
+    {
+        "rank": 175,
+        "word": "前",
+        "frequency": 171
+    },
+    {
+        "rank": 176,
+        "word": "第一",
+        "frequency": 170
+    },
+    {
+        "rank": 177,
+        "word": "者",
+        "frequency": 170
+    },
+    {
+        "rank": 178,
+        "word": "亦",
+        "frequency": 167
+    },
+    {
+        "rank": 179,
+        "word": "其中",
+        "frequency": 167
+    },
+    {
+        "rank": 180,
+        "word": "可能",
+        "frequency": 167
+    },
+    {
+        "rank": 181,
+        "word": "包括",
+        "frequency": 164
+    },
+    {
+        "rank": 182,
+        "word": "分",
+        "frequency": 163
+    },
+    {
+        "rank": 183,
+        "word": "向",
+        "frequency": 157
+    },
+    {
+        "rank": 184,
+        "word": "政府",
+        "frequency": 157
+    },
+    {
+        "rank": 185,
+        "word": "一些",
+        "frequency": 156
+    },
+    {
+        "rank": 186,
+        "word": "不同",
+        "frequency": 154
+    },
+    {
+        "rank": 187,
+        "word": "家",
+        "frequency": 153
+    },
+    {
+        "rank": 188,
+        "word": "香港",
+        "frequency": 153
+    },
+    {
+        "rank": 189,
+        "word": "位",
+        "frequency": 151
+    },
+    {
+        "rank": 190,
+        "word": "如",
+        "frequency": 149
+    },
+    {
+        "rank": 191,
+        "word": "得",
+        "frequency": 149
+    },
+    {
+        "rank": 192,
+        "word": "她",
+        "frequency": 148
+    },
+    {
+        "rank": 193,
+        "word": "我",
+        "frequency": 147
+    },
+    {
+        "rank": 194,
+        "word": "即",
+        "frequency": 146
+    },
+    {
+        "rank": 195,
+        "word": "研究",
+        "frequency": 143
+    },
+    {
+        "rank": 196,
+        "word": "时",
+        "frequency": 142
+    },
+    {
+        "rank": 197,
+        "word": "曾",
+        "frequency": 142
+    },
+    {
+        "rank": 198,
+        "word": "但是",
+        "frequency": 141
+    },
+    {
+        "rank": 199,
+        "word": "王",
+        "frequency": 141
+    },
+    {
+        "rank": 200,
+        "word": "从",
+        "frequency": 140
+    },
+    {
+        "rank": 201,
+        "word": "各",
+        "frequency": 136
+    },
+    {
+        "rank": 202,
+        "word": "小",
+        "frequency": 135
+    },
+    {
+        "rank": 203,
+        "word": "还",
+        "frequency": 133
+    },
+    {
+        "rank": 204,
+        "word": "没有",
+        "frequency": 129
+    },
+    {
+        "rank": 205,
+        "word": "四",
+        "frequency": 128
+    },
+    {
+        "rank": 206,
+        "word": "起",
+        "frequency": 128
+    },
+    {
+        "rank": 207,
+        "word": "自",
+        "frequency": 127
+    },
+    {
+        "rank": 208,
+        "word": "部分",
+        "frequency": 127
+    },
+    {
+        "rank": 209,
+        "word": "日本",
+        "frequency": 126
+    },
+    {
+        "rank": 210,
+        "word": "部",
+        "frequency": 126
+    },
+    {
+        "rank": 211,
+        "word": "重要",
+        "frequency": 126
+    },
+    {
+        "rank": 212,
+        "word": "把",
+        "frequency": 124
+    },
+    {
+        "rank": 213,
+        "word": "来",
+        "frequency": 124
+    },
+    {
+        "rank": 214,
+        "word": "main",
+        "frequency": 121
+    },
+    {
+        "rank": 215,
+        "word": "才",
+        "frequency": 120
+    },
+    {
+        "rank": 216,
+        "word": "由于",
+        "frequency": 120
+    },
+    {
+        "rank": 217,
+        "word": "同",
+        "frequency": 119
+    },
+    {
+        "rank": 218,
+        "word": "作",
+        "frequency": 117
+    },
+    {
+        "rank": 219,
+        "word": "开始",
+        "frequency": 116
+    },
+    {
+        "rank": 220,
+        "word": "世界",
+        "frequency": 114
+    },
+    {
+        "rank": 221,
+        "word": "文化",
+        "frequency": 113
+    },
+    {
+        "rank": 222,
+        "word": "行",
+        "frequency": 112
+    },
+    {
+        "rank": 223,
+        "word": "比",
+        "frequency": 110
+    },
+    {
+        "rank": 224,
+        "word": "成为",
+        "frequency": 109
+    },
+    {
+        "rank": 225,
+        "word": "进行",
+        "frequency": 109
+    },
+    {
+        "rank": 226,
+        "word": "城市",
+        "frequency": 108
+    },
+    {
+        "rank": 227,
+        "word": "中国",
+        "frequency": 107
+    },
+    {
+        "rank": 228,
+        "word": "他们",
+        "frequency": 107
+    },
+    {
+        "rank": 229,
+        "word": "工作",
+        "frequency": 107
+    },
+    {
+        "rank": 230,
+        "word": "政治",
+        "frequency": 107
+    },
+    {
+        "rank": 231,
+        "word": "则",
+        "frequency": 106
+    },
+    {
+        "rank": 232,
+        "word": "二",
+        "frequency": 104
+    },
+    {
+        "rank": 233,
+        "word": "公司",
+        "frequency": 104
+    },
+    {
+        "rank": 234,
+        "word": "种",
+        "frequency": 104
+    },
+    {
+        "rank": 235,
+        "word": "认为",
+        "frequency": 104
+    },
+    {
+        "rank": 236,
+        "word": "1",
+        "frequency": 101
+    },
+    {
+        "rank": 237,
+        "word": "国家",
+        "frequency": 101
+    },
+    {
+        "rank": 238,
+        "word": "表示",
+        "frequency": 100
+    },
+    {
+        "rank": 239,
+        "word": "天",
+        "frequency": 99
+    },
+    {
+        "rank": 240,
+        "word": "通过",
+        "frequency": 99
+    },
+    {
+        "rank": 241,
+        "word": "生",
+        "frequency": 97
+    },
+    {
+        "rank": 242,
+        "word": "如果",
+        "frequency": 96
+    },
+    {
+        "rank": 243,
+        "word": "得到",
+        "frequency": 96
+    },
+    {
+        "rank": 244,
+        "word": "例如",
+        "frequency": 94
+    },
+    {
+        "rank": 245,
+        "word": "发展",
+        "frequency": 94
+    },
+    {
+        "rank": 246,
+        "word": "美国",
+        "frequency": 94
+    },
+    {
+        "rank": 247,
+        "word": "2",
+        "frequency": 93
+    },
+    {
+        "rank": 248,
+        "word": "仍",
+        "frequency": 93
+    },
+    {
+        "rank": 249,
+        "word": "内",
+        "frequency": 93
+    },
+    {
+        "rank": 250,
+        "word": "李",
+        "frequency": 93
+    },
+    {
+        "rank": 251,
+        "word": "由于",
+        "frequency": 91
+    },
+    {
+        "rank": 252,
+        "word": "认为",
+        "frequency": 91
+    },
+    {
+        "rank": 253,
+        "word": "法",
+        "frequency": 90
+    },
+    {
+        "rank": 254,
+        "word": "造成",
+        "frequency": 90
+    },
+    {
+        "rank": 255,
+        "word": "形成",
+        "frequency": 89
+    },
+    {
+        "rank": 256,
+        "word": "这个",
+        "frequency": 89
+    },
+    {
+        "rank": 257,
+        "word": "人口",
+        "frequency": 88
+    },
+    {
+        "rank": 258,
+        "word": "具有",
+        "frequency": 88
+    },
+    {
+        "rank": 259,
+        "word": "未",
+        "frequency": 88
+    },
+    {
+        "rank": 260,
+        "word": "一般",
+        "frequency": 87
+    },
+    {
+        "rank": 261,
+        "word": "作品",
+        "frequency": 87
+    },
+    {
+        "rank": 262,
+        "word": "地方",
+        "frequency": 87
+    },
+    {
+        "rank": 263,
+        "word": "座",
+        "frequency": 87
+    },
+    {
+        "rank": 264,
+        "word": "方面",
+        "frequency": 87
+    },
+    {
+        "rank": 265,
+        "word": "外",
+        "frequency": 86
+    },
+    {
+        "rank": 266,
+        "word": "去",
+        "frequency": 84
+    },
+    {
+        "rank": 267,
+        "word": "受到",
+        "frequency": 84
+    },
+    {
+        "rank": 268,
+        "word": "称",
+        "frequency": 84
+    },
+    {
+        "rank": 269,
+        "word": "所有",
+        "frequency": 83
+    },
+    {
+        "rank": 270,
+        "word": "相",
+        "frequency": 83
+    },
+    {
+        "rank": 271,
+        "word": "美国",
+        "frequency": 83
+    },
+    {
+        "rank": 272,
+        "word": "说",
+        "frequency": 83
+    },
+    {
+        "rank": 273,
+        "word": "通常",
+        "frequency": 83
+    },
+    {
+        "rank": 274,
+        "word": "今",
+        "frequency": 82
+    },
+    {
+        "rank": 275,
+        "word": "任",
+        "frequency": 82
+    },
+    {
+        "rank": 276,
+        "word": "任何",
+        "frequency": 82
+    },
+    {
+        "rank": 277,
+        "word": "同时",
+        "frequency": 82
+    },
+    {
+        "rank": 278,
+        "word": "需要",
+        "frequency": 82
+    },
+    {
+        "rank": 279,
+        "word": "入",
+        "frequency": 81
+    },
+    {
+        "rank": 280,
+        "word": "成立",
+        "frequency": 81
+    },
+    {
+        "rank": 281,
+        "word": "中心",
+        "frequency": 80
+    },
+    {
+        "rank": 282,
+        "word": "受",
+        "frequency": 80
+    },
+    {
+        "rank": 283,
+        "word": "另",
+        "frequency": 80
+    },
+    {
+        "rank": 284,
+        "word": "支持",
+        "frequency": 80
+    },
+    {
+        "rank": 285,
+        "word": "每",
+        "frequency": 80
+    },
+    {
+        "rank": 286,
+        "word": "首",
+        "frequency": 80
+    },
+    {
+        "rank": 287,
+        "word": "所以",
+        "frequency": 79
+    },
+    {
+        "rank": 288,
+        "word": "北",
+        "frequency": 78
+    },
+    {
+        "rank": 289,
+        "word": "好",
+        "frequency": 78
+    },
+    {
+        "rank": 290,
+        "word": "十",
+        "frequency": 77
+    },
+    {
+        "rank": 291,
+        "word": "提供",
+        "frequency": 77
+    },
+    {
+        "rank": 292,
+        "word": "米",
+        "frequency": 77
+    },
+    {
+        "rank": 293,
+        "word": "这些",
+        "frequency": 77
+    },
+    {
+        "rank": 294,
+        "word": "事",
+        "frequency": 76
+    },
+    {
+        "rank": 295,
+        "word": "非常",
+        "frequency": 76
+    },
+    {
+        "rank": 296,
+        "word": "事件",
+        "frequency": 75
+    },
+    {
+        "rank": 297,
+        "word": "人民",
+        "frequency": 75
+    },
+    {
+        "rank": 298,
+        "word": "提",
+        "frequency": 75
+    },
+    {
+        "rank": 299,
+        "word": "方法",
+        "frequency": 75
+    },
+    {
+        "rank": 300,
+        "word": "期",
+        "frequency": 75
+    },
+    {
+        "rank": 301,
+        "word": "本",
+        "frequency": 75
+    },
+    {
+        "rank": 302,
+        "word": "经济",
+        "frequency": 75
+    },
+    {
+        "rank": 303,
+        "word": "5",
+        "frequency": 74
+    },
+    {
+        "rank": 304,
+        "word": "地区",
+        "frequency": 74
+    },
+    {
+        "rank": 305,
+        "word": "着",
+        "frequency": 74
+    },
+    {
+        "rank": 306,
+        "word": "便",
+        "frequency": 73
+    },
+    {
+        "rank": 307,
+        "word": "建立",
+        "frequency": 73
+    },
+    {
+        "rank": 308,
+        "word": "目前",
+        "frequency": 73
+    },
+    {
+        "rank": 309,
+        "word": "第二",
+        "frequency": 73
+    },
+    {
+        "rank": 310,
+        "word": "能力",
+        "frequency": 73
+    },
+    {
+        "rank": 311,
+        "word": "过",
+        "frequency": 73
+    },
+    {
+        "rank": 312,
+        "word": "里",
+        "frequency": 73
+    },
+    {
+        "rank": 313,
+        "word": "中央",
+        "frequency": 72
+    },
+    {
+        "rank": 314,
+        "word": "五",
+        "frequency": 72
+    },
+    {
+        "rank": 315,
+        "word": "字",
+        "frequency": 72
+    },
+    {
+        "rank": 316,
+        "word": "存在",
+        "frequency": 72
+    },
+    {
+        "rank": 317,
+        "word": "成为",
+        "frequency": 72
+    },
+    {
+        "rank": 318,
+        "word": "再",
+        "frequency": 71
+    },
+    {
+        "rank": 319,
+        "word": "少",
+        "frequency": 71
+    },
+    {
+        "rank": 320,
+        "word": "教育",
+        "frequency": 71
+    },
+    {
+        "rank": 321,
+        "word": "方式",
+        "frequency": 71
+    },
+    {
+        "rank": 322,
+        "word": "较",
+        "frequency": 71
+    },
+    {
+        "rank": 323,
+        "word": "3",
+        "frequency": 70
+    },
+    {
+        "rank": 324,
+        "word": "世",
+        "frequency": 70
+    },
+    {
+        "rank": 325,
+        "word": "台",
+        "frequency": 70
+    },
+    {
+        "rank": 326,
+        "word": "系统",
+        "frequency": 70
+    },
+    {
+        "rank": 327,
+        "word": "之后",
+        "frequency": 69
+    },
+    {
+        "rank": 328,
+        "word": "作为",
+        "frequency": 69
+    },
+    {
+        "rank": 329,
+        "word": "因为",
+        "frequency": 69
+    },
+    {
+        "rank": 330,
+        "word": "均",
+        "frequency": 69
+    },
+    {
+        "rank": 331,
+        "word": "定",
+        "frequency": 69
+    }
+]
