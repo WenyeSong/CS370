@@ -10,7 +10,7 @@ CORS(app)
 @app.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
-    hashed_password = generate_password_hash(data['password'])
+    hashed_password = (data['password'])
     
     # Connection details
     conn = psycopg2.connect(

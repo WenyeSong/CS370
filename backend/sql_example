@@ -15,7 +15,7 @@ def create_table():
     
     # SQL statement to create a new table
     create_table_sql = '''
-    CREATE TABLE user (
+    CREATE TABLE u (
         id SERIAL PRIMARY KEY,
         name VARCHAR(100),
         description TEXT,
