@@ -7,34 +7,22 @@ from random import random
 from time import sleep
 from concurrent.futures import ThreadPoolExecutor
 
-# sys.stdout = io.TextIOWrapper(buffer=sys.stdout.buffer,encoding='utf8')
-
 def get_word_data(word):
-    url = f"https://dictionary.cambridge.org/us/dictionary/chinese-simplified-english/{word}"
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+    url = f"https://dictionary.cambridge.org/us/dictionary/french-english/{word}"
+    headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.content, "html.parser")
 
-    # fetched_word = soup.select("div.dpos-h di-head normal-entry")
-    # print(fetched_word)
-    # fetched_words = [fetched.get_text(strip=True) for fetched in fetched_word]
-    # print(fetched_words)
-    
-    # if word not in fetched_words:
-    #     data["translation"] = None
-    #     data["explanations"] = None
-    #     data["cn_examples"] = None
-    #     data["en_examples"] = None
-    #     data["chosen_cn_example"] = None
-    #     data["chosen_en_example"] = None
-    #     return data
-    
+    # Adjust the selector below to match the actual HTML structure of the dictionary page
+    page_word = soup.select_one("h2.tw-bw.dhw.dpos-h_hw.di-title")
+    if page_word is None or page_word.get_text(strip=True).lower() != word.lower():
+        return None 
+
     translation = soup.select_one("span.dtrans")
-    
     if translation:
         translation = translation.get_text(strip=True)
 
-    explanation = soup.select_one("div.def")
+    explanation = soup.select_one("div.def-body.ddef_b.def_b-t")
     if explanation:
         explanation = explanation.get_text(strip=True)
 
@@ -50,18 +38,15 @@ def get_word_data(word):
         "explanations": explanation,
         "cn_examples": cn_example_texts,
         "en_examples": en_example_texts,
+        "chosen_cn_example": None,
+        "chosen_en_example": None
     }
-    
+
     for cn_example, en_example in zip(cn_example_texts, en_example_texts):
         if word in cn_example:
             data["chosen_cn_example"] = cn_example
             data["chosen_en_example"] = en_example
             break
-    else:
-        data["chosen_cn_example"] = None
-        data["chosen_en_example"] = None
-    
-    
     
     return data
 
@@ -71,11 +56,11 @@ def crawl_words(words):
     print("Initializing thread pool...")
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = []
-        for i, word in enumerate(words[:100], start=1):
+        for i, word in enumerate(words[:10], start=1):
             word = word.split()[0]
             print(f"Submitting task {i}/{len(words)}")
             futures.append(executor.submit(get_word_data, word))
-            sleep(random() + 1)
+            sleep(random() + 0.5)
 
         print("All tasks submitted. Waiting for results...")
         for i, future in enumerate(futures, start=1):
@@ -100,9 +85,8 @@ def crawl_words(words):
     return results
 
 if __name__ == "__main__":
-    with open("./chinese/chinese_list.txt", "r", encoding="utf-8") as f:
+    with open("d:\\CS370\\dictionary_crawl\\french\\francais.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
-    with open("./chinese/chinese_dict.json", "w", encoding="utf-8") as f:
+    with open("dutch_dict.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
-        

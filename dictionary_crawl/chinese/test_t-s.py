@@ -24,7 +24,7 @@ def convert_txt_to_json(input_txt_file, output_json_file):
     else:
         print("Warning: The words list is empty. No data will be written to the JSON file.")
 
-input_txt_file = 'd:\\CS370\\dictionary_crawl\\chinese\\test.txt'
-output_json_file = 'd:\\CS370\\dictionary_crawl\\chinese\\simplified_.json'
+input_txt_file = 'd:\\CS370\\dictionary_crawl\\chinese\\zho_wikipedia_2018_10K-words.txt'
+output_json_file = 'd:\\CS370\\dictionary_crawl\\chinese\\simplified_321.json'
 
 convert_txt_to_json(input_txt_file, output_json_file)

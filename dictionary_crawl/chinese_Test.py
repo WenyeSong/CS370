@@ -65,7 +65,7 @@ def crawl_words(words):
     return results
 
 if __name__ == "__main__":
-    with open("./chinese_list.txt", "r", encoding="utf-8") as f:
+    with open("chinese_list.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
     with open("chinese_dict2.json", "w", encoding="utf-8") as f:
