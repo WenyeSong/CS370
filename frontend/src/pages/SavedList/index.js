@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react'; // Fix for 'useState' and 'useEffect' not defined
-import { Button, Card, Col, Row, Space, Table, Popconfirm } from 'antd'; // Fix for Ant Design components not defined
-import { Link } from 'react-router-dom'; // Ensures 'Link' is defined
+import React, { useState, useEffect } from 'react';
+import { Button, Card, Col, Row, Space, Table, Popconfirm } from 'antd';
+import { Link } from 'react-router-dom';
 
 function SavedList() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(false);
-  const userId = 7; // Replace with actual user ID logic or state
+  const userId = 7; // Consider replacing this with actual user ID logic or state
+
 
   useEffect(() => {
     fetchWords();
@@ -19,6 +20,9 @@ function SavedList() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
+      
+      console.log("Fetched words data:", data); // For debugging, consider removing for production
+      
       setWords(data);
     } catch (error) {
       console.error("Fetch error: ", error.message);
@@ -28,6 +32,8 @@ function SavedList() {
   };
 
   const deleteWord = async (wordId) => {
+    console.log("Deleting word with ID:", wordId); // This line will print the ID to the console
+  
     try {
       const response = await fetch(`http://localhost:5000/user/${userId}/words/${wordId}`, {
         method: 'DELETE',
@@ -41,6 +47,7 @@ function SavedList() {
       console.error("Delete error: ", error.message);
     }
   };
+  
 
   const columns = [
     {
@@ -48,11 +55,13 @@ function SavedList() {
       dataIndex: 'word',
       key: 'word',
     },
+
     {
       title: 'Definition',
       dataIndex: 'definition',
       key: 'definition',
     },
+
     {
       title: 'Action',
       key: 'action',
@@ -64,7 +73,18 @@ function SavedList() {
         </Space>
       ),
     },
+
   ];
+
+// Assuming the `words` state is correctly structured and includes an `id` for each word
+const dataSource = words.map((word, index) => ({
+  key: word.id,  // Use the actual word id as the key for each row
+  word: word.french_word,
+  definition: word.english_translations.join(', '),
+  id: word.id,  // Ensure this matches the property name used in the backend response
+}));
+
+
 
   return (
     <Row>
@@ -79,20 +99,63 @@ function SavedList() {
             </Space>
           }
         >
+          <AddWordForm userId={userId} onWordAdded={fetchWords} />
           <Table
             loading={loading}
             columns={columns}
-            dataSource={words.map((word, index) => ({
-              key: index,
-              word: word.french_word,
-              definition: word.english_translations.join(', '),
-              id: word.id,
-            }))}
+            dataSource={dataSource}
           />
         </Card>
       </Col>
     </Row>
   );
 }
+
+function AddWordForm({ userId, onWordAdded }) {
+  const [frenchTermId, setFrenchTermId] = useState('');
+  const [masteryLevel, setMasteryLevel] = useState(1);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await fetch(`http://localhost:5000/user/${userId}/words`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ french_term_id: frenchTermId, mastery_level: masteryLevel }),
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      onWordAdded(); // Callback to refresh the word list in the parent component
+    } catch (error) {
+      console.error("Failed to add word:", error);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        French Term ID:
+        <input
+          type="text"
+          value={frenchTermId}
+          onChange={(e) => setFrenchTermId(e.target.value)}
+        />
+      </label>
+      <label>
+        Mastery Level:
+        <input
+          type="number"
+          value={masteryLevel}
+          onChange={(e) => setMasteryLevel(e.target.value)}
+        />
+      </label>
+      <button type="submit">Add Word</button>
+    </form>
+  );
+}
+
 
 export default SavedList;

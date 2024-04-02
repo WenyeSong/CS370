@@ -3,7 +3,8 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # This will allow all origins. For specific origins, use the `resources` argument.
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:cs370@34.69.154.109/postgres'
 db = SQLAlchemy(app)
 
@@ -32,19 +33,25 @@ class UserWord(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     french_term_id = db.Column(db.Integer, db.ForeignKey('french_terms.id'), nullable=False)
-    mastery_level = db.Column(db.Integer)  # Ensure this line is correctly defined
+    mastery_level = db.Column(db.Integer)
+    # Add other fields if necessary
+
 
 
 
 @app.route('/user/<int:user_id>/words/<int:word_id>', methods=['DELETE'])
 def delete_user_word(user_id, word_id):
-    user_word = UserWord.query.filter_by(user_id=user_id, id=word_id).first()
-    if user_word:
+    try:
+        user_word = UserWord.query.filter_by(user_id=user_id, id=word_id).first()
+        if not user_word:
+            return jsonify({'message': 'Word not found'}), 404
+
         db.session.delete(user_word)
         db.session.commit()
-        return jsonify({"message": "Word deleted successfully"}), 200
-    else:
-        return jsonify({"error": "Word not found"}), 404
+        return jsonify({'message': 'Word deleted successfully'}), 200
+    except Exception as e:
+        return jsonify({'message': str(e)}), 500
+
 
     
 
@@ -72,12 +79,14 @@ def get_user_words(user_id):
         french_term = FrenchTerm.query.get(user_word.french_term_id)
         translations = [translation.translation for translation in french_term.english_translations]
         saved_words_info.append({
+            "id": user_word.id,  # Include the UserWord id here
             "french_word": french_term.term,
-            "english_translations": translations,
+            "english_translations": [translation.translation for translation in french_term.english_translations],
             "mastery_level": user_word.mastery_level
         })
 
     return jsonify(saved_words_info)
+
 
 @app.route('/user/<int:user_id>/words', methods=['POST'])
 def save_user_word(user_id):
