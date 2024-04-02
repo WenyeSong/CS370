@@ -2,11 +2,12 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
-CORS(app)  # This will allow all origins. For specific origins, use the `resources` argument.
+#app = Flask(__name__)
+#CORS(app)  # This will allow all origins. For specific origins, use the `resources` argument.
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:cs370@34.69.154.109/postgres'
-db = SQLAlchemy(app)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:cs370@34.69.154.109/postgres'
+#db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 class User(db.Model):
     __tablename__ = 'users'  # Explicitly specify the table name to match your database
@@ -39,7 +40,7 @@ class UserWord(db.Model):
 
 
 
-@app.route('/user/<int:user_id>/words/<int:word_id>', methods=['DELETE'])
+#@app.route('/user/<int:user_id>/words/<int:word_id>', methods=['DELETE'])
 def delete_user_word(user_id, word_id):
     try:
         user_word = UserWord.query.filter_by(user_id=user_id, id=word_id).first()
@@ -70,7 +71,7 @@ def delete_user_word(user_id, word_id):
 
 #     return jsonify(saved_words_info)
 
-@app.route('/user/<int:user_id>/words', methods=['GET'])
+#@app.route('/user/<int:user_id>/words', methods=['GET'])
 def get_user_words(user_id):
     user_words = UserWord.query.filter_by(user_id=user_id).all()
     saved_words_info = []
@@ -88,7 +89,7 @@ def get_user_words(user_id):
     return jsonify(saved_words_info)
 
 
-@app.route('/user/<int:user_id>/words', methods=['POST'])
+#@app.route('/user/<int:user_id>/words', methods=['POST'])
 def save_user_word(user_id):
     data = request.json
     french_term_id = data['french_term_id']  # This should be the ID of the French word the user wants to save
@@ -124,11 +125,11 @@ def add_first_ten_french_words_to_user(user_id):
 
 
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
 
 
-    with app.app_context():
-        db.create_all()  # This creates the database tables if they don't exist
-        add_first_ten_french_words_to_user(7)
+#    with app.app_context():
+#         db.create_all()  # This creates the database tables if they don't exist
+#         add_first_ten_french_words_to_user(7)
 
-    app.run(debug=True)
+#     app.run(debug=True, port=5000)
