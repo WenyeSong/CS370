@@ -1,0 +1,57 @@
+.Voc_test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Background color for the entire page */
+  }
+  
+  .App-header {
+    text-align: center;
+    background-color: transparent; /* Set the header background color to transparent */
+    border: none; /* Remove the border */
+  }
+  
+  .question-section {
+    margin-bottom: 20px;
+  }
+  
+  .question-count {
+    font-size: 18px;
+  }
+  
+  .question-text {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Add !important */
+    padding: 10px;
+  }
+  
+  
+  .answer-section {
+    margin-top: 20px;
+  }
+  
+  .definition-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff; /* White color for the button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+  
