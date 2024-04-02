@@ -39,7 +39,7 @@ function Login () {
         // loginStore.setToken(data.token);
         navigate('/'); // 导航到其他页面，待添加
       } else {
-        // 登录失败，显示错误消息
+        // login fail, with message
         message.error(data.message || 'log in failed');
       }
     } catch (e) {
