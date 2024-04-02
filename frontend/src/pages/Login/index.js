@@ -22,29 +22,28 @@ function Login () {
 
     //Wenye has changed this part
     try {
-      const response = await fetch('http://localhost:5000/login', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    username: values.account,
-    password: values.password,
-  }),
-});
-
-
+      const response = await fetch('http://localhost:5000/login', { // point to flask port, 5000
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: values.account,
+          password: values.password,
+        }),
+      });
+  
       const data = await response.json();
       if (response.ok) {
         // 登录成功，可以将 token 保存在本地存储或状态管理库中
         // loginStore.setToken(data.token);
-        navigate('/'); // 导航到其他页面，待添加
+        navigate('/'); 
       } else {
         // login fail, with message
         message.error(data.message || 'log in failed');
       }
-    } catch (e) {
-      // 网络或其他错误，显示错误消息
+    }
+     catch (e) {
       message.error('Network error or server is down');
     } 
   }

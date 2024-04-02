@@ -6,6 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/login', methods=['POST'])
 def login():
     # Parse the JSON request to get username and password
     data = request.get_json()
