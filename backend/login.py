@@ -6,7 +6,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/login', methods=['POST'])
 def login():
     # Parse the JSON request to get username and password
     data = request.get_json()
@@ -31,6 +30,7 @@ def login():
 
         if user_record:
             password_hash = user_record[0]
+            print(password_hash, "database: ", user_record[0])
             # Verify the provided password against the stored hashed password
             if check_password_hash(password_hash, password):
                 # Password is correct

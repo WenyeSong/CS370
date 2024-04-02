@@ -22,17 +22,18 @@ function Login () {
 
     //Wenye has changed this part
     try {
-      const response = await fetch('/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username: values.account,
-          password: values.password,
-        }),
-      });
-  
+      const response = await fetch('http://localhost:5000/login', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    username: values.account,
+    password: values.password,
+  }),
+});
+
+
       const data = await response.json();
       if (response.ok) {
         // 登录成功，可以将 token 保存在本地存储或状态管理库中
