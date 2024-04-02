@@ -1,0 +1,59 @@
+[
+    {
+        "word": "阿飞",
+        "translation": "punk",
+        "explanations": "a young man who fights and is involved in criminal activities:",
+        "cn_examples": [
+            "听好了，你这个小流氓，你再那么做我就扭断你的脖子。"
+        ],
+        "en_examples": [
+            "Listen to me, you little punk - you do that again and I'm gonna break your neck."
+        ],
+        "chosen_cn_example": null,
+        "chosen_en_example": null
+    },
+    {
+        "word": "阿富汗",
+        "translation": "Afghanistan",
+        "explanations": "a country in Central Asia",
+        "cn_examples": [],
+        "en_examples": [],
+        "chosen_cn_example": null,
+        "chosen_en_example": null
+    },
+    {
+        "word": "阿拉伯数字",
+        "translation": "Arabic numeral",
+        "explanations": "a symbol used for writing a number in many parts of the world:",
+        "cn_examples": [
+            "1和2是阿拉伯数字。"
+        ],
+        "en_examples": [
+            "1 and 2 are Arabic numerals."
+        ],
+        "chosen_cn_example": "1和2是阿拉伯数字。",
+        "chosen_en_example": "1 and 2 are Arabic numerals."
+    },
+    {
+        "word": "阿拉伯语",
+        "translation": "Arabic",
+        "explanations": "a language spoken in Western Asia and North Africa:",
+        "cn_examples": [
+            "阿拉伯语有很多地区方言。"
+        ],
+        "en_examples": [
+            "There are many regional varieties of Arabic."
+        ],
+        "chosen_cn_example": "阿拉伯语有很多地区方言。",
+        "chosen_en_example": "There are many regional varieties of Arabic."
+    },
+    {
+        "word": "阿门",
+        "translation": "amen",
+        "explanations": "said or sung at the end of a prayer or a religious song to express agreement with what has been said",
+        "cn_examples": [],
+        "en_examples": [],
+        "chosen_cn_example": null,
+        "chosen_en_example": null
+    }
+]

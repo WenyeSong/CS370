@@ -100,7 +100,6 @@ def crawl_words(words):
     return results
 
 if __name__ == "__main__":
-    # you might need to add the parent directory to the path, depending on your setup
     with open("./chinese/chinese_list.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
