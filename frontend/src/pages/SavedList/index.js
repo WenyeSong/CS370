@@ -80,9 +80,11 @@ function SavedList() {
 const dataSource = words.map((word, index) => ({
   key: word.id,  // Use the actual word id as the key for each row
   word: word.french_word,
-  definition: word.english_translations.join(', '),
+  // Use a Set to ensure unique translations before joining them
+  definition: [...new Set(word.english_translations)].join(', '),
   id: word.id,  // Ensure this matches the property name used in the backend response
 }));
+
 
 
 
