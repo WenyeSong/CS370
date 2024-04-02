@@ -5,6 +5,17 @@ import './index.scss'
 import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
 
+// check backend status
+async function checkBackendStatus() {
+  try {
+    const response = await fetch('http://127.0.0.1:5000/health');
+    return response.ok;
+  } catch (error) {
+    console.error('Error when checking backend status:', error);
+    return false;
+  }
+}
+
 function Login () {
 
   // const { loginStore } = useStore()
@@ -19,10 +30,16 @@ function Login () {
     //   message.error(e.response?.data?.message || 'log in failed')
     // }
     
+      // fisrt check whether the request can acheive backend
+      const isBackendReachable = await checkBackendStatus();
+      if (!isBackendReachable) {
+        message.error('Cannot reach the backend service. Please try again later.');
+        return;
+      }
 
-    //Wenye has changed this part
+
     try {
-      const response = await fetch('http://localhost:5000/login', { // point to flask port, 5000
+      const response = await fetch('http://127.0.0.1:5000/login', { // point to flask port, 5000
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,6 +54,7 @@ function Login () {
       if (response.ok) {
         // 登录成功，可以将 token 保存在本地存储或状态管理库中
         // loginStore.setToken(data.token);
+        message.success('Login is successful!');
         navigate('/'); 
       } else {
         // login fail, with message

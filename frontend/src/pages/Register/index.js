@@ -30,7 +30,7 @@ const Register = (props) => {
       const data = await response.json();
       if (response.ok) {
         // add: where to navigate
-        message.success('Registration successful');
+        message.success('Registration is successful!');
         navigate('/');
       } else {
         message.error(data.message || 'Registration failed');
