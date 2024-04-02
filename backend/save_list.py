@@ -2,53 +2,124 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
-
-
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all domains on all routes
-
-# In-memory storage for simplicity
-words_list = [
-    {"word": "meticulous", "definition": "Showing great attention to detail; very careful and precise."},
-    {"word": "vivacious", "definition": "Attractively lively and animated."},
-    {"word": "serendipity", "definition": "The occurrence and development of events by chance in a happy or beneficial way."},
-    {"word": "ephemeral", "definition": "Lasting for a very short time."},
-    {"word": "quintessential", "definition": "Representing the most perfect or typical example of a quality or class."},
-    {"word": "melancholy", "definition": "A feeling of pensive sadness, typically with no obvious cause."},
-    {"word": "ineffable", "definition": "Too great or extreme to be expressed or described in words."},
-    {"word": "lucid", "definition": "Expressed clearly; easy to understand."},
-    {"word": "ubiquitous", "definition": "Present, appearing, or found everywhere."},
-    {"word": "zenith", "definition": "The time at which something is most powerful or successful."}
-]
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://test:cs370@localhost/test'
+CORS(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:cs370@34.69.154.109/postgres'
 db = SQLAlchemy(app)
 
-class UserWord(db.Model): #Wenye：我觉得这个后面加
+class User(db.Model):
+    __tablename__ = 'users'  # Explicitly specify the table name to match your database
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    word_id = db.Column(db.Integer, db.ForeignKey('word.id'))
-    mastery_level = db.Column(db.Integer)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    # Other fields...
 
-@app.route('/words/<int:index>', methods=['DELETE'])
-def delete_word(index):
-    if index < len(words_list):
-        del words_list[index]
-        return jsonify({"message": "Word deleted successfully!"}), 200
+
+class FrenchTerm(db.Model):
+    __tablename__ = 'french_terms'
+    id = db.Column(db.Integer, primary_key=True)
+    term = db.Column(db.String(255), unique=True, nullable=False)
+    english_translations = db.relationship('EnglishTranslation', backref='french_term', lazy='dynamic')
+
+class EnglishTranslation(db.Model):
+    __tablename__ = 'english_translations'
+    id = db.Column(db.Integer, primary_key=True)
+    french_term_id = db.Column(db.Integer, db.ForeignKey('french_terms.id'), nullable=False)
+    translation = db.Column(db.String(255), nullable=False)
+
+
+class UserWord(db.Model):
+    __tablename__ = 'user_words'
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    french_term_id = db.Column(db.Integer, db.ForeignKey('french_terms.id'), nullable=False)
+    mastery_level = db.Column(db.Integer)  # Ensure this line is correctly defined
+
+
+
+@app.route('/user/<int:user_id>/words/<int:word_id>', methods=['DELETE'])
+def delete_user_word(user_id, word_id):
+    user_word = UserWord.query.filter_by(user_id=user_id, id=word_id).first()
+    if user_word:
+        db.session.delete(user_word)
+        db.session.commit()
+        return jsonify({"message": "Word deleted successfully"}), 200
     else:
         return jsonify({"error": "Word not found"}), 404
+
     
 
-@app.route('/words', methods=['GET'])
-def get_words():
-    return jsonify(words_list)
+# @app.route('/user/<int:user_id>/words', methods=['GET'])
+# def get_user_words(user_id):
+#     user_words = UserWord.query.filter_by(user_id=user_id).all()
+#     saved_words_info = []
 
-@app.route('/words', methods=['POST'])
-def add_word():
+#     for user_word in user_words:
+#         french_term = FrenchTerm.query.get(user_word.french_term_id)
+#         translations = [translation.translation for translation in french_term.english_translations]
+#         saved_words_info.append({
+#             "word": french_term.term,
+#             "definition": ", ".join(translations)  # Combine all translations into a single string
+#         })
+
+#     return jsonify(saved_words_info)
+
+@app.route('/user/<int:user_id>/words', methods=['GET'])
+def get_user_words(user_id):
+    user_words = UserWord.query.filter_by(user_id=user_id).all()
+    saved_words_info = []
+
+    for user_word in user_words:
+        french_term = FrenchTerm.query.get(user_word.french_term_id)
+        translations = [translation.translation for translation in french_term.english_translations]
+        saved_words_info.append({
+            "french_word": french_term.term,
+            "english_translations": translations,
+            "mastery_level": user_word.mastery_level
+        })
+
+    return jsonify(saved_words_info)
+
+@app.route('/user/<int:user_id>/words', methods=['POST'])
+def save_user_word(user_id):
     data = request.json
-    words_list.append(data)
-    return jsonify({"message": "Word added successfully!"}), 201
+    french_term_id = data['french_term_id']  # This should be the ID of the French word the user wants to save
+    mastery_level = data.get('mastery_level', 1)  # A default mastery level if not provided
+
+    # Check if the user exists
+    user = User.query.get(user_id)
+    if user is None:
+        return jsonify({"error": "User not found"}), 404
+
+    # Create a new UserWord entry
+    new_user_word = UserWord(user_id=user_id, french_term_id=french_term_id, mastery_level=mastery_level)
+    db.session.add(new_user_word)
+    db.session.commit()
+
+    return jsonify({"message": "Word saved successfully", "word_id": new_user_word.id}), 201
+
+
+def add_first_ten_french_words_to_user(user_id):
+    # Assuming user_id = 7 for "Wenye Song"
+    # Get the first ten French terms by ID
+    french_terms = FrenchTerm.query.order_by(FrenchTerm.id).limit(10).all()
+
+    for term in french_terms:
+        # Check if the user-word association already exists to avoid duplicates
+        existing_user_word = UserWord.query.filter_by(user_id=user_id, french_term_id=term.id).first()
+        if not existing_user_word:
+            # Create a new UserWord association with a default mastery level (e.g., 1)
+            new_user_word = UserWord(user_id=user_id, french_term_id=term.id, mastery_level=1)
+            db.session.add(new_user_word)
+
+    db.session.commit()
+
 
 
 if __name__ == "__main__":
+
+
+    with app.app_context():
+        db.create_all()  # This creates the database tables if they don't exist
+        add_first_ten_french_words_to_user(7)
+
     app.run(debug=True)

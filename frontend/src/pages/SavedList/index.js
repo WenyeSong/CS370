@@ -1,98 +1,64 @@
-import React, { useState, useEffect } from 'react';
-import {
-  Button,
-  Card,
-  Col,
-  Row,
-  Space,
-  Table,
-  Popconfirm,
-  Select,
-} from 'antd';
-import { Link} from 'react-router-dom';
-import './index.css';
-
-const { Option } = Select;
+import React, { useState, useEffect } from 'react'; // Fix for 'useState' and 'useEffect' not defined
+import { Button, Card, Col, Row, Space, Table, Popconfirm } from 'antd'; // Fix for Ant Design components not defined
+import { Link } from 'react-router-dom'; // Ensures 'Link' is defined
 
 function SavedList() {
-  // State for storing the words list and the current directory
   const [words, setWords] = useState([]);
-  const [directories, setDirectories] = useState([]);
-  const [currentDirectory, setCurrentDirectory] = useState('');
+  const [loading, setLoading] = useState(false);
+  const userId = 7; // Replace with actual user ID logic or state
 
-  // Fetch directories
-  const fetchDirectories = async () => {
-    const dirs = ['English', 'French'];
-    setDirectories(dirs);
-    if(dirs.length > 0) {
-      setCurrentDirectory(dirs[0]);
-    }
-  };
+  useEffect(() => {
+    fetchWords();
+  }, []);
 
-  // Function to fetch words from the backend based on the current directory
   const fetchWords = async () => {
+    setLoading(true);
     try {
-      const response = await fetch(`http://127.0.0.1:5000/words?directory=${currentDirectory}`);
+      const response = await fetch(`http://localhost:5000/user/${userId}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
       setWords(data);
     } catch (error) {
-      console.log("Fetch error: " + error.message);
+      console.error("Fetch error: ", error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
-  useEffect(() => {
-    fetchDirectories();
-  }, []);
-
-  useEffect(() => {
-    if(currentDirectory) {
-      fetchWords();
-    }
-  }, [currentDirectory]);
-
-  const deleteWord = async (index) => {
+  const deleteWord = async (wordId) => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/words/${index}`, {
+      const response = await fetch(`http://localhost:5000/user/${userId}/words/${wordId}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      // Fetch the updated words list after deletion
-      fetchWords();
+      // If deletion was successful, remove the word from the state
+      setWords(words.filter(word => word.id !== wordId));
     } catch (error) {
-      console.log("Delete error: " + error.message);
+      console.error("Delete error: ", error.message);
     }
-  };  
-
-  const onChange = (pagination, filters, sorter, extra) => {
-    console.log('params', pagination, filters, sorter, extra);
-  };  
+  };
 
   const columns = [
     {
       title: 'Word',
       dataIndex: 'word',
       key: 'word',
-      sorter: (a, b) => a.word.localeCompare(b.word),
-      sortDirections: ['ascend', 'descend', 'ascend'],
-    
     },
     {
       title: 'Definition',
-      dataIndex: 'definition',  
+      dataIndex: 'definition',
       key: 'definition',
     },
     {
       title: 'Action',
       key: 'action',
-      render: (text, record, index) => (
+      render: (_, record) => (
         <Space size="middle">
-          <Button type="primary">Edit</Button>
-          <Popconfirm title="Sure to delete?" okText="Yes" cancelText="No" onConfirm={() => deleteWord(index)}>
+          <Popconfirm title="Sure to delete?" onConfirm={() => deleteWord(record.id)}>
             <Button type="primary" danger>Delete</Button>
           </Popconfirm>
         </Space>
@@ -101,34 +67,31 @@ function SavedList() {
   ];
 
   return (
-    <div>
-      <Row>
-        <Col span={24}>
-          <Card
-            title="Saved List"
-            extra={
-              <Space>
-                <Select defaultValue={currentDirectory} style={{ width: 120 }} onChange={setCurrentDirectory}>
-                  {directories.map(dir => <Option key={dir} value={dir}>{dir}</Option>)}
-                </Select>
-                {/* Link to FlashcardPage */}
-                <Link to="/flashcards">
-                  <Button type="primary">Go to Flashcard Page</Button>
-                </Link>
-                {/* End of Link to FlashcardPage */}
-                <Button type="primary">Add New</Button>
-              </Space>
-            }>
-            <Table
-              onChange={onChange}
-              pagination={{ pageSize: 5 }}
-              columns={columns}
-              dataSource={words}
-            />
-          </Card>
-        </Col>
-      </Row>
-    </div>
+    <Row>
+      <Col span={24}>
+        <Card
+          title="Saved List"
+          extra={
+            <Space>
+              <Link to="/flashcards">
+                <Button type="primary">Go to Flashcard Page</Button>
+              </Link>
+            </Space>
+          }
+        >
+          <Table
+            loading={loading}
+            columns={columns}
+            dataSource={words.map((word, index) => ({
+              key: index,
+              word: word.french_word,
+              definition: word.english_translations.join(', '),
+              id: word.id,
+            }))}
+          />
+        </Card>
+      </Col>
+    </Row>
   );
 }
 
