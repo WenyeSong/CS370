@@ -2,7 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from login import login_routes  
-from save_list import db, delete_user_word, get_user_words, save_user_word, add_first_ten_french_words_to_user
+from save_list import db, delete_user_word, get_user_words, save_user_word
 from register import register_routes
 
 app = Flask(__name__)
@@ -24,6 +24,6 @@ app.add_url_rule('/user/<int:user_id>/words', view_func=save_user_word, methods=
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-        add_first_ten_french_words_to_user(7)  # This should be called with caution, only when needed
+# This should be called with caution, only when needed
 
     app.run(debug=True, port=5000)  # starts the app

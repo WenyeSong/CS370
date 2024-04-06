@@ -58,6 +58,3 @@ def login_routes(app):
             # Close communication with the database
             cur.close()
             conn.close()
-
-#if __name__ == '__main__':
-    #app.run(debug=True, port=5000)
