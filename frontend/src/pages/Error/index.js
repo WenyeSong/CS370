@@ -13,13 +13,13 @@ function Login () {
   const goBackToMainPage = () => {
     navigate('/');
   };
-
+  var token = localStorage.getItem('token');
   return (
     //create the error page
     <div className="Error">
       <h1>
       </h1>
-      How did you even get here -(0 o 0）-？
+      How did you even get here -(0 o 0）-？{token}
       <br />
       <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </div>

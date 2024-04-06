@@ -42,7 +42,8 @@ def login_routes(app):
                 # Verify the provided password against the stored hashed password
                 if password_hash == password: # if hash later, change this code to : if check_password_hash(password_hash, password):
                     # Password is correct
-                    return jsonify({'message': 'Login is successful!'}), 200
+                    token=username+'-'+password
+                    return jsonify({'message': 'Login is successful!','token':token}), 200
                 else:
                     # Password is incorrect
                     return make_response('Wrong username or password11', 401)
