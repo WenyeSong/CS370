@@ -1,12 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
+import { useNavigate } from 'react-router-dom';
 
 function Voctest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userChoice, setUserChoice] = useState('');
   const [vocabulary, setVocabulary] = useState([]);
-  const [correctCount, setCorrectCount] = useState(0);
   const MAX_QUESTIONS = 30;
+  const [correctCount, setCorrectCount] = useState(0); // State to keep track of correct answers
+  let wrongWords = []; // keep track of wrong words
+
+  const [resultText, setResultText] = useState('');
+  const [feedbackText, setFeedbackText] = useState('');
+  const [feedbackButton, setFeedbackButton] = useState('Next');
+
+  const navigate = useNavigate(); // Define navigate function
+  // Define goBackToMainPage function
+  const goBackToMainPage = () => {
+    navigate('/'); // Navigate to the main page
+  };
 
   useEffect(() => {
     // Fetch vocabulary data from the backend when the component mounts
@@ -52,9 +64,72 @@ function Voctest() {
     setUserChoice('');
   };
 
+  // called when submit is clicked
+  const showAnswer = () => {
+    // const resultLines = "";
+
+    const correctAnswer = vocabulary[currentQuestion][0]; // Get the key (term) of the current question
+      const isCorrect = correctAnswer.includes(userChoice); // Check if the user's choice matches any synonym
+      if ((isCorrect) && !(userChoice === '')) {
+        setCorrectCount((prevCount) => prevCount + 1); // Increment correct count if answer is correct
+        setResultText('Correct!')
+      } 
+      else {
+        wrongWords.push(vocabulary[currentQuestion][0]);
+        setResultText(
+          `Wrong! The correct vocabulary is:
+          ${correctAnswer}.
+          Your input: ${userChoice}`)
+      }
+      if (currentQuestion + 1 === MAX_QUESTIONS) {
+        alert(`you have reached the end of quiz! Your correction rate is: ${correctCount}/${MAX_QUESTIONS}`)
+        // this comment will appear before the resultText gets updates and displayed. 
+        // setFeedbackText(`Accracy: ${Math.round(correctCount/MAX_QUESTIONS) * 100} %`);
+        
+        setFeedbackButton("check feedback on your vocab quiz");
+      }
+  
+    // document.getElementById("result-section").textContent = resultText;
+  }
+
+
+  function printArray(wrongWords) {
+    return wrongWords.join(', ')
+    // if (wrongWords.length === 0) {
+    //   return "there's no wrong words!"
+    // }
+    // else {
+    //   let output = ""
+    //   for (let i = 0; i < wrongWords.length; i++) {
+    //     output += wrongWords[i] + (i < wrongWords.length - 1 ? ", " : ""); // Add separator between words
+    //   }
+    //   return output;
+    // }
+  }
+
+  // called when next is clicked
+  const nextQuestion = () => {
+    
+    if (currentQuestion + 1 === MAX_QUESTIONS) {
+      setFeedbackText(
+        `Accuracy: ${correctCount/MAX_QUESTIONS}
+        Wrong Words: ${printArray(wrongWords)}`
+        );
+    }
+    else{
+      setCurrentQuestion((prevCurrent) => (prevCurrent + 1) % vocabulary.length);
+      setUserChoice('');
+      setResultText('');
+    }
+  }
   const handleChoiceChange = (event) => {
     setUserChoice(event.target.value);
   };
+
+  const goToLoginPage = () => {
+    navigate('/login');
+};
+    
 
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -91,12 +166,21 @@ function Voctest() {
             placeholder="Type the word here"
             className="definition-input"
           />
-          <button onClick={checkAnswer}>Submit</button>
+          {/* <button onClick={checkAnswer}>Submit</button> */}
+          <button onClick={showAnswer}>Submit</button>
         </div>
+
         <div className="result-section">
+          <p>{resultText}</p>
           <p>Correct Answers: {correctCount}</p>
+          <button onClick={nextQuestion}>{feedbackButton}</button> 
+        </div>
+        {/*the following section gives overall feedback and let the user see the wrong wordlist.*/}
+        <div className="feedback-section">
+          <p>{feedbackText}</p>
         </div>
       </header>
+      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </div>
   );
 }

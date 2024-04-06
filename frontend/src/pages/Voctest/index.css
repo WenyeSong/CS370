@@ -32,6 +32,18 @@
   .answer-section {
     margin-top: 20px;
   }
+
+  .result-section {
+    margin-top: 20px;
+    white-space: pre-wrap;
+  }
+
+  .feedback-section {
+    margin-top: 20px;
+    white-space: pre-wrap;
+  }
+
+
   
   .definition-input {
     width: 350px;
