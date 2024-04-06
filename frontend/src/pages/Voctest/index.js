@@ -1,48 +1,61 @@
 import React, { useState, useEffect } from 'react';
-import vocabularyData from './french-english.json';
 import './index.css';
 
 function Voctest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userChoice, setUserChoice] = useState('');
   const [vocabulary, setVocabulary] = useState([]);
-  const [correctCount, setCorrectCount] = useState(0); // State to keep track of correct answers
-  const MAX_QUESTIONS = 30; // Max number of questions
+  const [correctCount, setCorrectCount] = useState(0);
+  const MAX_QUESTIONS = 30;
 
   useEffect(() => {
-    // Convert the object into an array of [key, value] pairs
-    const vocabArray = Object.entries(vocabularyData);
-
-    // Shuffle the vocabulary array
-    const shuffledVocab = shuffleArray(vocabArray);
-
-    // Limit the number of vocabulary terms to 30
-    const limitedVocab = shuffledVocab.slice(0, MAX_QUESTIONS);
-
-    setVocabulary(limitedVocab);
+    // Fetch vocabulary data from the backend when the component mounts
+    fetchVocabulary('default'); // Fetch the default dictionary initially
   }, []);
 
+  const fetchVocabulary = (dictionary) => {
+    // Fetch vocabulary data from the backend using the specified dictionary
+    // Replace the URL with your backend API endpoint
+    fetch(`http://your-backend-api-url/${dictionary}`)
+      .then(response => response.json())
+      .then(data => {
+        // Convert the object into an array of [key, value] pairs
+        const vocabArray = Object.entries(data);
+
+        // Shuffle the vocabulary array
+        const shuffledVocab = shuffleArray(vocabArray);
+
+        // Limit the number of vocabulary terms to 30
+        const limitedVocab = shuffledVocab.slice(0, MAX_QUESTIONS);
+
+        // Update the vocabulary state
+        setVocabulary(limitedVocab);
+      })
+      .catch(error => console.error('Error fetching vocabulary:', error));
+  };
+
+  const handleDictionaryChange = (event) => {
+    const selectedDictionary = event.target.value;
+    fetchVocabulary(selectedDictionary); // Fetch vocabulary data when the dictionary selection changes
+  };
+
   const checkAnswer = () => {
-    const correctAnswer = vocabulary[currentQuestion][0]; // Get the key (term) of the current question
-    const isCorrect = correctAnswer.includes(userChoice); // Check if the user's choice matches any synonym
+    const correctAnswer = vocabulary[currentQuestion][0];
+    const isCorrect = correctAnswer.includes(userChoice);
     if (isCorrect) {
-      setCorrectCount((prevCount) => prevCount + 1); // Increment correct count if answer is correct
+      setCorrectCount(prevCount => prevCount + 1);
       alert('Correct!');
     } else {
-      alert(`Wrong! The correct vocabulary is: ${correctAnswer}. Your input: ${userChoice}`); // Include user input and correct answer in the alert
+      alert(`Wrong! The correct vocabulary is: ${correctAnswer}. Your input: ${userChoice}`);
     }
-    setCurrentQuestion((prevCurrent) => (prevCurrent + 1) % vocabulary.length);
+    setCurrentQuestion(prevCurrent => (prevCurrent + 1) % vocabulary.length);
     setUserChoice('');
   };
-  
-  
-  
 
   const handleChoiceChange = (event) => {
     setUserChoice(event.target.value);
   };
 
-  // Function to shuffle an array
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -55,6 +68,13 @@ function Voctest() {
     <div className="Voc_test">
       <header className="App-header">
         <h1>Vocabulary Test</h1>
+        <div className="dictionary-select">
+          <label htmlFor="dictionary">Select a dictionary: </label>
+          <select id="dictionary" onChange={handleDictionaryChange}>
+            <option value="default">Default Dictionary</option>
+            {/* Add more options for different dictionaries */}
+          </select>
+        </div>
         <div className="question-section">
           <div className="question-count">
             <span>Question {currentQuestion + 1}</span>/{MAX_QUESTIONS}
@@ -68,7 +88,7 @@ function Voctest() {
             type="text"
             value={userChoice}
             onChange={handleChoiceChange}
-            placeholder="Type a synonym here"
+            placeholder="Type the word here"
             className="definition-input"
           />
           <button onClick={checkAnswer}>Submit</button>

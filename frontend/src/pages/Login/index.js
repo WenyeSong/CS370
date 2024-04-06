@@ -20,6 +20,9 @@ function Login () {
 
   // const { loginStore } = useStore()
   const navigate = useNavigate()
+  const goBackToMainPage = () => {
+    navigate('/');
+};
   const onFinish = async values => {
     // const { mobile, code } = values
     // console.log(mobile, code)
@@ -96,6 +99,7 @@ function Login () {
             <Button type="primary" htmlType='submit' size="large" >Login</Button>
           </Form.Item>
         </Form>
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
       </Card>
     </div>
   )

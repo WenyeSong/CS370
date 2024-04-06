@@ -1,0 +1,28 @@
+.Error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    font-size: 2rem; /* Adjust the font size as needed */
+    text-align: center;
+  }
+  
+  .link-btn {
+    width: 100%;
+    padding: 12px 20px; /* Increase padding for a nicer button appearance */
+    border: none;
+    border-radius: 25px; /* Adjust border-radius for a rounded button */
+    background-color: transparent; /* Transparent background */
+    color: #ffcc00;
+    font-size: 40px; /* Adjust font size */
+    font-weight: bold; /* Apply bold font weight for emphasis */
+    text-align: center; /* Center align text */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .link-btn:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,21 @@
+.link-btn {
+    width: 20%;
+    padding: 12px 20px; /* Increase padding for a nicer button appearance */
+    border: none;
+    border-radius: 25px; /* Adjust border-radius for a rounded button */
+    background-color: transparent; /* Transparent background */
+    color: #ffcc00;
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Apply bold font weight for emphasis */
+    text-align: center; /* Center align text */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .link-btn:hover {
+    background-color: #0056b3;
+  }

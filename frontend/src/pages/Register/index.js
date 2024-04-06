@@ -10,6 +10,10 @@ const Register = (props) => {
     const [name, setName] = useState('');
     const navigate = useNavigate();
 
+    const goBackToMainPage = () => {
+      navigate('/');
+  };
+
   // Wenye has changed this handleSubmit function
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,6 +43,10 @@ const Register = (props) => {
       message.error('Network error or server is down');
     }
   };
+
+  const goToLoginPage = () => {
+    navigate('/login');
+};
     
     return (
         <div className="auth-form-container">
@@ -52,7 +60,8 @@ const Register = (props) => {
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
             <button type="submit">Sign Up</button>
         </form>
-        <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
+        <button className="login-btn" onClick={goToLoginPage}>Already have an account? Login here.</button>
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </div>
     )
 
