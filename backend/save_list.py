@@ -54,7 +54,10 @@ def delete_user_word(user_id, foreign_id):
         db.session.commit()
         return jsonify({'message': 'Word deleted successfully'}), 200
     except Exception as e:
+        db.session.rollback()  # Rollback the transaction to avoid any db lock issues.
+        print(f"Error when trying to delete word: {e}")  # Log the error
         return jsonify({'message': str(e)}), 500
+
     
 
 def get_user_words(user_id):
@@ -91,3 +94,5 @@ def save_user_word(user_id):
         return jsonify({"message": "Word saved successfully"}), 201
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+    

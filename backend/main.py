@@ -16,7 +16,7 @@ login_routes(app)
 register_routes(app)
 
 # register the routes from save_list
-app.add_url_rule('/user/<int:user_id>/words/<int:word_id>', view_func=delete_user_word, methods=['DELETE'])
+app.add_url_rule('/user/<int:user_id>/words/<int:foreign_id>', view_func=delete_user_word, methods=['DELETE'])
 app.add_url_rule('/user/<int:user_id>/words', view_func=get_user_words, methods=['GET'])
 app.add_url_rule('/user/<int:user_id>/words', view_func=save_user_word, methods=['POST'])
 
