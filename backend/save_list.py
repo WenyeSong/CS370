@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import func
 
 #app = Flask(__name__)
 #CORS(app)  # This will allow all origins. For specific origins, use the `resources` argument.
@@ -85,7 +86,7 @@ def save_user_word(user_id):
         return jsonify({"error": "Foreign word is required"}), 400
     
     # Check if the foreign word exists in the ForeignTerm table
-    foreign_term = ForeignTerm.query.filter_by(term=foreign_word).first()
+    foreign_term = ForeignTerm.query.filter(func.lower(ForeignTerm.term) == func.lower(foreign_word)).first()
     
     # If not, create a new ForeignTerm entry
     if not foreign_term:
