@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Card, Col, Row, Space, Table, Popconfirm } from 'antd';
+import { Button, Card, Col, Row, Space, Table, Popconfirm, Input, Form } from 'antd'; // Import Input and Form
 import { Link, useNavigate } from 'react-router-dom';
 import './index.css';
 
 function SavedList() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [foreignWord, setForeignWord] = useState(''); // Added state for foreignWord
   const userId = 7; // Dynamically manage this in a real application
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     fetchWords();
   }, []);
@@ -43,7 +44,28 @@ function SavedList() {
       console.error("Delete error: ", error.message);
     }
   };
-  
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+        const response = await fetch(`http://localhost:5000/user/${userId}/words`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ foreign_word: foreignWord }),
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        fetchWords(); // Refresh the list after adding
+        setForeignWord(''); // Reset input field
+    } catch (error) {
+        console.error("Failed to add word:", error);
+    }
+};
+
+
   const columns = [
     {
       title: 'Foreign Word',
@@ -79,16 +101,16 @@ function SavedList() {
   return (
     <Row>
       <Col span={24}>
-        <Card
-          title="Your Saved Words"
-          extra={
-            <Space>
-              <Link to="/add-word">
-                <Button type="primary">Add New Word</Button>
-              </Link>
-            </Space>
-          }
-        >
+        <Card title="Your Saved Words">
+          {/* Add Word Form */}
+          <Form layout="inline" onSubmitCapture={handleSubmit}>
+            <Form.Item>
+              <Input placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+            </Form.Item>
+            <Form.Item>
+              <Button type="primary" htmlType="submit">Add New Word</Button>
+            </Form.Item>
+          </Form>
           <Table loading={loading} columns={columns} dataSource={dataSource} />
         </Card>
       </Col>

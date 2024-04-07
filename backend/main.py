@@ -15,10 +15,14 @@ db.init_app(app)
 login_routes(app)
 register_routes(app)
 
-# register the routes from save_list
+# Assuming `app` is your Flask application instance
+# and assuming `add_foreign_word` is imported or defined in the same file
+
 app.add_url_rule('/user/<int:user_id>/words/<int:foreign_id>', view_func=delete_user_word, methods=['DELETE'])
 app.add_url_rule('/user/<int:user_id>/words', view_func=get_user_words, methods=['GET'])
 app.add_url_rule('/user/<int:user_id>/words', view_func=save_user_word, methods=['POST'])
+
+
 
 
 if __name__ == '__main__':

@@ -75,24 +75,35 @@ def get_user_words(user_id):
 
     return jsonify(saved_words_info)
 
+    
+
 def save_user_word(user_id):
     data = request.get_json()
-    foreign_id = data.get('foreign_id')
+    foreign_word = data.get('foreign_word')
     
-    if not foreign_id:
-        return jsonify({"error": "Foreign term ID is required"}), 400
+    if not foreign_word:
+        return jsonify({"error": "Foreign word is required"}), 400
+    
+    # Check if the foreign word exists in the ForeignTerm table
+    foreign_term = ForeignTerm.query.filter_by(term=foreign_word).first()
+    
+    # If not, create a new ForeignTerm entry
+    if not foreign_term:
+        language = Language.query.first()  # Assumes default language; adjust as needed
+        if not language:
+            return jsonify({"error": "Default language not found"}), 500
+        foreign_term = ForeignTerm(language_id=language.language_id, term=foreign_word)
+        db.session.add(foreign_term)
+        db.session.commit()
 
-    # Ensure the term doesn't already exist for the user
-    existing = UserSaved.query.filter_by(user_id=user_id, foreign_id=foreign_id).first()
-    if existing:
+    # Check if the term is already saved for this user
+    existing_user_saved = UserSaved.query.filter_by(user_id=user_id, foreign_id=foreign_term.foreign_id).first()
+    if existing_user_saved:
         return jsonify({"message": "Word already saved"}), 409
 
-    try:
-        new_user_word = UserSaved(user_id=user_id, foreign_id=foreign_id)
-        db.session.add(new_user_word)
-        db.session.commit()
-        return jsonify({"message": "Word saved successfully"}), 201
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-    
-    
+    # Save the new word for the user
+    new_user_saved = UserSaved(user_id=user_id, foreign_id=foreign_term.foreign_id)
+    db.session.add(new_user_saved)
+    db.session.commit()
+
+    return jsonify({"message": "Word saved successfully"}), 201
