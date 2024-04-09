@@ -2,9 +2,19 @@ import psycopg2
 from flask import Flask, request, jsonify, make_response
 from werkzeug.security import check_password_hash
 from flask_cors import CORS
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import func
+from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
+
 
 #app = Flask(__name__)
 #CORS(app)
+
+# class User(db.Model):
+#     __tablename__ = 'users'  # Explicitly specify the table name to match your database
+#     id = db.Column(db.Integer, primary_key=True)
+#     username = db.Column(db.String(80), unique=True, nullable=False)
+#     token = db.Column(db.String(80),unique=True, nullable=False)
 
 def login_routes(app):
 # check whether status is activate
@@ -43,6 +53,10 @@ def login_routes(app):
                 if password_hash == password: # if hash later, change this code to : if check_password_hash(password_hash, password):
                     # Password is correct
                     token=username+'-'+password
+                    user=User.query.filter_by(username=username).first()
+                    user.token=token
+                    db.session.commit()
+                    
                     return jsonify({'message': 'Login is successful!','token':token}), 200
                 else:
                     # Password is incorrect

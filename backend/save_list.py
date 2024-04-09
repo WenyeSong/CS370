@@ -2,51 +2,55 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
+from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
 
 #app = Flask(__name__)
 #CORS(app)  # This will allow all origins. For specific origins, use the `resources` argument.
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:cs370@34.69.154.109/postgres'
 #db = SQLAlchemy(app)
-db = SQLAlchemy()
+# db = SQLAlchemy()
 
-class User(db.Model):
-    __tablename__ = 'users'  # Explicitly specify the table name to match your database
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    token = db.Column(db.String(80),unique=True, nullable=False)
-    # Other fields...
-
-
-class Language(db.Model):
-    __tablename__ = 'languages'
-    language_id = db.Column(db.Integer, primary_key=True)
-    language_name = db.Column(db.String(255), nullable=False)
-
-class ForeignTerm(db.Model):
-    __tablename__ = 'foreign_terms'
-    foreign_id = db.Column(db.Integer, primary_key=True)
-    language_id = db.Column(db.Integer, db.ForeignKey('languages.language_id'), nullable=False)
-    term = db.Column(db.String(255), nullable=False)
-    english_translations = db.relationship('EnglishTranslation', backref='foreign_term', lazy='dynamic')
-
-class EnglishTranslation(db.Model):
-    __tablename__ = 'english_translations'
-    translation_id = db.Column(db.Integer, primary_key=True)
-    foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), nullable=False)
-    english_id = db.Column(db.Integer)  # Assuming this relates to a language ID for English, might require adjustment
-    english_term = db.Column(db.String(255), nullable=False)
+# class User(db.Model):
+#     __tablename__ = 'users'  # Explicitly specify the table name to match your database
+#     id = db.Column(db.Integer, primary_key=True)
+#     username = db.Column(db.String(80), unique=True, nullable=False)
+#     token = db.Column(db.String(80),unique=True, nullable=False)
+#     # Other fields...
 
 
+# class Language(db.Model):
+#     __tablename__ = 'languages'
+#     language_id = db.Column(db.Integer, primary_key=True)
+#     language_name = db.Column(db.String(255), nullable=False)
 
-class UserSaved(db.Model):
-    __tablename__ = 'user_saved'
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)  # Corrected ForeignKey reference
-    foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), primary_key=True)
+# class ForeignTerm(db.Model):
+#     __tablename__ = 'foreign_terms'
+#     foreign_id = db.Column(db.Integer, primary_key=True)
+#     language_id = db.Column(db.Integer, db.ForeignKey('languages.language_id'), nullable=False)
+#     term = db.Column(db.String(255), nullable=False)
+#     english_translations = db.relationship('EnglishTranslation', backref='foreign_term', lazy='dynamic')
+
+# class EnglishTranslation(db.Model):
+#     __tablename__ = 'english_translations'
+#     translation_id = db.Column(db.Integer, primary_key=True)
+#     foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), nullable=False)
+#     english_id = db.Column(db.Integer)  # Assuming this relates to a language ID for English, might require adjustment
+#     english_term = db.Column(db.String(255), nullable=False)
 
 
-def delete_user_word(user_id, foreign_id):
+
+# class UserSaved(db.Model):
+#     __tablename__ = 'user_saved'
+#     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)  # Corrected ForeignKey reference
+#     foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), primary_key=True)
+
+
+
+def delete_user_word(token, foreign_id):
     try:
+        print(token)
+        user_id=User.query.filter_by(token=token).first().id
         user_word = UserSaved.query.filter_by(user_id=user_id, foreign_id=foreign_id).first()
         if not user_word:
             return jsonify({'message': 'Word not found'}), 404
@@ -61,7 +65,10 @@ def delete_user_word(user_id, foreign_id):
 
     
 
-def get_user_words(user_id):
+def get_user_words(token):
+    user_id = User.query.filter_by(token=token).first().id
+    print(user_id)
+    
     user_words = UserSaved.query.filter_by(user_id=user_id).all()
     saved_words_info = []
 
@@ -78,8 +85,9 @@ def get_user_words(user_id):
 
     
 
-def save_user_word(user_id):
+def save_user_word(token):
     data = request.get_json()
+    user_id = User.query.filter_by(token=token).first().id
     foreign_word = data.get('foreign_word')
     
     if not foreign_word:

@@ -7,17 +7,19 @@ function SavedList() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(false);
   const [foreignWord, setForeignWord] = useState(''); // Added state for foreignWord
-  const userId = 7; // Dynamically manage this in a real application
+  const userId = -1; // Dynamically manage this in a real application
   const navigate = useNavigate();
 
   useEffect(() => {
     fetchWords();
   }, []);
 
+  var token = localStorage.getItem('token');
+
   const fetchWords = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/user/${userId}/words`);
+      const response = await fetch(`http://localhost:5000/user/${token}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -32,7 +34,7 @@ function SavedList() {
 
   const deleteWord = async (foreignId) => {
     try {
-      const response = await fetch(`http://localhost:5000/user/${userId}/words/${foreignId}`, {
+      const response = await fetch(`http://localhost:5000/user/${token}/words/${foreignId}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
@@ -48,7 +50,7 @@ function SavedList() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-        const response = await fetch(`http://localhost:5000/user/${userId}/words`, {
+        const response = await fetch(`http://localhost:5000/user/${token}/words`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

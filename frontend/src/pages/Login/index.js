@@ -58,7 +58,7 @@ function Login () {
         // 登录成功，可以将 token 保存在本地存储或状态管理库中
         // loginStore.setToken(data.token);
         localStorage.setItem('token', data['token']);
-        console.log(localStorage.getItem['token']);
+        console.log('set_token:',localStorage.getItem('token'));
         message.success('Login is successful!');
         navigate('/'); 
       } else {
