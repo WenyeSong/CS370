@@ -159,13 +159,19 @@ function Voctest() {
           </div>
         </div>
         <div className="answer-section">
-          <input
-            type="text"
-            value={userChoice}
-            onChange={handleChoiceChange}
-            placeholder="Type the word here"
-            className="definition-input"
-          />
+          <div className="input-group type-md">
+            <input
+              type="text"
+              value={userChoice}
+              onChange={handleChoiceChange}
+              // placeholder="Type the word here" // commented out to test animation**
+              className="definition-input"
+              required
+            />
+            <label for = "answer">Your Answer</label>
+            <span class = "border"></span>
+          </div>
+          
           {/* <button onClick={checkAnswer}>Submit</button> */}
           <button onClick={showAnswer}>Submit</button>
         </div>
