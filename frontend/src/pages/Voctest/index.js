@@ -92,14 +92,14 @@ function Voctest() {
     setCurrentQuestion((prevCurrent) => (prevCurrent + 1) % vocabulary.length);
     setUserChoice('');
 
-    //if (currentQuestion + 1 === MAX_QUESTIONS) {
-    alert(`You have reached the end of the quiz! Your correction rate is: ${correctCount}/${MAX_QUESTIONS}`);
-    setFeedbackText(
-      `Accuracy: ${(correctCount / MAX_QUESTIONS) * 100}%
-      Wrong Words: ${wrongWords.join(', ')}`
-    );
-    setFeedbackButton("Check feedback on your vocab quiz");
-    //}
+    if (currentQuestion + 1 === MAX_QUESTIONS) {
+      alert(`You have reached the end of the quiz! Your correction rate is: ${correctCount}/${MAX_QUESTIONS}`);
+      setFeedbackText(
+        `Accuracy: ${(correctCount / MAX_QUESTIONS) * 100}%
+        Wrong Words: ${wrongWords.join(', ')}`
+      );
+      setFeedbackButton("Check feedback on your vocab quiz");
+    }
   }
     
 
