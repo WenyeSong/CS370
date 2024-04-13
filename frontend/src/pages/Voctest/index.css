@@ -1,0 +1,137 @@
+.Voc_test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 120vh;
+    background-color: #f8f9fa; /* Background color for the entire page */
+  }
+  
+  .App-header {
+    text-align: center;
+    background-color: transparent; /* Set the header background color to transparent */
+    border: none; /* Remove the border */
+  }
+  
+  .question-section {
+    margin-bottom: 20px;
+  }
+  
+  .question-count {
+    font-size: 18px;
+  }
+  
+  .question-text {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Add !important */
+    padding: 10px;
+  }
+  
+  
+  /*the following few sections adress the text input animation:*/
+  .answer-section {
+    margin-top: 20px;
+  }
+  
+  .input-group{
+    position: relative;
+    width: 24rem;
+    margin: 2rem 0;
+  }
+
+  .input-group input{
+    width: 100%;
+    padding: 1rem;
+
+    background-color: rgb(238, 236, 248); /*Need a better color than grey.*/
+    color: black;
+
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+  }
+
+  .input-group.type-md input{
+    border-bottom: 0.05rem solid #06478e;
+    padding-left: 0;
+  }
+
+  .input-group label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: black;
+    font-size: 1.1rem;
+
+    transition: .2s ease-in-out;
+  }
+
+  .input-group.input-group.type-md label {
+    left: 0;
+  }
+
+  .input-group input:focus + label,
+  .input-group input:valid + label {
+    top: 5%;
+    color: rgb(3, 85, 85);
+    font-size: 0.8rem;
+  }
+  .input-group input:not(focus) + label {
+    color: #aaa;
+  }
+
+  .input-group .border {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.1rem;
+    width: 100%;
+    background-color: aqua;
+
+    transform: scaleX(0);
+    transform-origin: left; 
+    transition: .3s ease-in-out;
+  }
+
+  .input-group.input-group.type-md input:focus ~ .border {
+    transform: scaleX(1);
+  }
+
+
+  .result-section {
+    margin-top: 20px;
+    white-space: pre-wrap;
+  }
+
+  .feedback-section {
+    margin-top: 20px;
+    white-space: pre-wrap;
+  }
+
+
+  
+  .definition-input {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff; /* White color for the button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+  

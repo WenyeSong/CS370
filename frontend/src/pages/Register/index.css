@@ -61,20 +61,38 @@
   }
   
 
-  .link-btn {
-    width: 100%;
-    padding: 12px 20px; /* Increase padding for a nicer button appearance */
+  .login-btn {
+    width: 80%;
+    padding: 12px 20px;
     border: none;
-    border-radius: 25px; /* Adjust border-radius for a rounded button */
-    background-color: transparent; /* Transparent background */
+    border-radius: 25px;
+    background-color: transparent;
     color: #ffcc00;
-    font-size: 14px; /* Adjust font size */
-    font-weight: bold; /* Apply bold font weight for emphasis */
-    text-align: center; /* Center align text */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
     cursor: pointer;
     transition: color 0.3s ease;
-  }
-  
-  .link-btn:hover {
+}
+
+.login-btn:hover {
     color: #0056b3;
-  }
+}
+
+.link-btn {
+  width: 20%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #ffcc00;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link-btn:hover {
+    color: #0056b3;
+}

@@ -1,98 +1,91 @@
 import React, { useState, useEffect } from 'react';
-import {
-  Button,
-  Card,
-  Col,
-  Row,
-  Space,
-  Table,
-  Popconfirm,
-  Select,
-} from 'antd';
-import { Link} from 'react-router-dom';
+import { Button, Card, Col, Row, Space, Table, Popconfirm, Input, Form } from 'antd'; // Import Input and Form
+import { Link, useNavigate } from 'react-router-dom';
 import './index.css';
 
-const { Option } = Select;
-
 function SavedList() {
-  // State for storing the words list and the current directory
   const [words, setWords] = useState([]);
-  const [directories, setDirectories] = useState([]);
-  const [currentDirectory, setCurrentDirectory] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [foreignWord, setForeignWord] = useState(''); // Added state for foreignWord
+  const userId = -1; // Dynamically manage this in a real application
+  const navigate = useNavigate();
 
-  // Fetch directories
-  const fetchDirectories = async () => {
-    const dirs = ['English', 'French'];
-    setDirectories(dirs);
-    if(dirs.length > 0) {
-      setCurrentDirectory(dirs[0]);
-    }
-  };
+  useEffect(() => {
+    fetchWords();
+  }, []);
 
-  // Function to fetch words from the backend based on the current directory
+  var token = localStorage.getItem('token');
+
   const fetchWords = async () => {
+    setLoading(true);
     try {
-      const response = await fetch(`http://127.0.0.1:5000/words?directory=${currentDirectory}`);
+      const response = await fetch(`http://localhost:5000/user/${token}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
       setWords(data);
     } catch (error) {
-      console.log("Fetch error: " + error.message);
+      console.error("Fetch error: ", error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
-  useEffect(() => {
-    fetchDirectories();
-  }, []);
-
-  useEffect(() => {
-    if(currentDirectory) {
-      fetchWords();
-    }
-  }, [currentDirectory]);
-
-  const deleteWord = async (index) => {
+  const deleteWord = async (foreignId) => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/words/${index}`, {
+      const response = await fetch(`http://localhost:5000/user/${token}/words/${foreignId}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      // Fetch the updated words list after deletion
-      fetchWords();
+      // Update state to reflect the deletion
+      setWords(words.filter(word => word.foreign_id !== foreignId));
     } catch (error) {
-      console.log("Delete error: " + error.message);
+      console.error("Delete error: ", error.message);
     }
-  };  
+  };
 
-  const onChange = (pagination, filters, sorter, extra) => {
-    console.log('params', pagination, filters, sorter, extra);
-  };  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+        const response = await fetch(`http://localhost:5000/user/${token}/words`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ foreign_word: foreignWord }),
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        fetchWords(); // Refresh the list after adding
+        setForeignWord(''); // Reset input field
+    } catch (error) {
+        console.error("Failed to add word:", error);
+    }
+};
+
 
   const columns = [
     {
-      title: 'Word',
-      dataIndex: 'word',
-      key: 'word',
-      sorter: (a, b) => a.word.localeCompare(b.word),
-      sortDirections: ['ascend', 'descend', 'ascend'],
-    
+      title: 'Foreign Word',
+      dataIndex: 'foreign_word',
+      key: 'foreign_word',
     },
     {
-      title: 'Definition',
-      dataIndex: 'definition',  
-      key: 'definition',
+      title: 'English Translations',
+      dataIndex: 'english_translations',
+      key: 'english_translations',
+      render: translations => translations.join(', '),
     },
     {
       title: 'Action',
       key: 'action',
-      render: (text, record, index) => (
+      render: (_, record) => (
         <Space size="middle">
-          <Button type="primary">Edit</Button>
-          <Popconfirm title="Sure to delete?" okText="Yes" cancelText="No" onConfirm={() => deleteWord(index)}>
+          <Popconfirm title="Sure to delete?" onConfirm={() => deleteWord(record.foreign_id)}>
             <Button type="primary" danger>Delete</Button>
           </Popconfirm>
         </Space>
@@ -100,35 +93,30 @@ function SavedList() {
     },
   ];
 
+  const dataSource = words.map((word) => ({
+    key: word.foreign_id,
+    foreign_word: word.foreign_word,
+    english_translations: word.english_translations,
+    foreign_id: word.foreign_id,
+  }));
+
   return (
-    <div>
-      <Row>
-        <Col span={24}>
-          <Card
-            title="Saved List"
-            extra={
-              <Space>
-                <Select defaultValue={currentDirectory} style={{ width: 120 }} onChange={setCurrentDirectory}>
-                  {directories.map(dir => <Option key={dir} value={dir}>{dir}</Option>)}
-                </Select>
-                {/* Link to FlashcardPage */}
-                <Link to="/flashcards">
-                  <Button type="primary">Go to Flashcard Page</Button>
-                </Link>
-                {/* End of Link to FlashcardPage */}
-                <Button type="primary">Add New</Button>
-              </Space>
-            }>
-            <Table
-              onChange={onChange}
-              pagination={{ pageSize: 5 }}
-              columns={columns}
-              dataSource={words}
-            />
-          </Card>
-        </Col>
-      </Row>
-    </div>
+    <Row>
+      <Col span={24}>
+        <Card title="Your Saved Words">
+          {/* Add Word Form */}
+          <Form layout="inline" onSubmitCapture={handleSubmit}>
+            <Form.Item>
+              <Input placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+            </Form.Item>
+            <Form.Item>
+              <Button type="primary" htmlType="submit">Add New Word</Button>
+            </Form.Item>
+          </Form>
+          <Table loading={loading} columns={columns} dataSource={dataSource} />
+        </Card>
+      </Col>
+    </Row>
   );
 }
 

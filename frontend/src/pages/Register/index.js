@@ -10,6 +10,10 @@ const Register = (props) => {
     const [name, setName] = useState('');
     const navigate = useNavigate();
 
+    const goBackToMainPage = () => {
+      navigate('/');
+  };
+
   // Wenye has changed this handleSubmit function
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,6 +34,7 @@ const Register = (props) => {
       const data = await response.json();
       if (response.ok) {
         // add: where to navigate
+        message.success('Registration is successful!');
         navigate('/');
       } else {
         message.error(data.message || 'Registration failed');
@@ -38,6 +43,10 @@ const Register = (props) => {
       message.error('Network error or server is down');
     }
   };
+
+  const goToLoginPage = () => {
+    navigate('/login');
+};
     
     return (
         <div className="auth-form-container">
@@ -49,9 +58,10 @@ const Register = (props) => {
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
             <label htmlFor="password">password</label>
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
-            <button type="submit">Log In</button>
+            <button type="submit">Sign Up</button>
         </form>
-        <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
+        <button className="login-btn" onClick={goToLoginPage}>Already have an account? Login here.</button>
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </div>
     )
 

@@ -5,10 +5,24 @@ import './index.scss'
 import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
 
+// check backend status
+async function checkBackendStatus() {
+  try {
+    const response = await fetch('http://127.0.0.1:5000/health');
+    return response.ok;
+  } catch (error) {
+    console.error('Error when checking backend status:', error);
+    return false;
+  }
+}
+
 function Login () {
 
   // const { loginStore } = useStore()
   const navigate = useNavigate()
+  const goBackToMainPage = () => {
+    navigate('/');
+};
   const onFinish = async values => {
     // const { mobile, code } = values
     // console.log(mobile, code)
@@ -19,10 +33,16 @@ function Login () {
     //   message.error(e.response?.data?.message || 'log in failed')
     // }
     
+      // fisrt check whether the request can acheive backend
+      const isBackendReachable = await checkBackendStatus();
+      if (!isBackendReachable) {
+        message.error('Cannot reach the backend service. Please try again later.');
+        return;
+      }
 
-    //Wenye has changed this part
+
     try {
-      const response = await fetch('/login', {
+      const response = await fetch('http://127.0.0.1:5000/login', { // point to flask port, 5000
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,13 +57,16 @@ function Login () {
       if (response.ok) {
         // 登录成功，可以将 token 保存在本地存储或状态管理库中
         // loginStore.setToken(data.token);
-        navigate('/'); // 导航到其他页面，待添加
+        localStorage.setItem('token', data['token']);
+        console.log('set_token:',localStorage.getItem('token'));
+        message.success('Login is successful!');
+        navigate('/'); 
       } else {
-        // 登录失败，显示错误消息
+        // login fail, with message
         message.error(data.message || 'log in failed');
       }
-    } catch (e) {
-      // 网络或其他错误，显示错误消息
+    }
+     catch (e) {
       message.error('Network error or server is down');
     } 
   }
@@ -78,6 +101,7 @@ function Login () {
             <Button type="primary" htmlType='submit' size="large" >Login</Button>
           </Form.Item>
         </Form>
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
       </Card>
     </div>
   )
