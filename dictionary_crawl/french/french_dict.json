@@ -1,0 +1,53 @@
+[
+    null,
+    null,
+    {
+        "word": "abaissement",
+        "real_word": [
+            "loweringl’abaissement duniveaud’unerivièrelowering the water level of a riverl’abaissement de l’âge de laretraitelowering the retirement age"
+        ],
+        "translation": "lowering",
+        "explanations": null,
+        "cn_examples": [],
+        "en_examples": [],
+        "chosen_cn_example": null,
+        "chosen_en_example": null
+    },
+    {
+        "word": "abaisser",
+        "real_word": [
+            "to lowerabaisser unstoreto lower a blindabaisser uneperpendiculaire",
+            "to lowerabaisser lalimited’âgeto lower the age limitLes magasins ont abaissé lesprix."
+        ],
+        "translation": "to lower",
+        "explanations": null,
+        "cn_examples": [],
+        "en_examples": [],
+        "chosen_cn_example": null,
+        "chosen_en_example": null
+    },
+    {
+        "word": "abandon",
+        "real_word": [
+            "abandonmentabandon d’enfantabandoning a childfaireabandon de sapropriété",
+            "neglectedunjardinlaissé à l’abandona neglected gardenLes malades ont été laissés à l’abandon.",
+            "abandoningabandon dudomicileconjugaldesertionJ’appelle cedépartun abandon.",
+            "abandoningabandon d’unprojetabandoning a projectDoit-ilfaireabandon de sonplan?",
+            "pulling outgagnerpar abandonto win because one’s opponent pulled outL’abandon d’uncoureurl’a faitpasserau premierrang.",
+            "helplessness[noun]",
+            "abandonment[noun]Lack of money led to the abandonment of theplan.",
+            "disuse[noun]the state of not being usedWith the arrival of the railway, thecanalfell into disuse."
+        ],
+        "translation": "abandonment",
+        "explanations": null,
+        "cn_examples": [],
+        "en_examples": [],
+        "chosen_cn_example": null,
+        "chosen_en_example": null
+    },
+    null,
+    null,
+    null,
+    null,
+    null
+]

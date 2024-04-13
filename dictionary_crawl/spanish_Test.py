@@ -7,9 +7,55 @@ from random import random
 from time import sleep
 from concurrent.futures import ThreadPoolExecutor
 
+# def get_word_data(word):
+#     url = f"https://dictionary.cambridge.org/us/dictionary/dutch-english/{word}"
+#     headers = {'User-Agent': 'Mozilla/5.0'}
+#     response = requests.get(url, headers=headers)
+#     soup = BeautifulSoup(response.content, "html.parser")
 
+#     # Adjust the selector below to match the actual HTML structure of the dictionary page
+#     page_word = soup.select_one("h2.tw-bw.dhw.dpos-h_hw.di-title")
+#     if page_word is None or page_word.get_text(strip=True).lower() != word.lower():
+#         return None 
+
+#     real_word = soup.select("div.def-body.ddef_b.ddef_b-t")
+#     if real_word:
+#         real_word = translation.get_text(strip=True)
+
+#     translation = soup.select_one("span.dtrans")
+#     if translation:
+#         translation = translation.get_text(strip=True)
+
+#     explanation = soup.select_one("div.def-body.ddef_b.def_b-t")
+#     if explanation:
+#         explanation = explanation.get_text(strip=True)
+
+#     cn_examples = soup.select("span.dtrans-eg-transzh.lmr-10.hdb")
+#     cn_example_texts = [cn_example.get_text(strip=True) for cn_example in cn_examples]
+
+#     en_examples = soup.select("span.dtrans-egzh.lmr-10.hdb")
+#     en_example_texts = [en_example.get_text(strip=True) for en_example in en_examples]
+
+#     data = {
+#         "word": word,
+#         "real_word": real_word,
+#         "translation": translation,
+#         "explanations": explanation,
+#         "cn_examples": cn_example_texts,
+#         "en_examples": en_example_texts,
+#         "chosen_cn_example": None,
+#         "chosen_en_example": None
+#     }
+
+#     for cn_example, en_example in zip(cn_example_texts, en_example_texts):
+#         if word in cn_example:
+#             data["chosen_cn_example"] = cn_example
+#             data["chosen_en_example"] = en_example
+#             break
+    
+#     return data
 def get_word_data(word):
-    url = f"https://dictionary.cambridge.org/us/dictionary/french-english/{word}"
+    url = f"https://dictionary.cambridge.org/us/dictionary/spanish-english/{word}"
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.content, "html.parser")
@@ -92,8 +138,8 @@ def crawl_words(words):
     return results
 
 if __name__ == "__main__":
-    with open("d:\\CS370\\dictionary_crawl\\french\\francais.txt", "r", encoding="utf-8") as f:
+    with open("d:\\CS370\\dictionary_crawl\\spanish\\spanish_words.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
-    with open("d:\\CS370\\dictionary_crawl\\french\\french_dict.json", "w", encoding="utf-8") as f:
+    with open("d:\\CS370\\dictionary_crawl\\spanish\\spanish_dict.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
