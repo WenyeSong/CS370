@@ -1,12 +1,20 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, {useState, useEffect, useRef } from 'react';
 import './index.css';
+import { Link, useNavigate } from 'react-router-dom';
 import dictionary from './french-english.json';
+
 
 export default function App() {
   const [flashcards, setFlashcards] = useState([]);
 
   const categoryEl = useRef();
   const amountEl = useRef();
+  const navigate = useNavigate();
+
+ // Define goBackToMainPage function
+  const goBackToMainPage = () => {
+      navigate('/'); // Navigate to the main page
+    };
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -14,6 +22,7 @@ export default function App() {
 
     // Generate flashcards using the dictionary
     const generatedFlashcards = [];
+
 
     function formatAnswer(answerArray) {
       return answerArray.join(', ');
@@ -45,6 +54,7 @@ export default function App() {
       <div className="container">
         <FlashcardList flashcards={flashcards} />
       </div>
+      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </>
   );
 }
@@ -66,6 +76,7 @@ function Flashcard({ flashcard }) {
   const frontEl = useRef();
   const backEl = useRef();
 
+
   function setMaxHeight() {
     const frontHeight = frontEl.current.getBoundingClientRect().height;
     const backHeight = backEl.current.getBoundingClientRect().height;
@@ -79,6 +90,7 @@ function Flashcard({ flashcard }) {
   }, []);
 
   return (
+    <>
     <div
       className={`card ${flip ? 'flip' : ''}`}
       style={{ height: height }}
@@ -88,6 +100,8 @@ function Flashcard({ flashcard }) {
         {flashcard.question}
       </div>
       <div className="back" ref={backEl}>{flashcard.answer}</div>
-    </div>
+    </div> 
+    </>
+
   );
 }

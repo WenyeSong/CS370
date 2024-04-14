@@ -10,6 +10,11 @@ function SavedList() {
   const userId = -1; // Dynamically manage this in a real application
   const navigate = useNavigate();
 
+  // Define goBackToMainPage function
+  const goBackToMainPage = () => {
+    navigate('/'); // Navigate to the main page
+  };
+
   useEffect(() => {
     fetchWords();
   }, []);
@@ -101,6 +106,7 @@ function SavedList() {
   }));
 
   return (
+    <>
     <Row>
       <Col span={24}>
         <Card title="Your Saved Words">
@@ -116,7 +122,8 @@ function SavedList() {
           <Table loading={loading} columns={columns} dataSource={dataSource} />
         </Card>
       </Col>
-    </Row>
+    </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+    </>
   );
 }
 
