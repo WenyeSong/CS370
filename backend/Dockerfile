@@ -26,3 +26,4 @@ ENV NAME World
 
 # run gunicorn when the container launches
 CMD gunicorn -b :$PORT main:app
+

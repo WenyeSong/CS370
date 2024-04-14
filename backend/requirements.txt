@@ -4,3 +4,5 @@ gunicorn
 sqlalchemy
 psycopg2-binary
 flask_sqlalchemy
+
+# use for deploy
