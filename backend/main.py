@@ -2,7 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from login import login_routes  
-from save_list import delete_user_word, get_user_words, save_user_word
+from save_list import delete_user_saved_word, get_user_words, save_user_word, delete_user_contribution
 from register import register_routes
 from db import db
 
@@ -20,10 +20,10 @@ register_routes(app)
 # Assuming `app` is your Flask application instance
 # and assuming `add_foreign_word` is imported or defined in the same file
 
-app.add_url_rule('/user/<string:token>/words/<int:foreign_id>', view_func=delete_user_word, methods=['DELETE'])
+app.add_url_rule('/user/<string:token>/words/<int:foreign_id>', view_func=delete_user_saved_word, methods=['DELETE'])
+app.add_url_rule('/user/<string:token>/contributions/<int:contribution_id>', view_func=delete_user_contribution, methods=['DELETE'])
 app.add_url_rule('/user/<string:token>/words', view_func=get_user_words, methods=['GET'])
 app.add_url_rule('/user/<string:token>/words', view_func=save_user_word, methods=['POST'])
-
 
 
 
