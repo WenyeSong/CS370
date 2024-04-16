@@ -6,15 +6,16 @@ function Voctest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userChoice, setUserChoice] = useState('');
   const [vocabulary, setVocabulary] = useState([]);
-  const MAX_QUESTIONS = 30;
   const [correctCount, setCorrectCount] = useState(0); // State to keep track of correct answers
+  const MAX_QUESTIONS = 30; // Max number of questions
+  const navigate = useNavigate(); // Define navigate function
   let wrongWords = []; // keep track of wrong words
 
   const [resultText, setResultText] = useState('');
   const [feedbackText, setFeedbackText] = useState('');
   const [feedbackButton, setFeedbackButton] = useState('Next');
 
-  const navigate = useNavigate(); // Define navigate function
+
   // Define goBackToMainPage function
   const goBackToMainPage = () => {
     navigate('/'); // Navigate to the main page
@@ -22,115 +23,48 @@ function Voctest() {
 
   useEffect(() => {
     // Fetch vocabulary data from the backend when the component mounts
-    fetchVocabulary('default'); // Fetch the default dictionary initially
+    fetchVocabulary('default');
   }, []);
 
-  const fetchVocabulary = (dictionary) => {
-    // Fetch vocabulary data from the backend using the specified dictionary
-    // Replace the URL with your backend API endpoint
-    fetch(`http://your-backend-api-url/${dictionary}`)
-      .then(response => response.json())
-      .then(data => {
-        // Convert the object into an array of [key, value] pairs
-        const vocabArray = Object.entries(data);
-
-        // Shuffle the vocabulary array
-        const shuffledVocab = shuffleArray(vocabArray);
-
-        // Limit the number of vocabulary terms to 30
-        const limitedVocab = shuffledVocab.slice(0, MAX_QUESTIONS);
-
-        // Update the vocabulary state
-        setVocabulary(limitedVocab);
-      })
-      .catch(error => console.error('Error fetching vocabulary:', error));
-  };
-
-  const handleDictionaryChange = (event) => {
-    const selectedDictionary = event.target.value;
-    fetchVocabulary(selectedDictionary); // Fetch vocabulary data when the dictionary selection changes
-  };
-
-  const checkAnswer = () => {
-    const correctAnswer = vocabulary[currentQuestion][0];
-    const isCorrect = correctAnswer.includes(userChoice);
-    if (isCorrect) {
-      setCorrectCount(prevCount => prevCount + 1);
-      alert('Correct!');
-    } else {
-      alert(`Wrong! The correct vocabulary is: ${correctAnswer}. Your input: ${userChoice}`);
-    }
-    setCurrentQuestion(prevCurrent => (prevCurrent + 1) % vocabulary.length);
-    setUserChoice('');
-  };
-
-  // called when submit is clicked
-  const showAnswer = () => {
-    // const resultLines = "";
-
-    const correctAnswer = vocabulary[currentQuestion][0]; // Get the key (term) of the current question
-      const isCorrect = correctAnswer.includes(userChoice); // Check if the user's choice matches any synonym
-      if ((isCorrect) && !(userChoice === '')) {
-        setCorrectCount((prevCount) => prevCount + 1); // Increment correct count if answer is correct
-        setResultText('Correct!')
-      } 
-      else {
-        wrongWords.push(vocabulary[currentQuestion][0]);
-        setResultText(
-          `Wrong! The correct vocabulary is:
-          ${correctAnswer}.
-          Your input: ${userChoice}`)
+  const fetchVocabulary = async () => {
+    try {
+      var token = localStorage.getItem('token')
+      const response = await fetch(`http://localhost:5000/user/${token}/words`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
-      if (currentQuestion + 1 === MAX_QUESTIONS) {
-        alert(`you have reached the end of quiz! Your correction rate is: ${correctCount}/${MAX_QUESTIONS}`)
-        // this comment will appear before the resultText gets updates and displayed. 
-        // setFeedbackText(`Accracy: ${Math.round(correctCount/MAX_QUESTIONS) * 100} %`);
-        
-        setFeedbackButton("check feedback on your vocab quiz");
+      const data = await response.json();
+      const vocabulary = {}
+      // Iterate over the data array and populate the dictionary
+      for (const key in data) {
+        if (Object.hasOwnProperty.call(data, key)) {
+          const item = data[key];
+          const { foreign_word, english_translations } = item;
+      
+          // Add the foreign word and its translations to the dictionary
+          vocabulary[foreign_word] = english_translations;
+        }
       }
-  
-    // document.getElementById("result-section").textContent = resultText;
-  }
-
-
-  function printArray(wrongWords) {
-    return wrongWords.join(', ')
-    // if (wrongWords.length === 0) {
-    //   return "there's no wrong words!"
-    // }
-    // else {
-    //   let output = ""
-    //   for (let i = 0; i < wrongWords.length; i++) {
-    //     output += wrongWords[i] + (i < wrongWords.length - 1 ? ", " : ""); // Add separator between words
-    //   }
-    //   return output;
-    // }
-  }
-
-  // called when next is clicked
-  const nextQuestion = () => {
+      //console.log(vocabulary);
+      const vocabArray = Object.entries(vocabulary);
+      const shuffledVocab = shuffleArray(vocabArray);
+      const limitedVocab = shuffledVocab.slice(0, MAX_QUESTIONS);
+      //console.log(limitedVocab);
+      setVocabulary(limitedVocab);
+      if(limitedVocab.length()< MAX_QUESTIONS){
+        MAX_QUESTIONS = limitedVocab.length()
+      }
+    } catch (error) {
+      console.error("Fetch error: ", error.message);
+    } 
+  };
     
-    if (currentQuestion + 1 === MAX_QUESTIONS) {
-      setFeedbackText(
-        `Accuracy: ${correctCount/MAX_QUESTIONS}
-        Wrong Words: ${printArray(wrongWords)}`
-        );
-    }
-    else{
-      setCurrentQuestion((prevCurrent) => (prevCurrent + 1) % vocabulary.length);
-      setUserChoice('');
-      setResultText('');
-    }
-  }
+
   const handleChoiceChange = (event) => {
     setUserChoice(event.target.value);
   };
 
-  const goToLoginPage = () => {
-    navigate('/login');
-};
-    
-
+  // Function to shuffle an array
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -139,47 +73,80 @@ function Voctest() {
     return array;
   };
 
+
+  
+  const showAnswer = () => {
+    const correctWord = vocabulary[currentQuestion][0]; // Get the correct foreign word
+    const isCorrect = correctWord === userChoice; // Check if the user's choice matches the correct word
+    if (isCorrect && !(userChoice === '')) {
+      setCorrectCount(prevCount => prevCount + 1); // Increment correct count if answer is correct
+      setResultText('Correct!');
+    } else {
+      wrongWords.push(correctWord);
+      setResultText(
+        `Wrong! The correct vocabulary is:
+        ${correctWord}. Your input: ${userChoice}`
+      );
+    }
+
+    setCurrentQuestion((prevCurrent) => (prevCurrent + 1) % vocabulary.length);
+    setUserChoice('');
+
+    if (currentQuestion + 1 === MAX_QUESTIONS) {
+      alert(`You have reached the end of the quiz! Your correction rate is: ${correctCount}/${MAX_QUESTIONS}`);
+      setFeedbackText(
+        `Accuracy: ${(correctCount / MAX_QUESTIONS) * 100}%
+        Wrong Words: ${wrongWords.join(', ')}`
+      );
+      setFeedbackButton("Check feedback on your vocab quiz");
+    }
+  }
+    
+
+  
+
+  const nextQuestion = () => {
+    if (currentQuestion + 1 === MAX_QUESTIONS) {
+      // Display overall feedback and wrong words if it's the last question
+      setFeedbackText(
+        `Accuracy: ${(correctCount / MAX_QUESTIONS) * 100}%
+        Wrong Words: ${wrongWords.join(', ')}`
+      );
+    } else {
+      setCurrentQuestion(prevCurrent => (prevCurrent + 1) % Object.keys(vocabulary).length);
+      setUserChoice('');
+      setResultText('');
+    }
+  }
+
+
   return (
     <div className="Voc_test">
       <header className="App-header">
         <h1>Vocabulary Test</h1>
-        <div className="dictionary-select">
-          <label htmlFor="dictionary">Select a dictionary: </label>
-          <select id="dictionary" onChange={handleDictionaryChange}>
-            <option value="default">Default Dictionary</option>
-            {/* Add more options for different dictionaries */}
-          </select>
-        </div>
         <div className="question-section">
           <div className="question-count">
-            <span>Question {currentQuestion + 1}</span>/{MAX_QUESTIONS}
+            <span>Question {currentQuestion + 1}</span>/{Object.keys(vocabulary).length}
           </div>
           <div className="question-text">
             Definition: {vocabulary.length > 0 && vocabulary[currentQuestion] ? vocabulary[currentQuestion][1].join(', ') : ''}
           </div>
         </div>
         <div className="answer-section">
-          <div className="input-group type-md">
-            <input
-              type="text"
-              value={userChoice}
-              onChange={handleChoiceChange}
-              // placeholder="Type the word here" // commented out to test animation**
-              className="definition-input"
-              required
-            />
-            <label for = "answer">Your Answer</label>
-            <span class = "border"></span>
-          </div>
-          
-          {/* <button onClick={checkAnswer}>Submit</button> */}
+          <input
+            type="text"
+            value={userChoice}
+            onChange={handleChoiceChange}
+            placeholder="Type the word here"
+            className="definition-input"
+          />
           <button onClick={showAnswer}>Submit</button>
         </div>
 
         <div className="result-section">
           <p>{resultText}</p>
           <p>Correct Answers: {correctCount}</p>
-          <button onClick={nextQuestion}>{feedbackButton}</button> 
+          <button onClick={nextQuestion}>{feedbackButton}</button>
         </div>
         {/*the following section gives overall feedback and let the user see the wrong wordlist.*/}
         <div className="feedback-section">
@@ -187,6 +154,7 @@ function Voctest() {
         </div>
       </header>
       <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+      <a href="http://localhost:5000/download" download>Download Vocabulary JSON</a>
     </div>
   );
 }
