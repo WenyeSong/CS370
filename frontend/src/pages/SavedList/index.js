@@ -11,7 +11,7 @@ function SavedList() {
   
   // Define goBackToMainPage function
   const goBackToMainPage = () => {
-    navigate('/'); // Navigate to the main page
+  navigate('/'); // Navigate to the main page
   };
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function SavedList() {
       endpoint = `http://localhost:5000/user/${token}/words/${record.foreign_id}`; 
     } else if (record.type === 'contribution') {
       // Use id for user contributions
-      endpoint = `http://localhost:5000/user/${token}/contributions/${record.id}`;
+      endpoint = `http://localhost:5000/user/${token}/contributions/${record.foreign_id}`;
     }
   
     console.log("Constructed endpoint URL:", endpoint);
@@ -139,7 +139,7 @@ function SavedList() {
           <Table loading={loading} columns={columns} dataSource={dataSource} />
         </Card>
       </Col>
-    </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+   </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </>
   );
 }
