@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space } from 'antd';
+import { useNavigate } from "react-router-dom";
 
 function SavedList() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(false);
   const [foreignWord, setForeignWord] = useState('');
   const [englishTranslation, setEnglishTranslation] = useState(''); // For user contributions
-
+  const navigate = useNavigate();
+  
   // Define goBackToMainPage function
   const goBackToMainPage = () => {
     navigate('/'); // Navigate to the main page

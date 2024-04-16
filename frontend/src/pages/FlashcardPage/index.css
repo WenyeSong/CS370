@@ -75,9 +75,25 @@ body {
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin: .5rem;
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+}
+.form-group select:hover,
+.form-group select:focus {
+  border-color: #888;
+}
+
+/* Optional: Add styles for the dropdown options */
+.form-group select option {
+  font-size: 1rem;
 }
 
 .form-group > label {
