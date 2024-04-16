@@ -72,46 +72,56 @@ function SavedList() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-     
-
-
-    // Assuming 'foreignWord' is always required
+  
     if (!foreignWord) {
       notification.error({
         message: 'Missing Input',
         description: 'Please enter a foreign word.',
         duration: 4,
       });
-      return; // Prevent form submission
+      return;
     }
-
-    // // Check if the word is user-contributed and missing an English translation
-    // if (foreignWord && !englishTranslation) {
-    //   notification.warning({
-    //     message: 'Missing Translation',
-    //     description: 'Please provide an English translation for user contributed word.',
-    //     duration: 4,
-    //   });
-    //   return; // Prevent form submission
-    // }
-
-
-
+  
     try {
-      const payload = { foreign_word: foreignWord, english_translation: englishTranslation };
+      const payload = {
+        foreign_word: foreignWord,
+        english_translation: englishTranslation  // It's okay to send an empty string if no translation is provided
+      };
       const response = await fetch(`http://localhost:5000/user/${token}/words`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(payload)
       });
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(`HTTP error! status: ${response.status}, Message: ${errorData.error || errorData.message}`);
+      }
+      
+      const responseData = await response.json();
+      notification.success({
+        message: 'Success',
+        description: responseData.message,
+        duration: 4,
+      });
+      
       fetchWords(); // Refresh list
       setForeignWord(''); // Reset fields
       setEnglishTranslation('');
     } catch (error) {
       console.error("Failed to add word:", error.message);
+      notification.error({
+        message: 'Error Submitting Word',
+        description: `An error occurred: ${error.message}`,
+        duration: 4,
+      });
     }
   };
+  
+
+
+
+
 
   const columns = [
     { title: 'Foreign Word', dataIndex: 'foreign_word', key: 'foreign_word' },
