@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space } from 'antd';
+import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space, Checkbox, notification } from 'antd';
 import { useNavigate } from "react-router-dom";
+
+
 
 function SavedList() {
   const [words, setWords] = useState([]);
@@ -70,6 +72,31 @@ function SavedList() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+     
+
+
+    // Assuming 'foreignWord' is always required
+    if (!foreignWord) {
+      notification.error({
+        message: 'Missing Input',
+        description: 'Please enter a foreign word.',
+        duration: 4,
+      });
+      return; // Prevent form submission
+    }
+
+    // // Check if the word is user-contributed and missing an English translation
+    // if (foreignWord && !englishTranslation) {
+    //   notification.warning({
+    //     message: 'Missing Translation',
+    //     description: 'Please provide an English translation for user contributed word.',
+    //     duration: 4,
+    //   });
+    //   return; // Prevent form submission
+    // }
+
+
+
     try {
       const payload = { foreign_word: foreignWord, english_translation: englishTranslation };
       const response = await fetch(`http://localhost:5000/user/${token}/words`, {
