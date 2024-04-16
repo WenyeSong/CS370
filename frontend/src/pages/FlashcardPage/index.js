@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 import { useNavigate } from 'react-router-dom';
 
+
 export default function FlashcardPage() {
   const [flashcards, setFlashcards] = useState([]);
   const [selectedDictionary, setSelectedDictionary] = useState('');
@@ -88,7 +89,7 @@ export default function FlashcardPage() {
             ))}
           </select>
         </div>
-        <div className="form-group">
+        <div className="btn-container">
           <button className="btn">Generate</button>
         </div>
       </form>
