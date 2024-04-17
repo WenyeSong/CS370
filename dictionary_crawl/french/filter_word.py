@@ -8,7 +8,7 @@ df = pd.read_csv(file_path, sep="\t", header=None, names=["Number", "Word", "Fre
 
 def is_french_word(word):
     for char in word:
-        if not ((char.isalpha() and char in "abcdefghijklmnopqrstuvwxyzàâäçéèêëîïôöùûüÿœæ") or char == "-"):
+        if not ((char.isalpha() and char in "AZERTYUIOPQSDFGHJKLWXCVBNMabcdefghijklmnopqrstuvwxyzàâäçéèêëîïôöùûüÿœæ") or char == "-"):
             return False
     return True
 
