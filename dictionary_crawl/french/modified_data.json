@@ -7,7 +7,7 @@
             "assistance",
             "mate"
         ],
-        "word_number": 1,
+        "word_number": 10,
         "language_id": 1,
         "explanation": [
             "[noun]the act of helping, or the result of thisCan you give me some help?Your digging the garden was a big helpCan I be of help to you?.",
@@ -15,7 +15,7 @@
             "[noun]helpDo you need anyassistance?.",
             "[noun]a fellow workman or assistanta carpenter’s mate.."
         ]
-    },
+    },                                                                                                                                      
     {
         "word": "amour",
         "english_term": [
