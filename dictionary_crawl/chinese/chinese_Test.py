@@ -114,7 +114,7 @@ def crawl_words(words):
             word = word.split()[0]  # Treat only the first part of any line as the word
             print(f"Submitting task {i}/{len(words)}")
             futures.append(executor.submit(get_word_data, word))
-            sleep(random() + 0.2)
+            sleep(0.01)
 
         print("All tasks submitted. Waiting for results...")
         for i, future in enumerate(futures, start=1):
