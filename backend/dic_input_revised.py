@@ -125,4 +125,4 @@ def insert_data_from_json(json_file_path):
         if conn:
             conn.close()
 
-insert_data_from_json('d:\\CS370\\dictionary_crawl\\french\\modified_data.json')
+insert_data_from_json('d:\\CS370\\dictionary_crawl\\combine\\all_dict.json')
