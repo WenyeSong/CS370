@@ -5,14 +5,17 @@ file_path = "d:\\CS370\\dictionary_crawl\\chinese\\zho-simp-tw_web_2014_10K-word
 try:
     df = pd.read_csv(file_path, sep="\t", header=None, names=["Number", "Word", "Frequency"], quotechar='"', escapechar='\\')
     def check_contain_chinese(check_str):
-        # for ch in check_str.decode('utf-8'):
-        #     if u'\u4e00' <= ch <= u'\u9fff':
-        #         return True
-        # return False
-        for char in check_str:
-            if not ((char.isalpha() and char in "AZERTYUIOPQSDFGHJKLWXCVBNMabcdefghijklmnopqrstuvwxyzàâäçéèêëîïôöùûüÿœæ") or char == "-"):
-                return False
-        return True
+        for ch in check_str:
+            if len(check_str)!=2:
+                return False    
+
+            if u'\u4e00' <= ch <= u'\u9fff':
+                return True
+        return False
+        # for char in check_str:
+        #     if not ((char.isalpha() and char in "AZERTYUIOPQSDFGHJKLWXCVBNMabcdefghijklmnopqrstuvwxyzàâäçéèêëîïôöùûüÿœæ") or char == "-"):
+        #         return False
+        # return True
 
     # Filter the DataFrame
     filtered_df = df[df["Word"].apply(check_contain_chinese)].drop(columns=['Number'])
