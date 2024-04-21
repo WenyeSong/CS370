@@ -53,7 +53,6 @@ class UserContributions(db.Model):
 #     foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), primary_key=True)
 
 
-
 def delete_user_saved_word(token, foreign_id):
     try:
         user_id = User.query.filter_by(token=token).first().id
@@ -83,9 +82,7 @@ def delete_user_contribution(token, contribution_id):
         return jsonify({'message': 'Contribution not found'}), 404
     except Exception as e:
         db.session.rollback()
-        return jsonify({'message': str(e)}), 500
-
-    
+        return jsonify({'message': str(e)}), 500  
 
 def get_user_words(token):
     user_id = User.query.filter_by(token=token).first().id
@@ -117,7 +114,6 @@ def get_user_words(token):
         })
 
     return jsonify(saved_words_info)
-
 
 
     
@@ -161,3 +157,12 @@ def save_user_word(token):
             return jsonify({"error": "English translation is required for words not in the dictionary"}), 400
 
     return jsonify({"message": "Word saved successfully"}), 201
+
+def search_similar(word):
+    foreign_terms = ForeignTerm.query.filter(ForeignTerm.term.ilike(f'{word}%')).all()
+    foreign_terms = foreign_terms[:5]  # Limit the number of results to 5
+    print(foreign_terms)
+    return jsonify([term.term for term in foreign_terms]), 200
+    
+    return jsonify({"message": "This is a placeholder response"}), 200
+

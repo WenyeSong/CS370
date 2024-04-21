@@ -5,13 +5,30 @@
     justify-content: center;
     height: 100vh;
     width: 120vh;
-    background-color: #f8f9fa; /* Background color for the entire page */
+    /* background-color: #f2f0ef;  Background color for the entire page  */
+
+    /*This works to center the white background: EXTRA*/
+    min-height: 100vh; /* Minimum height to take full viewport height */
+    max-width: 600px; /* Set a max-width for the container */
+    margin: auto; /* Centers the container horizontally */
+    padding: 20px; /* Add some padding */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
   }
   
   .App-header {
     text-align: center;
-    background-color: transparent; /* Set the header background color to transparent */
+    position: absolute; /*newly added*/
+    background-color: white; /* Set the header background color to transparent */
     border: none; /* Remove the border */
+
+    width: 100%; /* Make it take the full width of its parent */
+    max-width: 600px; /* Set a max-width */
+    margin: 0 auto; /* Center it if it's not taking the full width of its parent */
+    /* Remove min-height if you do not want it to take the full viewport height */
+    padding: 20px; /* Add padding to keep content from touching the edges */
+    /* background-color: #ffffff; /Background color */
+    /* background: linear-gradient(to bottom right, #efe6b5, #f8dab9, #fabfbf); */
+    background: linear-gradient(to bottom right, #efe6b5, #fcd2a4, #fabfbf); 
   }
   
   .question-section {
@@ -33,6 +50,9 @@
   /*the following few sections adress the text input animation:*/
   .answer-section {
     margin-top: 20px;
+    display: flex; /* Use flexbox to center label and input */
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: center; /* Center the input and label horizontally */
   }
   
   .input-group{
@@ -135,3 +155,9 @@
     background-color: #0056b3; /* Darker blue color on hover */
   }
   
+
+
+
+  /*the following is added later:*/
+
+  /* Input styles */

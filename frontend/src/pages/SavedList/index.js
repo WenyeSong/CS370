@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space, Checkbox, notification } from 'antd';
 import { useNavigate } from "react-router-dom";
+import { autocomplete } from '../SearchBar/AutocompleteFunctions';
+import SearchBar from '../SearchBar/index.js'
 
 
 
@@ -9,6 +11,9 @@ function SavedList() {
   const [loading, setLoading] = useState(false);
   const [foreignWord, setForeignWord] = useState('');
   const [englishTranslation, setEnglishTranslation] = useState(''); // For user contributions
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);  // 10 words each page
+  const [total, setTotal] = useState(0); // new state
   const navigate = useNavigate();
   
   // Define goBackToMainPage function
@@ -17,18 +22,24 @@ function SavedList() {
   };
 
   useEffect(() => {
-    fetchWords();
-  }, []);
+    fetchWords(currentPage, pageSize);
+  }, [currentPage, pageSize]);
 
   const token = localStorage.getItem('token');
 
-  const fetchWords = async () => {
+  const fetchWords = async (pageNum = currentPage, pageSizeParam = pageSize) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/user/${token}/words`);
+      const response = await fetch(`http://localhost:5000/user/${token}/words?page=${pageNum}&size=${pageSizeParam}`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
+
+      console.log('Fetched words:', data); // 打印从服务器获取的数据
       setWords(data);
+      setTotal(data.total); //record subpages data
+      setCurrentPage(pageNum); // update page
+      setPageSize(pageSizeParam); // update page size
+    
     } catch (error) {
       console.error("Fetch error:", error.message);
     } finally {
@@ -67,8 +78,6 @@ function SavedList() {
   
   
   
-
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -117,10 +126,6 @@ function SavedList() {
       });
     }
   };
-  
-
-
-
 
 
   const columns = [
@@ -136,47 +141,77 @@ function SavedList() {
       key: 'action', 
       render: (_, record) => (
         <Space size="middle">
-          <Popconfirm title="Sure to delete?" onConfirm={() => deleteWord(record)}>
-            <Button type="primary" danger>Delete</Button>
+          <Popconfirm 
+            title="Sure to delete?" 
+            onConfirm={() => deleteWord(record)} 
+            okButtonProps={{ style: { height: '27px', width: 'auto', padding: '0px 9px' } }} // OK button
+            >
+            <Button 
+            style={{ width: '80px', height:'30px', lineHeight: '30px', textAlign: 'center', padding: 0 }}
+            type="primary" 
+            danger>
+              Delete</Button>
           </Popconfirm>
         </Space>
       ),
     },
   ];
   
-  
 
   const dataSource = words.map(word => ({
-    key: word.type === 'contribution' ? `contribution-${word.id}` : `dictionary-${word.foreign_id}`,
+    key: word.type === 'contribution' ? `contribution-${word.foreign_id}` : `dictionary-${word.foreign_id}`,
     ...word,
     id: word.id, // Ensure this exists for contributions
     foreign_id: word.foreign_id // Ensure this exists for dictionary words
   }));
-  
-  
-  
-  
+
+
+  const handleTableChange = (pagination) => { // when page changes call this
+    fetchWords(pagination.current, pagination.pageSize);
+  };
 
   return (
     <>
     <Row>
       <Col span={24}>
-        <Card title="Your Saved Words">
-          <Form layout="inline" onSubmitCapture={handleSubmit}>
+        <Card title="Your Saved Words" className="page_container" style={{ maxWidth: '70%', maxheight: '70%', margin: '20px auto', padding: '0 20px' }}>
+          <Form layout="inline" onSubmitCapture={handleSubmit} autoComplete="off" action="/action_page.php">
             <Form.Item>
-              <Input placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+              <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
             </Form.Item>
+            {/* <Form.Item>
+              <Input id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+            </Form.Item> */}
             <Form.Item>
               <Input placeholder="English Translation" value={englishTranslation} onChange={e => setEnglishTranslation(e.target.value)} />
             </Form.Item>
-            <Form.Item>
-              <Button type="primary" htmlType="submit">Add New Word</Button>
+            <Form.Item style={{ display: 'flex', alignItems: 'start' }}>
+            <Button 
+                type="primary" htmlType="submit"
+                style={{ width: '170px', height: '40px', lineHeight: '40px', // Ensure that this is the same as your height for vertical center
+                textAlign: 'center', // For horizontal center
+                padding: '0', // Removing padding can help in centering the text
+                justifyContent: 'center', marginTop: '-5px'
+              }}
+            >Add New Word    
+              </Button>
             </Form.Item>
           </Form>
-          <Table loading={loading} columns={columns} dataSource={dataSource} />
+          <Table loading={loading} columns={columns} dataSource={dataSource}
+            pagination={{ 
+              current: currentPage, 
+              pageSize: pageSize, 
+              total: total 
+            }}
+          onChange={handleTableChange} />
         </Card>
       </Col>
-   </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+  
+   </Row> 
+    <div className="link-btn-container">
+      <button className="link-btn" onClick={goBackToMainPage}
+      >Back to Main Page</button>
+    </div>
     </>
   );
 }

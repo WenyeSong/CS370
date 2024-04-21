@@ -1,3 +1,4 @@
+
 .link-btn {
     width: 20%;
     padding: 12px 20px; /* Increase padding for a nicer button appearance */
@@ -5,7 +6,7 @@
     border-radius: 25px; /* Adjust border-radius for a rounded button */
     background-color: transparent; /* Transparent background */
     color: #ffcc00;
-    font-size: 14px; /* Adjust font size */
+    font-size: px; /* Adjust font size */
     font-weight: bold; /* Apply bold font weight for emphasis */
     text-align: center; /* Center align text */
     cursor: pointer;
@@ -14,8 +15,21 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0 15px; 
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
   }
   
+  .page_container {
+    max-width: 70%; /* percentage of save list page to the overall screen */
+    max-height: '70%';
+    margin: 20px auto; /* center */
+    padding: 0 20px; 
+    margin-top: 20px;
+  }
   .link-btn:hover {
     background-color: #0056b3;
   }
+
+  

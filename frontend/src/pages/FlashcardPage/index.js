@@ -10,6 +10,8 @@ export default function FlashcardPage() {
   const amountEl = useRef();
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
+  const [successMessage, setSuccessMessage] = useState('');
+
 
 
   // Define goBackToMainPage function
@@ -58,7 +60,8 @@ export default function FlashcardPage() {
         body: JSON.stringify(payload)
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      // Optionally update flashcards or perform other actions after adding the word
+      setSuccessMessage('Word added successfully!'); // Set success message
+      setTimeout(() => setSuccessMessage(''), 1000); // Clear success message after 3 seconds
     } catch (error) {
       console.error("Failed to add word:", error.message);
     }
@@ -94,38 +97,63 @@ export default function FlashcardPage() {
 
   return (
     <>
-      <form className="header" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="amount">Number of Questions</label>
-          <input type="number" id="amount" min="1" step="1" defaultValue={10} ref={amountEl} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="dictionary">Select a Dictionary</label>
-          <select id="dictionary" onChange={(e) => setSelectedDictionary(e.target.value)} value={selectedDictionary}>
-            <option value="">Select Dictionary</option>
-            {Object.keys(dictionaries).map((dictionaryName) => (
-              <option key={dictionaryName} value={dictionaryName}>{dictionaryName}</option>
-            ))}
-          </select>
-        </div>
-        <div className="btn-container">
-          <button className="btn">Generate</button>
-        </div>
-      </form>
+      <div className="flashcard-form-container">
+        <h2>Flashcard</h2>
+        {successMessage && <p className="success-message">{successMessage}</p>}
+        <form className="header" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="amount">Number of Questions</label>
+            <input type="number" id="amount" min="1" step="1" defaultValue={10} ref={amountEl} />
+          </div>
+          <div className="form-group">
+            <label htmlFor="dictionary">Select a Dictionary</label>
+            <select id="dictionary" onChange={(e) => setSelectedDictionary(e.target.value)} value={selectedDictionary}>
+              <option value="">Select Dictionary</option>
+              {Object.keys(dictionaries).map((dictionaryName) => (
+                <option key={dictionaryName} value={dictionaryName}>{dictionaryName}</option>
+              ))}
+            </select>
+          </div>
+          <div className="btn-container">
+            <button className="btn">Generate</button>
+          </div>
+        </form>
+      </div>
       <div className="container">
         <FlashcardList flashcards={flashcards} addWord={addWord} />
       </div>
-      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+      <div className="link-btn-container">
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+      </div>
     </>
   );
 }
 
 function FlashcardList({ flashcards, addWord }) {
+  const [currentFlashcardIndex, setCurrentFlashcardIndex] = useState(0);
+
+  const goToPreviousFlashcard = () => {
+    setCurrentFlashcardIndex(prevIndex => Math.max(prevIndex - 1, 0));
+  };
+
+  const goToNextFlashcard = () => {
+    setCurrentFlashcardIndex(prevIndex => Math.min(prevIndex + 1, flashcards.length - 1));
+  };
+
   return (
-    <div className="card-grid">
-      {flashcards.map(flashcard => {
-        return <Flashcard flashcard={flashcard} addWord={addWord} key={flashcard.id} />;
-      })}
+    <div className="flashcard-list">
+      {flashcards.length > 0 && (
+        <div className="flashcard">
+          <div className='flashcard-container'>
+            <Flashcard flashcard={flashcards[currentFlashcardIndex]} addWord={addWord} />
+          </div>
+          <div className="navigation-buttons">
+            <button onClick={goToPreviousFlashcard} disabled={currentFlashcardIndex === 0}>←</button>
+            <span className="flashcard-number">{currentFlashcardIndex + 1} / {flashcards.length}</span>
+            <button onClick={goToNextFlashcard} disabled={currentFlashcardIndex === flashcards.length - 1}>→</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -150,21 +178,21 @@ function Flashcard({ flashcard, addWord }) {
   }, []);
 
   return (
-    <>
+    <div className="flashcard-container"> {/* Added container */}
     <div
-    className={`card ${flip ? 'flip' : ''}`}
-    style={{ height: height }}
-    onClick={() => setFlip(!flip)}
-  >
-    <div className="front" ref={frontEl}>
-      {flashcard.question}
+      className={`card ${flip ? 'flip' : ''}`}
+      style={{ height: height }}
+      onClick={() => setFlip(!flip)}
+    >
+      <div className="front" ref={frontEl}>
+        {flashcard.question}
+      </div>
+      <div className="back" ref={backEl}>{flashcard.answer}</div> 
     </div>
-    <div className="back" ref={backEl}>{flashcard.answer}</div> 
+    <div> {/* Added container for the button */}
+      <button className="add-word-btn" onClick={() => addWord(flashcard.question, flashcard.answer)}>Add Word</button>
+    </div>
   </div>
-  <>
-    <button className="add-word-btn" onClick={() => addWord(flashcard.question, flashcard.answer)}>Add Word</button>
-  </>
-  </>
-    
   );
 }
+
