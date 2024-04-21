@@ -130,11 +130,30 @@ export default function FlashcardPage() {
 }
 
 function FlashcardList({ flashcards, addWord }) {
+  const [currentFlashcardIndex, setCurrentFlashcardIndex] = useState(0);
+
+  const goToPreviousFlashcard = () => {
+    setCurrentFlashcardIndex(prevIndex => Math.max(prevIndex - 1, 0));
+  };
+
+  const goToNextFlashcard = () => {
+    setCurrentFlashcardIndex(prevIndex => Math.min(prevIndex + 1, flashcards.length - 1));
+  };
+
   return (
-    <div className="card-grid">
-      {flashcards.map(flashcard => {
-        return <Flashcard flashcard={flashcard} addWord={addWord} key={flashcard.id} />;
-      })}
+    <div className="flashcard-list">
+      {flashcards.length > 0 && (
+        <div className="flashcard">
+          <div className='flashcard-container'>
+            <Flashcard flashcard={flashcards[currentFlashcardIndex]} addWord={addWord} />
+          </div>
+          <div className="navigation-buttons">
+            <button onClick={goToPreviousFlashcard} disabled={currentFlashcardIndex === 0}>←</button>
+            <span className="flashcard-number">{currentFlashcardIndex + 1} / {flashcards.length}</span>
+            <button onClick={goToNextFlashcard} disabled={currentFlashcardIndex === flashcards.length - 1}>→</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -159,21 +178,21 @@ function Flashcard({ flashcard, addWord }) {
   }, []);
 
   return (
-    <>
+    <div className="flashcard-container"> {/* Added container */}
     <div
-    className={`card ${flip ? 'flip' : ''}`}
-    style={{ height: height }}
-    onClick={() => setFlip(!flip)}
-  >
-    <div className="front" ref={frontEl}>
-      {flashcard.question}
+      className={`card ${flip ? 'flip' : ''}`}
+      style={{ height: height }}
+      onClick={() => setFlip(!flip)}
+    >
+      <div className="front" ref={frontEl}>
+        {flashcard.question}
+      </div>
+      <div className="back" ref={backEl}>{flashcard.answer}</div> 
     </div>
-    <div className="back" ref={backEl}>{flashcard.answer}</div> 
+    <div> {/* Added container for the button */}
+      <button className="add-word-btn" onClick={() => addWord(flashcard.question, flashcard.answer)}>Add Word</button>
+    </div>
   </div>
-  <>
-    <button className="add-word-btn" onClick={() => addWord(flashcard.question, flashcard.answer)}>Add Word</button>
-  </>
-  </>
-    
   );
 }
+

@@ -11,8 +11,14 @@ body {
   }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    justify-content: center;
+    text-align: center; /* Center text */
     max-width: 900px;
     margin: 1rem auto; /* Center the container horizontally */
+    justify-content: center;
 }
 
 .card-grid {
@@ -60,21 +66,6 @@ body {
 .card .back {
     transform: rotateY(180deg); /* Initially hide the back face of the card */
 }
-
-.card .back {
-    transform: rotateY(180deg); /* Simplified transform property */
-}
-
-.flashcard-options {
-    margin-top: .5rem;
-    color: #555;
-    font-size: 0.75em;
-}
-
-.flashcard-option:first-child {
-    margin-top: 0;
-}
-
 
 
 .header {
@@ -140,6 +131,7 @@ body {
     color: white;
     padding: 10px 20px; /* Adjust padding of the button */
     border-radius: 5px;
+    margin-top: 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -148,3 +140,13 @@ body {
 .add-word-btn:hover {
     background-color: hsl(200, 100%, 40%);
 }
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the top margin as needed */
+  }
+  
+  .navigation-buttons button {
+    margin: 0 50px; /* Add margin between the buttons */
+  }
