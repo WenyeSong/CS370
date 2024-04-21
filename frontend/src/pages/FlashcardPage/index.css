@@ -71,6 +71,8 @@ body {
     margin-top: 0;
 }
 
+
+
 .header {
     width: 350px;
     padding: 20px;
@@ -127,4 +129,18 @@ body {
 
 .link-btn {
     max-width: 250px;
+}
+
+.add-word-btn {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+    padding: 10px 20px; /* Adjust padding of the button */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-word-btn:hover {
+    background-color: hsl(200, 100%, 40%);
 }

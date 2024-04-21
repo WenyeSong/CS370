@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
+import { Button, Form } from 'antd'; // Import Button from antd for styling
 import { useNavigate } from 'react-router-dom';
-
 
 export default function FlashcardPage() {
   const [flashcards, setFlashcards] = useState([]);
@@ -9,6 +9,8 @@ export default function FlashcardPage() {
   const [dictionaries, setDictionaries] = useState({});
   const amountEl = useRef();
   const navigate = useNavigate();
+  const token = localStorage.getItem('token');
+
 
   // Define goBackToMainPage function
   const goBackToMainPage = () => {
@@ -44,7 +46,25 @@ export default function FlashcardPage() {
     fetchDictionaries();
   }, []);
 
-  function handleSubmit(e) {
+  const addWord = async (question, answer) => {
+    try {
+      const payload = {
+        foreign_word: question,
+        english_translation: answer,
+      };
+      const response = await fetch(`http://localhost:5000/user/${token}/words`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      // Optionally update flashcards or perform other actions after adding the word
+    } catch (error) {
+      console.error("Failed to add word:", error.message);
+    }
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     const amount = amountEl.current.value;
 
@@ -53,7 +73,6 @@ export default function FlashcardPage() {
       return;
     }
 
-    // Generate flashcards using the selected dictionary
     const dictionary = dictionaries[selectedDictionary];
     const generatedFlashcards = [];
 
@@ -71,7 +90,7 @@ export default function FlashcardPage() {
     }
 
     setFlashcards(generatedFlashcards);
-  }
+  };
 
   return (
     <>
@@ -97,7 +116,7 @@ export default function FlashcardPage() {
         </form>
       </div>
       <div className="container">
-        <FlashcardList flashcards={flashcards} />
+        <FlashcardList flashcards={flashcards} addWord={addWord} />
       </div>
       <div className="link-btn-container">
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
@@ -106,17 +125,17 @@ export default function FlashcardPage() {
   );
 }
 
-function FlashcardList({ flashcards }) {
+function FlashcardList({ flashcards, addWord }) {
   return (
     <div className="card-grid">
       {flashcards.map(flashcard => {
-        return <Flashcard flashcard={flashcard} key={flashcard.id} />;
+        return <Flashcard flashcard={flashcard} addWord={addWord} key={flashcard.id} />;
       })}
     </div>
   );
 }
 
-function Flashcard({ flashcard }) {
+function Flashcard({ flashcard, addWord }) {
   const [flip, setFlip] = useState(false);
   const [height, setHeight] = useState('initial');
 
@@ -136,15 +155,21 @@ function Flashcard({ flashcard }) {
   }, []);
 
   return (
+    <>
     <div
-      className={`card ${flip ? 'flip' : ''}`}
-      style={{ height: height }}
-      onClick={() => setFlip(!flip)}
-    >
-      <div className="front" ref={frontEl}>
-        {flashcard.question}
-      </div>
-      <div className="back" ref={backEl}>{flashcard.answer}</div>
+    className={`card ${flip ? 'flip' : ''}`}
+    style={{ height: height }}
+    onClick={() => setFlip(!flip)}
+  >
+    <div className="front" ref={frontEl}>
+      {flashcard.question}
     </div>
+    <div className="back" ref={backEl}>{flashcard.answer}</div> 
+  </div>
+  <>
+    <button className="add-word-btn" onClick={() => addWord(flashcard.question, flashcard.answer)}>Add Word</button>
+  </>
+  </>
+    
   );
 }

@@ -2,7 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from login import login_routes  
-from save_list import delete_user_saved_word, get_user_words, save_user_word, delete_user_contribution
+from save_list import delete_user_saved_word, get_user_words, save_user_word, delete_user_contribution, search_similar
 from register import register_routes
 from db import db
 import os
@@ -25,7 +25,7 @@ app.add_url_rule('/user/<string:token>/words/<int:foreign_id>', view_func=delete
 app.add_url_rule('/user/<string:token>/contributions/<int:contribution_id>', view_func=delete_user_contribution, methods=['DELETE'])
 app.add_url_rule('/user/<string:token>/words', view_func=get_user_words, methods=['GET'])
 app.add_url_rule('/user/<string:token>/words', view_func=save_user_word, methods=['POST'])
-
+app.add_url_rule('/user/words/<string:word>', view_func=search_similar, methods=['GET'])
 
 
 if __name__ == '__main__':

@@ -1,14 +1,32 @@
-import json
+import pandas as pd
 
-def filter_null(input_file, output_file):
-    with open(input_file, 'r', encoding='utf-8') as file:
-        word_list = json.load(file)
+file_path = "d:\\CS370\\dictionary_crawl\\chinese\\zho-simp-tw_web_2014_10K-words.txt"
 
-    # Filter the word list
-    filtered_list = [word for word in word_list if word["translation"] is not None]
-    with open(output_file, 'w', encoding='utf-8') as file:
-        json.dump(filtered_list, file, ensure_ascii=False, indent=4)
+try:
+    df = pd.read_csv(file_path, sep="\t", header=None, names=["Number", "Word", "Frequency"], quotechar='"', escapechar='\\')
+    def check_contain_chinese(check_str):
+        for ch in check_str:
+            if len(check_str)!=2:
+                return False    
 
-input_file = 'd:\\CS370\\dictionary_crawl\\chinese\\chinese_dict.json'
-output_file = 'filtered_chinese_dict.json' 
-filter_null(input_file, output_file)
+            if u'\u4e00' <= ch <= u'\u9fff':
+                return True
+        return False
+        # for char in check_str:
+        #     if not ((char.isalpha() and char in "AZERTYUIOPQSDFGHJKLWXCVBNMabcdefghijklmnopqrstuvwxyzàâäçéèêëîïôöùûüÿœæ") or char == "-"):
+        #         return False
+        # return True
+
+    # Filter the DataFrame
+    filtered_df = df[df["Word"].apply(check_contain_chinese)].drop(columns=['Number'])
+
+    # Save the filtered DataFrame to a file
+    output_path = "d:\\CS370\\dictionary_crawl\\chinese\\filtered_words_chinese.txt"
+    filtered_df.to_csv(output_path, sep="\t", index=False, header=False)
+    print("Filtered data saved to 'filtered_words_chinese.txt'.")
+
+except pd.errors.ParserError as e:
+    print("Parsing error:", e)
+    # You can provide additional instructions here on what to do next
+except Exception as e:
+    print("An error occurred:", e)

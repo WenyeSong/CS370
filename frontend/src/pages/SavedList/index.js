@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space, Checkbox, notification } from 'antd';
 import { useNavigate } from "react-router-dom";
+import { autocomplete } from '../SearchBar/AutocompleteFunctions';
+import SearchBar from '../SearchBar/index.js'
 
 
 
@@ -117,10 +119,6 @@ function SavedList() {
       });
     }
   };
-  
-
-
-
 
 
   const columns = [
@@ -144,7 +142,6 @@ function SavedList() {
     },
   ];
   
-  
 
   const dataSource = words.map(word => ({
     key: word.type === 'contribution' ? `contribution-${word.id}` : `dictionary-${word.foreign_id}`,
@@ -152,20 +149,19 @@ function SavedList() {
     id: word.id, // Ensure this exists for contributions
     foreign_id: word.foreign_id // Ensure this exists for dictionary words
   }));
-  
-  
-  
-  
 
   return (
     <>
     <Row>
       <Col span={24}>
         <Card title="Your Saved Words">
-          <Form layout="inline" onSubmitCapture={handleSubmit}>
+          <Form layout="inline" onSubmitCapture={handleSubmit} autoComplete="off" action="/action_page.php">
             <Form.Item>
-              <Input placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+              <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
             </Form.Item>
+            {/* <Form.Item>
+              <Input id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+            </Form.Item> */}
             <Form.Item>
               <Input placeholder="English Translation" value={englishTranslation} onChange={e => setEnglishTranslation(e.target.value)} />
             </Form.Item>
@@ -176,6 +172,7 @@ function SavedList() {
           <Table loading={loading} columns={columns} dataSource={dataSource} />
         </Card>
       </Col>
+  
    </Row> 
     <div className="link-btn-container">
       <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
