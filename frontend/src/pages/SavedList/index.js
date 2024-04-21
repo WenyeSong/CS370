@@ -144,13 +144,12 @@ function SavedList() {
           <Popconfirm 
             title="Sure to delete?" 
             onConfirm={() => deleteWord(record)} 
-            okButtonProps={{ style: { width: '100px', textAlign: 'center' }, ghost: true }} // OK button
-          >
+            okButtonProps={{ style: { height: '27px', width: 'auto', padding: '0px 9px' } }} // OK button
+            >
             <Button 
-            style={{ width: '90px', height:'40px', lineHeight: '40px', textAlign: 'center', padding: 0 }}
+            style={{ width: '80px', height:'30px', lineHeight: '30px', textAlign: 'center', padding: 0 }}
             type="primary" 
-            danger
-          >
+            danger>
               Delete</Button>
           </Popconfirm>
         </Space>
@@ -186,19 +185,16 @@ function SavedList() {
             <Form.Item>
               <Input placeholder="English Translation" value={englishTranslation} onChange={e => setEnglishTranslation(e.target.value)} />
             </Form.Item>
-            <Form.Item>
+            <Form.Item style={{ display: 'flex', alignItems: 'start' }}>
             <Button 
                 type="primary" htmlType="submit"
                 style={{ width: '170px', height: '40px', lineHeight: '40px', // Ensure that this is the same as your height for vertical center
                 textAlign: 'center', // For horizontal center
                 padding: '0', // Removing padding can help in centering the text
-                alignItems: 'center', // Center text vertically
-                justifyContent: 'center'
+                justifyContent: 'center', marginTop: '-5px'
               }}
-            >
-                Add New Word    
+            >Add New Word    
               </Button>
-
             </Form.Item>
           </Form>
           <Table loading={loading} columns={columns} dataSource={dataSource}
