@@ -10,6 +10,8 @@ export default function FlashcardPage() {
   const amountEl = useRef();
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
+  const [successMessage, setSuccessMessage] = useState('');
+
 
 
   // Define goBackToMainPage function
@@ -58,7 +60,8 @@ export default function FlashcardPage() {
         body: JSON.stringify(payload)
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      // Optionally update flashcards or perform other actions after adding the word
+      setSuccessMessage('Word added successfully!'); // Set success message
+      setTimeout(() => setSuccessMessage(''), 3000); // Clear success message after 3 seconds
     } catch (error) {
       console.error("Failed to add word:", error.message);
     }
@@ -94,28 +97,33 @@ export default function FlashcardPage() {
 
   return (
     <>
-      <form className="header" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="amount">Number of Questions</label>
-          <input type="number" id="amount" min="1" step="1" defaultValue={10} ref={amountEl} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="dictionary">Select a Dictionary</label>
-          <select id="dictionary" onChange={(e) => setSelectedDictionary(e.target.value)} value={selectedDictionary}>
-            <option value="">Select Dictionary</option>
-            {Object.keys(dictionaries).map((dictionaryName) => (
-              <option key={dictionaryName} value={dictionaryName}>{dictionaryName}</option>
-            ))}
-          </select>
-        </div>
-        <div className="btn-container">
-          <button className="btn">Generate</button>
-        </div>
-      </form>
+      <div className="flashcard-form-container">
+        <h2>Flashcard</h2>
+        <form className="header" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="amount">Number of Questions</label>
+            <input type="number" id="amount" min="1" step="1" defaultValue={10} ref={amountEl} />
+          </div>
+          <div className="form-group">
+            <label htmlFor="dictionary">Select a Dictionary</label>
+            <select id="dictionary" onChange={(e) => setSelectedDictionary(e.target.value)} value={selectedDictionary}>
+              <option value="">Select Dictionary</option>
+              {Object.keys(dictionaries).map((dictionaryName) => (
+                <option key={dictionaryName} value={dictionaryName}>{dictionaryName}</option>
+              ))}
+            </select>
+          </div>
+          <div className="btn-container">
+            <button className="btn">Generate</button>
+          </div>
+        </form>
+      </div>
       <div className="container">
         <FlashcardList flashcards={flashcards} addWord={addWord} />
       </div>
-      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+      <div className="link-btn-container">
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+      </div>
     </>
   );
 }
