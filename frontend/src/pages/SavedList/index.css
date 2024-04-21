@@ -21,8 +21,9 @@
   .page_container {
     max-width: 70%; /* percentage of save list page to the overall screen */
     max-height: '70%';
-    margin: 0 auto; /* center */
+    margin: 20px auto; /* center */
     padding: 0 20px; 
+    margin-top: 20px;
   }
   .link-btn:hover {
     background-color: #0056b3;
