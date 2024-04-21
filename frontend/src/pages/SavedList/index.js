@@ -166,7 +166,7 @@ function SavedList() {
     <>
     <Row>
       <Col span={24}>
-        <Card title="Your Saved Words">
+        <Card title="Your Saved Words" className="page_container" style={{ maxWidth: '70%', maxheight: '70%', margin: '0 auto', padding: '0 20px' }}>
           <Form layout="inline" onSubmitCapture={handleSubmit} autoComplete="off" action="/action_page.php">
             <Form.Item>
               <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
