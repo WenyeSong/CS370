@@ -169,7 +169,8 @@ function SavedList() {
         <Card title="Your Saved Words">
           <Form layout="inline" onSubmitCapture={handleSubmit} autoComplete="off" action="/action_page.php">
             <Form.Item>
-              <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            </Form.Item>
+              <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
+            </Form.Item>
             {/* <Form.Item>
               <Input id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
             </Form.Item> */}
@@ -190,7 +191,10 @@ function SavedList() {
         </Card>
       </Col>
   
-   </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+   </Row> 
+    <div className="link-btn-container">
+      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+    </div>
     </>
   );
 }

@@ -11,7 +11,7 @@ import TypeGo from './pages/TypeGo'
 import Register from './pages/Register';
 import FlashcardPage from './pages/FlashcardPage';
 
-
+import { Navbar } from "./pages/Navbar";
 
 function App () {
 
@@ -29,6 +29,7 @@ function App () {
   return (
     <BrowserRouter>
       <div className='App' >
+        <Navbar />
         <Routes>
           <Route path='/' element={<Main />}></Route>
           <Route path='/login' element={<Login />}></Route>

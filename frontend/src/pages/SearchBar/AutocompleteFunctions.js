@@ -21,10 +21,10 @@ export function autocomplete(inp) {
         b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
         b.innerHTML += arr[i].substr(val.length);
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-        b.addEventListener("click", function(e) {
-          inp.value = this.getElementsByTagName("input")[0].value;
-          closeAllLists(null, inp); // Pass inp to closeAllLists
-        });
+        // b.addEventListener("click", function(e) {
+        //   inp.value = this.getElementsByTagName("input")[0].value;
+        //   closeAllLists(null, inp); // Pass inp to closeAllLists
+        // });
         a.appendChild(b);
       }
     }

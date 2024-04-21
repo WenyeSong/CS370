@@ -6,8 +6,7 @@ import {Input} from 'antd'
 class AutocompleteComponent extends React.Component {
   async componentDidMount() {
     // var arr = fetch(`http://localhost:5000/user/words/${word}`, {method: 'GET'}); // Add all countries here
-    var arr = ["hi"]
-    autocomplete(document.getElementById("myInput"),arr);
+    autocomplete(document.getElementById("myInput"));
   }
 
   render() {

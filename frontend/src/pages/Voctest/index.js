@@ -133,13 +133,18 @@ function Voctest() {
           </div>
         </div>
         <div className="answer-section">
-          <input
-            type="text"
-            value={userChoice}
-            onChange={handleChoiceChange}
-            placeholder="Type the word here"
-            className="definition-input"
-          />
+          <div class = "input-group type-md">
+            <input
+              type="text"
+              value={userChoice}
+              onChange={handleChoiceChange}
+              // placeholder="Type the word here"
+              className="definition-input"
+              required
+            />
+            <label for = "answer">Your Answer</label>
+            <span class = "border"></span>
+          </div>
           <button onClick={showAnswer}>Submit</button>
         </div>
 
@@ -155,6 +160,7 @@ function Voctest() {
       </header>
       <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
       <a href="http://localhost:5000/download" download>Download Vocabulary JSON</a>
+    
     </div>
   );
 }

@@ -73,7 +73,7 @@ function Login () {
   return (
 
     <div className="login">
-      <h1>Login</h1>
+      <h2>Login</h2>
       <Card title="" bordered={true}>
         <Form validateTrigger={['onBlur', 'onChange']}
           onFinish={onFinish} >
@@ -95,13 +95,16 @@ function Login () {
             <Input size="large" placeholder="please Enter your password" />
           </Form.Item>
           <Form.Item>
-            <Checkbox>I have already read the agreement and blah blah blah</Checkbox>
+            <Checkbox>I have already read and accept the agreement.</Checkbox>
           </Form.Item>
           <Form.Item>
             <Button type="primary" htmlType='submit' size="large" >Login</Button>
           </Form.Item>
         </Form>
-        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+        <div className="link-btn-container">
+          <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+        </div>
+        
       </Card>
     </div>
   )
