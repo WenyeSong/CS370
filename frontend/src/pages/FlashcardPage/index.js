@@ -10,6 +10,8 @@ export default function FlashcardPage() {
   const amountEl = useRef();
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
+  const [successMessage, setSuccessMessage] = useState('');
+
 
 
   // Define goBackToMainPage function
@@ -58,7 +60,8 @@ export default function FlashcardPage() {
         body: JSON.stringify(payload)
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      // Optionally update flashcards or perform other actions after adding the word
+      setSuccessMessage('Word added successfully!'); // Set success message
+      setTimeout(() => setSuccessMessage(''), 3000); // Clear success message after 3 seconds
     } catch (error) {
       console.error("Failed to add word:", error.message);
     }
