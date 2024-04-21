@@ -12,9 +12,6 @@ function Main() {
         <Link to='/Login' className='main-link subtitle'>
           Login
         </Link>
-        <Link to='/TypeGo' className='main-link subtitle'>
-          Typing go!
-        </Link>
         <Link to='/Voctest' className='main-link subtitle'>
           Vocabulary Test
         </Link>

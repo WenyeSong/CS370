@@ -22,21 +22,26 @@ function SavedList() {
   };
 
   useEffect(() => {
-    fetchWords();
-  }, []);
+    fetchWords(currentPage, pageSize);
+  }, [currentPage, pageSize]);
 
   const token = localStorage.getItem('token');
 
   const fetchWords = async (pageNum = currentPage, pageSizeParam = pageSize) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/user/${token}/words`);
+      const response = await fetch(`http://localhost:5000/user/${token}/words?page=${pageNum}&size=${pageSizeParam}`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
 
-      console.log('Fetched words:', data); // 打印从服务器获取的数据
-      setWords(data);
-      setTotal(data.total); //record subpages data
+      // console.log('Fetched words:', data); 
+      // console.log('Words:', data.words);
+      // console.log('Total saved:', data.total_saved);
+      // console.log('Total contributions:', data.total_contributions);
+      
+      setWords(data.words);
+      setTotal(data.total_saved + data.total_contributions); //record subpages data
+     
       setCurrentPage(pageNum); // update page
       setPageSize(pageSizeParam); // update page size
     
@@ -151,7 +156,7 @@ function SavedList() {
   
 
   const dataSource = words.map(word => ({
-    key: word.type === 'contribution' ? `contribution-${word.id}` : `dictionary-${word.foreign_id}`,
+    key: word.type === 'contribution' ? `contribution-${word.foreign_id}` : `dictionary-${word.foreign_id}`,
     ...word,
     id: word.id, // Ensure this exists for contributions
     foreign_id: word.foreign_id // Ensure this exists for dictionary words
