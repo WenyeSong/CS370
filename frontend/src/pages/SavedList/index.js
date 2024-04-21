@@ -156,11 +156,12 @@ function SavedList() {
       <Col span={24}>
         <Card title="Your Saved Words">
           <Form layout="inline" onSubmitCapture={handleSubmit} autoComplete="off" action="/action_page.php">
-            <Form.Item>
-              <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            </Form.Item>
             {/* <Form.Item>
-              <Input id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+              <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
             </Form.Item> */}
+            <Form.Item>
+              <Input id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
+            </Form.Item>
             <Form.Item>
               <Input placeholder="English Translation" value={englishTranslation} onChange={e => setEnglishTranslation(e.target.value)} />
             </Form.Item>
