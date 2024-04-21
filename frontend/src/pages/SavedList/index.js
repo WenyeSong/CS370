@@ -31,6 +31,7 @@ function SavedList() {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
       setWords(data);
+
     } catch (error) {
       console.error("Fetch error:", error.message);
     } finally {
@@ -118,6 +119,7 @@ function SavedList() {
         duration: 4,
       });
     }
+    // window.location.reload();
   };
 
 
@@ -144,11 +146,16 @@ function SavedList() {
   
 
   const dataSource = words.map(word => ({
-    key: word.type === 'contribution' ? `contribution-${word.id}` : `dictionary-${word.foreign_id}`,
+    key: word.type === 'contribution' ? `contribution-${word.foreign_id}` : `dictionary-${word.foreign_id}`,
     ...word,
     id: word.id, // Ensure this exists for contributions
     foreign_id: word.foreign_id // Ensure this exists for dictionary words
   }));
+
+  const checkdatasource = () => {
+    console.log(dataSource);
+    console.log(words);
+  }
 
   return (
     <>
@@ -169,11 +176,12 @@ function SavedList() {
               <Button type="primary" htmlType="submit">Add New Word</Button>
             </Form.Item>
           </Form>
-          <Table loading={loading} columns={columns} dataSource={dataSource} />
+          <Table loading={loading} columns={columns} dataSource={dataSource} pagination={{pageSize: 10,}}/>
         </Card>
       </Col>
   
-   </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+   </Row>  
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </>
   );
 }
