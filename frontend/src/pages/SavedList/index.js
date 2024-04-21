@@ -11,6 +11,9 @@ function SavedList() {
   const [loading, setLoading] = useState(false);
   const [foreignWord, setForeignWord] = useState('');
   const [englishTranslation, setEnglishTranslation] = useState(''); // For user contributions
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);  // 10 words each page
+  const [total, setTotal] = useState(0); // new state
   const navigate = useNavigate();
   
   // Define goBackToMainPage function
@@ -24,13 +27,19 @@ function SavedList() {
 
   const token = localStorage.getItem('token');
 
-  const fetchWords = async () => {
+  const fetchWords = async (pageNum = currentPage, pageSizeParam = pageSize) => {
     setLoading(true);
     try {
       const response = await fetch(`http://localhost:5000/user/${token}/words`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
+
+      console.log('Fetched words:', data); // 打印从服务器获取的数据
       setWords(data);
+      setTotal(data.total); //record subpages data
+      setCurrentPage(pageNum); // update page
+      setPageSize(pageSizeParam); // update page size
+    
     } catch (error) {
       console.error("Fetch error:", error.message);
     } finally {
@@ -69,8 +78,6 @@ function SavedList() {
   
   
   
-
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -150,6 +157,11 @@ function SavedList() {
     foreign_id: word.foreign_id // Ensure this exists for dictionary words
   }));
 
+
+  const handleTableChange = (pagination) => { // when page changes call this
+    fetchWords(pagination.current, pagination.pageSize);
+  };
+
   return (
     <>
     <Row>
@@ -168,7 +180,13 @@ function SavedList() {
               <Button type="primary" htmlType="submit">Add New Word</Button>
             </Form.Item>
           </Form>
-          <Table loading={loading} columns={columns} dataSource={dataSource} />
+          <Table loading={loading} columns={columns} dataSource={dataSource}
+            pagination={{ 
+              current: currentPage, 
+              pageSize: pageSize, 
+              total: total 
+            }}
+          onChange={handleTableChange} />
         </Card>
       </Col>
   
