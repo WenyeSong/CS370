@@ -1,64 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
 
 function Main() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
   return (
-    <>
-      {/* Navigation */}
-      <nav className="navbar">
-        <div className="navbar-container">
-          <h1>VocabGrow</h1>
-          <h2>Welcome! Study fun!</h2>
-          <Link to='/' className='nacbar-logo'>
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-time'>
-              <Link to='/Login' className='nav-links subtitle' onClick={closeMobileMenu}>
-                Login
-              </Link>
-            </li>
-            <li className='nav-time'>
-              <Link to='/TypeGo' className='nav-links subtitle' onClick={closeMobileMenu}>
-                Typing go!
-              </Link>
-            </li>
-            <li className='nav-time'>
-              <Link to='/Voctest' className='nav-links subtitle' onClick={closeMobileMenu}>
-                Vocabulary Test
-              </Link>
-            </li>
-            <li className='nav-time'>
-              <Link to='/SavedList' className='nav-links subtitle' onClick={closeMobileMenu}>
-                Saved Words List
-              </Link>
-            </li>
-            <li className='nav-time'>
-              <Link to='/Register' className='nav-links subtitle' onClick={closeMobileMenu}>
-                Register
-              </Link>
-            </li>
-            <li className='nav-time'>
-              <Link to='/flashcards' className='nav-links subtitle' onClick={closeMobileMenu}>
-                Flashcard
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      {/* Footer */}
-      <footer className="footer">
-        {/* No content needed */}
-      </footer>
-    </>
+  
+    <div className="main-content">
+      <h1 className="main-heading">VocabGrow</h1>
+      <h2 className="main-subtitle">Welcome! Study fun!</h2>
+      <div className="main-links">
+        <Link to='/Login' className='main-link subtitle'>
+          Login
+        </Link>
+        <Link to='/TypeGo' className='main-link subtitle'>
+          Typing go!
+        </Link>
+        <Link to='/Voctest' className='main-link subtitle'>
+          Vocabulary Test
+        </Link>
+        <Link to='/SavedList' className='main-link subtitle'>
+          Saved Words List
+        </Link>
+        <Link to='/Register' className='main-link subtitle'>
+          Register
+        </Link>
+        <Link to='/flashcards' className='main-link subtitle'>
+          Flashcard
+        </Link>
+      </div>
+    </div>
+  
   );
 }
 

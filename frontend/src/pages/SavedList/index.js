@@ -176,7 +176,10 @@ function SavedList() {
           <Table loading={loading} columns={columns} dataSource={dataSource} />
         </Card>
       </Col>
-   </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+   </Row> 
+    <div className="link-btn-container">
+      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+    </div>
     </>
   );
 }

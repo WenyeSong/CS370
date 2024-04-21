@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	/* width: 80%;
+	margin: 0 auto; */
+
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Vertically centers the flex items */
+  justify-content: space-between; /* Space out the logo and nav */
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #7cebc6;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 100px; /* Or whatever size you prefer */
+  height: auto; /* Maintain aspect ratio */
+  float: left; /* Float left to align it with the nav */
+  margin-right: 15px; /* Add some space between the logo and the nav items */
+}
+
+
+nav {
+  display: flex; /* Enables flexbox for nav */
+  float: right;
+  align-items: center; /* Vertically centers the nav items */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 3px;
+  position: relative;
+}
+
+nav a {
+  color: rgb(5, 5, 71);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover { /*word color*/
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}

@@ -2,6 +2,13 @@ body {
     margin: 0;
     font-family: 'Changa'; /* Added font family for better cross-browser compatibility */
 }
+.flashcard-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
 
 .container {
     max-width: 900px;
@@ -72,6 +79,8 @@ body {
     background-color: #fff;
 }
 
+
+
 .form-group {
     width: 90%;
     padding: 10px;
@@ -114,4 +123,8 @@ body {
     font-weight: bold; /* Apply bold font weight for emphasis */
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.link-btn {
+    max-width: 250px;
 }
