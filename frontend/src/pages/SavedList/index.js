@@ -34,14 +34,9 @@ function SavedList() {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
 
-      // console.log('Fetched words:', data); 
-      // console.log('Words:', data.words);
-      // console.log('Total saved:', data.total_saved);
-      // console.log('Total contributions:', data.total_contributions);
-      
-      setWords(data.words);
-      setTotal(data.total_saved + data.total_contributions); //record subpages data
-     
+      console.log('Fetched words:', data); // 打印从服务器获取的数据
+      setWords(data);
+      setTotal(data.total); //record subpages data
       setCurrentPage(pageNum); // update page
       setPageSize(pageSizeParam); // update page size
     
