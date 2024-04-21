@@ -36,6 +36,10 @@ function SavedList() {
 
       console.log('Fetched words:', data); // 打印从服务器获取的数据
       setWords(data);
+      setTotal(data.total); //record subpages data
+      setCurrentPage(pageNum); // update page
+      setPageSize(pageSizeParam); // update page size
+    
     } catch (error) {
       console.error("Fetch error:", error.message);
     } finally {
@@ -121,7 +125,6 @@ function SavedList() {
         duration: 4,
       });
     }
-    // window.location.reload();
   };
 
 
@@ -148,16 +151,11 @@ function SavedList() {
   
 
   const dataSource = words.map(word => ({
-    key: word.type === 'contribution' ? `contribution-${word.foreign_id}` : `dictionary-${word.foreign_id}`,
+    key: word.type === 'contribution' ? `contribution-${word.id}` : `dictionary-${word.foreign_id}`,
     ...word,
     id: word.id, // Ensure this exists for contributions
     foreign_id: word.foreign_id // Ensure this exists for dictionary words
   }));
-
-  const checkdatasource = () => {
-    console.log(dataSource);
-    console.log(words);
-  }
 
 
   const handleTableChange = (pagination) => { // when page changes call this
@@ -183,11 +181,20 @@ function SavedList() {
               <Button type="primary" htmlType="submit">Add New Word</Button>
             </Form.Item>
           </Form>
-          <Table loading={loading} columns={columns} dataSource={dataSource} />
+          <Table loading={loading} columns={columns} dataSource={dataSource}
+            pagination={{ 
+              current: currentPage, 
+              pageSize: pageSize, 
+              total: total 
+            }}
+          onChange={handleTableChange} />
         </Card>
       </Col>
   
-   </Row>  <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+   </Row> 
+    <div className="link-btn-container">
+      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+    </div>
     </>
   );
 }
