@@ -110,7 +110,7 @@ def crawl_words(words):
     print("Initializing thread pool...")
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = []
-        for i, word in enumerate(words[:6772], start=1):  # Example limit to first 8 words
+        for i, word in enumerate(words[:100], start=1):  # Example limit to first 8 words
             word = word.split()[0]  # Treat only the first part of any line as the word
             print(f"Submitting task {i}/{len(words)}")
             futures.append(executor.submit(get_word_data, word))
@@ -134,11 +134,11 @@ def crawl_words(words):
     return results
 
 if __name__ == "__main__":
-    with open("d:\\CS370\\dictionary_crawl\\french\\filtered_words1.txt", "r", encoding="utf-8") as f:
+    with open("d:\\CS370\\dictionary_crawl\\chinese\\filtered_words_chinese.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
     if results:
-        with open("d:\\CS370\\dictionary_crawl\\french\\french_dict1.json", "w", encoding="utf-8") as f:
+        with open("d:\\CS370\\dictionary_crawl\\chinese\\chinese_dict1.json", "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=4)
     else:
         print("No valid entries to save.")
