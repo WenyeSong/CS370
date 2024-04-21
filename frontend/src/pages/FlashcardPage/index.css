@@ -21,6 +21,9 @@ body {
     gap: 1rem;
     padding: 1rem; /* Add padding to the card grid */
     margin: 0; /* Remove margin */
+    margin: auto; /* center */
+    justify-content: center; 
+    align-items: center;
 }
 
 .card {
@@ -35,6 +38,7 @@ body {
     transition: transform 0.5s;
     cursor: pointer;
     height: 100%; /* Make the cards fill the entire height of their container */
+    width: 100%;
 }
 
 .card:hover,

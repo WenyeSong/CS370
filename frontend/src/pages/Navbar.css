@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 body {
 	margin: 0;
-	background: #222;
+  background: #070707;
+  
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
 }
@@ -18,7 +19,11 @@ body {
 }
 
 header {
-  background: #7cebc6;
+  /* background: linear-gradient(to bottom right, #efe6b5, #fcd2a4, #fabfbf); */
+  background-color: rgba(67, 34, 22, 0.1);
+  background-image: url(../vocabtest.jpeg);
+
+
 }
 
 header::after {
@@ -54,8 +59,8 @@ nav li {
   position: relative;
 }
 
-nav a {
-  color: rgb(5, 5, 71);
+nav a { /*botton*/
+  color: rgb(10, 10, 11);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;

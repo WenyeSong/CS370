@@ -11,11 +11,16 @@ import TypeGo from './pages/TypeGo'
 import Register from './pages/Register';
 import FlashcardPage from './pages/FlashcardPage';
 
+
 import { Navbar } from "./pages/Navbar";
 
 function App () {
 
   const [currentForm, setCurrentForm] = useState('login');
+
+  const appStyle = {
+    backgroundImage: 'url(../src/image-from-rawpixel-id-577697-jpeg.jpg)',
+  }
 
   const toggleForm = (formName) => {
     setCurrentForm(formName);
@@ -29,6 +34,7 @@ function App () {
   return (
     <BrowserRouter>
       <div className='App' >
+      <div style={appStyle}>
         <Navbar />
         <Routes>
           <Route path='/' element={<Main />}></Route>
@@ -41,7 +47,7 @@ function App () {
           <Route path='*' element={<Error />} />
           <Route path="/flashcards" element={<FlashcardPage />} />
         </Routes>
-      </div>
+      </div></div>
     </BrowserRouter >
   )
 }

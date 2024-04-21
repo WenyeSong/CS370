@@ -1,9 +1,11 @@
+
+
 /* Global Styles */
 body {
   margin: 0;
   font-family: 'Changa';
   color: #000000;
-  background-image: url('../src/pages/image-from-rawpixel-id-577697-jpeg.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg);/* Replace 'path/to/your/image.jpg' with the actual path to your image */
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-position: center; /* Center the background image */
@@ -72,7 +74,11 @@ footer {
 
 .App { 
   /*addresses the overall syntax issues*/
-  background-color: white;
+  /* background-color: white; */
+  background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg);/* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Center the background image */
   position: absolute;
   height: auto;
   width: 100%; 

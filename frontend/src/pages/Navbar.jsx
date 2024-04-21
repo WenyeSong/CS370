@@ -20,6 +20,11 @@ export const Navbar = () => {
               Login
             </Link>
           </li>
+          <li>
+            <Link to='/Register' className='nav-links subtitle' onClick={closeMobileMenu}>
+              Register
+            </Link>
+          </li>
           {/* <li>
             <Link to='/TypeGo' className='nav-links subtitle' onClick={closeMobileMenu}>
               Typing go!
@@ -35,15 +40,12 @@ export const Navbar = () => {
               Saved Words List
             </Link>
           </li>
-          <li>
-            <Link to='/Register' className='nav-links subtitle' onClick={closeMobileMenu}>
-              Register
-            </Link>
-          </li>
+
           <li>
             <Link to='/flashcards' className='nav-links subtitle' onClick={closeMobileMenu}>
               Flashcard
             </Link>
+            
           </li>
         </ul>
       </nav>
