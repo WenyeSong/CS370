@@ -61,7 +61,7 @@ export default function FlashcardPage() {
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       setSuccessMessage('Word added successfully!'); // Set success message
-      setTimeout(() => setSuccessMessage(''), 3000); // Clear success message after 3 seconds
+      setTimeout(() => setSuccessMessage(''), 1000); // Clear success message after 3 seconds
     } catch (error) {
       console.error("Failed to add word:", error.message);
     }
@@ -99,6 +99,7 @@ export default function FlashcardPage() {
     <>
       <div className="flashcard-form-container">
         <h2>Flashcard</h2>
+        {successMessage && <p className="success-message">{successMessage}</p>}
         <form className="header" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="amount">Number of Questions</label>
