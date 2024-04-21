@@ -151,7 +151,7 @@ function SavedList() {
   
 
   const dataSource = words.map(word => ({
-    key: word.type === 'contribution' ? `contribution-${word.id}` : `dictionary-${word.foreign_id}`,
+    key: word.type === 'contribution' ? `contribution-${word.foreign_id}` : `dictionary-${word.foreign_id}`,
     ...word,
     id: word.id, // Ensure this exists for contributions
     foreign_id: word.foreign_id // Ensure this exists for dictionary words
