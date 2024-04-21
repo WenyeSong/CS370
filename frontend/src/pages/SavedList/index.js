@@ -141,8 +141,17 @@ function SavedList() {
       key: 'action', 
       render: (_, record) => (
         <Space size="middle">
-          <Popconfirm title="Sure to delete?" onConfirm={() => deleteWord(record)}>
-            <Button type="primary" danger>Delete</Button>
+          <Popconfirm 
+            title="Sure to delete?" 
+            onConfirm={() => deleteWord(record)} 
+            okButtonProps={{ style: { width: '100px', textAlign: 'center' }, ghost: true }} // OK button
+          >
+            <Button 
+            style={{ width: '90px', height:'40px', lineHeight: '40px', textAlign: 'center', padding: 0 }}
+            type="primary" 
+            danger
+          >
+              Delete</Button>
           </Popconfirm>
         </Space>
       ),
@@ -178,7 +187,18 @@ function SavedList() {
               <Input placeholder="English Translation" value={englishTranslation} onChange={e => setEnglishTranslation(e.target.value)} />
             </Form.Item>
             <Form.Item>
-              <Button type="primary" htmlType="submit">Add New Word</Button>
+            <Button 
+                type="primary" htmlType="submit"
+                style={{ width: '170px', height: '40px', lineHeight: '40px', // Ensure that this is the same as your height for vertical center
+                textAlign: 'center', // For horizontal center
+                padding: '0', // Removing padding can help in centering the text
+                alignItems: 'center', // Center text vertically
+                justifyContent: 'center'
+              }}
+            >
+                Add New Word    
+              </Button>
+
             </Form.Item>
           </Form>
           <Table loading={loading} columns={columns} dataSource={dataSource}
@@ -193,7 +213,8 @@ function SavedList() {
   
    </Row> 
     <div className="link-btn-container">
-      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+      <button className="link-btn" onClick={goBackToMainPage}
+      >Back to Main Page</button>
     </div>
     </>
   );

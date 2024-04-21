@@ -6,7 +6,7 @@
     border-radius: 25px; /* Adjust border-radius for a rounded button */
     background-color: transparent; /* Transparent background */
     color: #ffcc00;
-    font-size: 14px; /* Adjust font size */
+    font-size: px; /* Adjust font size */
     font-weight: bold; /* Apply bold font weight for emphasis */
     text-align: center; /* Center align text */
     cursor: pointer;
@@ -16,6 +16,9 @@
     left: 50%;
     transform: translateX(-50%);
     margin: 0 15px; 
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
   }
   
   .page_container {
