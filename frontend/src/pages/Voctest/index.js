@@ -134,9 +134,11 @@ function Voctest() {
             </div>
           </>
         )}
+
       </header>
       <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
       <a href="http://localhost:5000/download" download>Download Vocabulary JSON</a>
+    
     </div>
   );
 }

@@ -1,109 +1,34 @@
-/* Main.css */
-
-
-body {
-  background-color: #349ad5; /* Set background color for the entire page */
-  font-family: 'Changa';
-  color: #000000; /* Set text color to white */
+.main-content {
+  background-color: #fff; /* Set a white background for the content area */
+  color: #000; /* Set the text color to black for contrast */
+  padding: 20px; /* Add some padding around the content */
+  border-radius: 8px; /* Optional: Round the corners of the content box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  width: 80%; /* Set the width of the content area */
+  max-width: 960px; /* Maximum width of the content area */
+  margin: 20px auto; /* Center the content area and add some margin above and below */
 }
 
+.main-heading, .main-subtitle {
+  color: #000; /* Ensures that the headings are also black or a dark color for contrast */
+}
+
+/* Style for the links to make them stand out and readable */
+.main-links a {
+  color: #349ad5; /* Color for the links to make them stand out */
+  text-decoration: none; /* Remove underline from links */
+  margin: 10px; /* Add margin around the links */
+  display: inline-block; /* Make the links align in a line */
+}
+
+.main-links a:hover {
+  color: #1d70a2; /* Darker color on hover for better interaction */
+}
+
+/* Additional styles for the header and footer if necessary */
 .header, .footer {
-  background-color: #000;
-  color: #fff; /* Set text color to white */
-}
-
-.navbar {
-  background-color: transparent; /* Make the navbar transparent */
-}
-
-.navbar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar h1 {
-  margin: 0;
-  font-size: 48px; /* Increase font size */
-  text-align: center;
-  margin-bottom: 50px; /* Add space below the h1 */
-}
-
-.navbar h2 {
-  margin: 5px 0;
-  font-size: 36px; /* Increase font size */
-  text-align: center;
-  margin-bottom: 80px; /* Add space below the h2 */
-}
-
-.navbar .menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar ul li {
-  margin-right: 20px;
-}
-
-.navbar ul li:last-child {
-  margin-right: 0;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #000000;
-  font-size: x-large;
-}
-
-.navbar .menu-icon i {
-  font-size: 24px;
-}
-
-.navbar .nav-time {
-  font-size: 30px;
-}
-
-/* Media Query for Responsive Design */
-@media screen and (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar h1 {
-    margin-bottom: 10px;
-  }
-
-  .navbar h2 {
-    display: none;
-  }
-
-  .navbar .menu-icon {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #0056b3;
-  }
-
-  .navbar ul.active {
-    display: flex;
-  }
-
-  .navbar ul li {
-    margin: 10px 0;
-  }
+  background-color: #000; /* Keep the header and footer background black */
+  color: #fff; /* Text color white for contrast */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center the text */
 }
