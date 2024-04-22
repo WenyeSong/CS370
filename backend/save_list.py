@@ -94,7 +94,7 @@ def get_user_words(token):
     for user_word in user_words:
         foreign_term = ForeignTerm.query.get(user_word.foreign_id)
         if foreign_term:  # Ensure the foreign term exists
-            translations = [translation.english_term for translation in foreign_term.english_translations]
+            translations = [translation.english_term for translation in foreign_term.translations]
             saved_words_info.append({
                 "type": "dictionary",  # Indicate this word is from the main dictionary
                 "foreign_id": foreign_term.foreign_id,

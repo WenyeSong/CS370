@@ -15,20 +15,24 @@ class Language(db.Model):
     language_name = db.Column(db.String(255), nullable=False)
 
 class ForeignTerm(db.Model):
-    __tablename__ = 'foreign_terms'
+    __tablename__ = 'foreign_table1'  # The actual table name in your database
     foreign_id = db.Column(db.Integer, primary_key=True)
     language_id = db.Column(db.Integer, db.ForeignKey('languages.language_id'), nullable=False)
     term = db.Column(db.String(255), nullable=False)
-    english_translations = db.relationship('EnglishTranslation', backref='foreign_term', lazy='dynamic')
+    # The relationship should refer to 'EnglishTranslation', the name of the class
+    translations = db.relationship('EnglishTranslation', backref='foreign_term', lazy='dynamic')
 
 class EnglishTranslation(db.Model):
-    __tablename__ = 'english_translations'
+    __tablename__ = 'translations'  # The actual table name in your database
     translation_id = db.Column(db.Integer, primary_key=True)
-    foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), nullable=False)
-    english_id = db.Column(db.Integer)  # Assuming this relates to a language ID for English, might require adjustment
+    foreign_language_id = db.Column(db.Integer, db.ForeignKey('foreign_table1.foreign_id'), nullable=False)
+    english_id = db.Column(db.Integer)  # Assuming you have this column and it's needed
     english_term = db.Column(db.String(255), nullable=False)
+    english_explanation = db.Column(db.Text)
 
 class UserSaved(db.Model):
     __tablename__ = 'user_saved'
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)  # Corrected ForeignKey reference
-    foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), primary_key=True)
+    foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_table1.foreign_id'), primary_key=True)
+
+
