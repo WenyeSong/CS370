@@ -95,11 +95,13 @@ def get_user_words(token):
         foreign_term = ForeignTerm.query.get(user_word.foreign_id)
         if foreign_term:  # Ensure the foreign term exists
             translations = [translation.english_term for translation in foreign_term.translations]
+            # change to "translation.english_explanation" to see the entire definition ! 
             saved_words_info.append({
                 "type": "dictionary",  # Indicate this word is from the main dictionary
                 "foreign_id": foreign_term.foreign_id,
                 "foreign_word": foreign_term.term,
                 "english_translations": translations,
+                "language_id": foreign_term.language_id # add this for different language tab!
             })
 
     # Fetch contributions from UserContributions

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space, Checkbox, notification } from 'antd';
+import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space, Tabs, notification } from 'antd';
 import { useNavigate } from "react-router-dom";
 import { autocomplete } from '../SearchBar/AutocompleteFunctions';
 import SearchBar from '../SearchBar/index.js'
@@ -46,6 +46,83 @@ function SavedList() {
       setLoading(false);
     }
   };
+
+  const columns = [
+    { title: 'Foreign Word', dataIndex: 'foreign_word', key: 'foreign_word' },
+    {
+      title: 'English Translations',
+      dataIndex: 'english_translations',
+      key: 'english_translations',
+      render: translations => Array.isArray(translations) ? translations.join(", ") : translations, // Updated this line
+    },
+    {
+      title: 'Action', 
+      key: 'action', 
+      render: (_, record) => (
+        <Space size="middle">
+          <Popconfirm 
+            title="Sure to delete?" 
+            onConfirm={() => deleteWord(record)} 
+            okButtonProps={{ style: { height: '27px', width: 'auto', padding: '0px 9px' } }} // OK button
+            >
+            <Button 
+            style={{ width: '80px', height:'30px', lineHeight: '30px', textAlign: 'center', padding: 0 }}
+            type="primary" 
+            danger>
+              Delete</Button>
+          </Popconfirm>
+        </Space>
+      ),
+    },
+  ];
+  
+
+  const handleTableChange = (pagination) => { // when page changes call this
+    fetchWords(pagination.current, pagination.pageSize);
+  };
+
+  const tabItems = [
+    {
+      label: 'French',
+      key: '1',
+      children: (
+        <Table 
+          loading={loading}
+          columns={columns}
+          dataSource={words.filter(word => word.language_id === 1)}
+          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          onChange={handleTableChange}
+        />
+      )
+    },
+    {
+      label: 'Spanish',
+      key: '3',
+      children: (
+        <Table 
+          loading={loading}
+          columns={columns}
+          dataSource={words.filter(word => word.language_id === 3)}
+          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          onChange={handleTableChange}
+        />
+      )
+    },
+    {
+      label: 'Dutch',
+      key: '4',
+      children: (
+        <Table 
+          loading={loading}
+          columns={columns}
+          dataSource={words.filter(word => word.language_id === 4)}
+          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          onChange={handleTableChange}
+        />
+      )
+    }
+  ];
+
 
   const deleteWord = async (record) => {
     console.log("Deleting word with record:", record);
@@ -128,35 +205,7 @@ function SavedList() {
   };
 
 
-  const columns = [
-    { title: 'Foreign Word', dataIndex: 'foreign_word', key: 'foreign_word' },
-    {
-      title: 'English Translations',
-      dataIndex: 'english_translations',
-      key: 'english_translations',
-      render: translations => Array.isArray(translations) ? translations.join(", ") : translations, // Updated this line
-    },
-    {
-      title: 'Action', 
-      key: 'action', 
-      render: (_, record) => (
-        <Space size="middle">
-          <Popconfirm 
-            title="Sure to delete?" 
-            onConfirm={() => deleteWord(record)} 
-            okButtonProps={{ style: { height: '27px', width: 'auto', padding: '0px 9px' } }} // OK button
-            >
-            <Button 
-            style={{ width: '80px', height:'30px', lineHeight: '30px', textAlign: 'center', padding: 0 }}
-            type="primary" 
-            danger>
-              Delete</Button>
-          </Popconfirm>
-        </Space>
-      ),
-    },
-  ];
-  
+
 
   const dataSource = words.map(word => ({
     key: word.type === 'contribution' ? `contribution-${word.foreign_id}` : `dictionary-${word.foreign_id}`,
@@ -166,9 +215,8 @@ function SavedList() {
   }));
 
 
-  const handleTableChange = (pagination) => { // when page changes call this
-    fetchWords(pagination.current, pagination.pageSize);
-  };
+
+
 
   return (
     <>
@@ -197,13 +245,14 @@ function SavedList() {
               </Button>
             </Form.Item>
           </Form>
-          <Table loading={loading} columns={columns} dataSource={dataSource}
+          <Table loading={loading} columns={columns} dataSource={dataSource} // do i still need table here?
             pagination={{ 
               current: currentPage, 
               pageSize: pageSize, 
               total: total 
             }}
           onChange={handleTableChange} />
+          <Tabs defaultActiveKey="1" items={tabItems} /> {/* This line adds the tabs to your UI */}
         </Card>
       </Col>
   
@@ -217,3 +266,4 @@ function SavedList() {
 }
 
 export default SavedList;
+
