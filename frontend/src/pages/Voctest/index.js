@@ -7,17 +7,14 @@ function Voctest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userChoice, setUserChoice] = useState('');
   const [vocabulary, setVocabulary] = useState([]);
-  const [correctCount, setCorrectCount] = useState(0); 
-  const [resultText, setResultText] = useState('');
-  const [feedbackText, setFeedbackText] = useState('');
-  const [showResultPage, setShowResultPage] = useState(false); // State to control rendering of result page
-  let wrongWords = [];
+  const [correctCount, setCorrectCount] = useState(0);
+  const [showResultPage, setShowResultPage] = useState(false);
+  const [feedbackText, setFeedbackText] = useState(''); // State to control feedback text
 
   const navigate = useNavigate();
 
-  // Define goBackToMainPage function
   const goBackToMainPage = () => {
-    navigate('/'); // Navigate to the main page
+    navigate('/');
   };
 
   useEffect(() => {
@@ -45,9 +42,9 @@ function Voctest() {
       setVocabulary(shuffledVocab);
     } catch (error) {
       console.error("Fetch error: ", error.message);
-    } 
+    }
   };
-    
+
   const handleChoiceChange = (event) => {
     setUserChoice(event.target.value);
   };
@@ -59,42 +56,44 @@ function Voctest() {
     }
     return array;
   };
-  
+
   const showAnswer = () => {
     const correctWord = vocabulary[currentQuestion][0];
-    const isCorrect = correctWord === userChoice;
-    if (isCorrect && !(userChoice === '')) {
-      setResultText('Correct!');
-      // Update correctCount here
+    const trimmedUserChoice = userChoice.trim();
+    if (trimmedUserChoice === '') {
+      setFeedbackText('Please enter a word.');
+      return;
+    }
+    const isCorrect = correctWord === trimmedUserChoice;
+
+    if (isCorrect) {
+      setFeedbackText('Correct!');
       setCorrectCount(prevCount => prevCount + 1);
     } else {
-      wrongWords.push(correctWord);
-      setResultText(
-        `Wrong! The correct vocabulary is:
-        ${correctWord}. Your input: ${userChoice}`
-      );
+      setFeedbackText('Wrong!');
     }
-    // Move to the next question
-    nextQuestion();
+    setTimeout(() => {
+      setFeedbackText('');
+      nextQuestion();
+    }, 500); // Hide feedback after 0.5 seconds
   };
-  
+
   const correctionRate = ((correctCount / Object.keys(vocabulary).length) * 100).toFixed(2);
 
   const nextQuestion = () => {
     if (currentQuestion + 1 === vocabulary.length) {
-      setShowResultPage(true); // Show result page when last question is reached
+      setShowResultPage(true);
     } else {
       setCurrentQuestion(prevCurrent => (prevCurrent + 1) % vocabulary.length);
       setUserChoice('');
-      setResultText('');
     }
   };
-  
+
   return (
     <div className="Voc_test">
       <header className="App-header">
         <h1>Vocabulary Test</h1>
-        {showResultPage ? ( // Conditional rendering of result page
+        {showResultPage ? (
           <QuizResultPage correctionRate={correctionRate} />
         ) : (
           <>
@@ -123,7 +122,6 @@ function Voctest() {
               </div>
             )}
             <div className="result-section">
-              <p>{resultText}</p>
               <p>Correct Answers: {correctCount}</p>
             </div>
             <div className="feedback-section">
@@ -135,7 +133,7 @@ function Voctest() {
       </header>
       <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
       <a href="http://localhost:5000/download" download>Download Vocabulary JSON</a>
-    
+
     </div>
   );
 }
