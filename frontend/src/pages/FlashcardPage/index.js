@@ -9,6 +9,7 @@ export default function FlashcardPage() {
   const [dictionaries, setDictionaries] = useState({});
   const amountEl = useRef();
   const navigate = useNavigate();
+  const token = localStorage.getItem('token');
   const [successMessage, setSuccessMessage] = useState('');
   const [difficultyLevel, setDifficultyLevel] = useState(1);  // Default level is set to 1 !!!!!!!!!!!!!!!!!!!!
 
@@ -221,7 +222,6 @@ function Flashcard({ flashcard, addWord }) {
     <div> {/* Added container for the button */}
       <button className="add-word-btn" onClick={() => addWord(flashcard.question, flashcard.answer)}>Add Word</button>
     </div>
-  </div>
+    </div>
   );
 }
-
