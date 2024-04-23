@@ -9,7 +9,7 @@ export const Navbar = () => {
     const closeMobileMenu = () => setClick(false);
     const [username, setUsername] = useState('');
     return (
-    　<header>
+    　<header className = "navhead">
     　　<div className="container">  
         <img src={logoImage} alt="logo" className="logo" />
         <nav>

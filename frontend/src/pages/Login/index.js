@@ -4,6 +4,7 @@ import './index.scss'
 // import { useStore } from "@/store"
 import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
+import {Navbar} from '../Navbar'
 
 // check backend status
 async function checkBackendStatus() {
@@ -73,6 +74,7 @@ function Login () {
   return (
 
     <div className="login">
+      { window.location.pathname !== '/' && <Navbar/> }
       <h2>Login</h2>
       <Card title="" bordered={true}>
         <Form validateTrigger={['onBlur', 'onChange']}
