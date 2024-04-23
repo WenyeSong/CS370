@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { message } from 'antd';
 import "./index.css"
+import { Navbar } from "../Navbar"; 
 
 
 const Register = (props) => {
@@ -50,6 +51,7 @@ const Register = (props) => {
     
     return (
         <div className="auth-form-container">
+          <Navbar />
             <h2>Register</h2>
         <form className="register-form" onSubmit={handleSubmit}>
             <label htmlFor="name">Full name</label>

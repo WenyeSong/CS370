@@ -3,6 +3,7 @@ import { Button, Card, Col, Row, Input, Form, Table, Popconfirm, Space, Tabs, no
 import { useNavigate } from "react-router-dom";
 import { autocomplete } from '../SearchBar/AutocompleteFunctions';
 import SearchBar from '../SearchBar/index.js'
+import { Navbar } from "../Navbar"; 
 
 
 
@@ -231,6 +232,7 @@ function SavedList() {
 
   return (
     <>
+    <Navbar />
     <Row>
       <Col span={24}>
         <Card title="Your Saved Words" className="page_container" style={{ maxWidth: '70%', maxheight: '70%', margin: '20px auto', padding: '0 20px' }}>

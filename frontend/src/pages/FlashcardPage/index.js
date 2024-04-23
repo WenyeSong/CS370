@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 import { Button, Form } from 'antd'; // Import Button from antd for styling
 import { useNavigate } from 'react-router-dom';
+import { Navbar } from "../Navbar"; 
 
 export default function FlashcardPage() {
   const [flashcards, setFlashcards] = useState([]);
@@ -116,7 +117,7 @@ export default function FlashcardPage() {
 
 
 return (
-    <>
+    <><Navbar/> 
       <div className="flashcard-form-container">
         <h2>Flashcard</h2>
         {successMessage && <p className="success-message">{successMessage}</p>}

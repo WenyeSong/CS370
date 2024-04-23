@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.css';
 import { useNavigate } from 'react-router-dom';
 import QuizResultPage from './QuizResultPage';
+import { Navbar } from "../Navbar"; 
 
 function Voctest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -90,6 +91,10 @@ function Voctest() {
   };
 
   return (
+    <div className="voc_test_container">
+      <Navbar/>
+    
+
     <div className="Voc_test">
       <header className="App-header">
         <h1>Vocabulary Test</h1>
@@ -134,6 +139,7 @@ function Voctest() {
       <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
       <a href="http://localhost:5000/download" download>Download Vocabulary JSON</a>
 
+    </div>
     </div>
   );
 }

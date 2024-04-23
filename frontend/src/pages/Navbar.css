@@ -8,25 +8,30 @@ body {
 }
 
 .container {
-	/* width: 80%;
-	margin: 0 auto; */
-
-  display: flex; /* Enables flexbox */
-  align-items: center; /* Vertically centers the flex items */
-  justify-content: space-between; /* Space out the logo and nav */
-  width: 80%;
-  margin: 0 auto;
+  display: flex;
+  align-items: center; /* This will vertically center your items */
+  justify-content: space-between; /* This spaces out the logo and navigation */
+  width: 100%;
+  padding: 0 15px; /* Adjust the horizontal padding as needed */
+  padding-bottom: 0;
 }
 
-header {
-  /* background: linear-gradient(to bottom right, #efe6b5, #fcd2a4, #fabfbf); */
-  background-color: rgba(67, 34, 22, 0.1);
-  background-image: url(../vocabtest.jpeg);
+.navhead {
+  background-color: #f4e9e9ea; /* Changed to white or any color that suits the page */
+  /* Remove the background image if it does not fit well with the design */
+  width: 100%;
+  /* Adjust padding to control the height of the navbar */
+  padding: 3px; /* Reduced padding to decrease height */
+  height: 20vh;
 
-
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other content */
 }
 
-header::after {
+.navhead::after {
   content: '';
   display: table;
   clear: both;
@@ -37,6 +42,7 @@ header::after {
   height: auto; /* Maintain aspect ratio */
   float: left; /* Float left to align it with the nav */
   margin-right: 15px; /* Add some space between the logo and the nav items */
+  margin-top: 0px;
 }
 
 
@@ -44,7 +50,7 @@ nav {
   display: flex; /* Enables flexbox for nav */
   float: right;
   align-items: center; /* Vertically centers the nav items */
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 nav ul {
@@ -55,17 +61,16 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 20px;
-  padding-top: 3px;
   position: relative;
-  
+  margin-left: 10px; /* Reduced spacing between items */
+  padding-top: 0px; /* Reduced padding */
 }
 
 nav a { /*botton*/
   color: rgb(10, 10, 11);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 nav a:hover { /*word color*/
@@ -75,8 +80,9 @@ nav a:hover { /*word color*/
 nav a::before {
   content: '';
   display: block;
-  height: 5px;
+  
   background-color: #444;
+  height: 3px; /* Smaller indicator block */
 
   position: absolute;
   top: 0;
