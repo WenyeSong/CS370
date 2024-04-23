@@ -125,9 +125,6 @@ function Voctest() {
             <div className="result-section">
               <p>{resultText}</p>
               <p>Correct Answers: {correctCount}</p>
-              <button onClick={nextQuestion}>
-                {currentQuestion + 1 === Object.keys(vocabulary).length ? "Try Again" : "Next"}
-              </button>
             </div>
             <div className="feedback-section">
               <p>{feedbackText}</p>
