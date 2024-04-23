@@ -39,7 +39,8 @@ function Voctest() {
       const data = await response.json();
       const vocabulary = data.map(item => ({
         question: item.english_translations.join(', '), // Assuming there's always at least one translation
-        choices: shuffleArray([item.foreign_word, "NA", "NA", "NA"]) // Hardcoded incorrect answers
+        correctAnswer: item.foreign_word, // Store the correct answer
+        choices: shuffleArray([item.foreign_word, "NA", "NA", "NA"]) // Include correct answer among placeholders
       }));
       setVocabulary(vocabulary);
     } catch (error) {
@@ -47,9 +48,10 @@ function Voctest() {
     }
   };
   
+  
 
   const handleChoiceChange = (choice) => {
-    const correctWord = vocabulary[currentQuestion].choices[0]; // Assuming the first choice is always correct
+    const correctWord = vocabulary[currentQuestion].correctAnswer; // Directly use the correct answer from the vocabulary
     const isCorrect = correctWord === choice;
     setFeedbackText(isCorrect ? 'Correct!' : 'Wrong!');
     if (isCorrect) {
@@ -60,6 +62,7 @@ function Voctest() {
       nextQuestion();
     }, 500);
   };
+  
   
 
   const nextQuestion = () => {
