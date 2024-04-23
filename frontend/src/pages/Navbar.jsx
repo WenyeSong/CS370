@@ -8,7 +8,6 @@ export const Navbar = () => {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
     const [username, setUsername] = useState('');
-  
     return (
     　<header>
     　　<div className="container">  
@@ -17,7 +16,7 @@ export const Navbar = () => {
         {/* <ul className={click ? 'nav-menu active' : 'nav-menu'}>*/} 
         <ul>
         <li className='nav-links'>
-            Hello, User!  {username} {/* username, need to connect to backend */}
+            Hello, {localStorage.getItem('token').split('-')[0]}! {/* username, need to connect to backend */}
           </li>
          <li>
             <Link to='/Login' className='nav-links subtitle' onClick={closeMobileMenu}>
