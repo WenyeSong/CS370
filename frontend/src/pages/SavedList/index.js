@@ -33,19 +33,30 @@ function SavedList() {
       const response = await fetch(`http://localhost:5000/user/${token}/words?page=${pageNum}&size=${pageSizeParam}`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
-
-      console.log('Fetched words:', data); // 打印从服务器获取的数据
-      setWords(data);
-      setTotal(data.total); //record subpages data
-      setCurrentPage(pageNum); // update page
-      setPageSize(pageSizeParam); // update page size
-    
+  
+      // Check if data is an array and sort it by 'foreign_word'
+      if (Array.isArray(data)) {
+        const sortedWords = data.sort((a, b) => {
+          return a.foreign_word.localeCompare(b.foreign_word, undefined, {sensitivity: 'base'});
+        });
+        setWords(sortedWords);
+      } else {
+        // If no words are returned or the structure is not as expected
+        console.error('Expected an array of words, but received:', data);
+        setWords([]);
+      }
+      
+      setTotal(data.length || 0);  // Assuming 'data' array length as total, adjust if actual 'total' is provided differently
+      setCurrentPage(pageNum);
+      setPageSize(pageSizeParam);
     } catch (error) {
       console.error("Fetch error:", error.message);
+      setWords([]);  // Reset words state in case of an error
     } finally {
       setLoading(false);
     }
   };
+  
 
   const columns = [
     { title: 'Foreign Word', dataIndex: 'foreign_word', key: 'foreign_word' },

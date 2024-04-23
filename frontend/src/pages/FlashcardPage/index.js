@@ -27,17 +27,20 @@ export default function FlashcardPage() {
         // Fetch dictionaries that do not have difficulty levels
         const responseChinese = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/chinese-english.json');
         const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/german-english.json');
+        const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/french-english.json');
         const chineseDictionary = await responseChinese.json();
         const germanDictionary = await responseGerman.json();
+        const frenchDictionary = await responseFrench.json();
   
         // Initialize dictionaries object with languages that do not have levels
         const fetchedDictionaries = {
           'Chinese': chineseDictionary,
-          'German': germanDictionary
+          'German': germanDictionary,
+          'French': frenchDictionary
         };
   
         // Languages with difficulty levels
-        const languagesWithLevels = ['French', 'Spanish', 'Dutch'];
+        const languagesWithLevels = ['Spanish', 'Dutch'];
         for (const language of languagesWithLevels) {
           for (let level = 1; level <= 3; level++) {
             const response = await fetch(`https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/${language.toLowerCase()}_part_${level}.json`);
@@ -57,7 +60,7 @@ export default function FlashcardPage() {
   }, []);
   
   const hasDifficultyLevels = (language) => {
-    return ['French', 'Spanish', 'Dutch'].includes(language);
+    return ['Spanish', 'Dutch'].includes(language);
   };
   
 
