@@ -8,6 +8,21 @@ export const Navbar = () => {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
     const [username, setUsername] = useState('');
+    const hellouser = () => {
+      if (localStorage.getItem('token') == null) {
+        return (
+          <></>
+        );
+      } else {
+        return (
+            <li>hello {localStorage.getItem('token').split('-')[0]}!</li>
+        );
+      }
+    }
+    const logout = () => {
+      localStorage.removeItem('token');
+      setClick(false);
+    }
     return (
     　<header className = "navhead">
     　　<div className="container">  
@@ -15,11 +30,11 @@ export const Navbar = () => {
         <nav>
         {/* <ul className={click ? 'nav-menu active' : 'nav-menu'}>*/} 
         <ul>
-        <li className='nav-links'>
-            Hello, {localStorage.getItem('token').split('-')[0]}! {/* username, need to connect to backend */}
+          <li className='nav-links'>
+            {hellouser()}
           </li>
          <li>
-            <Link to='/Login' className='nav-links subtitle' onClick={closeMobileMenu}>
+            <Link to='/' className='nav-links subtitle' onClick={logout}>
               Log out
             </Link>
           </li>
