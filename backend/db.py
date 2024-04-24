@@ -35,4 +35,9 @@ class UserSaved(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)  # Corrected ForeignKey reference
     foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_table1.foreign_id'), primary_key=True)
 
-
+class UserContributions(db.Model):
+    __tablename__ = 'user_contributions'
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    foreign_word = db.Column(db.String(255), nullable=False)
+    english_translation = db.Column(db.String(255), nullable=False)

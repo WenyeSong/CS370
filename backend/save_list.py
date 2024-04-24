@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
-from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
+from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved, UserContributions
 
 #app = Flask(__name__)
 #CORS(app)  # This will allow all origins. For specific origins, use the `resources` argument.
@@ -11,12 +11,12 @@ from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
 #db = SQLAlchemy(app)
 # db = SQLAlchemy()
 
-class UserContributions(db.Model):
-    __tablename__ = 'user_contributions'
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    foreign_word = db.Column(db.String(255), nullable=False)
-    english_translation = db.Column(db.String(255), nullable=False)
+# class UserContributions(db.Model):
+#     __tablename__ = 'user_contributions'
+#     id = db.Column(db.Integer, primary_key=True)
+#     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+#     foreign_word = db.Column(db.String(255), nullable=False)
+#     english_translation = db.Column(db.String(255), nullable=False)
 
 # class User(db.Model):
 #     __tablename__ = 'users'  # Explicitly specify the table name to match your database

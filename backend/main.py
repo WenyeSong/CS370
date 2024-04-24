@@ -3,6 +3,7 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from login import login_routes  
 from save_list import delete_user_saved_word, get_user_words, save_user_word, delete_user_contribution, search_similar
+from voctest import get_random_words
 from register import register_routes
 from db import db
 import os
@@ -26,6 +27,7 @@ app.add_url_rule('/user/<string:token>/contributions/<int:contribution_id>', vie
 app.add_url_rule('/user/<string:token>/words', view_func=get_user_words, methods=['GET'])
 app.add_url_rule('/user/<string:token>/words', view_func=save_user_word, methods=['POST'])
 app.add_url_rule('/user/words/<string:word>', view_func=search_similar, methods=['GET'])
+app.add_url_rule('/user/words/<int:language_id>', view_func=get_random_words, methods=['GET'])
 
 
 if __name__ == '__main__':
