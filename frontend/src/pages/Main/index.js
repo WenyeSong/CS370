@@ -15,16 +15,6 @@ function Main() {
         <Link to='/Register' className='main-link subtitle'>
           Register
         </Link>
-        <Link to='/Voctest' className='main-link subtitle'>
-          Vocabulary Test
-        </Link>
-        <Link to='/SavedList' className='main-link subtitle'>
-          Saved Words List
-        </Link>
-
-        <Link to='/flashcards' className='main-link subtitle'>
-          Flashcard
-        </Link>
       </div>
     </div>
   

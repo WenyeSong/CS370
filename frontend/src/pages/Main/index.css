@@ -26,9 +26,5 @@
 }
 
 /* Additional styles for the header and footer if necessary */
-.header, .footer {
-  background-color: #000; /* Keep the header and footer background black */
-  color: #fff; /* Text color white for contrast */
-  padding: 20px; /* Add padding for spacing */
-  text-align: center; /* Center the text */
-}
+
+
