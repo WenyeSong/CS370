@@ -18,8 +18,8 @@ def register_routes(app):
         conn = psycopg2.connect(
             dbname='postgres',
             user='postgres',
-            password='cs370',  # Replace with your password
-            host='34.69.154.109',  # Replace with your host IP
+            password='cs370',  
+            host='34.69.154.109',  
         )
 
         # Cursor to execute database operations

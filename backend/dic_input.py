@@ -51,5 +51,5 @@ def insert_data_from_json(json_file_path):
     cur.close()
     conn.close()
 
-# Adjust the path to your actual JSON file path
+
 insert_data_from_json('/Users/jinjiahui/Desktop/cs370/CS370/frontend/src/pages/Voctest/french-english.json')

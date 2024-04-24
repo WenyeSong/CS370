@@ -4,8 +4,8 @@ def create_tables():
     conn = psycopg2.connect(
         dbname='postgres',
         user='postgres',
-        password='cs370',  # Replace with your password
-        host='34.69.154.109',  # Replace with your host IP
+        password='cs370',  
+        host='34.69.154.109',  
         sslmode='disable'  # SSL mode is disabled for this example, adjust as necessary
     )
     cur = conn.cursor()

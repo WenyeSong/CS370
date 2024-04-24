@@ -19,8 +19,6 @@ db.init_app(app)
 login_routes(app)
 register_routes(app)
 
-# Assuming `app` is your Flask application instance
-# and assuming `add_foreign_word` is imported or defined in the same file·
 
 app.add_url_rule('/user/<string:token>/words/<int:foreign_id>', view_func=delete_user_saved_word, methods=['DELETE'])
 app.add_url_rule('/user/<string:token>/contributions/<int:contribution_id>', view_func=delete_user_contribution, methods=['DELETE'])

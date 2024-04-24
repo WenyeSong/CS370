@@ -9,10 +9,10 @@ body {
 
 .container {
   display: flex;
-  align-items: center; /* This will vertically center your items */
+  align-items: center; 
   justify-content: space-between; /* This spaces out the logo and navigation */
   width: 100%;
-  padding: 0 15px; /* Adjust the horizontal padding as needed */
+  padding: 0 15px; /* Adjust the horizontal padding */
   padding-bottom: 0;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .logo {
-  width: 100px; /* Or whatever size you prefer */
+  width: 100px; 
   height: auto; /* Maintain aspect ratio */
   float: left; /* Float left to align it with the nav */
   margin-right: 15px; /* Add some space between the logo and the nav items */
