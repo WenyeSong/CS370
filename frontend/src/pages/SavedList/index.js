@@ -28,6 +28,17 @@ function SavedList() {
 
   const token = localStorage.getItem('token');
 
+  const languages = [
+    { id: 1, name: 'French' },
+    { id: 3, name: 'Spanish' },
+    { id: 4, name: 'Dutch' },
+    { id: 5, name: 'German' },
+    { id: 6, name: 'Chinese' }
+  ];
+  
+  const [languageId, setLanguageId] = useState(null);
+
+
   const fetchWords = async (pageNum = currentPage, pageSizeParam = pageSize) => {
     setLoading(true);
     try {
@@ -132,6 +143,32 @@ function SavedList() {
           onChange={handleTableChange}
         />
       )
+    },
+    {
+      label: 'German',
+      key: '5',
+      children: (
+        <Table 
+          loading={loading}
+          columns={columns}
+          dataSource={words.filter(word => word.language_id === 5)}
+          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          onChange={handleTableChange}
+        />
+      )
+    },
+    {
+      label: 'Chinese',
+      key: '6',
+      children: (
+        <Table 
+          loading={loading}
+          columns={columns}
+          dataSource={words.filter(word => word.language_id === 6)}
+          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          onChange={handleTableChange}
+        />
+      )
     }
   ];
 
@@ -179,11 +216,21 @@ function SavedList() {
       });
       return;
     }
+
+    if (!foreignWord || !languageId) {
+      notification.error({
+        message: 'Missing Input',
+        description: 'Please enter a foreign word and select a language.',
+        duration: 4,
+      });
+      return;
+    }
   
     try {
       const payload = {
         foreign_word: foreignWord,
-        english_translation: englishTranslation  // It's okay to send an empty string if no translation is provided
+        english_translation: englishTranslation,  // It's okay to send an empty string if no translation is provided
+        language_id: languageId
       };
       const response = await fetch(`http://localhost:5000/user/${token}/words`, {
         method: 'POST',
@@ -238,45 +285,51 @@ function SavedList() {
         <Card title="Your Saved Words" className="page_container" style={{ maxWidth: '70%', maxheight: '70%', margin: '20px auto', padding: '0 20px' }}>
           <Form layout="inline" onSubmitCapture={handleSubmit} autoComplete="off" action="/action_page.php">
             <Form.Item>
-              <SearchBar id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
+              <SearchBar id="myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
             </Form.Item>
-            {/* <Form.Item>
-              <Input id = "myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />
-            </Form.Item> */}
             <Form.Item>
               <Input placeholder="English Translation" value={englishTranslation} onChange={e => setEnglishTranslation(e.target.value)} />
             </Form.Item>
+            {/* Add Form.Item for language selection */}
+            <Form.Item>
+              <select
+                value={languageId}
+                onChange={e => setLanguageId(e.target.value)}
+                style={{ width: '100%', height: '32px', padding: '4px 11px' }} // Style to match other inputs
+              >
+                <option value="">Select Language</option>
+                {languages.map(lang => (
+                  <option key={lang.id} value={lang.id}>{lang.name}</option>
+                ))}
+              </select>
+            </Form.Item>
             <Form.Item style={{ display: 'flex', alignItems: 'start' }}>
-            <Button 
+              <Button 
                 type="primary" htmlType="submit"
-                style={{ width: '170px', height: '40px', lineHeight: '40px', // Ensure that this is the same as your height for vertical center
-                textAlign: 'center', // For horizontal center
-                padding: '0', // Removing padding can help in centering the text
-                justifyContent: 'center', marginTop: '-5px'
-              }}
-            >Add New Word    
+                style={{ width: '170px', height: '40px', lineHeight: '40px',
+                textAlign: 'center', padding: '0', justifyContent: 'center', marginTop: '-5px' }}
+              >
+                Add New Word    
               </Button>
             </Form.Item>
           </Form>
-          <Table loading={loading} columns={columns} dataSource={dataSource} // do i still need table here?
+          <Table loading={loading} columns={columns} dataSource={dataSource}
             pagination={{ 
               current: currentPage, 
               pageSize: pageSize, 
               total: total 
             }}
-          onChange={handleTableChange} />
-          <Tabs defaultActiveKey="1" items={tabItems} /> {/* This line adds the tabs to your UI */}
+            onChange={handleTableChange} />
+          <Tabs defaultActiveKey="1" items={tabItems} />
         </Card>
       </Col>
-  
-   </Row> 
+    </Row> 
     <div className="link-btn-container">
-      <button className="link-btn" onClick={goBackToMainPage}
-      >Back to Main Page</button>
+      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </div>
     </>
-  );
-}
+);
+          }
 
 export default SavedList;
 
