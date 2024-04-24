@@ -43,7 +43,7 @@ function Login () {
 
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/login', { // point to flask port, 5000
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, { // point to real cloud run backend now
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

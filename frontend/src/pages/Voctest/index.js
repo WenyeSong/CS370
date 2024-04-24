@@ -30,7 +30,7 @@ function Voctest() {
   };
 
   async function getrandom(language_id) {
-    const response = await fetch(`http://localhost:5000/user/words/${language_id}`, {method: 'GET'});
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/user/words/${language_id}`, {method: 'GET'});
     let data = await response.json();
     return data;
   }
@@ -52,7 +52,7 @@ function Voctest() {
   const fetchVocabulary = async () => {
     try {
       var token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/user/${token}/words`);
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/user/${token}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -140,7 +140,7 @@ function Voctest() {
           )}
         </header>
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        <a href="http://localhost:5000/download" download>Download Vocabulary JSON</a>
+        <a href="${process.env.REACT_APP_BACKEND_URL}/download" download>Download Vocabulary JSON</a>
       </div>
     </div>
   );
