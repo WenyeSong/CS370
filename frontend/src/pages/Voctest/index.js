@@ -29,6 +29,26 @@ function Voctest() {
     navigate('/');
   };
 
+  async function getrandom(language_id) {
+    const response = await fetch(`http://localhost:5000/user/words/${language_id}`, {method: 'GET'});
+    let data = await response.json();
+    return data;
+  }
+
+  async function prepareVocabulary(data, language_id) {
+    const vocabularyPromises = data.map(async item => {
+      const randomWords = await getrandom(language_id);
+      const choices = shuffleArray([item.foreign_word, ...randomWords]);
+      return {
+        question: item.english_translations.join(', '), 
+        correctAnswer: item.foreign_word,
+        choices
+      };
+    });
+  
+    return Promise.all(vocabularyPromises);
+  }
+
   const fetchVocabulary = async () => {
     try {
       var token = localStorage.getItem('token');
@@ -36,11 +56,11 @@ function Voctest() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+      const language_id = 1;
       const data = await response.json();
-      const vocabulary = data.map(item => ({
+      var vocabulary = data.map(item => ({
         question: item.english_translations.join(', '), // Assuming there's always at least one translation
         correctAnswer: item.foreign_word, // Store the correct answer
-        choices: shuffleArray([item.foreign_word, "NA", "NA", "NA"]) // Include correct answer among placeholders
       }));
       setVocabulary(vocabulary);
     } catch (error) {
@@ -48,7 +68,21 @@ function Voctest() {
     }
   };
   
-  
+  const [choices, setChoices] = useState([]);
+
+  useEffect(() => {
+    if (vocabulary.length > 0) {
+      getchoices(vocabulary[currentQuestion].correctAnswer, 1); // Assuming language_id is 1 for example
+    }
+  }, [currentQuestion, vocabulary]);
+
+  const getchoices = async (correctAnswer, language_id) => {
+    var random = await getrandom(language_id);
+    random.push(correctAnswer);
+    var shuffledChoices = shuffleArray(random);
+    setChoices(shuffledChoices); // Update state with the shuffled choices
+  };
+
 
   const handleChoiceChange = (choice) => {
     const correctWord = vocabulary[currentQuestion].correctAnswer; // Directly use the correct answer from the vocabulary
@@ -90,12 +124,13 @@ function Voctest() {
                     {vocabulary[currentQuestion].question}  {/* Display the question from vocabulary */}
                   </div>
                   <div className="answer-section">
-                    {vocabulary[currentQuestion].choices.map((choice, index) => (
-                      <button key={index} onClick={() => handleChoiceChange(choice)}>
-                        {choice}
-                      </button>
-                    ))}
-                  </div>
+                  {choices.map((choice, index) => (
+                    <button key={index} onClick={() => handleChoiceChange(choice)}>
+                      {choice}
+                    </button>
+                  ))}
+                </div>
+                  
                 </div>
               )}
               <div className="feedback-section">
