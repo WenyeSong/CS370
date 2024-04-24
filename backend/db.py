@@ -41,3 +41,4 @@ class UserContributions(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     foreign_word = db.Column(db.String(255), nullable=False)
     english_translation = db.Column(db.String(255), nullable=False)
+    language_id = db.Column(db.Integer, db.ForeignKey('languages.language_id'), nullable=False)  # Now non-nullable
