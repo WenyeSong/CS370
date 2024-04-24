@@ -47,7 +47,6 @@ def insert_data_from_json(json_file_path):
             )
 
         conn.commit()
-
     cur.close()
     conn.close()
 
