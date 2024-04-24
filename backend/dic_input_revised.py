@@ -84,27 +84,18 @@ def insert_data_from_json(json_file_path):
             sslmode='disable'
         )
         cur = conn.cursor()
-        english_id = get_language_id('English', cur)
-
         translation_id = 1
         for item in data:
-            if 'word' not in item or 'english_term' not in item or 'explanation' not in item:
-                print("Missing required keys in JSON data.")
-                continue
-            foreign_id = cur.fetchone()
+            
             cur.execute(
-                "INSERT INTO Foreign_Language_Terms (Language_ID, Term) VALUES (%s, %s) RETURNING Foreign_ID;",
-                (foreign_id[0], item['word'])
+                "INSERT INTO Foreign_Table1 (Language_ID, Term) VALUES (%s, %s) RETURNING Foreign_Language_ID;",
+                (item['language_id'], item['word'])
             )
-
-            if not foreign_id:
-                print(f"Failed to insert term {item['word']} or retrieve Foreign_ID.")
-                continue
-
+            foreign_id = cur.fetchone()
             for english_term, explanation in zip(item['english_term'], item['explanation']):
                 cur.execute(
-                    "INSERT INTO translations (translation_id, foreign_language_id, english_id, english_term, english_explanation) VALUES (%s, %s, %s, %s, %s);",
-                    (translation_id, foreign_id[0], english_id, english_term, explanation)
+                    "INSERT INTO translations (new_translation_id, foreign_language_id, english_id, english_term, english_explanation) VALUES (%s, %s, %s, %s, %s);",
+                    (translation_id, foreign_id[0], 2, english_term, explanation)
                 )
                 translation_id += 1
 
