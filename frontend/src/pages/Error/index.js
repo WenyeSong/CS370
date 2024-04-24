@@ -4,7 +4,6 @@ import './index.css'
 import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
 
-
 function Login () {
   const navigate = useNavigate()
   const onFinish = async values => {

@@ -150,3 +150,7 @@ body {
   .navigation-buttons button {
     margin: 0 50px; /* Add margin between the buttons */
   }
+
+  .feedback-section{
+    color: red
+  }

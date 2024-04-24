@@ -2,55 +2,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
-from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
+from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved, UserContributions
 
-#app = Flask(__name__)
-#CORS(app)  # This will allow all origins. For specific origins, use the `resources` argument.
-
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:cs370@34.69.154.109/postgres'
-#db = SQLAlchemy(app)
-# db = SQLAlchemy()
-
-class UserContributions(db.Model):
-    __tablename__ = 'user_contributions'
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    foreign_word = db.Column(db.String(255), nullable=False)
-    english_translation = db.Column(db.String(255), nullable=False)
-
-# class User(db.Model):
-#     __tablename__ = 'users'  # Explicitly specify the table name to match your database
-#     id = db.Column(db.Integer, primary_key=True)
-#     username = db.Column(db.String(80), unique=True, nullable=False)
-#     token = db.Column(db.String(80),unique=True, nullable=False)
-#     # Other fields...
-
-
-# class Language(db.Model):
-#     __tablename__ = 'languages'
-#     language_id = db.Column(db.Integer, primary_key=True)
-#     language_name = db.Column(db.String(255), nullable=False)
-
-# class ForeignTerm(db.Model):
-#     __tablename__ = 'foreign_terms'
-#     foreign_id = db.Column(db.Integer, primary_key=True)
-#     language_id = db.Column(db.Integer, db.ForeignKey('languages.language_id'), nullable=False)
-#     term = db.Column(db.String(255), nullable=False)
-#     english_translations = db.relationship('EnglishTranslation', backref='foreign_term', lazy='dynamic')
-
-# class EnglishTranslation(db.Model):
-#     __tablename__ = 'english_translations'
-#     translation_id = db.Column(db.Integer, primary_key=True)
-#     foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), nullable=False)
-#     english_id = db.Column(db.Integer)  # Assuming this relates to a language ID for English, might require adjustment
-#     english_term = db.Column(db.String(255), nullable=False)
-
-
-
-# class UserSaved(db.Model):
-#     __tablename__ = 'user_saved'
-#     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)  # Corrected ForeignKey reference
-#     foreign_id = db.Column(db.Integer, db.ForeignKey('foreign_terms.foreign_id'), primary_key=True)
 
 
 def delete_user_saved_word(token, foreign_id):
@@ -94,12 +47,14 @@ def get_user_words(token):
     for user_word in user_words:
         foreign_term = ForeignTerm.query.get(user_word.foreign_id)
         if foreign_term:  # Ensure the foreign term exists
-            translations = [translation.english_term for translation in foreign_term.english_translations]
+            translations = [translation.english_term for translation in foreign_term.translations]
+            # change to "translation.english_explanation" to see the entire definition ! 
             saved_words_info.append({
                 "type": "dictionary",  # Indicate this word is from the main dictionary
                 "foreign_id": foreign_term.foreign_id,
                 "foreign_word": foreign_term.term,
                 "english_translations": translations,
+                "language_id": foreign_term.language_id # add this for different language tab!
             })
 
     # Fetch contributions from UserContributions
@@ -111,6 +66,7 @@ def get_user_words(token):
             "foreign_id": contribution.id,  # Use the primary key ID as the unique identifier
             "foreign_word": contribution.foreign_word,
             "english_translations": [contribution.english_translation],
+            "language_id": contribution.language_id
         })
 
     return jsonify(saved_words_info)
@@ -123,10 +79,15 @@ def save_user_word(token):
     user_id = User.query.filter_by(token=token).first().id
     foreign_word = data.get('foreign_word')
     english_translation = data.get('english_translation')  # Capture English translation from the request
+    language_id = data.get('language_id')  # Retrieve the language_id from the request data
+
+    if not foreign_word or not language_id:
+        return jsonify({"error": "Foreign word and language ID are required"}), 400
     
-    if not foreign_word:
-        return jsonify({"error": "Foreign word is required"}), 400
-    
+    # Verify if the provided language_id exists in the Language table
+    if not Language.query.get(language_id):
+        return jsonify({"error": "Invalid language ID"}), 400
+
     # Check if the foreign word exists in the ForeignTerm table
     foreign_term = ForeignTerm.query.filter(func.lower(ForeignTerm.term) == func.lower(foreign_word)).first()
     
@@ -148,15 +109,17 @@ def save_user_word(token):
             new_contribution = UserContributions(
                 user_id=user_id, 
                 foreign_word=foreign_word, 
-                english_translation=english_translation
+                english_translation=english_translation,
+                language_id=language_id  # Include the language_id in the new contribution
             )
             db.session.add(new_contribution)
             db.session.commit()
             return jsonify({"message": "Your contribution has been saved successfully."}), 201
         else:
-            return jsonify({"error": "English translation is required for words not in the dictionary"}), 400
+            return jsonify({"error": "English translation and language ID are required for words not in the dictionary"}), 400
 
     return jsonify({"message": "Word saved successfully"}), 201
+
 
 def search_similar(word):
     foreign_terms = ForeignTerm.query.filter(ForeignTerm.term.ilike(f'{word}%')).all()

@@ -35,7 +35,7 @@ function App () {
     <BrowserRouter>
       <div className='App' >
       <div style={appStyle}>
-        <Navbar />
+        
         <Routes>
           <Route path='/' element={<Main />}></Route>
           <Route path='/login' element={<Login />}></Route>

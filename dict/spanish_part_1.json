@@ -1,0 +1,6506 @@
+{
+    "dado": [
+        "die",
+        "given",
+        "given",
+        "dice"
+    ],
+    "dar": [
+        "give",
+        "allow",
+        "cast",
+        "bring",
+        "chime",
+        "give",
+        "give",
+        "bid",
+        "deliver",
+        "extend",
+        "give away",
+        "hand on",
+        "lend",
+        "put on",
+        "render",
+        "take",
+        "wage"
+    ],
+    "defensa": [
+        "defence,defense",
+        "championship",
+        "defence,defense",
+        "defence,defense",
+        "advocate",
+        "fender",
+        "back",
+        "wicket-keeper"
+    ],
+    "director": [
+        "director",
+        "headmaster",
+        "head",
+        "rector",
+        "manager",
+        "principal",
+        "superintendent",
+        "warden",
+        "warden",
+        "governor"
+    ],
+    "encontrar": [
+        "find",
+        "meet",
+        "meet",
+        "meet",
+        "meet",
+        "come across",
+        "find",
+        "hit on",
+        "pick up",
+        "pick up",
+        "dig out",
+        "strike",
+        "track down"
+    ],
+    "fase": [
+        "phase",
+        "period",
+        "phase",
+        "stage"
+    ],
+    "grande": [
+        "big",
+        "great",
+        "large",
+        "high",
+        "gross",
+        "grown-up",
+        "wide",
+        "great"
+    ],
+    "interior": [
+        "inside",
+        "interior",
+        "interior",
+        "hinterland",
+        "outback",
+        "inside",
+        "inland",
+        "inland",
+        "inner",
+        "interior",
+        "internal",
+        "inward",
+        "landlocked"
+    ],
+    "material": [
+        "material",
+        "material",
+        "physical",
+        "material",
+        "stuff"
+    ],
+    "musical": [
+        "musical",
+        "musical",
+        "musical"
+    ],
+    "nuevas": [
+        "tidings"
+    ],
+    "palabra": [
+        "word",
+        "word",
+        "word",
+        "faith",
+        "talk"
+    ],
+    "producto": [
+        "product",
+        "product",
+        "product",
+        "produce",
+        "commodity"
+    ],
+    "realidad": [
+        "reality",
+        "reality",
+        "reality",
+        "actuality",
+        "fact"
+    ],
+    "trabajar": [
+        "work",
+        "work",
+        "work"
+    ],
+    "calidad": [
+        "quality",
+        "capacity",
+        "grade"
+    ],
+    "capaz": [
+        "able",
+        "capable",
+        "capable",
+        "susceptible"
+    ],
+    "carga": [
+        "burden",
+        "charge",
+        "load",
+        "cargo",
+        "burden",
+        "drag",
+        "freight",
+        "charge",
+        "charge",
+        "tax",
+        "trust",
+        "load",
+        "refill"
+    ],
+    "clase": [
+        "classroom",
+        "class",
+        "lecture",
+        "class",
+        "class",
+        "class",
+        "class",
+        "class",
+        "description",
+        "form",
+        "lesson",
+        "stream",
+        "rank",
+        "kind",
+        "sort",
+        "style"
+    ],
+    "completo": [
+        "complete",
+        "complete",
+        "full",
+        "entire",
+        "thorough",
+        "positive",
+        "proper",
+        "dead",
+        "pure",
+        "sound",
+        "perfect",
+        "all-round,all-around",
+        "collected",
+        "comprehensive"
+    ],
+    "crecimiento": [
+        "growth",
+        "growth",
+        "growth"
+    ],
+    "cuarto": [
+        "chamber",
+        "room",
+        "den",
+        "fourth",
+        "quarter",
+        "fourth",
+        "quarter",
+        "quarter",
+        "quarter"
+    ],
+    "especialmente": [
+        "specially",
+        "especially",
+        "particularly",
+        "peculiarly",
+        "notably"
+    ],
+    "estructura": [
+        "structure",
+        "frame",
+        "framework"
+    ],
+    "fuente": [
+        "fountain",
+        "fountain",
+        "source",
+        "fountain",
+        "source",
+        "head",
+        "font",
+        "font",
+        "platter"
+    ],
+    "generalmente": [
+        "usually",
+        "generally"
+    ],
+    "ocho": [
+        "eight",
+        "eight",
+        "figure of eight"
+    ],
+    "personaje": [
+        "character"
+    ],
+    "realizado": [
+        "fulfilled"
+    ],
+    "red": [
+        "network",
+        "network",
+        "network",
+        "net",
+        "ring"
+    ],
+    "vuelta": [
+        "lap",
+        "turn",
+        "stroll",
+        "circuit",
+        "round",
+        "round",
+        "revolution",
+        "cuff",
+        "comeback",
+        "lift",
+        "return",
+        "ride",
+        "run",
+        "saunter",
+        "screw",
+        "turn-up",
+        "twirl",
+        "twist",
+        "twist",
+        "whirl",
+        "kink",
+        "spin",
+        "spin",
+        "wander"
+    ],
+    "aire": [
+        "air",
+        "wind",
+        "air",
+        "air"
+    ],
+    "calle": [
+        "road",
+        "street",
+        "way",
+        "street"
+    ],
+    "conflicto": [
+        "conflict",
+        "strife",
+        "conflict",
+        "clash"
+    ],
+    "existencia": [
+        "existence",
+        "existence",
+        "being"
+    ],
+    "falta": [
+        "lack",
+        "shortage",
+        "want",
+        "dearth",
+        "foul"
+    ],
+    "gira": [
+        "tour"
+    ],
+    "localidad": [
+        "locality"
+    ],
+    "mano": [
+        "hand",
+        "hand",
+        "hand",
+        "lick",
+        "pestle"
+    ],
+    "mil": [
+        "thousand",
+        "thousand"
+    ],
+    "pasar": [
+        "go",
+        "go",
+        "pass",
+        "pass",
+        "pass",
+        "pass",
+        "blow over",
+        "elapse",
+        "go down",
+        "go on",
+        "hand",
+        "hand down",
+        "happen",
+        "march",
+        "pass off",
+        "pass on",
+        "push",
+        "roll",
+        "run",
+        "slip",
+        "spend",
+        "step",
+        "undergo",
+        "undergo"
+    ],
+    "posteriormente": [
+        "afterwards",
+        "subsequently"
+    ],
+    "sala": [
+        "room",
+        "hall",
+        "house",
+        "ward"
+    ],
+    "seguridad": [
+        "security",
+        "safety",
+        "assurance",
+        "certainty",
+        "confidence",
+        "safeness"
+    ],
+    "siete": [
+        "seven"
+    ],
+    "voz": [
+        "voice",
+        "voice"
+    ],
+    "actor": [
+        "actor"
+    ],
+    "altura": [
+        "height",
+        "height",
+        "highness",
+        "tallness"
+    ],
+    "antiguo": [
+        "old",
+        "old",
+        "ancient",
+        "antique",
+        "former",
+        "early",
+        "unfashionable"
+    ],
+    "considerado": [
+        "thoughtful",
+        "considerate"
+    ],
+    "formar": [
+        "educate",
+        "school",
+        "train",
+        "form",
+        "make up",
+        "spell",
+        "parade"
+    ],
+    "fuego": [
+        "fire",
+        "fire",
+        "fire",
+        "gunfire",
+        "light"
+    ],
+    "g\u00e9nero": [
+        "gender",
+        "genre",
+        "sort",
+        "kind",
+        "genus",
+        "stuff"
+    ],
+    "importancia": [
+        "importance",
+        "consequence",
+        "emphasis",
+        "greatness",
+        "prominence",
+        "value",
+        "weightiness",
+        "magnitude",
+        "noteworthiness",
+        "significance"
+    ],
+    "industria": [
+        "industry",
+        "trade"
+    ],
+    "inicialmente": [
+        "initially"
+    ],
+    "llama": [
+        "flame",
+        "llama"
+    ],
+    "negro": [
+        "black",
+        "black",
+        "black",
+        "black",
+        "black",
+        "sick"
+    ],
+    "palabras": [
+        "speech",
+        "talk"
+    ],
+    "parque": [
+        "gardens",
+        "park",
+        "playpen",
+        "parquet"
+    ],
+    "planta": [
+        "floor",
+        "plant",
+        "plant",
+        "sole"
+    ],
+    "referencia": [
+        "reference",
+        "reference",
+        "cross-reference"
+    ],
+    "unidad": [
+        "unit",
+        "unit",
+        "unit",
+        "unity",
+        "unity",
+        "unity"
+    ],
+    "conocimiento": [
+        "knowledge",
+        "knowledge",
+        "acquaintance",
+        "grip",
+        "appreciation",
+        "knowledge"
+    ],
+    "directamente": [
+        "directly",
+        "straight",
+        "straight",
+        "smack",
+        "square",
+        "squarely"
+    ],
+    "elecciones": [
+        "poll"
+    ],
+    "escrito": [
+        "written"
+    ],
+    "esposa": [
+        "wife"
+    ],
+    "evitar": [
+        "avoid",
+        "miss",
+        "sidestep",
+        "get out of",
+        "shun",
+        "spare",
+        "spare",
+        "stop"
+    ],
+    "idea": [
+        "idea",
+        "appreciation",
+        "hunch",
+        "idea",
+        "inkling",
+        "notion",
+        "notion",
+        "sound"
+    ],
+    "independiente": [
+        "independent",
+        "independent",
+        "independent",
+        "independent",
+        "self-sufficient",
+        "detached",
+        "viable"
+    ],
+    "media": [
+        "average",
+        "stocking",
+        "tights"
+    ],
+    "principio": [
+        "start",
+        "principle",
+        "principle",
+        "standard",
+        "germ",
+        "head",
+        "outset"
+    ],
+    "promedio": [
+        "average"
+    ],
+    "prueba": [
+        "proof",
+        "proof",
+        "proof",
+        "event",
+        "evidence",
+        "test",
+        "test",
+        "test",
+        "test",
+        "fitting",
+        "hardship",
+        "taste",
+        "token",
+        "trial",
+        "trial run"
+    ],
+    "revista": [
+        "magazine",
+        "parade",
+        "review",
+        "revue",
+        "journal"
+    ],
+    "utilizar": [
+        "use",
+        "utilize, (also utilise British)",
+        "employ",
+        "harness",
+        "tap"
+    ],
+    "actualmente": [
+        "currently",
+        "nowadays",
+        "presently"
+    ],
+    "barrio": [
+        "neighbourhood,neighborhood",
+        "quarter",
+        "municipality"
+    ],
+    "convertirse": [
+        "become",
+        "turn",
+        "get",
+        "shade"
+    ],
+    "corte": [
+        "cut",
+        "incision",
+        "gash",
+        "slit",
+        "hack",
+        "court",
+        "cut",
+        "trim",
+        "cut",
+        "fit",
+        "failure",
+        "notch"
+    ],
+    "dicho": [
+        "saying"
+    ],
+    "efectos": [
+        "effects"
+    ],
+    "figura": [
+        "figure",
+        "figure",
+        "shape",
+        "sight",
+        "character"
+    ],
+    "longitud": [
+        "length",
+        "longitude"
+    ],
+    "madera": [
+        "wood",
+        "head"
+    ],
+    "mar": [
+        "sea",
+        "sea",
+        "sea",
+        "blue"
+    ],
+    "matrimonio": [
+        "marriage",
+        "matrimony",
+        "wedlock"
+    ],
+    "nada": [
+        "nothing",
+        "anything",
+        "naught",
+        "nothingness",
+        "nought",
+        "little"
+    ],
+    "naturaleza": [
+        "nature",
+        "nature"
+    ],
+    "pareja": [
+        "couple",
+        "mate",
+        "mate",
+        "pair",
+        "partner",
+        "partnership",
+        "twosome"
+    ],
+    "profesor": [
+        "teacher",
+        "lecturer",
+        "master",
+        "academic",
+        "professor",
+        "schoolteacher",
+        "schoolmaster"
+    ],
+    "sentido": [
+        "sense",
+        "sense",
+        "sense",
+        "sense",
+        "drift",
+        "meaning",
+        "point"
+    ],
+    "similar": [
+        "similar",
+        "sister"
+    ],
+    "suelo": [
+        "floor",
+        "ground",
+        "soil"
+    ],
+    "toma": [
+        "take",
+        "intake",
+        "intake",
+        "point",
+        "shot"
+    ],
+    "t\u00e9cnica": [
+        "technique",
+        "method",
+        "skill"
+    ],
+    "valor": [
+        "value",
+        "value",
+        "value",
+        "value",
+        "value",
+        "worth",
+        "courage",
+        "denomination",
+        "fortitude",
+        "grit",
+        "heart",
+        "nerve",
+        "pluck",
+        "valour,valor",
+        "spirit"
+    ],
+    "venta": [
+        "sale",
+        "sale",
+        "seller"
+    ],
+    "acto": [
+        "act",
+        "act",
+        "deed"
+    ],
+    "aquel": [
+        "that",
+        "that"
+    ],
+    "batalla": [
+        "battle"
+    ],
+    "civil": [
+        "civilian",
+        "civil",
+        "civil",
+        "civil"
+    ],
+    "comercial": [
+        "commercial",
+        "commercial"
+    ],
+    "contrato": [
+        "contract",
+        "engagement"
+    ],
+    "costa": [
+        "coast",
+        "coastline",
+        "shore"
+    ],
+    "cuyo": [
+        "whose"
+    ],
+    "entorno": [
+        "environment",
+        "surroundings"
+    ],
+    "escapar": [
+        "escape",
+        "break out",
+        "get away",
+        "break away",
+        "elude",
+        "escape"
+    ],
+    "evento": [
+        "event",
+        "do"
+    ],
+    "izquierda": [
+        "left",
+        "left",
+        "left wing"
+    ],
+    "llevar": [
+        "carry",
+        "take",
+        "take",
+        "wear",
+        "wear",
+        "have on",
+        "bear",
+        "bear",
+        "beat",
+        "bring",
+        "cart",
+        "convey",
+        "draw",
+        "drive",
+        "go",
+        "keep",
+        "lead",
+        "lead",
+        "lead",
+        "lift",
+        "manage",
+        "manage",
+        "manage",
+        "run"
+    ],
+    "memoria": [
+        "memory",
+        "memory",
+        "memory",
+        "recall",
+        "recollection",
+        "remembrance"
+    ],
+    "plan": [
+        "plan",
+        "plan",
+        "design",
+        "scheme"
+    ],
+    "problema": [
+        "trouble",
+        "trouble",
+        "question",
+        "question",
+        "problem",
+        "problem",
+        "difficulty",
+        "ill",
+        "proposition",
+        "snag",
+        "trial"
+    ],
+    "profesional": [
+        "professional",
+        "professional",
+        "professional",
+        "businesslike",
+        "occupational",
+        "regular",
+        "workmanlike",
+        "professional"
+    ],
+    "puente": [
+        "bridge",
+        "bridge"
+    ],
+    "p\u00e9rdida": [
+        "bereavement",
+        "waste",
+        "wastage",
+        "loss",
+        "loss",
+        "loss",
+        "stall"
+    ],
+    "real": [
+        "true",
+        "actual",
+        "regal",
+        "kingly",
+        "royal"
+    ],
+    "teatro": [
+        "theatre,theater",
+        "theatre,theater",
+        "drama",
+        "theatricals"
+    ],
+    "torneo": [
+        "tournament"
+    ],
+    "victoria": [
+        "victory",
+        "win"
+    ],
+    "accidente": [
+        "accident",
+        "landform"
+    ],
+    "adelante": [
+        "forward",
+        "along",
+        "forth"
+    ],
+    "bastante": [
+        "ample",
+        "enough",
+        "some",
+        "sufficient",
+        "enough",
+        "enough",
+        "fairly",
+        "pretty",
+        "quite",
+        "rather",
+        "enough",
+        "plenty"
+    ],
+    "blanco": [
+        "white",
+        "white",
+        "fair",
+        "white",
+        "white",
+        "target",
+        "white",
+        "butt",
+        "target",
+        "target",
+        "whitening"
+    ],
+    "campeonato": [
+        "championship"
+    ],
+    "cierto": [
+        "right",
+        "certain",
+        "certain",
+        "certain"
+    ],
+    "completamente": [
+        "completely",
+        "entirely",
+        "fully",
+        "perfectly",
+        "properly",
+        "thoroughly",
+        "wholly",
+        "utterly",
+        "all",
+        "dead",
+        "full",
+        "unreservedly",
+        "hard",
+        "home",
+        "off",
+        "right",
+        "very",
+        "wide"
+    ],
+    "comportamiento": [
+        "behaviour,behavior",
+        "behaviour,behavior",
+        "conduct",
+        "demeanour,demeanor"
+    ],
+    "consecuencia": [
+        "consequence",
+        "effect",
+        "backwash",
+        "implication"
+    ],
+    "cultura": [
+        "culture",
+        "culture",
+        "culture"
+    ],
+    "dejar": [
+        "leave",
+        "let",
+        "put down",
+        "dump",
+        "throw up",
+        "abandon",
+        "leave",
+        "forget",
+        "drop",
+        "leave",
+        "leave",
+        "leave",
+        "abandon",
+        "behind",
+        "cast off",
+        "deposit",
+        "drop off",
+        "render",
+        "set down",
+        "drop"
+    ],
+    "futuro": [
+        "future",
+        "oncoming",
+        "future",
+        "future",
+        "promise"
+    ],
+    "mal": [
+        "amiss",
+        "bad",
+        "queer",
+        "wrong",
+        "badly",
+        "poorly",
+        "naughtily",
+        "wrong",
+        "evil",
+        "harm",
+        "disease",
+        "ill",
+        "ill",
+        "illness",
+        "mischief",
+        "under-"
+    ],
+    "motor": [
+        "engine",
+        "motor"
+    ],
+    "nos": [
+        "ourselves",
+        "us"
+    ],
+    "oro": [
+        "gold",
+        "gold",
+        "gold"
+    ],
+    "plaza": [
+        "square",
+        "place",
+        "seat"
+    ],
+    "salida": [
+        "exit",
+        "exit",
+        "exit",
+        "departure",
+        "growth",
+        "outlet",
+        "quip",
+        "sally",
+        "start",
+        "way",
+        "rising",
+        "sortie",
+        "wisecrack",
+        "witticism"
+    ],
+    "seguir": [
+        "follow",
+        "follow",
+        "follow",
+        "follow",
+        "follow up",
+        "follow up",
+        "pursue",
+        "act on",
+        "dog",
+        "drive on",
+        "get after",
+        "get on",
+        "go after",
+        "go by",
+        "go on",
+        "keep",
+        "keep on",
+        "keep up",
+        "keep up",
+        "strike"
+    ],
+    "tomar": [
+        "take",
+        "take",
+        "take",
+        "take",
+        "take",
+        "take",
+        "take",
+        "take on",
+        "drink",
+        "get",
+        "have",
+        "overrun",
+        "take up"
+    ],
+    "variedad": [
+        "range",
+        "variety",
+        "variety",
+        "variety"
+    ],
+    "velocidad": [
+        "speed",
+        "velocity",
+        "rate"
+    ],
+    "curso": [
+        "course",
+        "form",
+        "grade",
+        "course",
+        "course",
+        "school"
+    ],
+    "dicha": [
+        "bliss",
+        "happiness"
+    ],
+    "eje": [
+        "axis",
+        "axis",
+        "shaft",
+        "axle",
+        "spindle",
+        "axis",
+        "hub",
+        "pivot"
+    ],
+    "evidencia": [
+        "nakedness"
+    ],
+    "fondo": [
+        "bottom",
+        "back",
+        "background",
+        "fund"
+    ],
+    "gobernador": [
+        "governor",
+        "governor"
+    ],
+    "hora": [
+        "hour",
+        "hour",
+        "time",
+        "time",
+        "appointment"
+    ],
+    "ingresos": [
+        "revenue",
+        "earnings",
+        "means",
+        "proceeds"
+    ],
+    "libertad": [
+        "freedom",
+        "liberty",
+        "liberty",
+        "liberty",
+        "latitude"
+    ],
+    "paz": [
+        "peace",
+        "peace",
+        "peacefulness"
+    ],
+    "quienes": [
+        "whom",
+        "whom",
+        "who"
+    ],
+    "sede": [
+        "headquarters",
+        "seat",
+        "see"
+    ],
+    "territorio": [
+        "territory",
+        "territory"
+    ],
+    "texto": [
+        "text",
+        "text",
+        "lines",
+        "copy",
+        "script"
+    ],
+    "acceso": [
+        "access",
+        "access",
+        "approach",
+        "fit"
+    ],
+    "baja": [
+        "casualty",
+        "sick-leave"
+    ],
+    "castillo": [
+        "castle"
+    ],
+    "colores": [
+        "colours,colors",
+        "colours,colors"
+    ],
+    "combate": [
+        "combat",
+        "action",
+        "contest",
+        "engagement",
+        "bout",
+        "boxing match",
+        "fight"
+    ],
+    "conseguir": [
+        "achieve",
+        "obtain",
+        "get",
+        "gain",
+        "gain",
+        "succeed",
+        "come by",
+        "procure",
+        "attain",
+        "bring off",
+        "enlist",
+        "manage",
+        "pick up",
+        "pull off",
+        "recruit"
+    ],
+    "contenido": [
+        "content",
+        "content"
+    ],
+    "diez": [
+        "ten"
+    ],
+    "escena": [
+        "scene",
+        "scene",
+        "scene",
+        "scene"
+    ],
+    "experiencia": [
+        "experience",
+        "experience",
+        "expertise"
+    ],
+    "funcionamiento": [
+        "operation"
+    ],
+    "ganado": [
+        "cattle",
+        "stock",
+        "livestock"
+    ],
+    "hermana": [
+        "sister",
+        "sister"
+    ],
+    "honor": [
+        "honour,honor",
+        "honour,honor",
+        "honour,honor"
+    ],
+    "llegada": [
+        "arrival",
+        "advent",
+        "finish"
+    ],
+    "mando": [
+        "command",
+        "control",
+        "control"
+    ],
+    "objeto": [
+        "object",
+        "object"
+    ],
+    "piedra": [
+        "stone",
+        "stone",
+        "stone",
+        "stone",
+        "stone",
+        "hailstone"
+    ],
+    "posibilidad": [
+        "possibility",
+        "chance",
+        "odds",
+        "question"
+    ],
+    "puertas": [
+        "threshold"
+    ],
+    "puerto": [
+        "harbour,harbor",
+        "haven",
+        "port",
+        "pass",
+        "waterfront"
+    ],
+    "tradicional": [
+        "traditional"
+    ],
+    "transporte": [
+        "transport",
+        "carriage",
+        "transportation",
+        "conveyance",
+        "shipment"
+    ],
+    "tratamiento": [
+        "treatment",
+        "care"
+    ],
+    "utilizado": [
+        "used"
+    ],
+    "valores": [
+        "stock",
+        "values"
+    ],
+    "vivir": [
+        "live",
+        "live",
+        "live"
+    ],
+    "volumen": [
+        "volume",
+        "volume",
+        "volume",
+        "volume",
+        "volume"
+    ],
+    "volver": [
+        "return",
+        "return",
+        "revert",
+        "make",
+        "render",
+        "revive",
+        "send"
+    ],
+    "cine": [
+        "cinema",
+        "cinema",
+        "movie",
+        "repeat",
+        "the pictures"
+    ],
+    "diario": [
+        "daily",
+        "diary",
+        "journal",
+        "newspaper",
+        "daily"
+    ],
+    "encuentro": [
+        "encounter",
+        "meeting",
+        "rendezvous",
+        "rendezvous",
+        "encounter",
+        "match",
+        "fixture",
+        "meet",
+        "tie",
+        "match"
+    ],
+    "esfuerzo": [
+        "effort",
+        "effort",
+        "exertion",
+        "stroke"
+    ],
+    "identidad": [
+        "identity"
+    ],
+    "inicial": [
+        "initial",
+        "initial"
+    ],
+    "jugar": [
+        "play",
+        "play",
+        "play"
+    ],
+    "marcha": [
+        "march",
+        "march",
+        "departure",
+        "gear"
+    ],
+    "ni\u00f1o": [
+        "child",
+        "child",
+        "boy",
+        "kid",
+        "child"
+    ],
+    "nueve": [
+        "nine"
+    ],
+    "oficina": [
+        "office",
+        "office",
+        "office",
+        "station",
+        "workstation",
+        "workstation"
+    ],
+    "particular": [
+        "particular",
+        "particular",
+        "individual",
+        "private",
+        "special"
+    ],
+    "peso": [
+        "weight",
+        "weight",
+        "weight",
+        "weight",
+        "weightiness",
+        "load",
+        "peso"
+    ],
+    "prensa": [
+        "press",
+        "press",
+        "press",
+        "press",
+        "printing press"
+    ],
+    "presente": [
+        "present",
+        "present",
+        "present",
+        "here",
+        "gift",
+        "present"
+    ],
+    "producir": [
+        "produce",
+        "produce",
+        "produce",
+        "produce",
+        "generate",
+        "give off",
+        "give out",
+        "send out",
+        "turn out",
+        "yield"
+    ],
+    "reconocimiento": [
+        "recognition",
+        "acknowledgement,acknowledgment",
+        "admission",
+        "appreciation",
+        "survey",
+        "reconnaissance"
+    ],
+    "riesgo": [
+        "risk",
+        "chance",
+        "hazard",
+        "hazardousness",
+        "jeopardy"
+    ],
+    "sonido": [
+        "sound",
+        "sound",
+        "clash",
+        "noise"
+    ],
+    "tiempos": [
+        "times"
+    ],
+    "usar": [
+        "use",
+        "wear"
+    ],
+    "alcanzar": [
+        "reach",
+        "fetch",
+        "catch",
+        "attain",
+        "hit"
+    ],
+    "ambiente": [
+        "ambience,ambiance",
+        "atmosphere",
+        "surroundings"
+    ],
+    "ancho": [
+        "wide",
+        "broad"
+    ],
+    "aun": [
+        "still",
+        "still",
+        "yet",
+        "yet",
+        "yet",
+        "all"
+    ],
+    "buen": [
+        "good",
+        "pretty",
+        "hearty"
+    ],
+    "busca": [
+        "bleep",
+        "hunt",
+        "pager",
+        "quest"
+    ],
+    "complejo": [
+        "complex",
+        "complex",
+        "complex",
+        "intricate",
+        "complex",
+        "sophisticated"
+    ],
+    "construir": [
+        "build",
+        "construct",
+        "make",
+        "put up"
+    ],
+    "cultural": [
+        "cultural"
+    ],
+    "debajo": [
+        "underneath"
+    ],
+    "disponible": [
+        "available",
+        "allowable"
+    ],
+    "estudiante": [
+        "student",
+        "student"
+    ],
+    "extremo": [
+        "extreme",
+        "extreme",
+        "extreme",
+        "utmost",
+        "utmost",
+        "towering",
+        "extreme",
+        "extreme",
+        "end",
+        "extremity",
+        "extremity",
+        "pitch",
+        "tail-end",
+        "wing",
+        "wing",
+        "winger"
+    ],
+    "hospital": [
+        "hospital",
+        "infirmary"
+    ],
+    "instalaciones": [
+        "premises",
+        "facility"
+    ],
+    "lenguaje": [
+        "language",
+        "language",
+        "speech"
+    ],
+    "mundial": [
+        "global"
+    ],
+    "municipal": [
+        "civic",
+        "municipal"
+    ],
+    "oeste": [
+        "west",
+        "west",
+        "west"
+    ],
+    "peligro": [
+        "danger",
+        "hazard",
+        "menace",
+        "peril",
+        "jeopardy"
+    ],
+    "permanente": [
+        "perm",
+        "permanent wave",
+        "permanent",
+        "regular",
+        "resident",
+        "standing"
+    ],
+    "pista": [
+        "alley",
+        "course",
+        "court",
+        "clue",
+        "lead",
+        "runway",
+        "scent",
+        "tarmac",
+        "track",
+        "track",
+        "trail"
+    ],
+    "rango": [
+        "rank"
+    ],
+    "regresar": [
+        "return"
+    ],
+    "reino": [
+        "kingdom",
+        "kingdom",
+        "realm"
+    ],
+    "salud": [
+        "health",
+        "health",
+        "healthiness",
+        "wholesomeness",
+        "cheers!"
+    ],
+    "temperatura": [
+        "heat",
+        "temperature"
+    ],
+    "templo": [
+        "temple"
+    ],
+    "u": [
+        "U,u"
+    ],
+    "alguien": [
+        "anybody,anyone",
+        "somebody",
+        "someone",
+        "someone"
+    ],
+    "amor": [
+        "love",
+        "love",
+        "devotion",
+        "sweetheart",
+        "darling",
+        "beloved",
+        "dear"
+    ],
+    "autoridades": [
+        "authority"
+    ],
+    "cambiar": [
+        "change",
+        "change",
+        "change",
+        "exchange",
+        "alter",
+        "swing",
+        "trade",
+        "break",
+        "get off",
+        "revise",
+        "switch",
+        "transfer"
+    ],
+    "cantante": [
+        "singer"
+    ],
+    "censo": [
+        "census"
+    ],
+    "conocer": [
+        "know",
+        "know",
+        "know",
+        "meet",
+        "taste"
+    ],
+    "contacto": [
+        "contact",
+        "contact",
+        "connection",
+        "contact",
+        "contact",
+        "contact",
+        "contact"
+    ],
+    "destino": [
+        "destiny",
+        "fate",
+        "destination",
+        "doom",
+        "fate",
+        "lot"
+    ],
+    "distrito": [
+        "district",
+        "municipality",
+        "precinct"
+    ],
+    "duda": [
+        "doubt",
+        "hesitation",
+        "question",
+        "dubiety",
+        "dubiousness",
+        "hesitancy"
+    ],
+    "enfermedad": [
+        "disease",
+        "illness",
+        "sickness",
+        "complaint",
+        "infirmity",
+        "trouble",
+        "malady"
+    ],
+    "entrenador": [
+        "coach",
+        "instructor",
+        "trainer",
+        "trainer"
+    ],
+    "favor": [
+        "favour,favor"
+    ],
+    "formato": [
+        "format"
+    ],
+    "haya": [
+        "beech",
+        "beech"
+    ],
+    "hogar": [
+        "home",
+        "fireside",
+        "hearth"
+    ],
+    "humano": [
+        "human",
+        "humane"
+    ],
+    "ir": [
+        "do",
+        "get",
+        "go",
+        "go",
+        "go",
+        "go",
+        "go",
+        "visit",
+        "nip",
+        "roll",
+        "come along",
+        "go along"
+    ],
+    "ma\u00f1ana": [
+        "morning",
+        "morn",
+        "tomorrow",
+        "tomorrow"
+    ],
+    "morir": [
+        "die",
+        "expire",
+        "pass on"
+    ],
+    "m\u00e9dico": [
+        "doctor",
+        "medic",
+        "physician"
+    ],
+    "necesidad": [
+        "necessity",
+        "need",
+        "need",
+        "call"
+    ],
+    "ni\u00f1a": [
+        "girl",
+        "child",
+        "she"
+    ],
+    "normal": [
+        "normal",
+        "natural",
+        "ordinary",
+        "regular",
+        "stock"
+    ],
+    "originalmente": [
+        "originally"
+    ],
+    "participar": [
+        "participate",
+        "enter into",
+        "join in",
+        "partake"
+    ],
+    "pasa": [
+        "currant"
+    ],
+    "planeta": [
+        "planet"
+    ],
+    "pronto": [
+        "ready",
+        "early",
+        "prompt",
+        "early",
+        "soon",
+        "soon"
+    ],
+    "propuesta": [
+        "suggestion",
+        "proposition",
+        "proposal",
+        "proposal",
+        "proposal",
+        "advance",
+        "approach",
+        "nomination"
+    ],
+    "responsable": [
+        "monitor",
+        "responsible"
+    ],
+    "restos": [
+        "debris",
+        "leftover",
+        "remains",
+        "remains",
+        "scrap",
+        "wreck",
+        "wreck",
+        "wreckage"
+    ],
+    "rojo": [
+        "red",
+        "red",
+        "red"
+    ],
+    "secreto": [
+        "secret",
+        "secret",
+        "secrecy",
+        "secret",
+        "cryptic",
+        "dark",
+        "classified",
+        "sneaking",
+        "undercover"
+    ],
+    "situado": [
+        "situated"
+    ],
+    "terreno": [
+        "ground",
+        "land",
+        "field",
+        "grounds",
+        "patch",
+        "plot",
+        "preserve",
+        "terrain",
+        "wicket"
+    ],
+    "ventaja": [
+        "advantage",
+        "advantage",
+        "lead",
+        "odds",
+        "asset",
+        "convenience"
+    ],
+    "viaje": [
+        "trip",
+        "travel",
+        "journey",
+        "voyage",
+        "passage",
+        "run",
+        "tour",
+        "transit"
+    ],
+    "apertura": [
+        "opening"
+    ],
+    "ayudar": [
+        "help",
+        "help",
+        "assist",
+        "help",
+        "help",
+        "aid",
+        "help out",
+        "oblige"
+    ],
+    "breve": [
+        "brief",
+        "short"
+    ],
+    "cadena": [
+        "chain",
+        "tether",
+        "fetter",
+        "chain",
+        "range",
+        "ridge"
+    ],
+    "conferencia": [
+        "conference",
+        "talk",
+        "lecture"
+    ],
+    "consejo": [
+        "advice",
+        "tip",
+        "counsel",
+        "guidance",
+        "council",
+        "board"
+    ],
+    "continuar": [
+        "continue",
+        "continue",
+        "proceed",
+        "go on",
+        "carry on",
+        "remain",
+        "get on",
+        "keep on",
+        "keep",
+        "persist",
+        "push on"
+    ],
+    "corriente": [
+        "common",
+        "common",
+        "average",
+        "standard",
+        "commonplace",
+        "prevailing",
+        "prevalent",
+        "stock",
+        "current",
+        "stream",
+        "stream",
+        "flow",
+        "current"
+    ],
+    "creciente": [
+        "rising",
+        "crescent"
+    ],
+    "documento": [
+        "document"
+    ],
+    "escenario": [
+        "scene",
+        "stage",
+        "platform",
+        "scene",
+        "scenery",
+        "setting"
+    ],
+    "escribir": [
+        "write",
+        "write",
+        "write",
+        "put",
+        "drop",
+        "contribute"
+    ],
+    "exterior": [
+        "exterior",
+        "outside",
+        "outer",
+        "outward",
+        "outermost",
+        "exterior",
+        "outside"
+    ],
+    "global": [
+        "global"
+    ],
+    "habla": [
+        "speech"
+    ],
+    "homenaje": [
+        "homage",
+        "tribute"
+    ],
+    "industrial": [
+        "industrialist",
+        "industrial"
+    ],
+    "inicio": [
+        "birth",
+        "onset"
+    ],
+    "intento": [
+        "attempt",
+        "endeavour,endeavor",
+        "effort",
+        "effort",
+        "go",
+        "shot",
+        "try"
+    ],
+    "letras": [
+        "arts"
+    ],
+    "liga": [
+        "league",
+        "league"
+    ],
+    "marca": [
+        "bullet point",
+        "brand",
+        "brand",
+        "impression",
+        "imprint",
+        "landmark",
+        "make",
+        "mark",
+        "mark",
+        "marker",
+        "print",
+        "scratch",
+        "tick",
+        "record"
+    ],
+    "mejorar": [
+        "improve",
+        "better",
+        "improve on",
+        "look up",
+        "optimize, (also optimise British)",
+        "polish",
+        "progress",
+        "refine"
+    ],
+    "m\u00e9todo": [
+        "method",
+        "method",
+        "method",
+        "system",
+        "system",
+        "tutor"
+    ],
+    "natal": [
+        "native"
+    ],
+    "nave": [
+        "nave",
+        "shed",
+        "ship",
+        "vessel"
+    ],
+    "normalmente": [
+        "usually",
+        "normally",
+        "normally"
+    ],
+    "pasado": [
+        "past",
+        "past",
+        "the past",
+        "bad",
+        "high",
+        "past",
+        "past",
+        "past"
+    ],
+    "precio": [
+        "price",
+        "price",
+        "cost",
+        "charge",
+        "value"
+    ],
+    "propiedad": [
+        "property",
+        "property",
+        "property",
+        "ownership",
+        "appropriateness",
+        "aptness",
+        "domain"
+    ],
+    "registro": [
+        "record",
+        "entry",
+        "register",
+        "registry",
+        "booking",
+        "search",
+        "stop",
+        "logbook",
+        "tally"
+    ],
+    "regreso": [
+        "return"
+    ],
+    "relaciones": [
+        "dealing",
+        "intercourse",
+        "terms"
+    ],
+    "rendimiento": [
+        "yield"
+    ],
+    "salir": [
+        "depart",
+        "get out",
+        "go out",
+        "get away",
+        "set off",
+        "set out",
+        "emerge",
+        "break out in",
+        "come out",
+        "come out",
+        "come out",
+        "draw out",
+        "issue",
+        "pop",
+        "pour",
+        "protrude",
+        "sprout"
+    ],
+    "sangre": [
+        "blood"
+    ],
+    "se\u00f1al": [
+        "sign",
+        "sign",
+        "signal",
+        "signal",
+        "signal",
+        "evidence",
+        "beep",
+        "deposit",
+        "deposit",
+        "landmark",
+        "mark",
+        "pledge",
+        "scratch",
+        "tick",
+        "token"
+    ],
+    "soporte": [
+        "medium",
+        "bracket",
+        "mount",
+        "rest",
+        "support",
+        "support"
+    ],
+    "totalmente": [
+        "totally",
+        "perfectly",
+        "altogether",
+        "all",
+        "hard",
+        "quite",
+        "right",
+        "unreservedly",
+        "utterly"
+    ],
+    "visita": [
+        "visit",
+        "call",
+        "visitor",
+        "caller",
+        "company",
+        "tour",
+        "tour",
+        "view"
+    ],
+    "abogado": [
+        "attorney",
+        "barrister",
+        "counsel",
+        "lawyer",
+        "solicitor"
+    ],
+    "activo": [
+        "active",
+        "active",
+        "active",
+        "active",
+        "energetic",
+        "live",
+        "vivid",
+        "active",
+        "alive",
+        "brisk"
+    ],
+    "aspecto": [
+        "aspect",
+        "aspect",
+        "look",
+        "air",
+        "way",
+        "guise",
+        "respect",
+        "side"
+    ],
+    "bosque": [
+        "forest",
+        "wood",
+        "woodland"
+    ],
+    "cara": [
+        "face",
+        "side",
+        "facet",
+        "side",
+        "cheek",
+        "heads"
+    ],
+    "completar": [
+        "complete",
+        "finish off",
+        "make up"
+    ],
+    "compuesto": [
+        "compound",
+        "compound"
+    ],
+    "constante": [
+        "constant",
+        "constant",
+        "steady",
+        "steady",
+        "unfailing",
+        "even",
+        "even",
+        "steadiness"
+    ],
+    "contexto": [
+        "context"
+    ],
+    "corto": [
+        "short",
+        "short",
+        "curt",
+        "dense",
+        "dim",
+        "light-headed"
+    ],
+    "desarrollar": [
+        "develop",
+        "work",
+        "elaborate",
+        "formulate",
+        "amplify"
+    ],
+    "diferente": [
+        "different",
+        "unlike",
+        "separate"
+    ],
+    "doble": [
+        "stuntman",
+        "double",
+        "look-alike",
+        "double",
+        "double",
+        "double",
+        "double",
+        "dual"
+    ],
+    "doce": [
+        "twelve"
+    ],
+    "encima": [
+        "above",
+        "over"
+    ],
+    "esposo": [
+        "husband"
+    ],
+    "hablar": [
+        "talk",
+        "talk",
+        "talk",
+        "speak",
+        "speak",
+        "speak",
+        "chat"
+    ],
+    "hechos": [
+        "doings"
+    ],
+    "juicio": [
+        "trial",
+        "judgement,judgment",
+        "judgement,judgment",
+        "judgement,judgment",
+        "judgement,judgment",
+        "estimation",
+        "prosecution",
+        "reasonableness",
+        "sense",
+        "judiciousness",
+        "suit",
+        "wit"
+    ],
+    "justicia": [
+        "justice",
+        "justice",
+        "fairness",
+        "righteousness",
+        "rightness",
+        "justness"
+    ],
+    "legal": [
+        "legal",
+        "legal",
+        "lawful"
+    ],
+    "maestro": [
+        "master"
+    ],
+    "muerto": [
+        "dead"
+    ],
+    "nacimiento": [
+        "birth",
+        "birth",
+        "dawning",
+        "head",
+        "source"
+    ],
+    "novela": [
+        "novel"
+    ],
+    "ojo": [
+        "eye",
+        "eye"
+    ],
+    "par": [
+        "pair",
+        "pair",
+        "par",
+        "peer",
+        "peer",
+        "brace",
+        "even"
+    ],
+    "plata": [
+        "silver",
+        "silver"
+    ],
+    "plataforma": [
+        "platform",
+        "apron",
+        "pad",
+        "shelf"
+    ],
+    "poner": [
+        "put",
+        "put",
+        "put on",
+        "place",
+        "fit",
+        "fix",
+        "get",
+        "lay",
+        "lay",
+        "make",
+        "put through",
+        "set",
+        "set",
+        "set",
+        "set",
+        "stow",
+        "take"
+    ],
+    "posterior": [
+        "posterior",
+        "subsequent"
+    ],
+    "potencia": [
+        "power",
+        "power",
+        "powerfulness",
+        "potency"
+    ],
+    "probablemente": [
+        "easily",
+        "probably"
+    ],
+    "puerta": [
+        "door",
+        "door",
+        "doorway",
+        "gate",
+        "gateway"
+    ],
+    "recibir": [
+        "receive",
+        "receive",
+        "receive",
+        "receive",
+        "get",
+        "welcome",
+        "derive",
+        "entertain",
+        "have",
+        "have",
+        "meet",
+        "pick up",
+        "poll"
+    ],
+    "reserva": [
+        "booking",
+        "reserve",
+        "reserve",
+        "reserve",
+        "reservation",
+        "reservation",
+        "reservation",
+        "aloofness",
+        "caginess",
+        "confidentiality",
+        "forest",
+        "qualification",
+        "reservation",
+        "safari park",
+        "sanctuary",
+        "stock",
+        "store",
+        "secrecy",
+        "secretiveness"
+    ],
+    "responsabilidad": [
+        "responsibility",
+        "responsibility",
+        "responsibility",
+        "blame",
+        "accountability",
+        "liability",
+        "onus",
+        "trust",
+        "trust"
+    ],
+    "sello": [
+        "stamp",
+        "stamp",
+        "seal",
+        "hallmark",
+        "touch"
+    ],
+    "simplemente": [
+        "simply",
+        "simply"
+    ],
+    "solamente": [
+        "only",
+        "only",
+        "only",
+        "alone",
+        "just"
+    ],
+    "te": [
+        "tea",
+        "tea",
+        "tea"
+    ],
+    "tercero": [
+        "third",
+        "third party"
+    ],
+    "terminar": [
+        "finish",
+        "complete",
+        "end",
+        "end up",
+        "expire",
+        "break up",
+        "finish off",
+        "finish off",
+        "terminate",
+        "close",
+        "conclude",
+        "get through",
+        "give out",
+        "pass",
+        "see through"
+    ],
+    "torre": [
+        "tower",
+        "castle",
+        "pylon",
+        "pylon",
+        "rook"
+    ],
+    "urbano": [
+        "urban"
+    ],
+    "valle": [
+        "valley",
+        "vale"
+    ],
+    "vuelo": [
+        "flight",
+        "flight"
+    ],
+    "aeropuerto": [
+        "airport"
+    ],
+    "alcalde": [
+        "mayor",
+        "lord mayor"
+    ],
+    "apenas": [
+        "barely",
+        "hardly",
+        "hardly",
+        "scarcely"
+    ],
+    "arquitecto": [
+        "architect"
+    ],
+    "asesinato": [
+        "murder",
+        "assassination",
+        "murder"
+    ],
+    "aumento": [
+        "augmentation",
+        "increase",
+        "gain",
+        "raise",
+        "enlargement",
+        "increment",
+        "jump",
+        "magnification",
+        "rise"
+    ],
+    "avance": [
+        "advance",
+        "advancement",
+        "breakthrough",
+        "trailer",
+        "thrust"
+    ],
+    "capilla": [
+        "chapel",
+        "chapel"
+    ],
+    "carta": [
+        "letter",
+        "menu",
+        "card",
+        "playing card",
+        "chart",
+        "map"
+    ],
+    "comercio": [
+        "shop",
+        "commerce",
+        "trade"
+    ],
+    "constantemente": [
+        "always",
+        "constantly",
+        "steadily",
+        "unfailingly"
+    ],
+    "contrario": [
+        "opposite",
+        "opposing",
+        "contrary",
+        "reverse",
+        "converse"
+    ],
+    "da\u00f1o": [
+        "damage",
+        "harm",
+        "mischief"
+    ],
+    "diversidad": [
+        "diversity",
+        "diverseness"
+    ],
+    "doctor": [
+        "doctor",
+        "medic"
+    ],
+    "editor": [
+        "publisher",
+        "editor"
+    ],
+    "espera": [
+        "wait"
+    ],
+    "frecuencia": [
+        "frequency",
+        "frequency",
+        "frequency"
+    ],
+    "ganar": [
+        "earn",
+        "gain",
+        "gain",
+        "gain",
+        "win",
+        "win",
+        "make",
+        "profit",
+        "take"
+    ],
+    "gol": [
+        "goal"
+    ],
+    "golpe": [
+        "blow",
+        "hit",
+        "stroke",
+        "slash",
+        "whack",
+        "slog",
+        "crack",
+        "bang",
+        "shock",
+        "swipe",
+        "knock",
+        "wallop",
+        "blow",
+        "shock",
+        "stroke",
+        "bump",
+        "dig",
+        "poke",
+        "slam",
+        "stroke",
+        "stroke",
+        "swat",
+        "jab",
+        "knock"
+    ],
+    "hacerse": [
+        "become",
+        "grow",
+        "grow",
+        "carve out",
+        "get",
+        "go through"
+    ],
+    "hoja": [
+        "leaf",
+        "leaf",
+        "sheet",
+        "blade"
+    ],
+    "hotel": [
+        "hotel"
+    ],
+    "individual": [
+        "individual",
+        "individual",
+        "single"
+    ],
+    "inferior": [
+        "inferior",
+        "inferior",
+        "substandard"
+    ],
+    "izquierdo": [
+        "left"
+    ],
+    "motivo": [
+        "motive",
+        "cause",
+        "grounds",
+        "call",
+        "design",
+        "need",
+        "subject"
+    ],
+    "noticias": [
+        "news",
+        "tidings"
+    ],
+    "oficialmente": [
+        "officially",
+        "officially",
+        "officially"
+    ],
+    "oportunidad": [
+        "opportunity",
+        "chance",
+        "break",
+        "expediency",
+        "opening",
+        "opportuneness",
+        "scope",
+        "timeliness"
+    ],
+    "patio": [
+        "yard",
+        "yard",
+        "court",
+        "courtyard",
+        "patio",
+        "quadrangle"
+    ],
+    "periodista": [
+        "journalist"
+    ],
+    "personalidad": [
+        "personality",
+        "personality",
+        "personality"
+    ],
+    "pieza": [
+        "piece",
+        "piece",
+        "component",
+        "man"
+    ],
+    "pintura": [
+        "paint",
+        "painting",
+        "paintwork",
+        "picture",
+        "painting"
+    ],
+    "protagonista": [
+        "principal",
+        "hero"
+    ],
+    "siglos": [
+        "age",
+        "donkey\u2019s years/ages"
+    ],
+    "significado": [
+        "meaning",
+        "sense",
+        "significance"
+    ],
+    "techo": [
+        "ceiling",
+        "roof",
+        "roof top"
+    ],
+    "terminal": [
+        "terminal",
+        "terminal",
+        "terminal",
+        "terminal"
+    ],
+    "torno": [
+        "lathe",
+        "winch"
+    ],
+    "trayectoria": [
+        "path"
+    ],
+    "universidad": [
+        "university",
+        "school"
+    ],
+    "usado": [
+        "used",
+        "bare",
+        "spent"
+    ],
+    "ventas": [
+        "take"
+    ],
+    "verdad": [
+        "surely",
+        "truth",
+        "truth",
+        "trueness"
+    ],
+    "acero": [
+        "steel"
+    ],
+    "alma": [
+        "soul",
+        "soul",
+        "soul"
+    ],
+    "amigo": [
+        "pally",
+        "friend",
+        "friend",
+        "pal",
+        "boyfriend"
+    ],
+    "arriba": [
+        "above",
+        "above",
+        "overhead",
+        "up",
+        "upstairs"
+    ],
+    "artista": [
+        "artist",
+        "artist",
+        "performer",
+        "artiste",
+        "entertainer"
+    ],
+    "aumentar": [
+        "increase",
+        "heighten",
+        "add",
+        "augment",
+        "boost",
+        "enhance",
+        "build up",
+        "enlarge",
+        "enlarge",
+        "expand",
+        "gain",
+        "deepen",
+        "escalate",
+        "get up",
+        "go up",
+        "magnify",
+        "mount",
+        "put on",
+        "put up",
+        "rise",
+        "step up",
+        "up"
+    ],
+    "cartas": [
+        "cards"
+    ],
+    "chico": [
+        "boy",
+        "lad"
+    ],
+    "ciencia": [
+        "science",
+        "science",
+        "science"
+    ],
+    "cifra": [
+        "figure"
+    ],
+    "comienzo": [
+        "beginning",
+        "birth",
+        "onset",
+        "opening",
+        "outset",
+        "commencement"
+    ],
+    "compromiso": [
+        "commitment",
+        "appointment",
+        "date",
+        "engagement",
+        "undertaking"
+    ],
+    "contar": [
+        "count",
+        "tell",
+        "tell",
+        "narrate",
+        "number",
+        "count",
+        "tell",
+        "number",
+        "count"
+    ],
+    "crimen": [
+        "crime",
+        "crime",
+        "felony"
+    ],
+    "culto": [
+        "learned",
+        "well-read",
+        "cultured",
+        "enlightened",
+        "literary",
+        "cultivated",
+        "well-educated",
+        "cult"
+    ],
+    "departamento": [
+        "department"
+    ],
+    "descanso": [
+        "rest",
+        "time out",
+        "rest",
+        "breather",
+        "half-time",
+        "time out",
+        "interval",
+        "intermission"
+    ],
+    "empleado": [
+        "employee,employee",
+        "staff",
+        "help",
+        "employed"
+    ],
+    "enemigo": [
+        "enemy",
+        "foe",
+        "enemy",
+        "hostile",
+        "belligerent"
+    ],
+    "episodio": [
+        "episode",
+        "episode",
+        "scene",
+        "instalment",
+        "passage"
+    ],
+    "estudiar": [
+        "study",
+        "study",
+        "read",
+        "do"
+    ],
+    "familiar": [
+        "familiar",
+        "homely",
+        "domestic",
+        "informal"
+    ],
+    "fondos": [
+        "funds",
+        "finance"
+    ],
+    "fundamental": [
+        "fundamental",
+        "material",
+        "basic",
+        "radical"
+    ],
+    "grabado": [
+        "engraving",
+        "engraving",
+        "plate",
+        "print"
+    ],
+    "grabar": [
+        "record",
+        "tape",
+        "engrave",
+        "engrave",
+        "carve",
+        "brand",
+        "impress",
+        "imprint",
+        "scratch"
+    ],
+    "grado": [
+        "degree",
+        "degree",
+        "grade",
+        "degree",
+        "measure",
+        "pitch"
+    ],
+    "habilidad": [
+        "skill",
+        "ability",
+        "faculty",
+        "skilfulness, skillfulness",
+        "adroitness",
+        "aptitude",
+        "deftness",
+        "dexterity",
+        "ingeniousness",
+        "neatness",
+        "power",
+        "knack",
+        "workmanship"
+    ],
+    "impacto": [
+        "impact",
+        "impact",
+        "shock"
+    ],
+    "marcador": [
+        "bookmark",
+        "marker",
+        "scoreboard"
+    ],
+    "materia": [
+        "matter",
+        "stuff"
+    ],
+    "mezcla": [
+        "blend",
+        "hybrid",
+        "mix",
+        "mix",
+        "mixture",
+        "mixture",
+        "mixture"
+    ],
+    "negocio": [
+        "business",
+        "business",
+        "trade",
+        "concern",
+        "shop"
+    ],
+    "obispo": [
+        "bishop"
+    ],
+    "paciente": [
+        "patient",
+        "patient",
+        "forbearing",
+        "meek"
+    ],
+    "piloto": [
+        "pilot",
+        "pilot",
+        "pilot light",
+        "pilot"
+    ],
+    "potencial": [
+        "potential",
+        "potential"
+    ],
+    "realmente": [
+        "really",
+        "real",
+        "truly",
+        "actually",
+        "indeed",
+        "regally",
+        "royally"
+    ],
+    "recientemente": [
+        "recently",
+        "lately"
+    ],
+    "reci\u00e9n": [
+        "freshly",
+        "new",
+        "newly"
+    ],
+    "resistencia": [
+        "resistance",
+        "resistance",
+        "resistance",
+        "endurance",
+        "toughness",
+        "element",
+        "give",
+        "hardiness",
+        "sturdiness"
+    ],
+    "respectivamente": [
+        "respectively"
+    ],
+    "software": [
+        "software"
+    ],
+    "tejido": [
+        "fabric",
+        "tissue",
+        "material",
+        "web"
+    ],
+    "titular": [
+        "headline",
+        "head",
+        "entitle"
+    ],
+    "tono": [
+        "tone",
+        "tone",
+        "tone",
+        "tone",
+        "pitch",
+        "key",
+        "shade"
+    ],
+    "usuario": [
+        "user"
+    ],
+    "verde": [
+        "green",
+        "green",
+        "green",
+        "green",
+        "raw",
+        "immature",
+        "bawdy",
+        "green",
+        "green",
+        "green"
+    ],
+    "voto": [
+        "vote",
+        "vow",
+        "suffrage"
+    ],
+    "abandonar": [
+        "abandon",
+        "leave",
+        "give up",
+        "desert",
+        "drop",
+        "ditch",
+        "forsake",
+        "fly",
+        "jilt",
+        "stand down",
+        "quit",
+        "throw up",
+        "maroon",
+        "maroon"
+    ],
+    "actuar": [
+        "act",
+        "act",
+        "play",
+        "do",
+        "proceed"
+    ],
+    "adicional": [
+        "additional",
+        "added",
+        "subsidiary"
+    ],
+    "ampliamente": [
+        "amply",
+        "widely",
+        "spaciously"
+    ],
+    "arma": [
+        "weapon"
+    ],
+    "asistencia": [
+        "assistance",
+        "attendance"
+    ],
+    "bienes": [
+        "estate",
+        "effects",
+        "assets"
+    ],
+    "candidato": [
+        "contestant",
+        "candidate",
+        "nominee",
+        "applicant",
+        "entrant"
+    ],
+    "carretera": [
+        "road",
+        "highway",
+        "high road"
+    ],
+    "casado": [
+        "married"
+    ],
+    "casco": [
+        "hoof",
+        "helmet",
+        "headgear",
+        "hull",
+        "hulk",
+        "hoof"
+    ],
+    "claro": [
+        "clearing",
+        "surely",
+        "indeed",
+        "sure",
+        "clear",
+        "plain",
+        "plain",
+        "apparent",
+        "clear",
+        "crystal clear",
+        "distinct",
+        "manifest",
+        "stark",
+        "clear-cut",
+        "fair",
+        "light",
+        "light",
+        "pale",
+        "thin"
+    ],
+    "clima": [
+        "weather",
+        "climate",
+        "climate"
+    ],
+    "columna": [
+        "column",
+        "pillar",
+        "upright",
+        "column",
+        "column",
+        "column",
+        "column",
+        "column"
+    ],
+    "competencia": [
+        "competence",
+        "competition",
+        "proficiency",
+        "rat race"
+    ],
+    "compositor": [
+        "composer",
+        "songwriter"
+    ],
+    "compra": [
+        "shopping",
+        "purchase",
+        "shopping",
+        "purchase"
+    ],
+    "concepto": [
+        "concept",
+        "notion"
+    ],
+    "concierto": [
+        "concert",
+        "concerto"
+    ],
+    "concurso": [
+        "contest"
+    ],
+    "condado": [
+        "county"
+    ],
+    "consumo": [
+        "consumption"
+    ],
+    "correo": [
+        "post",
+        "mail"
+    ],
+    "cosa": [
+        "thing",
+        "thing",
+        "stuff",
+        "object",
+        "affair"
+    ],
+    "cuello": [
+        "neck",
+        "throat",
+        "neck",
+        "neck",
+        "collar"
+    ],
+    "dejado": [
+        "sloppy",
+        "scruffy"
+    ],
+    "deseo": [
+        "desire",
+        "wish",
+        "longing",
+        "dream",
+        "hunger",
+        "urge",
+        "want",
+        "wish",
+        "wish"
+    ],
+    "determinar": [
+        "determine",
+        "determine",
+        "shape"
+    ],
+    "deuda": [
+        "debt"
+    ],
+    "distinto": [
+        "distinct",
+        "separate",
+        "dissimilar"
+    ],
+    "emperador": [
+        "emperor"
+    ],
+    "entrega": [
+        "delivery",
+        "instalment"
+    ],
+    "entrevista": [
+        "interview"
+    ],
+    "escala": [
+        "scale",
+        "scale",
+        "scale",
+        "scale",
+        "scale",
+        "range"
+    ],
+    "escritor": [
+        "writer"
+    ],
+    "establecer": [
+        "establish",
+        "base",
+        "determine",
+        "institute"
+    ],
+    "excepto": [
+        "excepted",
+        "except",
+        "excepting",
+        "excluding",
+        "save",
+        "but",
+        "bar"
+    ],
+    "ferrocarril": [
+        "railway",
+        "railroad"
+    ],
+    "hembra": [
+        "female",
+        "female",
+        "cow",
+        "hen",
+        "mate",
+        "she",
+        "she-"
+    ],
+    "independencia": [
+        "independence",
+        "self-sufficiency"
+    ],
+    "infancia": [
+        "childhood",
+        "boyhood",
+        "infancy"
+    ],
+    "inmediatamente": [
+        "immediately",
+        "instantly",
+        "right now",
+        "right away",
+        "right",
+        "directly",
+        "promptly"
+    ],
+    "inteligencia": [
+        "intelligence",
+        "brain",
+        "brightness",
+        "cleverness",
+        "understanding",
+        "wit"
+    ],
+    "jurado": [
+        "avowed",
+        "sworn",
+        "judge",
+        "jury",
+        "jury",
+        "juror,juryman"
+    ],
+    "leyenda": [
+        "legend",
+        "caption",
+        "key"
+    ],
+    "ministro": [
+        "minister"
+    ],
+    "nadie": [
+        "nobody",
+        "no-one"
+    ],
+    "nuestro": [
+        "our"
+    ],
+    "organizado": [
+        "organized, (also organised British)",
+        "organized, (also organised British)",
+        "organized, (also organised British)"
+    ],
+    "oriental": [
+        "eastern",
+        "oriental"
+    ],
+    "oscuro": [
+        "blackout",
+        "dark",
+        "dark",
+        "dark",
+        "obscure",
+        "black",
+        "gloomy"
+    ],
+    "pie": [
+        "foot",
+        "foot",
+        "foot",
+        "foot",
+        "foot",
+        "foot",
+        "foot",
+        "foot",
+        "foot",
+        "foot",
+        "stem",
+        "cue"
+    ],
+    "piel": [
+        "skin",
+        "skin",
+        "fur",
+        "fur",
+        "hide",
+        "leather",
+        "peel",
+        "rind"
+    ],
+    "poblado": [
+        "settlement"
+    ],
+    "profundidad": [
+        "depth",
+        "deepness",
+        "profundity",
+        "throatiness"
+    ],
+    "reciente": [
+        "fresh",
+        "recent",
+        "hot",
+        "up-to-date",
+        "up-to-the-minute"
+    ],
+    "reconocido": [
+        "accepted",
+        "accredited"
+    ],
+    "regular": [
+        "even",
+        "fair",
+        "middling",
+        "moderate",
+        "regular",
+        "regular",
+        "regular",
+        "regular",
+        "so-so",
+        "regulate",
+        "regulate"
+    ],
+    "relativamente": [
+        "comparatively",
+        "relatively"
+    ],
+    "resolver": [
+        "solve",
+        "solve",
+        "resolve",
+        "resolve",
+        "resolve",
+        "work out",
+        "crack",
+        "get round",
+        "patch up",
+        "puzzle out"
+    ],
+    "ropa": [
+        "clothing",
+        "wear"
+    ],
+    "saber": [
+        "know",
+        "know",
+        "taste",
+        "can",
+        "learn",
+        "knowledge",
+        "lore"
+    ],
+    "simple": [
+        "simple",
+        "simple",
+        "simple",
+        "simple",
+        "mere",
+        "simple-minded"
+    ],
+    "solar": [
+        "floor",
+        "plot",
+        "solar"
+    ],
+    "tabla": [
+        "board",
+        "table",
+        "plank",
+        "floorboard"
+    ],
+    "tarea": [
+        "task",
+        "assignment",
+        "job",
+        "chore",
+        "ploy",
+        "undertaking"
+    ],
+    "tienda": [
+        "shop",
+        "store",
+        "tent",
+        "chain store"
+    ],
+    "tramo": [
+        "stage",
+        "stage",
+        "flight",
+        "reach",
+        "stretch"
+    ],
+    "tu": [
+        "your",
+        "you"
+    ],
+    "verdadero": [
+        "true",
+        "real",
+        "real",
+        "real",
+        "real",
+        "absolute",
+        "positive"
+    ],
+    "villa": [
+        "villa"
+    ],
+    "acceder": [
+        "access",
+        "get at"
+    ],
+    "agricultura": [
+        "agriculture",
+        "farming"
+    ],
+    "aprendizaje": [
+        "apprenticeship",
+        "learning"
+    ],
+    "audiencia": [
+        "audience",
+        "hearing"
+    ],
+    "ausencia": [
+        "absence",
+        "absence",
+        "absence",
+        "want"
+    ],
+    "autor": [
+        "author"
+    ],
+    "belleza": [
+        "beauty",
+        "beauty",
+        "beauty",
+        "prettiness"
+    ],
+    "blanca": [
+        "minim"
+    ],
+    "boca": [
+        "mouth",
+        "mouth",
+        "muzzle"
+    ],
+    "boda": [
+        "wedding",
+        "marriage"
+    ],
+    "bolsa": [
+        "bag",
+        "pouch",
+        "exchange",
+        "grip",
+        "pannier",
+        "pocket",
+        "pouch",
+        "stock exchange",
+        "stock market"
+    ],
+    "bronce": [
+        "bronze"
+    ],
+    "ciclo": [
+        "cycle",
+        "cycle",
+        "cycle"
+    ],
+    "clara": [
+        "albumen",
+        "egg white",
+        "shamrock",
+        "shandy",
+        "white"
+    ],
+    "claramente": [
+        "clearly",
+        "evidently",
+        "plainly",
+        "distinctly"
+    ],
+    "clave": [
+        "key",
+        "clef",
+        "key"
+    ],
+    "cobertura": [
+        "coverage",
+        "coverage"
+    ],
+    "coche": [
+        "car",
+        "motor car",
+        "car"
+    ],
+    "comida": [
+        "food",
+        "meal",
+        "lunch",
+        "dinner",
+        "board",
+        "feed"
+    ],
+    "conciencia": [
+        "conscience",
+        "consciousness"
+    ],
+    "controlar": [
+        "control",
+        "monitor",
+        "supervise",
+        "control",
+        "control"
+    ],
+    "dedicado": [
+        "dedicated",
+        "devoted"
+    ],
+    "densidad": [
+        "density",
+        "density",
+        "thickness"
+    ],
+    "derrota": [
+        "defeat",
+        "rout"
+    ],
+    "destruir": [
+        "destroy",
+        "obliterate",
+        "wreck",
+        "grind down",
+        "go"
+    ],
+    "determinado": [
+        "determined",
+        "purposeful",
+        "determined",
+        "set"
+    ],
+    "documentos": [
+        "paper"
+    ],
+    "duro": [
+        "hard",
+        "hard",
+        "tough",
+        "tough",
+        "callous",
+        "uphill",
+        "rough",
+        "harsh",
+        "gruelling,grueling",
+        "unkind",
+        "scathing",
+        "steely",
+        "stiff",
+        "thick-skinned",
+        "hard",
+        "hard",
+        "hard-boiled",
+        "stale"
+    ],
+    "editorial": [
+        "editorial",
+        "leader",
+        "editorial"
+    ],
+    "ejercicio": [
+        "exercise",
+        "exercise",
+        "practice",
+        "exercise",
+        "exertion"
+    ],
+    "elegir": [
+        "select",
+        "pick",
+        "pick out",
+        "make",
+        "elect",
+        "pick on",
+        "return"
+    ],
+    "escudo": [
+        "shield",
+        "shield",
+        "arms",
+        "coat of arms"
+    ],
+    "espalda": [
+        "back"
+    ],
+    "esperanza": [
+        "hope",
+        "hope",
+        "expectation",
+        "hope",
+        "hopefulness"
+    ],
+    "estable": [
+        "stable",
+        "stable",
+        "level",
+        "stable",
+        "stable"
+    ],
+    "famoso": [
+        "famous",
+        "celebrated",
+        "well-known",
+        "noted",
+        "renowned"
+    ],
+    "festival": [
+        "festival",
+        "gala"
+    ],
+    "funcionar": [
+        "work",
+        "function",
+        "operate",
+        "go",
+        "run",
+        "work",
+        "go"
+    ],
+    "fundador": [
+        "founder",
+        "founding father"
+    ],
+    "gen\u00e9tica": [
+        "genetics"
+    ],
+    "imperio": [
+        "empire",
+        "empire"
+    ],
+    "invierno": [
+        "winter",
+        "wintertime"
+    ],
+    "juez": [
+        "adjudicator",
+        "judge",
+        "justice"
+    ],
+    "junta": [
+        "board",
+        "joint",
+        "plenary",
+        "seam",
+        "washer",
+        "junta"
+    ],
+    "lejos": [
+        "far",
+        "far",
+        "away",
+        "afar"
+    ],
+    "magia": [
+        "magic",
+        "magic",
+        "magic"
+    ],
+    "mantenimiento": [
+        "maintenance",
+        "maintenance",
+        "service",
+        "upkeep"
+    ],
+    "margen": [
+        "margin",
+        "margin",
+        "margin",
+        "allowance",
+        "verge"
+    ],
+    "masa": [
+        "mass",
+        "mass",
+        "paste",
+        "bulk",
+        "pastry"
+    ],
+    "mejora": [
+        "improvement",
+        "improvement",
+        "upgrade",
+        "refinement"
+    ],
+    "monta\u00f1a": [
+        "mountain"
+    ],
+    "museo": [
+        "museum"
+    ],
+    "notable": [
+        "remarkable",
+        "notable",
+        "prominent",
+        "marked",
+        "noteworthy",
+        "B,b"
+    ],
+    "pagar": [
+        "pay",
+        "pay",
+        "pay",
+        "pay back",
+        "pay up",
+        "settle",
+        "repay",
+        "cough up",
+        "settle up",
+        "square",
+        "stand"
+    ],
+    "pantalla": [
+        "screen",
+        "lampshade",
+        "screen",
+        "the screen",
+        "shade",
+        "visual display unit"
+    ],
+    "particularmente": [
+        "peculiarly",
+        "specially"
+    ],
+    "permanecer": [
+        "stay",
+        "stay",
+        "remain",
+        "remain",
+        "stay in",
+        "lie",
+        "stay behind",
+        "stop"
+    ],
+    "plazo": [
+        "grace",
+        "instalment"
+    ],
+    "pobreza": [
+        "poverty",
+        "poorness",
+        "shabbiness",
+        "want"
+    ],
+    "popularidad": [
+        "popularity"
+    ],
+    "privado": [
+        "private",
+        "intimate",
+        "en suite"
+    ],
+    "productor": [
+        "producer"
+    ],
+    "promover": [
+        "promote",
+        "promote",
+        "promote",
+        "further",
+        "foster",
+        "pioneer"
+    ],
+    "proporcionar": [
+        "provide",
+        "supply",
+        "bring",
+        "furnish",
+        "put up"
+    ],
+    "quedar": [
+        "meet",
+        "remain",
+        "go down"
+    ],
+    "raza": [
+        "race",
+        "race",
+        "race",
+        "breed",
+        "strain"
+    ],
+    "residencia": [
+        "residence",
+        "residence",
+        "dormitory",
+        "establishment",
+        "hall",
+        "hostel"
+    ],
+    "r\u00e9cord": [
+        "record"
+    ],
+    "secretario": [
+        "secretary",
+        "secretary",
+        "clerk"
+    ],
+    "secuencia": [
+        "sequence",
+        "sequencing"
+    ],
+    "tratado": [
+        "processed",
+        "treatise",
+        "treaty"
+    ],
+    "turismo": [
+        "tourism",
+        "sightseeing",
+        "saloon"
+    ],
+    "abierto": [
+        "forthcoming",
+        "open",
+        "free",
+        "open",
+        "open",
+        "open",
+        "gaping",
+        "open",
+        "open",
+        "open",
+        "unreserved",
+        "overt"
+    ],
+    "abrir": [
+        "crack",
+        "open",
+        "open",
+        "open up",
+        "open up",
+        "open up",
+        "spread",
+        "turn on",
+        "turn on",
+        "unlock",
+        "whet"
+    ],
+    "afuera": [
+        "outside",
+        "afield"
+    ],
+    "agente": [
+        "agent",
+        "agent",
+        "agent",
+        "policeman,policewoman",
+        "constable"
+    ],
+    "alguno": [
+        "any",
+        "some",
+        "some"
+    ],
+    "altitud": [
+        "altitude",
+        "elevation"
+    ],
+    "amiga": [
+        "girlfriend"
+    ],
+    "animal": [
+        "loutish",
+        "brute",
+        "animal",
+        "animal"
+    ],
+    "aprender": [
+        "learn",
+        "pick up",
+        "absorb"
+    ],
+    "armadura": [
+        "armour,armor"
+    ],
+    "arquitectura": [
+        "architecture"
+    ],
+    "ascendencia": [
+        "ancestry",
+        "descent"
+    ],
+    "asegurar": [
+        "ensure",
+        "assure",
+        "insure",
+        "assure",
+        "warrant"
+    ],
+    "autoridad": [
+        "authority",
+        "authority",
+        "authority",
+        "power"
+    ],
+    "baile": [
+        "dance",
+        "dance",
+        "ball"
+    ],
+    "banco": [
+        "bank",
+        "bank",
+        "bank",
+        "bank",
+        "bench",
+        "school",
+        "shoal"
+    ],
+    "bloque": [
+        "block",
+        "block",
+        "sett,set",
+        "bloc"
+    ],
+    "buscar": [
+        "seek",
+        "search",
+        "look for",
+        "look up",
+        "look out",
+        "forage",
+        "hunt",
+        "ask for",
+        "court",
+        "court",
+        "fish",
+        "fish",
+        "hunt for",
+        "tout",
+        "scout"
+    ],
+    "chica": [
+        "girl",
+        "lass"
+    ],
+    "cielo": [
+        "sky",
+        "blue",
+        "heaven",
+        "heaven",
+        "pet",
+        "love"
+    ],
+    "cocina": [
+        "kitchen",
+        "cooking",
+        "cooker",
+        "stove",
+        "cookery",
+        "cooking",
+        "cuisine",
+        "galley",
+        "range"
+    ],
+    "colonia": [
+        "colony",
+        "settlement",
+        "colony",
+        "colony"
+    ],
+    "comandante": [
+        "commandant",
+        "commander",
+        "major"
+    ],
+    "comedia": [
+        "comedy"
+    ],
+    "conducta": [
+        "demeanour,demeanor"
+    ],
+    "conocimientos": [
+        "learning",
+        "grounding",
+        "grasp"
+    ],
+    "controversia": [
+        "controversy"
+    ],
+    "convento": [
+        "convent",
+        "nunnery"
+    ],
+    "convertir": [
+        "convert",
+        "make over"
+    ],
+    "correr": [
+        "run",
+        "rush",
+        "race",
+        "dash",
+        "run",
+        "run",
+        "race",
+        "court",
+        "go around",
+        "rattle",
+        "ride",
+        "stream"
+    ],
+    "correspondiente": [
+        "corresponding",
+        "correspondent"
+    ],
+    "crisis": [
+        "crisis",
+        "crisis",
+        "depression"
+    ],
+    "cuadro": [
+        "picture",
+        "scene",
+        "check",
+        "bed",
+        "pageant",
+        "table"
+    ],
+    "cumplir": [
+        "fulfil,fulfill",
+        "fulfil,fulfill",
+        "discharge",
+        "go through",
+        "honour,honor",
+        "keep",
+        "realize, (also realise British)",
+        "serve",
+        "observe"
+    ],
+    "debut": [
+        "debut,d\u00e9but"
+    ],
+    "delito": [
+        "crime",
+        "offence,offense",
+        "crime",
+        "misdeed"
+    ],
+    "deporte": [
+        "sport",
+        "sport"
+    ],
+    "derecha": [
+        "right",
+        "right",
+        "right wing"
+    ],
+    "deriva": [
+        "leeway",
+        "fin"
+    ],
+    "derrotado": [
+        "defeated",
+        "beaten"
+    ],
+    "destacado": [
+        "prominent",
+        "salient"
+    ],
+    "detalles": [
+        "particulars"
+    ],
+    "encargado": [
+        "attendant",
+        "steward",
+        "monitor",
+        "overseer"
+    ],
+    "entrar": [
+        "enter",
+        "enter",
+        "step",
+        "tackle"
+    ],
+    "error": [
+        "error",
+        "mistake",
+        "lapse"
+    ],
+    "escritos": [
+        "writings"
+    ],
+    "estrella": [
+        "star",
+        "star",
+        "star"
+    ],
+    "evaluar": [
+        "evaluate",
+        "measure",
+        "weigh up",
+        "assess",
+        "assess",
+        "size up"
+    ],
+    "fiesta": [
+        "party",
+        "celebration",
+        "holiday",
+        "do",
+        "festival",
+        "gala",
+        "merrymaking",
+        "revelry",
+        "feast",
+        "fiesta"
+    ],
+    "firma": [
+        "signature",
+        "signature"
+    ],
+    "fiscal": [
+        "prosecutor"
+    ],
+    "fortaleza": [
+        "fortress",
+        "fort",
+        "stronghold",
+        "fortitude",
+        "toughness",
+        "hardiness"
+    ],
+    "frontera": [
+        "border",
+        "frontier",
+        "boundary",
+        "frontier",
+        "frontier"
+    ],
+    "generar": [
+        "generate"
+    ],
+    "gravedad": [
+        "gravity",
+        "gravity"
+    ],
+    "guitarra": [
+        "guitar"
+    ],
+    "hierro": [
+        "iron"
+    ],
+    "ida": [
+        "going"
+    ],
+    "incidente": [
+        "incident",
+        "scene"
+    ],
+    "incluir": [
+        "include",
+        "take in"
+    ],
+    "informe": [
+        "brief",
+        "dispatch",
+        "report",
+        "survey"
+    ],
+    "iniciar": [
+        "boot up",
+        "initiate",
+        "launch into"
+    ],
+    "interesante": [
+        "interesting",
+        "attractive",
+        "sporty"
+    ],
+    "invitado": [
+        "guest",
+        "visitor"
+    ],
+    "leche": [
+        "milk"
+    ],
+    "limpieza": [
+        "cleanliness"
+    ],
+    "literatura": [
+        "literature"
+    ],
+    "lograr": [
+        "achieve",
+        "manage",
+        "accomplish",
+        "attain",
+        "bring off",
+        "contrive",
+        "get"
+    ],
+    "mapa": [
+        "chart",
+        "map"
+    ],
+    "marido": [
+        "husband",
+        "spouse"
+    ],
+    "mensaje": [
+        "message",
+        "message"
+    ],
+    "mesa": [
+        "table",
+        "table"
+    ],
+    "minuto": [
+        "minute",
+        "minute",
+        "minute"
+    ],
+    "negocios": [
+        "dealing"
+    ],
+    "nieve": [
+        "snow"
+    ],
+    "novia": [
+        "girlfriend",
+        "bride",
+        "fianc\u00e9",
+        "sweetheart"
+    ],
+    "observar": [
+        "observe",
+        "observe",
+        "remark",
+        "sight",
+        "look out",
+        "watch",
+        "perceive",
+        "eye",
+        "monitor"
+    ],
+    "oto\u00f1o": [
+        "autumn",
+        "fall"
+    ],
+    "pelea": [
+        "fight",
+        "brawl",
+        "row",
+        "quarrel",
+        "dust-up",
+        "hassle",
+        "scramble",
+        "scrap",
+        "scuffle",
+        "set-to",
+        "wrangle"
+    ],
+    "piso": [
+        "floor",
+        "storey,story",
+        "deck",
+        "condominium"
+    ],
+    "portada": [
+        "title page"
+    ],
+    "presentar": [
+        "introduce",
+        "introduce",
+        "present",
+        "present",
+        "present",
+        "announce",
+        "bring up",
+        "submit",
+        "file",
+        "lodge",
+        "pose",
+        "put",
+        "put on"
+    ],
+    "probabilidad": [
+        "probability",
+        "probability",
+        "likelihood"
+    ],
+    "relacionado": [
+        "related"
+    ],
+    "renuncia": [
+        "renunciation"
+    ],
+    "reservas": [
+        "stockpile"
+    ],
+    "retirarse": [
+        "retire",
+        "retire",
+        "retreat",
+        "retreat",
+        "withdraw",
+        "steal"
+    ],
+    "retorno": [
+        "comeback"
+    ],
+    "rock": [
+        "rock"
+    ],
+    "ronda": [
+        "round",
+        "beat"
+    ],
+    "sol": [
+        "sun",
+        "sun",
+        "sun",
+        "pet"
+    ],
+    "suficiente": [
+        "enough",
+        "enough",
+        "sufficient",
+        "plenty",
+        "adequate",
+        "complacent",
+        "good"
+    ],
+    "s\u00e9ptimo": [
+        "seventh",
+        "seventh"
+    ],
+    "tel\u00e9fono": [
+        "telephone",
+        "phone"
+    ],
+    "totalidad": [
+        "entirety",
+        "whole",
+        "gross"
+    ],
+    "tratar": [
+        "treat",
+        "treat",
+        "treat",
+        "treat",
+        "handle",
+        "handle",
+        "handle",
+        "doctor",
+        "cover",
+        "process"
+    ],
+    "triunfo": [
+        "triumph",
+        "triumph",
+        "trump"
+    ],
+    "t\u00e9cnico": [
+        "technical",
+        "technical",
+        "technical",
+        "technician",
+        "tradesman"
+    ],
+    "violencia": [
+        "violence",
+        "luridness"
+    ],
+    "virus": [
+        "virus",
+        "virus"
+    ],
+    "vivo": [
+        "alive",
+        "alive",
+        "living",
+        "living",
+        "vivid",
+        "vivid",
+        "bright",
+        "bold",
+        "alert",
+        "animate",
+        "gay",
+        "quick-witted",
+        "racy",
+        "sharp-witted",
+        "vivid",
+        "live",
+        "live",
+        "lively"
+    ],
+    "voluntad": [
+        "will",
+        "will"
+    ],
+    "abajo": [
+        "down",
+        "downstairs",
+        "down",
+        "down",
+        "down",
+        "under",
+        "with"
+    ],
+    "abandonado": [
+        "abandoned",
+        "abandoned",
+        "disused",
+        "derelict",
+        "deserted"
+    ],
+    "actitud": [
+        "attitude",
+        "manner"
+    ],
+    "adquirir": [
+        "acquire",
+        "purchase",
+        "gain",
+        "acquire",
+        "develop",
+        "assume",
+        "take"
+    ],
+    "ala": [
+        "wing",
+        "wing",
+        "wing",
+        "wing",
+        "wing",
+        "wing",
+        "brim"
+    ],
+    "alianza": [
+        "alliance",
+        "covenant"
+    ],
+    "amarillo": [
+        "yellow"
+    ],
+    "amistad": [
+        "friendship",
+        "friendship"
+    ],
+    "anillo": [
+        "ring"
+    ],
+    "apoyar": [
+        "support",
+        "back",
+        "stand up for",
+        "bolster",
+        "uphold",
+        "favour,favor",
+        "further",
+        "prop",
+        "rest",
+        "second",
+        "stand by",
+        "countenance",
+        "pillow"
+    ],
+    "atacar": [
+        "attack",
+        "attack",
+        "attack",
+        "strike",
+        "go for",
+        "fall on/upon",
+        "descend",
+        "get at",
+        "go at",
+        "hit out",
+        "set (something or someone) on (someone)",
+        "set upon,set on",
+        "turn on",
+        "waylay",
+        "worry"
+    ],
+    "biblioteca": [
+        "library",
+        "study"
+    ],
+    "blindaje": [
+        "armour,armor"
+    ],
+    "borde": [
+        "border",
+        "edge",
+        "rim",
+        "fringe",
+        "brim",
+        "brink",
+        "edging",
+        "verge",
+        "wayside",
+        "lip",
+        "shirty"
+    ],
+    "canto": [
+        "singing",
+        "song",
+        "song",
+        "call",
+        "rim",
+        "crow"
+    ],
+    "capa": [
+        "coat",
+        "layer",
+        "bed",
+        "wash",
+        "film",
+        "cape",
+        "cloak",
+        "cloak",
+        "coating",
+        "covering",
+        "ply",
+        "deposit"
+    ],
+    "celebrar": [
+        "celebrate",
+        "give",
+        "hold"
+    ],
+    "cerebral": [
+        "cerebral"
+    ],
+    "ceremonia": [
+        "ceremony",
+        "ceremony",
+        "state"
+    ],
+    "cero": [
+        "zero",
+        "nought",
+        "nothing",
+        "zero",
+        "nil",
+        "love",
+        "duck"
+    ],
+    "cierre": [
+        "clasp",
+        "fastening",
+        "fastener",
+        "closure"
+    ],
+    "cita": [
+        "appointment",
+        "date",
+        "rendezvous",
+        "rendezvous",
+        "quotation",
+        "tag"
+    ],
+    "cliente": [
+        "customer",
+        "client",
+        "client"
+    ],
+    "combustible": [
+        "fuel",
+        "combustible"
+    ],
+    "complejidad": [
+        "complexity",
+        "complexity",
+        "intricacy"
+    ],
+    "conflictos": [
+        "trouble"
+    ],
+    "copia": [
+        "copy",
+        "duplicate",
+        "duplication",
+        "twin",
+        "imitation",
+        "facsimile",
+        "print",
+        "carbon copy"
+    ],
+    "cr\u00e9dito": [
+        "credit",
+        "credit",
+        "credit",
+        "credit"
+    ],
+    "debate": [
+        "debate"
+    ],
+    "decreto": [
+        "decree",
+        "edict"
+    ],
+    "dedicarse": [
+        "go in for",
+        "do",
+        "devote"
+    ],
+    "demasiado": [
+        "too"
+    ],
+    "descenso": [
+        "decline",
+        "drop",
+        "descent"
+    ],
+    "detenido": [
+        "detainee"
+    ],
+    "digital": [
+        "digital"
+    ],
+    "disciplina": [
+        "discipline",
+        "discipline"
+    ],
+    "discurso": [
+        "speech",
+        "oration",
+        "discourse",
+        "discourse",
+        "address"
+    ],
+    "dolor": [
+        "pain",
+        "ache",
+        "grief",
+        "sorrow",
+        "smart",
+        "soreness"
+    ],
+    "duque": [
+        "duke"
+    ],
+    "emergencia": [
+        "emergency"
+    ],
+    "ense\u00f1anza": [
+        "teaching",
+        "teaching",
+        "tutelage"
+    ],
+    "establecimiento": [
+        "establishment",
+        "premises"
+    ],
+    "estancia": [
+        "residence",
+        "stay"
+    ],
+    "estrategia": [
+        "strategy",
+        "strategy"
+    ],
+    "europeo": [
+        "European",
+        "European"
+    ],
+    "excelente": [
+        "excellent",
+        "great",
+        "outstanding",
+        "fine",
+        "fine",
+        "marvellous,marvelous",
+        "first-class",
+        "capital",
+        "superb",
+        "tip-top"
+    ],
+    "exclusivamente": [
+        "exclusively"
+    ],
+    "extremadamente": [
+        "extremely",
+        "exceedingly",
+        "terribly"
+    ],
+    "fachada": [
+        "facade",
+        "frontage"
+    ],
+    "fe": [
+        "faith",
+        "belief"
+    ],
+    "fluido": [
+        "fluent",
+        "fluid",
+        "glib",
+        "fluid",
+        "fluid"
+    ],
+    "ganador": [
+        "winning",
+        "winner",
+        "victor"
+    ],
+    "gas": [
+        "gas",
+        "gas",
+        "gas"
+    ],
+    "gusto": [
+        "taste",
+        "taste",
+        "taste",
+        "liking",
+        "delight",
+        "relish"
+    ],
+    "humor": [
+        "mood",
+        "humour,humor",
+        "cheer",
+        "humorousness",
+        "spirits",
+        "temper"
+    ],
+    "infantil": [
+        "childish",
+        "babyish",
+        "childlike",
+        "juvenile"
+    ],
+    "ingreso": [
+        "deposit",
+        "annuity"
+    ],
+    "instrucciones": [
+        "briefing",
+        "direction",
+        "instruction"
+    ],
+    "instrumento": [
+        "implement",
+        "instrument",
+        "instrument",
+        "tool"
+    ],
+    "interpretar": [
+        "interpret",
+        "interpret",
+        "interpret",
+        "act out",
+        "acting",
+        "render"
+    ],
+    "justo": [
+        "fair",
+        "equitable",
+        "very",
+        "just",
+        "just",
+        "exactly",
+        "full",
+        "right",
+        "just"
+    ],
+    "lento": [
+        "slow",
+        "slow",
+        "deliberate",
+        "dull",
+        "sluggish"
+    ],
+    "letra": [
+        "letter",
+        "print",
+        "type",
+        "type",
+        "lyric"
+    ],
+    "limitado": [
+        "confined",
+        "limited",
+        "restricted"
+    ],
+    "lleno": [
+        "eventful",
+        "filled",
+        "full",
+        "heaped"
+    ],
+    "mantenerse": [
+        "hold",
+        "hold"
+    ],
+    "marco": [
+        "frame",
+        "framework",
+        "mark",
+        "mark"
+    ],
+    "matar": [
+        "kill",
+        "slay",
+        "murder",
+        "slaughter",
+        "butcher",
+        "destroy",
+        "do for",
+        "mow down"
+    ],
+    "monasterio": [
+        "monastery"
+    ],
+    "moral": [
+        "moral",
+        "morale",
+        "morality",
+        "morals"
+    ],
+    "mostrar": [
+        "show",
+        "show",
+        "show",
+        "bare",
+        "display",
+        "manifest",
+        "wear"
+    ],
+    "nosotros": [
+        "us",
+        "we"
+    ],
+    "nuestros": [
+        "ours"
+    ],
+    "ocupar": [
+        "occupy",
+        "occupy",
+        "occupy",
+        "employ",
+        "engage",
+        "hold"
+    ],
+    "organismo": [
+        "organism",
+        "system"
+    ],
+    "organizar": [
+        "organize, (also organise British)",
+        "organize, (also organise British)",
+        "arrange",
+        "fix",
+        "get up",
+        "give",
+        "hold",
+        "line up",
+        "see about",
+        "stagger",
+        "station"
+    ],
+    "paisaje": [
+        "landscape",
+        "landscape",
+        "scene",
+        "scenery"
+    ],
+    "pared": [
+        "wall",
+        "wall"
+    ],
+    "patrimonio": [
+        "heritage",
+        "patrimony"
+    ],
+    "pedir": [
+        "ask",
+        "beg",
+        "order",
+        "request",
+        "bid",
+        "call on",
+        "inquire,enquire",
+        "invite",
+        "invite",
+        "put in for",
+        "solicit"
+    ],
+    "pensamiento": [
+        "thought",
+        "thought",
+        "think"
+    ],
+    "perdido": [
+        "lost",
+        "lost",
+        "lost",
+        "lost",
+        "missing",
+        "out-of-the-way",
+        "forfeit",
+        "astray",
+        "stray"
+    ],
+    "permitir": [
+        "allow",
+        "enable",
+        "let",
+        "brook",
+        "permit",
+        "permit",
+        "have",
+        "sanction",
+        "start off"
+    ],
+    "perro": [
+        "dog"
+    ],
+    "piano": [
+        "piano",
+        "pianoforte"
+    ],
+    "pintor": [
+        "painter",
+        "painter"
+    ],
+    "porcentaje": [
+        "percentage",
+        "percentage",
+        "rate"
+    ],
+    "portal": [
+        "doorway"
+    ],
+    "profundamente": [
+        "deep",
+        "deeply",
+        "profoundly",
+        "sorely"
+    ],
+    "propietario": [
+        "owner",
+        "homeowner",
+        "landlord",
+        "possessor",
+        "proprietor"
+    ],
+    "punta": [
+        "tip",
+        "point",
+        "point",
+        "head",
+        "headland",
+        "nib",
+        "points",
+        "prong",
+        "seed",
+        "spike"
+    ],
+    "quinta": [
+        "villa"
+    ],
+    "recorrido": [
+        "travel",
+        "circuit",
+        "path",
+        "round",
+        "round"
+    ],
+    "recuperar": [
+        "recover",
+        "recover",
+        "retrieve",
+        "regain",
+        "get back",
+        "recapture",
+        "salvage"
+    ],
+    "reducido": [
+        "diminished",
+        "confined",
+        "narrow"
+    ],
+    "referencias": [
+        "reference"
+    ],
+    "refuerzos": [
+        "reinforcement"
+    ],
+    "reina": [
+        "queen",
+        "queen",
+        "queen",
+        "queen",
+        "queen"
+    ],
+    "religiosa": [
+        "nun"
+    ],
+    "representante": [
+        "representative",
+        "representative"
+    ],
+    "residencial": [
+        "residential",
+        "residential"
+    ],
+    "ruta": [
+        "walk"
+    ],
+    "sacerdote": [
+        "priest"
+    ],
+    "seguido": [
+        "running",
+        "solid"
+    ],
+    "se\u00f1or": [
+        "master",
+        "master",
+        "Mister",
+        "sir"
+    ],
+    "socialista": [
+        "socialist",
+        "socialist"
+    ],
+    "suma": [
+        "addition",
+        "amount",
+        "sum",
+        "sum"
+    ],
+    "supervivencia": [
+        "survival"
+    ],
+    "tampoco": [
+        "either",
+        "nor"
+    ],
+    "tendencia": [
+        "tendency",
+        "movement",
+        "trend"
+    ],
+    "tocar": [
+        "touch",
+        "touch",
+        "play",
+        "feel",
+        "sound",
+        "blow",
+        "pat",
+        "pipe",
+        "strike",
+        "tamper",
+        "toot",
+        "ring"
+    ],
+    "trayecto": [
+        "travel"
+    ],
+    "treinta": [
+        "thirty"
+    ],
+    "universal": [
+        "universal",
+        "worldwide",
+        "global"
+    ],
+    "verse": [
+        "show"
+    ],
+    "vertical": [
+        "vertical",
+        "upright",
+        "sheer"
+    ],
+    "vivienda": [
+        "dwelling"
+    ],
+    "abuelo": [
+        "grandad",
+        "grandfather",
+        "grandpa"
+    ],
+    "administrativo": [
+        "administrative"
+    ],
+    "alcance": [
+        "reach",
+        "range",
+        "compass",
+        "extent",
+        "scope"
+    ],
+    "alrededores": [
+        "surroundings",
+        "outskirts"
+    ],
+    "aparte": [
+        "aside",
+        "aside"
+    ],
+    "artificial": [
+        "artificial",
+        "man-made",
+        "simulated"
+    ],
+    "asumir": [
+        "assume",
+        "take on"
+    ],
+    "aventura": [
+        "adventure",
+        "love affair",
+        "escapade",
+        "venture"
+    ],
+    "azul": [
+        "blue",
+        "blue",
+        "blue",
+        "blueness"
+    ],
+    "a\u00e9reo": [
+        "aerial"
+    ],
+    "basada": [
+        "stocks"
+    ],
+    "ba\u00f1o": [
+        "bath",
+        "bathe",
+        "loo",
+        "bathing",
+        "lavatory",
+        "swim",
+        "wash"
+    ],
+    "cabello": [
+        "hair",
+        "hair",
+        "lock"
+    ],
+    "caf\u00e9": [
+        "coffee",
+        "caf\u00e9",
+        "coffee shop"
+    ],
+    "caja": [
+        "box",
+        "case",
+        "crate",
+        "chest",
+        "carton",
+        "cash desk",
+        "checkout",
+        "till",
+        "take",
+        "takings"
+    ],
+    "campamento": [
+        "camp",
+        "encampment",
+        "camp",
+        "campsite"
+    ],
+    "captura": [
+        "capture",
+        "arrest",
+        "capture",
+        "bag",
+        "catch"
+    ],
+    "castigo": [
+        "punishment",
+        "punishment",
+        "penalty",
+        "chastisement",
+        "infliction",
+        "scourge"
+    ],
+    "catedral": [
+        "cathedral"
+    ],
+    "cerebro": [
+        "brain",
+        "brain",
+        "mastermind"
+    ],
+    "circuito": [
+        "circuit",
+        "circuit"
+    ],
+    "cobre": [
+        "copper"
+    ],
+    "colaborar": [
+        "collaborate",
+        "collaborate"
+    ],
+    "colegio": [
+        "school",
+        "academy"
+    ],
+    "combatir": [
+        "fight",
+        "battle",
+        "combat",
+        "fight off"
+    ],
+    "comenzar": [
+        "begin",
+        "enter",
+        "commence",
+        "set in"
+    ],
+    "comprender": [
+        "understand",
+        "understand",
+        "get",
+        "grasp",
+        "realize, (also realise British)",
+        "see",
+        "appreciate",
+        "take in",
+        "understand",
+        "apprehend",
+        "comprehend",
+        "comprehend",
+        "comprise",
+        "cover",
+        "fathom",
+        "figure out",
+        "make (something) of (something)",
+        "take in"
+    ],
+    "congreso": [
+        "convention",
+        "congress",
+        "congress"
+    ],
+    "conserva": [
+        "conserve"
+    ],
+    "considerar": [
+        "consider",
+        "consider",
+        "contemplate",
+        "count",
+        "regard",
+        "reckon",
+        "consider",
+        "consider",
+        "deem",
+        "regard",
+        "hold",
+        "ponder",
+        "debate",
+        "heed",
+        "look on"
+    ],
+    "coronel": [
+        "colonel"
+    ],
+    "costumbre": [
+        "custom",
+        "habit",
+        "practice",
+        "habit"
+    ],
+    "cristianismo": [
+        "Christianity"
+    ],
+    "cuarenta": [
+        "forty"
+    ],
+    "cubrir": [
+        "cover",
+        "coat",
+        "cap",
+        "top",
+        "wreathe",
+        "cover",
+        "cover",
+        "drown",
+        "drape",
+        "range",
+        "smother",
+        "stop",
+        "litter"
+    ],
+    "da\u00f1os": [
+        "impairment"
+    ],
+    "declarado": [
+        "sworn"
+    ],
+    "descubierto": [
+        "exposed",
+        "bare",
+        "naked",
+        "overdraft"
+    ],
+    "descubrir": [
+        "discover",
+        "find",
+        "dig out",
+        "find out",
+        "hit on",
+        "ascertain",
+        "expose",
+        "discover",
+        "unearth",
+        "uncover",
+        "bare",
+        "give away",
+        "unveil",
+        "unveil"
+    ],
+    "dictadura": [
+        "dictatorship",
+        "dictatorship"
+    ],
+    "dios": [
+        "God",
+        "God"
+    ],
+    "directo": [
+        "first-hand",
+        "point-blank",
+        "direct",
+        "direct",
+        "direct",
+        "uninterrupted",
+        "immediate",
+        "direct",
+        "bluff",
+        "blunt",
+        "first-hand",
+        "forthright",
+        "non-stop",
+        "point-blank",
+        "through"
+    ],
+    "divorcio": [
+        "divorce"
+    ],
+    "domingo": [
+        "Sunday",
+        "Sabbath"
+    ],
+    "dominio": [
+        "domain",
+        "domain",
+        "realm",
+        "dominance",
+        "domination",
+        "dominion",
+        "dominion",
+        "grasp",
+        "hold",
+        "clutch",
+        "masterfulness",
+        "mastery",
+        "preserve",
+        "sway"
+    ],
+    "efectivo": [
+        "cash",
+        "strength"
+    ],
+    "electoral": [
+        "electoral"
+    ],
+    "elevado": [
+        "high",
+        "towering"
+    ],
+    "eliminar": [
+        "eliminate",
+        "do away with",
+        "exclude",
+        "crush",
+        "knock out",
+        "expel",
+        "cull",
+        "score",
+        "catch out"
+    ],
+    "enfrentarse": [
+        "encounter",
+        "clash"
+    ],
+    "entrenamiento": [
+        "training",
+        "practice"
+    ],
+    "entusiasmo": [
+        "enthusiasm",
+        "keenness",
+        "gusto",
+        "zeal",
+        "zest"
+    ],
+    "enviado": [
+        "envoy"
+    ],
+    "escritura": [
+        "writing",
+        "lettering",
+        "scripture",
+        "script",
+        "title deed"
+    ],
+    "esperar": [
+        "wait",
+        "await",
+        "hang on",
+        "hold",
+        "hold on",
+        "watch",
+        "wait",
+        "expect",
+        "expect",
+        "hope",
+        "trust",
+        "anticipate",
+        "expect",
+        "watch"
+    ],
+    "esquina": [
+        "corner",
+        "angle"
+    ],
+    "establecido": [
+        "established",
+        "set"
+    ],
+    "extranjero": [
+        "foreign",
+        "alien",
+        "overseas",
+        "foreigner",
+        "alien"
+    ],
+    "federal": [
+        "federal"
+    ],
+    "frecuentemente": [
+        "frequently"
+    ],
+    "fuertemente": [
+        "hard",
+        "strongly"
+    ],
+    "gabinete": [
+        "practice",
+        "cabinet"
+    ],
+    "gama": [
+        "range",
+        "spectrum",
+        "line",
+        "doe"
+    ],
+    "grave": [
+        "grave",
+        "critical",
+        "severe",
+        "bad",
+        "grievous",
+        "nasty",
+        "grave",
+        "acute",
+        "grave",
+        "deep",
+        "sobering"
+    ],
+    "guion": [
+        "dash",
+        "hyphen",
+        "script",
+        "screenplay"
+    ],
+    "herido": [
+        "wounded",
+        "hurt",
+        "hurt",
+        "injured",
+        "injured"
+    ],
+    "h\u00e9roe": [
+        "hero"
+    ],
+    "identificar": [
+        "identify",
+        "identify",
+        "pick out",
+        "place"
+    ],
+    "idioma": [
+        "idiom",
+        "language",
+        "tongue"
+    ],
+    "igualmente": [
+        "likewise",
+        "equally"
+    ],
+    "individuo": [
+        "guy",
+        "individual",
+        "individual"
+    ],
+    "infraestructura": [
+        "infrastructure"
+    ],
+    "iniciativa": [
+        "initiative",
+        "initiative",
+        "enterprise"
+    ],
+    "inmediato": [
+        "immediate",
+        "immediate",
+        "immediate",
+        "instant",
+        "prompt"
+    ],
+    "instituto": [
+        "high school",
+        "institute"
+    ],
+    "intensidad": [
+        "intensity",
+        "depth",
+        "intenseness",
+        "edge",
+        "vividness",
+        "loudness"
+    ],
+    "intentar": [
+        "try",
+        "attempt",
+        "seek"
+    ],
+    "irse": [
+        "go",
+        "go off",
+        "leave",
+        "move out",
+        "run along"
+    ],
+    "lago": [
+        "lake"
+    ],
+    "lanzar": [
+        "throw",
+        "toss",
+        "launch",
+        "launch",
+        "cast",
+        "dash",
+        "fling",
+        "heave",
+        "pelt",
+        "pitch",
+        "project",
+        "put out",
+        "rap out",
+        "shoot",
+        "shoot",
+        "sling"
+    ],
+    "leer": [
+        "read",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read",
+        "read off"
+    ],
+    "legado": [
+        "bequest"
+    ],
+    "liderazgo": [
+        "lead",
+        "leadership",
+        "statesmanship"
+    ],
+    "ligero": [
+        "light",
+        "light",
+        "light",
+        "light",
+        "lightweight",
+        "mild",
+        "flimsy",
+        "slight",
+        "feathery",
+        "gentle",
+        "scanty"
+    ],
+    "manto": [
+        "blanket",
+        "mantle",
+        "mantle",
+        "pall",
+        "robe"
+    ],
+    "marcado": [
+        "distinct",
+        "indented",
+        "sharp",
+        "set"
+    ],
+    "mecanismo": [
+        "mechanics",
+        "mechanism",
+        "device",
+        "gear",
+        "machinery",
+        "works",
+        "works"
+    ],
+    "medalla": [
+        "medal"
+    ],
+    "medicina": [
+        "medicine",
+        "medicine"
+    ],
+    "medieval": [
+        "medieval,mediaeval"
+    ],
+    "mente": [
+        "head",
+        "-ly",
+        "-ly",
+        "-ly"
+    ],
+    "metro": [
+        "meter",
+        "metre,meter",
+        "metre,meter",
+        "tube",
+        "underground",
+        "subway"
+    ],
+    "moneda": [
+        "coin",
+        "piece",
+        "currency"
+    ],
+    "negativa": [
+        "denial",
+        "negative",
+        "refusal"
+    ],
+    "norma": [
+        "rule",
+        "rule"
+    ],
+    "novio": [
+        "boyfriend",
+        "fianc\u00e9",
+        "groom",
+        "bridegroom",
+        "sweetheart",
+        "valentine"
+    ],
+    "ofrecer": [
+        "offer",
+        "extend",
+        "pay",
+        "put up",
+        "serve up",
+        "volunteer"
+    ],
+    "palacio": [
+        "court",
+        "palace"
+    ],
+    "papeles": [
+        "paper",
+        "litter"
+    ],
+    "paralelo": [
+        "parallel",
+        "parallel",
+        "parallel",
+        "parallel"
+    ],
+    "parecer": [
+        "seem",
+        "look",
+        "sound",
+        "appear",
+        "find",
+        "strike",
+        "guess",
+        "view",
+        "judgement,judgment"
+    ],
+    "perder": [
+        "lose",
+        "lose",
+        "lose",
+        "lose",
+        "miss",
+        "miss",
+        "miss",
+        "lose",
+        "mislay",
+        "forfeit",
+        "idle away",
+        "misplace"
+    ],
+    "perfil": [
+        "profile"
+    ],
+    "periodismo": [
+        "journalism"
+    ],
+    "permiso": [
+        "licence,license",
+        "permission",
+        "leave",
+        "leave",
+        "pass",
+        "permit",
+        "sanction"
+    ],
+    "plano": [
+        "flat",
+        "level",
+        "flat",
+        "plane",
+        "plan",
+        "plane"
+    ],
+    "positivo": [
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "good",
+        "plus",
+        "positive"
+    ],
+    "practicar": [
+        "practise",
+        "practise"
+    ],
+    "pregunta": [
+        "question",
+        "question",
+        "query"
+    ],
+    "prioridad": [
+        "priority",
+        "priority",
+        "precedence",
+        "right of way"
+    ],
+    "probable": [
+        "likely",
+        "probable"
+    ],
+    "publicidad": [
+        "publicity",
+        "publicity"
+    ],
+    "quedarse": [
+        "stay behind",
+        "stay in",
+        "remain",
+        "behind",
+        "lapse",
+        "lie",
+        "linger",
+        "linger",
+        "stop"
+    ],
+    "quinto": [
+        "fifth",
+        "fifth"
+    ],
+    "religioso": [
+        "religious",
+        "religious"
+    ],
+    "renunciar": [
+        "renounce",
+        "renounce",
+        "surrender",
+        "relinquish"
+    ],
+    "r\u00e9gimen": [
+        "regime",
+        "diet"
+    ],
+    "salvo": [
+        "except",
+        "excepting",
+        "excepted",
+        "safe"
+    ],
+    "seguro": [
+        "assurance",
+        "insurance",
+        "certainly",
+        "sure",
+        "sure",
+        "sure",
+        "certain",
+        "assured",
+        "positive",
+        "safe",
+        "safe",
+        "safe",
+        "secure",
+        "secure"
+    ],
+    "sensibilidad": [
+        "sensitivity",
+        "sensitiveness",
+        "sensibility",
+        "feeling",
+        "responsiveness"
+    ],
+    "taller": [
+        "studio",
+        "garage",
+        "shop",
+        "workshop",
+        "workshop"
+    ],
+    "tesis": [
+        "thesis"
+    ],
+    "traje": [
+        "suit",
+        "suit",
+        "costume",
+        "costume",
+        "outfit",
+        "attire",
+        "lounge suit"
+    ],
+    "tren": [
+        "train",
+        "streetcar"
+    ],
+    "tribu": [
+        "tribe",
+        "tribe"
+    ],
+    "trono": [
+        "throne",
+        "throne"
+    ],
+    "vacaciones": [
+        "holiday",
+        "vacation",
+        "vac"
+    ],
+    "veinte": [
+        "score",
+        "twenty"
+    ],
+    "vender": [
+        "sell",
+        "sell",
+        "sell up",
+        "go",
+        "market",
+        "stock"
+    ],
+    "viernes": [
+        "Friday"
+    ],
+    "viva": [
+        "cheer"
+    ],
+    "abdomen": [
+        "abdomen",
+        "midriff"
+    ],
+    "acabar": [
+        "complete",
+        "finish",
+        "finish off",
+        "end up",
+        "land up",
+        "wind up",
+        "break up",
+        "finish up",
+        "finish",
+        "land",
+        "snuff out",
+        "stitch up",
+        "knock off"
+    ],
+    "acusado": [
+        "the accused",
+        "culprit",
+        "defendant",
+        "acute"
+    ],
+    "adoptar": [
+        "adopt",
+        "adopt",
+        "adopt",
+        "assume"
+    ],
+    "aeronave": [
+        "aircraft"
+    ],
+    "afectado": [
+        "overcome",
+        "genteel",
+        "mincing",
+        "woebegone"
+    ],
+    "agradable": [
+        "pleasant",
+        "pleasing",
+        "enjoyable",
+        "agreeable",
+        "sweet",
+        "kindly",
+        "cosy,cozy",
+        "companionable",
+        "congenial",
+        "good",
+        "pleasurable",
+        "sweet-tempered"
+    ],
+    "agujero": [
+        "hole",
+        "eye",
+        "prick",
+        "loophole"
+    ],
+    "aislado": [
+        "isolated",
+        "stray",
+        "lonely"
+    ],
+    "altar": [
+        "altar",
+        "altar"
+    ],
+    "alternativa": [
+        "alternative"
+    ],
+    "ama": [
+        "mistress",
+        "master"
+    ],
+    "amenaza": [
+        "threat",
+        "threat",
+        "threat",
+        "menace",
+        "menace"
+    ],
+    "amplio": [
+        "wide",
+        "expansive",
+        "sweeping",
+        "commodious",
+        "catholic",
+        "full"
+    ],
+    "analizar": [
+        "analyse,analyze"
+    ],
+    "aniversario": [
+        "anniversary",
+        "jubilee"
+    ],
+    "anual": [
+        "annual",
+        "annual",
+        "yearly"
+    ],
+    "anuncios": [
+        "publicity"
+    ],
+    "apariencia": [
+        "appearance",
+        "look",
+        "surface",
+        "front",
+        "semblance",
+        "show",
+        "guise",
+        "facade",
+        "show"
+    ],
+    "aplicado": [
+        "conscientious"
+    ],
+    "apodo": [
+        "nickname"
+    ],
+    "arco": [
+        "bow",
+        "arch",
+        "arc",
+        "arch",
+        "bow",
+        "bow"
+    ],
+    "asamblea": [
+        "assembly"
+    ],
+    "asistente": [
+        "aide",
+        "comer",
+        "help",
+        "helper",
+        "orderly"
+    ],
+    "atender": [
+        "attend",
+        "attend",
+        "attend",
+        "minister"
+    ],
+    "auxiliar": [
+        "auxiliary",
+        "auxiliary",
+        "auxiliary",
+        "demonstrator",
+        "aid",
+        "relieve"
+    ],
+    "avenida": [
+        "avenue",
+        "avenue",
+        "way"
+    ],
+    "balance": [
+        "balance sheet"
+    ],
+    "baloncesto": [
+        "basketball",
+        "netball"
+    ],
+    "bomba": [
+        "bomb",
+        "bombshell",
+        "pump",
+        "pump",
+        "thunderbolt"
+    ],
+    "brevemente": [
+        "briefly"
+    ],
+    "caballo": [
+        "horse",
+        "knight"
+    ],
+    "cabecera": [
+        "head",
+        "bedside"
+    ],
+    "campus": [
+        "campus"
+    ],
+    "cantar": [
+        "sing",
+        "chant",
+        "crow",
+        "singing"
+    ],
+    "capturar": [
+        "arrest",
+        "capture"
+    ],
+    "cincuenta": [
+        "fifty"
+    ],
+    "circular": [
+        "go around",
+        "run",
+        "run",
+        "move along",
+        "circulate",
+        "circular",
+        "circular",
+        "circular"
+    ],
+    "ciudadano": [
+        "citizen",
+        "citizen",
+        "townsfolk,townspeople"
+    ],
+    "compa\u00f1era": [
+        "girlfriend",
+        "sister"
+    ],
+    "comprobar": [
+        "check",
+        "check"
+    ],
+    "condena": [
+        "conviction",
+        "condemnation"
+    ],
+    "confianza": [
+        "trust",
+        "confidence",
+        "confidence",
+        "faith",
+        "belief"
+    ],
+    "continente": [
+        "continent",
+        "mainland"
+    ],
+    "continuidad": [
+        "continuity",
+        "continuity"
+    ],
+    "coordenadas": [
+        "bearings"
+    ],
+    "costas": [
+        "costs"
+    ],
+    "crecer": [
+        "grow",
+        "grow",
+        "grow up",
+        "sprout up",
+        "expand",
+        "mount",
+        "wax",
+        "wax"
+    ],
+    "cristal": [
+        "pane",
+        "crystal",
+        "window-pane",
+        "crystal"
+    ],
+    "culpa": [
+        "guilt",
+        "guilt",
+        "blame",
+        "fault"
+    ],
+    "dedo": [
+        "finger",
+        "finger",
+        "digit",
+        "finger",
+        "tot"
+    ],
+    "definitivamente": [
+        "definitively",
+        "positively",
+        "definitely",
+        "conclusively"
+    ],
+    "delante": [
+        "ahead"
+    ],
+    "delantero": [
+        "forward",
+        "striker",
+        "forward"
+    ],
+    "demanda": [
+        "action",
+        "demand",
+        "call"
+    ],
+    "denuncia": [
+        "denunciation"
+    ],
+    "describir": [
+        "describe",
+        "characterize",
+        "portray"
+    ],
+    "desnudo": [
+        "nude",
+        "naked",
+        "nude",
+        "bare",
+        "bare"
+    ],
+    "despedida": [
+        "farewell",
+        "parting"
+    ],
+    "destacar": [
+        "highlight",
+        "underline",
+        "show up",
+        "stand out",
+        "excel",
+        "shine",
+        "tower",
+        "spotlight"
+    ],
+    "deterioro": [
+        "decay",
+        "decline",
+        "deterioration",
+        "wear",
+        "impairment"
+    ],
+    "diagrama": [
+        "diagram",
+        "figure"
+    ],
+    "dificultades": [
+        "difficulty"
+    ],
+    "dirigir": [
+        "head",
+        "carry on",
+        "conduct",
+        "control",
+        "direct",
+        "channel",
+        "conduct",
+        "direct",
+        "guide",
+        "address",
+        "manage",
+        "mastermind",
+        "play",
+        "run",
+        "steer",
+        "turn"
+    ],
+    "disparo": [
+        "shot",
+        "shot",
+        "gunshot"
+    ],
+    "dispositivo": [
+        "gadget",
+        "contrivance"
+    ],
+    "disputa": [
+        "dispute"
+    ],
+    "dominante": [
+        "dominant",
+        "commanding",
+        "masterful",
+        "overbearing",
+        "towering"
+    ],
+    "don": [
+        "gift",
+        "flair"
+    ],
+    "duelo": [
+        "duel",
+        "duel",
+        "mourning"
+    ],
+    "d\u00e9cimo": [
+        "tenth",
+        "tenth"
+    ],
+    "enorme": [
+        "huge",
+        "enormous",
+        "massive",
+        "gigantic",
+        "monstrous",
+        "mighty",
+        "formidable",
+        "tremendous",
+        "awful",
+        "crass",
+        "whopping",
+        "thundering"
+    ],
+    "entregar": [
+        "deliver",
+        "hand on",
+        "hand in",
+        "give in",
+        "turn in",
+        "present",
+        "lay down",
+        "hand over",
+        "turn over"
+    ],
+    "equilibrio": [
+        "balance",
+        "poise",
+        "equilibrium",
+        "footing",
+        "balance"
+    ],
+    "equivalente": [
+        "equivalent",
+        "counterpart",
+        "equivalent"
+    ],
+    "escape": [
+        "leak",
+        "leak",
+        "leakage"
+    ],
+    "esencial": [
+        "essential",
+        "material",
+        "bare"
+    ],
+    "espada": [
+        "sword"
+    ],
+    "estadio": [
+        "stadium"
+    ],
+    "estatus": [
+        "status"
+    ],
+    "estrecho": [
+        "narrow",
+        "tight",
+        "cramped",
+        "cramped",
+        "skin-tight",
+        "strait",
+        "narrows"
+    ],
+    "estreno": [
+        "release",
+        "premi\u00e8re"
+    ],
+    "exclusivo": [
+        "sole",
+        "exclusive",
+        "exclusive"
+    ],
+    "excusa": [
+        "excuse"
+    ]
+}

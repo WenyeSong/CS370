@@ -1,0 +1,4823 @@
+{
+    "onafhankelijk": [
+        "independently",
+        "independent",
+        "independent",
+        "independent",
+        "self-sufficient"
+    ],
+    "onderscheid": [
+        "distinction",
+        "discrimination"
+    ],
+    "ontdekken": [
+        "discover",
+        "find",
+        "find out",
+        "nose out",
+        "pick out"
+    ],
+    "oorzaak": [
+        "cause"
+    ],
+    "opgeleid": [
+        "educated"
+    ],
+    "oranje": [
+        "orange",
+        "orange"
+    ],
+    "ouder": [
+        "parent",
+        "parent"
+    ],
+    "overal": [
+        "everywhere"
+    ],
+    "overstap": [
+        "stile"
+    ],
+    "paard": [
+        "horse",
+        "horse",
+        "knight"
+    ],
+    "parlement": [
+        "parliament"
+    ],
+    "parochie": [
+        "parish"
+    ],
+    "passen": [
+        "suit",
+        "fit",
+        "go with",
+        "match"
+    ],
+    "pers": [
+        "press",
+        "press",
+        "press",
+        "squeezer"
+    ],
+    "personage": [
+        "character"
+    ],
+    "persoonlijk": [
+        "personal",
+        "personal",
+        "personal",
+        "personal",
+        "personally",
+        "personally"
+    ],
+    "prins": [
+        "prince",
+        "prince"
+    ],
+    "radio": [
+        "radio",
+        "wireless"
+    ],
+    "ras": [
+        "race",
+        "race",
+        "breed",
+        "strain",
+        "pedigree"
+    ],
+    "rollen": [
+        "roll",
+        "roll",
+        "roll",
+        "roll",
+        "roll",
+        "trundle",
+        "peal"
+    ],
+    "samengesteld": [
+        "compound",
+        "multiple"
+    ],
+    "samenstelling": [
+        "composition",
+        "compound",
+        "compilation"
+    ],
+    "schaal": [
+        "dish",
+        "scale",
+        "scale",
+        "scale",
+        "dial",
+        "scale"
+    ],
+    "schedel": [
+        "skull"
+    ],
+    "schilderij": [
+        "painting"
+    ],
+    "slachtoffer": [
+        "casualty",
+        "victim"
+    ],
+    "slagen": [
+        "succeed",
+        "go",
+        "prosper",
+        "pull off",
+        "get through",
+        "pass"
+    ],
+    "spanning": [
+        "tension",
+        "strain",
+        "stress",
+        "stress",
+        "suspense"
+    ],
+    "specifiek": [
+        "specifically",
+        "specific"
+    ],
+    "spelling": [
+        "spelling"
+    ],
+    "spoor": [
+        "spur",
+        "trace",
+        "trail",
+        "track",
+        "trail",
+        "vestige",
+        "element"
+    ],
+    "springen": [
+        "jump",
+        "jump",
+        "jump",
+        "hop",
+        "leap",
+        "leap",
+        "vault",
+        "bound",
+        "pounce",
+        "spring",
+        "jump"
+    ],
+    "steen": [
+        "stone",
+        "stone",
+        "stone",
+        "stone",
+        "stone-cold, stone-dead, stone-deaf"
+    ],
+    "steken": [
+        "stab",
+        "stick",
+        "stick",
+        "smart",
+        "sting",
+        "jab",
+        "poke",
+        "poke",
+        "thrust",
+        "lodge",
+        "stitching"
+    ],
+    "stevig": [
+        "firmly",
+        "securely",
+        "sturdily",
+        "hard",
+        "hard-wearing",
+        "chewy",
+        "crisp",
+        "firm",
+        "secure",
+        "serviceable",
+        "stout",
+        "sturdy"
+    ],
+    "stof": [
+        "cloth",
+        "material",
+        "stuff",
+        "fabric",
+        "substance",
+        "dust"
+    ],
+    "structuur": [
+        "structure",
+        "organization, (also organisation British)"
+    ],
+    "tentoonstelling": [
+        "exhibition",
+        "exposition"
+    ],
+    "termijn": [
+        "term"
+    ],
+    "toestand": [
+        "condition",
+        "state"
+    ],
+    "toestemming": [
+        "permission",
+        "consent",
+        "go-ahead",
+        "leave"
+    ],
+    "training": [
+        "training",
+        "workout"
+    ],
+    "trap": [
+        "staircase, stairway",
+        "stair",
+        "flight",
+        "stage"
+    ],
+    "twaalfde": [
+        "twelfth",
+        "twelfth"
+    ],
+    "uiterlijk": [
+        "outward",
+        "outwardly",
+        "appearance",
+        "looks"
+    ],
+    "uitzondering": [
+        "exception",
+        "exception"
+    ],
+    "val": [
+        "downfall",
+        "fall",
+        "tumble",
+        "fall",
+        "fall",
+        "trap",
+        "trap"
+    ],
+    "vangen": [
+        "catch",
+        "nab",
+        "hook",
+        "net",
+        "trap"
+    ],
+    "vechten": [
+        "fight",
+        "scrap"
+    ],
+    "veilig": [
+        "safe",
+        "secure",
+        "safe",
+        "safe",
+        "safely"
+    ],
+    "veranderen": [
+        "change",
+        "change",
+        "transform",
+        "alter",
+        "turn"
+    ],
+    "verandering": [
+        "change",
+        "change",
+        "shift",
+        "transformation",
+        "transformation",
+        "alteration"
+    ],
+    "vergelijking": [
+        "comparison",
+        "equation",
+        "simile"
+    ],
+    "vergeten": [
+        "forget",
+        "forget"
+    ],
+    "verhouding": [
+        "proportion",
+        "rate",
+        "ratio",
+        "relation",
+        "relationship"
+    ],
+    "verloop": [
+        "turnover"
+    ],
+    "veroorzaken": [
+        "cause",
+        "produce",
+        "provoke",
+        "raise",
+        "do",
+        "kick up"
+    ],
+    "verscheidene": [
+        "several"
+    ],
+    "verspreid": [
+        "scattered"
+    ],
+    "vervolg": [
+        "continuation",
+        "sequel",
+        "follow-up",
+        "sequel",
+        "serial"
+    ],
+    "vloot": [
+        "fleet",
+        "fleet",
+        "flotilla"
+    ],
+    "voordeel": [
+        "benefit",
+        "advantage",
+        "profit",
+        "good",
+        "asset",
+        "virtue",
+        "advantage"
+    ],
+    "voorkant": [
+        "front",
+        "head"
+    ],
+    "wees": [
+        "orphan"
+    ],
+    "wijzen": [
+        "point"
+    ],
+    "wit": [
+        "white",
+        "pith",
+        "white"
+    ],
+    "zeventiende": [
+        "seventeenth",
+        "seventeenth"
+    ],
+    "ziek": [
+        "ill",
+        "sick",
+        "diseased",
+        "infirm",
+        "poorly"
+    ],
+    "ziekenhuis": [
+        "hospital",
+        "infirmary"
+    ],
+    "zin": [
+        "liking",
+        "point",
+        "sentence"
+    ],
+    "zondag": [
+        "Sunday",
+        "Sun."
+    ],
+    "zuster": [
+        "sister",
+        "sister",
+        "sister",
+        "sister",
+        "half-brother, half-sister"
+    ],
+    "zwaard": [
+        "sword"
+    ],
+    "aangesloten": [
+        "affiliated"
+    ],
+    "aanwijzing": [
+        "instruction",
+        "direction",
+        "indication",
+        "clue",
+        "lead",
+        "pointer"
+    ],
+    "afleggen": [
+        "cover",
+        "sit"
+    ],
+    "afscheid": [
+        "parting",
+        "farewell"
+    ],
+    "analyse": [
+        "analysis"
+    ],
+    "antwoord": [
+        "answer",
+        "reply",
+        "reply"
+    ],
+    "apart": [
+        "sporty"
+    ],
+    "apparatuur": [
+        "apparatus"
+    ],
+    "atelier": [
+        "studio",
+        "workshop"
+    ],
+    "auteur": [
+        "author"
+    ],
+    "baas": [
+        "boss",
+        "master",
+        "master"
+    ],
+    "bedreigd": [
+        "endangered"
+    ],
+    "beetje": [
+        "bit",
+        "spot",
+        "modicum"
+    ],
+    "beheer": [
+        "administration"
+    ],
+    "bekendheid": [
+        "familiarity",
+        "prominence",
+        "publicity"
+    ],
+    "bericht": [
+        "word",
+        "dispatch",
+        "acknowledgement, acknowledgment"
+    ],
+    "beschadigd": [
+        "damaged"
+    ],
+    "bestemd": [
+        "destined"
+    ],
+    "betekenis": [
+        "meaning",
+        "significance"
+    ],
+    "bevorderen": [
+        "promote",
+        "further",
+        "promote",
+        "promotion"
+    ],
+    "bewijzen": [
+        "prove",
+        "show"
+    ],
+    "bibliotheek": [
+        "library"
+    ],
+    "bier": [
+        "beer",
+        "ale"
+    ],
+    "bodem": [
+        "ground",
+        "bottom"
+    ],
+    "boeren": [
+        "belch"
+    ],
+    "boodschap": [
+        "message",
+        "message",
+        "errand",
+        "errand"
+    ],
+    "borst": [
+        "breast",
+        "chest",
+        "bosom",
+        "breast",
+        "pectoral",
+        "mammalian",
+        "mammary",
+        "thoracic"
+    ],
+    "brak": [
+        "brackish"
+    ],
+    "bus": [
+        "bus",
+        "canister"
+    ],
+    "capaciteit": [
+        "capacity"
+    ],
+    "conflict": [
+        "conflict"
+    ],
+    "dagboek": [
+        "diary",
+        "journal"
+    ],
+    "dateren": [
+        "date",
+        "date"
+    ],
+    "derhalve": [
+        "consequently"
+    ],
+    "draaien": [
+        "twist",
+        "turn",
+        "revolve",
+        "twirl",
+        "swivel",
+        "bear",
+        "orbit",
+        "dial"
+    ],
+    "dronken": [
+        "drunk",
+        "drunken",
+        "drunken",
+        "tipsily"
+    ],
+    "eenmaal": [
+        "once"
+    ],
+    "element": [
+        "element",
+        "element",
+        "strain",
+        "streak"
+    ],
+    "ergens": [
+        "somewhere",
+        "anywhere"
+    ],
+    "factor": [
+        "factor",
+        "factor"
+    ],
+    "filosofie": [
+        "philosophy"
+    ],
+    "fort": [
+        "fort"
+    ],
+    "gebroken": [
+        "broken",
+        "broken",
+        "prostrate"
+    ],
+    "gedeeltelijk": [
+        "partial",
+        "half"
+    ],
+    "gelden": [
+        "stand"
+    ],
+    "geliefd": [
+        "beloved",
+        "popular"
+    ],
+    "gemeenteraad": [
+        "council"
+    ],
+    "gereed": [
+        "poised"
+    ],
+    "gerucht": [
+        "rumour, rumor",
+        "report"
+    ],
+    "getroffen": [
+        "stricken"
+    ],
+    "gevoel": [
+        "feeling",
+        "feeling",
+        "feeling",
+        "sensation",
+        "sensation",
+        "sense",
+        "sense",
+        "sentiment",
+        "appreciation"
+    ],
+    "geweld": [
+        "violence"
+    ],
+    "glas": [
+        "glass",
+        "glass",
+        "glassful",
+        "tumbler",
+        "tumbler",
+        "tumblerful"
+    ],
+    "grenzen": [
+        "adjoin",
+        "border"
+    ],
+    "hanteren": [
+        "manipulate",
+        "ply",
+        "wield"
+    ],
+    "haven": [
+        "harbour, harbor",
+        "port",
+        "dock",
+        "haven"
+    ],
+    "hemel": [
+        "heaven",
+        "paradise",
+        "heaven",
+        "firmament",
+        "heavens",
+        "celestial"
+    ],
+    "hierin": [
+        "herein"
+    ],
+    "hof": [
+        "court",
+        "court"
+    ],
+    "hond": [
+        "dog"
+    ],
+    "hoofdstad": [
+        "capital"
+    ],
+    "inhoud": [
+        "content",
+        "contents",
+        "contents",
+        "volume"
+    ],
+    "inrichting": [
+        "fitting"
+    ],
+    "interesse": [
+        "interest"
+    ],
+    "jong": [
+        "offspring",
+        "pup",
+        "cub",
+        "joey",
+        "baby",
+        "young",
+        "youthful"
+    ],
+    "jongeren": [
+        "the young",
+        "youth"
+    ],
+    "journalist": [
+        "journalist"
+    ],
+    "kabinet": [
+        "cabinet",
+        "hutch"
+    ],
+    "kandidaat": [
+        "candidate"
+    ],
+    "kantoor": [
+        "office",
+        "office",
+        "office",
+        "white-collar"
+    ],
+    "klaar": [
+        "done",
+        "through",
+        "ready",
+        "handy"
+    ],
+    "klant": [
+        "client",
+        "customer"
+    ],
+    "kruis": [
+        "cross",
+        "cross",
+        "cross",
+        "cross",
+        "cross",
+        "cross",
+        "crotch",
+        "sharp",
+        "heads"
+    ],
+    "lidmaatschap": [
+        "membership",
+        "membership"
+    ],
+    "maatschappij": [
+        "society",
+        "Co"
+    ],
+    "malen": [
+        "grind",
+        "grind up",
+        "mill"
+    ],
+    "menselijk": [
+        "human",
+        "humane",
+        "humanely"
+    ],
+    "misschien": [
+        "perhaps",
+        "maybe",
+        "possibly"
+    ],
+    "moeite": [
+        "bother",
+        "difficulty"
+    ],
+    "mond": [
+        "mouth",
+        "mouth"
+    ],
+    "munten": [
+        "coin",
+        "mint"
+    ],
+    "nacht": [
+        "night",
+        "night",
+        "night-time",
+        "bedside"
+    ],
+    "natuurlijk": [
+        "certainly",
+        "naturally",
+        "certainly",
+        "natural",
+        "natural"
+    ],
+    "nieuws": [
+        "news"
+    ],
+    "noodzakelijk": [
+        "necessarily",
+        "imperative"
+    ],
+    "normaal": [
+        "normally",
+        "normal",
+        "natural"
+    ],
+    "oefenen": [
+        "practise"
+    ],
+    "ondersteunen": [
+        "support",
+        "prop up"
+    ],
+    "ondertussen": [
+        "meantime",
+        "meanwhile"
+    ],
+    "onderzoeken": [
+        "examine",
+        "examine",
+        "examine",
+        "go into",
+        "inquire, enquire",
+        "inspect",
+        "investigate",
+        "look into",
+        "probe",
+        "probe",
+        "screen",
+        "screen",
+        "survey"
+    ],
+    "ongeval": [
+        "mishap"
+    ],
+    "onmogelijk": [
+        "impossibly",
+        "impossible",
+        "impossible"
+    ],
+    "ontmoeting": [
+        "encounter",
+        "meeting"
+    ],
+    "ontwikkelen": [
+        "develop",
+        "develop",
+        "evolve"
+    ],
+    "openbaar": [
+        "public"
+    ],
+    "opvallend": [
+        "strikingly",
+        "conspicuously",
+        "prominently",
+        "glaringly",
+        "striking",
+        "conspicuous",
+        "prominent",
+        "spectacular"
+    ],
+    "opvolger": [
+        "successor"
+    ],
+    "organiseren": [
+        "organize, (also organise British)",
+        "organize, (also organise British)",
+        "mount",
+        "lay on",
+        "stage"
+    ],
+    "papier": [
+        "paper"
+    ],
+    "paus": [
+        "pope",
+        "the Holy Father",
+        "pontiff"
+    ],
+    "prinses": [
+        "princess",
+        "princess"
+    ],
+    "rapport": [
+        "report",
+        "dispatch"
+    ],
+    "reputatie": [
+        "reputation",
+        "name",
+        "character",
+        "honour, honor"
+    ],
+    "restauratie": [
+        "buffet",
+        "renovation",
+        "restoration"
+    ],
+    "revolutie": [
+        "revolution"
+    ],
+    "ring": [
+        "ring",
+        "ring",
+        "ring"
+    ],
+    "ru\u00efne": [
+        "ruin"
+    ],
+    "schilder": [
+        "painter"
+    ],
+    "schrift": [
+        "writing"
+    ],
+    "sleutel": [
+        "key",
+        "key",
+        "clef",
+        "winder",
+        "key"
+    ],
+    "sluiten": [
+        "close",
+        "shut",
+        "shut",
+        "shut up",
+        "close down",
+        "close",
+        "contract",
+        "enter into",
+        "negotiate",
+        "balance"
+    ],
+    "smaak": [
+        "taste",
+        "taste",
+        "taste",
+        "taste",
+        "flavour, flavor"
+    ],
+    "sneeuw": [
+        "snow"
+    ],
+    "spellen": [
+        "spell",
+        "spell"
+    ],
+    "spoorlijn": [
+        "track"
+    ],
+    "stel": [
+        "set",
+        "suite"
+    ],
+    "stem": [
+        "voice",
+        "voice",
+        "vote",
+        "vocal"
+    ],
+    "stromen": [
+        "flow",
+        "stream",
+        "run",
+        "pour",
+        "gush",
+        "surge"
+    ],
+    "stroom": [
+        "current",
+        "stream",
+        "stream",
+        "flow",
+        "gush",
+        "flood",
+        "stream",
+        "electric current, electrical current",
+        "current"
+    ],
+    "studio": [
+        "studio",
+        "studio"
+    ],
+    "sturen": [
+        "steer",
+        "sail",
+        "send",
+        "drop"
+    ],
+    "taak": [
+        "task",
+        "assignment",
+        "job",
+        "duty",
+        "place"
+    ],
+    "toestel": [
+        "set"
+    ],
+    "traditie": [
+        "tradition"
+    ],
+    "typisch": [
+        "typical",
+        "typically"
+    ],
+    "uitkomen": [
+        "come out",
+        "hatch",
+        "open on to"
+    ],
+    "uitsluitend": [
+        "exclusive",
+        "solely",
+        "exclusively"
+    ],
+    "uitvoering": [
+        "execution",
+        "implementation",
+        "performance",
+        "enactment",
+        "enforcement"
+    ],
+    "veertien": [
+        "fourteen",
+        "fourteen"
+    ],
+    "verborgen": [
+        "hidden",
+        "inner",
+        "covert"
+    ],
+    "verdwijnen": [
+        "disappear",
+        "disappear",
+        "disappear",
+        "go",
+        "vanish",
+        "fall away",
+        "come out",
+        "dive",
+        "go"
+    ],
+    "verkeerd": [
+        "wrong",
+        "wrong",
+        "wrong",
+        "wrong",
+        "incorrect",
+        "amiss",
+        "awry",
+        "mistakenly",
+        "wrongly",
+        "awry"
+    ],
+    "verliezen": [
+        "lose",
+        "lose",
+        "lose"
+    ],
+    "vernietigen": [
+        "wipe out",
+        "annihilate",
+        "obliterate",
+        "zap"
+    ],
+    "verwanten": [
+        "kin",
+        "kinsfolk",
+        "kindred"
+    ],
+    "vijver": [
+        "pond"
+    ],
+    "villa": [
+        "villa"
+    ],
+    "vlees": [
+        "meat",
+        "flesh",
+        "flesh"
+    ],
+    "voelen": [
+        "feel",
+        "feel",
+        "sense",
+        "have"
+    ],
+    "voetbal": [
+        "football",
+        "football",
+        "soccer"
+    ],
+    "voorlopig": [
+        "provisionally"
+    ],
+    "vriendin": [
+        "girlfriend"
+    ],
+    "werking": [
+        "operation"
+    ],
+    "wetgeving": [
+        "legislation",
+        "legislation"
+    ],
+    "wind": [
+        "wind",
+        "wind",
+        "windward"
+    ],
+    "winst": [
+        "gain",
+        "profit"
+    ],
+    "woning": [
+        "home",
+        "residence"
+    ],
+    "zagen": [
+        "saw"
+    ],
+    "zang": [
+        "singing"
+    ],
+    "zegel": [
+        "seal"
+    ],
+    "zelfmoord": [
+        "suicide"
+    ],
+    "zender": [
+        "transmitter"
+    ],
+    "zestien": [
+        "sixteen",
+        "sixteen"
+    ],
+    "zuidelijk": [
+        "south",
+        "southerly",
+        "southerly",
+        "southern"
+    ],
+    "achterstand": [
+        "backlog"
+    ],
+    "affaire": [
+        "affair"
+    ],
+    "afgelopen": [
+        "past"
+    ],
+    "afwezigheid": [
+        "absence",
+        "absence",
+        "vacancy"
+    ],
+    "akte": [
+        "certificate"
+    ],
+    "architectuur": [
+        "architecture"
+    ],
+    "attractie": [
+        "attraction",
+        "draw"
+    ],
+    "bakstenen": [
+        "brick"
+    ],
+    "beker": [
+        "mug",
+        "cup",
+        "beaker",
+        "mugful"
+    ],
+    "bepalen": [
+        "govern",
+        "condition",
+        "qualify",
+        "shape",
+        "stipulate"
+    ],
+    "beperkt": [
+        "limited",
+        "restricted",
+        "narrow"
+    ],
+    "beslag": [
+        "batter",
+        "mix"
+    ],
+    "beslissen": [
+        "decide",
+        "rule",
+        "decree"
+    ],
+    "besturen": [
+        "drive",
+        "government"
+    ],
+    "betekenen": [
+        "mean",
+        "signify",
+        "denote",
+        "spell",
+        "stand for"
+    ],
+    "bewust": [
+        "knowingly",
+        "consciously",
+        "conscious"
+    ],
+    "bezittingen": [
+        "belongings",
+        "effects"
+    ],
+    "be\u00ebindigen": [
+        "finish",
+        "end",
+        "wind up",
+        "discontinue",
+        "conclude"
+    ],
+    "blijken": [
+        "turn out",
+        "prove",
+        "emerge"
+    ],
+    "blik": [
+        "look",
+        "squint",
+        "can",
+        "tin",
+        "dustpan"
+    ],
+    "breedte": [
+        "breadth",
+        "width"
+    ],
+    "bruin": [
+        "brown",
+        "brown"
+    ],
+    "bureau": [
+        "bureau",
+        "bureau",
+        "agency"
+    ],
+    "campagne": [
+        "campaign",
+        "drive"
+    ],
+    "commando": [
+        "commando",
+        "ranger"
+    ],
+    "commercieel": [
+        "commercial"
+    ],
+    "conclusie": [
+        "conclusion"
+    ],
+    "datum": [
+        "date",
+        "date"
+    ],
+    "denken": [
+        "think",
+        "think of",
+        "have",
+        "make (something) of (something)",
+        "fancy",
+        "guess",
+        "reckon",
+        "thought"
+    ],
+    "deur": [
+        "door"
+    ],
+    "discussie": [
+        "discussion"
+    ],
+    "doek": [
+        "canvas",
+        "screen"
+    ],
+    "doelpunt": [
+        "goal"
+    ],
+    "draak": [
+        "dragon"
+    ],
+    "duren": [
+        "endure"
+    ],
+    "echtgenote": [
+        "wife"
+    ],
+    "eindelijk": [
+        "finally"
+    ],
+    "eindigen": [
+        "end",
+        "end up",
+        "finish",
+        "conclude",
+        "terminate"
+    ],
+    "elders": [
+        "elsewhere"
+    ],
+    "energie": [
+        "energy",
+        "energy",
+        "go",
+        "push",
+        "pep",
+        "vigour, vigor"
+    ],
+    "exemplaar": [
+        "copy"
+    ],
+    "finish": [
+        "finish"
+    ],
+    "formaat": [
+        "format",
+        "stature"
+    ],
+    "formeel": [
+        "formal",
+        "formal",
+        "formal",
+        "technical",
+        "formally"
+    ],
+    "fusie": [
+        "merger"
+    ],
+    "gebruikelijk": [
+        "customary",
+        "usual",
+        "customarily"
+    ],
+    "gekleed": [
+        "dressed",
+        "clad"
+    ],
+    "gemiddelde": [
+        "average",
+        "mean"
+    ],
+    "gerenoveerd": [
+        "reconditioned"
+    ],
+    "gespecialiseerd": [
+        "specialized, (also specialised British)"
+    ],
+    "gezamenlijk": [
+        "joint",
+        "joint",
+        "collective",
+        "concerted",
+        "corporate",
+        "aggregate",
+        "collectively",
+        "together"
+    ],
+    "ge\u00efnteresseerd": [
+        "interested",
+        "interested"
+    ],
+    "grijpen": [
+        "grab",
+        "grab at",
+        "grip",
+        "jump at",
+        "seize"
+    ],
+    "hagedis": [
+        "lizard"
+    ],
+    "herkennen": [
+        "recognize, (also recognise British)",
+        "spot",
+        "know"
+    ],
+    "hersenen": [
+        "brain"
+    ],
+    "herstellen": [
+        "recover",
+        "convalesce",
+        "recuperate",
+        "restore",
+        "remedy",
+        "repair",
+        "restore"
+    ],
+    "heuvel": [
+        "hill",
+        "mound",
+        "rise"
+    ],
+    "hol": [
+        "den",
+        "hole",
+        "hollow",
+        "lair",
+        "burrow",
+        "earth",
+        "hollow",
+        "hollow",
+        "empty"
+    ],
+    "hoop": [
+        "hope",
+        "hope",
+        "hope",
+        "hopefulness",
+        "mound",
+        "heap",
+        "heap",
+        "load",
+        "pile",
+        "pile"
+    ],
+    "hout": [
+        "wood",
+        "timber",
+        "woodwind"
+    ],
+    "ijzer": [
+        "iron"
+    ],
+    "illegaal": [
+        "underground"
+    ],
+    "indeling": [
+        "layout",
+        "classification"
+    ],
+    "installatie": [
+        "inauguration",
+        "installation"
+    ],
+    "instructies": [
+        "briefing"
+    ],
+    "introductie": [
+        "introduction"
+    ],
+    "keel": [
+        "throat"
+    ],
+    "kenmerken": [
+        "characterize"
+    ],
+    "kerkhof": [
+        "churchyard"
+    ],
+    "klok": [
+        "clock",
+        "bell"
+    ],
+    "koninkrijk": [
+        "kingdom",
+        "monarchy",
+        "realm"
+    ],
+    "kritisch": [
+        "critical",
+        "critical",
+        "critically"
+    ],
+    "kroon": [
+        "crown",
+        "crown",
+        "crown"
+    ],
+    "kunstwerk": [
+        "work of art",
+        "artwork"
+    ],
+    "lijken": [
+        "appear",
+        "resemble"
+    ],
+    "luchtmacht": [
+        "air force"
+    ],
+    "maan": [
+        "moon",
+        "moon",
+        "lunar"
+    ],
+    "maandag": [
+        "Monday"
+    ],
+    "makkelijk": [
+        "easy",
+        "easy-going",
+        "cushy",
+        "easily",
+        "easily"
+    ],
+    "maximum": [
+        "maximum",
+        "max"
+    ],
+    "metalen": [
+        "metallic"
+    ],
+    "mevrouw": [
+        "Mrs",
+        "madam",
+        "mistress",
+        "Ladyship"
+    ],
+    "middeleeuwen": [
+        "the Middle Ages"
+    ],
+    "middelen": [
+        "means"
+    ],
+    "mm": [
+        "mm"
+    ],
+    "monster": [
+        "monster",
+        "monster",
+        "monster"
+    ],
+    "nationaal": [
+        "nationally",
+        "nationwide",
+        "national",
+        "nationwide"
+    ],
+    "negentig": [
+        "ninety",
+        "ninety",
+        "ninety-year-old"
+    ],
+    "neutraal": [
+        "neutral",
+        "neutral",
+        "neutral"
+    ],
+    "nicht": [
+        "cousin",
+        "first/full cousin",
+        "pansy"
+    ],
+    "offensief": [
+        "offensive"
+    ],
+    "omgeven": [
+        "surround"
+    ],
+    "ondergrondse": [
+        "subway"
+    ],
+    "onderneming": [
+        "enterprise",
+        "undertaking",
+        "ploy"
+    ],
+    "onderwerpen": [
+        "subject",
+        "subject",
+        "subdue"
+    ],
+    "onmiddellijk": [
+        "immediately",
+        "instantly",
+        "outright",
+        "right away",
+        "right now",
+        "straight away",
+        "instantaneously"
+    ],
+    "ontmoeten": [
+        "meet"
+    ],
+    "ontploffing": [
+        "detonation",
+        "blast",
+        "explosion",
+        "explosion"
+    ],
+    "ontsnappen": [
+        "escape",
+        "escape",
+        "get out",
+        "elude",
+        "miss"
+    ],
+    "ontwerpen": [
+        "design",
+        "plan",
+        "style",
+        "think up",
+        "designing"
+    ],
+    "onvoldoende": [
+        "insufficiently",
+        "insufficient",
+        "unsatisfactory"
+    ],
+    "openen": [
+        "open",
+        "open",
+        "open up",
+        "head",
+        "draw"
+    ],
+    "opgezet": [
+        "puffy"
+    ],
+    "opkomst": [
+        "rise",
+        "rising",
+        "entrance",
+        "attendance"
+    ],
+    "opname": [
+        "admission",
+        "hospitalization, (also hospitalisation British)",
+        "committal",
+        "recording",
+        "shot",
+        "take",
+        "exposure",
+        "withdrawal",
+        "ingestion"
+    ],
+    "oprichten": [
+        "erect",
+        "raise",
+        "establish",
+        "set up",
+        "erect",
+        "draw up"
+    ],
+    "overeenkomst": [
+        "agreement",
+        "deal",
+        "pact",
+        "bargain",
+        "compact",
+        "concord",
+        "correspondence",
+        "covenant"
+    ],
+    "overgang": [
+        "transition",
+        "menopause",
+        "the change of life"
+    ],
+    "overwegend": [
+        "predominantly"
+    ],
+    "overzicht": [
+        "survey"
+    ],
+    "paleis": [
+        "palace"
+    ],
+    "plat": [
+        "flat",
+        "vulgar"
+    ],
+    "plotseling": [
+        "sudden",
+        "abrupt",
+        "suddenly",
+        "short"
+    ],
+    "podium": [
+        "podium",
+        "platform",
+        "rostrum"
+    ],
+    "populair": [
+        "up-to-date"
+    ],
+    "populariteit": [
+        "popularity"
+    ],
+    "praten": [
+        "chat"
+    ],
+    "precies": [
+        "precise",
+        "specific",
+        "exact",
+        "accurate",
+        "strict",
+        "very",
+        "exactly",
+        "exactly",
+        "exactly",
+        "precisely",
+        "precisely",
+        "right",
+        "sharp",
+        "quite"
+    ],
+    "premi\u00e8re": [
+        "premi\u00e8re"
+    ],
+    "procedure": [
+        "procedure"
+    ],
+    "ramp": [
+        "calamity",
+        "disaster"
+    ],
+    "rechtszaak": [
+        "trial",
+        "suit"
+    ],
+    "record": [
+        "record",
+        "bumper"
+    ],
+    "redelijk": [
+        "reasonable",
+        "rational",
+        "reasonable",
+        "reasonable",
+        "passable",
+        "tolerable",
+        "reasonably"
+    ],
+    "regiment": [
+        "regiment"
+    ],
+    "risico": [
+        "risk",
+        "chance"
+    ],
+    "roman": [
+        "novel",
+        "fictional"
+    ],
+    "roze": [
+        "pink",
+        "rose",
+        "pink",
+        "rose"
+    ],
+    "rustig": [
+        "restful",
+        "placid",
+        "peaceful",
+        "quiet",
+        "quiet",
+        "quiet",
+        "good",
+        "peacefully",
+        "placidly",
+        "quietly",
+        "restfully"
+    ],
+    "schacht": [
+        "shaft",
+        "shaft"
+    ],
+    "scheiding": [
+        "parting",
+        "division",
+        "segregation",
+        "separation"
+    ],
+    "seconde": [
+        "second"
+    ],
+    "serieus": [
+        "serious"
+    ],
+    "show": [
+        "entertainment",
+        "show"
+    ],
+    "slot": [
+        "lock",
+        "lock"
+    ],
+    "sport": [
+        "rung",
+        "sport",
+        "sport",
+        "sporting",
+        "sports",
+        "sporty"
+    ],
+    "sprong": [
+        "jump",
+        "bound",
+        "leap",
+        "pounce",
+        "spring",
+        "dart",
+        "ski jump",
+        "vault"
+    ],
+    "stabiel": [
+        "stable",
+        "stable",
+        "stable",
+        "stable"
+    ],
+    "stappen": [
+        "step"
+    ],
+    "starten": [
+        "start"
+    ],
+    "straf": [
+        "punishment",
+        "punishment",
+        "penalty",
+        "penal",
+        "criminal",
+        "disciplinary",
+        "punitive"
+    ],
+    "streek": [
+        "region",
+        "district",
+        "locality",
+        "point",
+        "stroke",
+        "trick"
+    ],
+    "symbool": [
+        "symbol",
+        "icon, ikon"
+    ],
+    "tante": [
+        "aunt",
+        "auntie, aunty"
+    ],
+    "technisch": [
+        "technically",
+        "technical",
+        "technical"
+    ],
+    "technologie": [
+        "technology"
+    ],
+    "tekening": [
+        "drawing",
+        "pattern"
+    ],
+    "terugtrekken": [
+        "withdraw",
+        "scratch"
+    ],
+    "theorie": [
+        "theory",
+        "theory"
+    ],
+    "tonen": [
+        "show",
+        "show",
+        "exhibit"
+    ],
+    "trouw": [
+        "true",
+        "faithful",
+        "loyal",
+        "constant",
+        "staunch",
+        "loyally",
+        "constantly",
+        "staunchly",
+        "fidelity",
+        "loyalty",
+        "constancy",
+        "staunchness",
+        "bridal"
+    ],
+    "tweeling": [
+        "twin"
+    ],
+    "u": [
+        "U,u",
+        "you"
+    ],
+    "uitbreiding": [
+        "extension",
+        "extension",
+        "extension",
+        "expansion"
+    ],
+    "uitgesproken": [
+        "pronounced"
+    ],
+    "uitgever": [
+        "publisher"
+    ],
+    "uitzicht": [
+        "aspect",
+        "outlook",
+        "perspective",
+        "prospect",
+        "view"
+    ],
+    "vari\u00ebteit": [
+        "variety"
+    ],
+    "veertiende": [
+        "fourteenth",
+        "fourteenth"
+    ],
+    "veiligheid": [
+        "safety",
+        "security",
+        "safeness"
+    ],
+    "verantwoordelijkheid": [
+        "responsibility",
+        "responsibility",
+        "responsibility",
+        "onus",
+        "lookout",
+        "mantle",
+        "accountability",
+        "trust"
+    ],
+    "verdedigen": [
+        "championship",
+        "defend",
+        "defend",
+        "champion"
+    ],
+    "verdediger": [
+        "defender"
+    ],
+    "verdediging": [
+        "defence, defense",
+        "defence, defense",
+        "defence, defense",
+        "the defence, the defense"
+    ],
+    "verenigd": [
+        "united"
+    ],
+    "verhogen": [
+        "heighten",
+        "heighten",
+        "raise",
+        "put up",
+        "boost"
+    ],
+    "verkeer": [
+        "traffic"
+    ],
+    "verklaring": [
+        "declaration",
+        "profession",
+        "key",
+        "certification",
+        "explanation",
+        "statement",
+        "elucidation",
+        "statement"
+    ],
+    "verlenging": [
+        "elongation",
+        "extension",
+        "extension",
+        "prolongation",
+        "renewal"
+    ],
+    "verloofde": [
+        "fianc\u00e9",
+        "betrothed"
+    ],
+    "vermoorden": [
+        "murder",
+        "assassinate",
+        "bump off"
+    ],
+    "verplicht": [
+        "compulsory",
+        "obligatory",
+        "compulsorily",
+        "obligatorily"
+    ],
+    "verslag": [
+        "coverage",
+        "account",
+        "description",
+        "record"
+    ],
+    "vertrekken": [
+        "start",
+        "start off",
+        "set off",
+        "start out",
+        "depart",
+        "go off",
+        "move out",
+        "screw up"
+    ],
+    "verval": [
+        "dilapidation",
+        "disrepair"
+    ],
+    "vervoer": [
+        "transport",
+        "transportation",
+        "carriage",
+        "transit",
+        "conveyance"
+    ],
+    "vervullen": [
+        "go through"
+    ],
+    "vierkant": [
+        "square",
+        "square",
+        "sq",
+        "square",
+        "square"
+    ],
+    "vlekken": [
+        "stain",
+        "stain",
+        "discolour, discolor"
+    ],
+    "vliegen": [
+        "fly",
+        "fly",
+        "scoot"
+    ],
+    "vocht": [
+        "moisture"
+    ],
+    "vochtig": [
+        "moistly",
+        "damp",
+        "humid",
+        "moist",
+        "oozy"
+    ],
+    "voeding": [
+        "feed",
+        "nourishment",
+        "nutriment",
+        "nutrition"
+    ],
+    "voertuig": [
+        "vehicle"
+    ],
+    "vogel": [
+        "bird",
+        "fowl",
+        "ornithological"
+    ],
+    "voldoen": [
+        "answer",
+        "meet"
+    ],
+    "volgend": [
+        "following",
+        "following",
+        "next"
+    ],
+    "volkomen": [
+        "quite",
+        "utterly",
+        "direct",
+        "plenary",
+        "thorough",
+        "utter"
+    ],
+    "voorgevel": [
+        "facade",
+        "frontage"
+    ],
+    "voornaam": [
+        "first name",
+        "given name",
+        "grand",
+        "lordly"
+    ],
+    "voorsprong": [
+        "lead",
+        "start",
+        "lead"
+    ],
+    "voorstel": [
+        "proposal",
+        "proposition",
+        "suggestion"
+    ],
+    "voorstelling": [
+        "image",
+        "performance",
+        "representation"
+    ],
+    "voortdurend": [
+        "continually",
+        "ongoing",
+        "continual"
+    ],
+    "vorst": [
+        "sovereign",
+        "monarch",
+        "frost"
+    ],
+    "wacht": [
+        "watch",
+        "watch",
+        "lookout"
+    ],
+    "wakker": [
+        "wakefully",
+        "awake",
+        "wakeful"
+    ],
+    "wand": [
+        "face"
+    ],
+    "weerstand": [
+        "resistance",
+        "resistor"
+    ],
+    "wens": [
+        "wish",
+        "desire",
+        "want",
+        "wish",
+        "wish"
+    ],
+    "werkplaats": [
+        "shop"
+    ],
+    "wijn": [
+        "wine"
+    ],
+    "winkelcentrum": [
+        "shopping centre, shopping center",
+        "shopping mall",
+        "mall",
+        "pedestrian precinct, shopping precinct"
+    ],
+    "zingen": [
+        "sing",
+        "song"
+    ],
+    "zodra": [
+        "immediately"
+    ],
+    "zon": [
+        "sun",
+        "sun",
+        "sun"
+    ],
+    "zorg": [
+        "care",
+        "care",
+        "trial",
+        "trouble",
+        "trust"
+    ],
+    "zwembad": [
+        "pool",
+        "swimming bath, swimming pool"
+    ],
+    "aanbieden": [
+        "present",
+        "offer",
+        "offer"
+    ],
+    "aanpassing": [
+        "adaptation",
+        "readjustment"
+    ],
+    "aanraking": [
+        "touch"
+    ],
+    "aanstelling": [
+        "appointment",
+        "engagement"
+    ],
+    "aardig": [
+        "kind",
+        "good",
+        "good-natured",
+        "tidy",
+        "nicely"
+    ],
+    "achttien": [
+        "eighteen",
+        "eighteen",
+        "eighteen",
+        "eighteen"
+    ],
+    "acteur": [
+        "actor"
+    ],
+    "advies": [
+        "advice",
+        "guidance",
+        "opinion"
+    ],
+    "advocaat": [
+        "barrister",
+        "advocate",
+        "counsel",
+        "solicitor",
+        "lawyer",
+        "attorney"
+    ],
+    "afgelegen": [
+        "outlying",
+        "out-of-the-way",
+        "remote"
+    ],
+    "afgewerkt": [
+        "finished",
+        "washed-out"
+    ],
+    "afkorting": [
+        "abbreviation"
+    ],
+    "afstaan": [
+        "yield",
+        "abdicate"
+    ],
+    "alternatief": [
+        "alternative",
+        "alternative"
+    ],
+    "appartement": [
+        "apartment"
+    ],
+    "arresteren": [
+        "arrest",
+        "bust"
+    ],
+    "baai": [
+        "bay"
+    ],
+    "ballingschap": [
+        "exile"
+    ],
+    "bang": [
+        "afraid",
+        "fearful",
+        "frightened",
+        "scared",
+        "afraid",
+        "afraid",
+        "fearfully"
+    ],
+    "begrafenis": [
+        "burial",
+        "funeral",
+        "interment",
+        "burial"
+    ],
+    "beheerder": [
+        "superintendent",
+        "trustee",
+        "warden"
+    ],
+    "beheren": [
+        "administer",
+        "manage"
+    ],
+    "behoorlijk": [
+        "decent",
+        "good",
+        "fair"
+    ],
+    "bek": [
+        "jaw",
+        "muzzle"
+    ],
+    "belangstelling": [
+        "interest"
+    ],
+    "belasting": [
+        "drain",
+        "duty",
+        "tax",
+        "taxation"
+    ],
+    "beleid": [
+        "policy"
+    ],
+    "bemanning": [
+        "crew"
+    ],
+    "benoeming": [
+        "nomination"
+    ],
+    "berekenen": [
+        "calculate",
+        "compute",
+        "evaluate",
+        "judge",
+        "judgement, judgment"
+    ],
+    "beroemd": [
+        "famous",
+        "noted",
+        "celebrated",
+        "distinguished"
+    ],
+    "beslissing": [
+        "decision",
+        "ruling"
+    ],
+    "best": [
+        "best",
+        "best"
+    ],
+    "betrekking": [
+        "connection",
+        "relationship",
+        "position",
+        "post",
+        "situation"
+    ],
+    "bewezen": [
+        "proven"
+    ],
+    "bezet": [
+        "busy",
+        "engaged",
+        "set"
+    ],
+    "bijdrage": [
+        "contribution",
+        "contribution"
+    ],
+    "bloed": [
+        "blood"
+    ],
+    "boete": [
+        "fine",
+        "penance"
+    ],
+    "bol": [
+        "sphere",
+        "ball",
+        "bulb",
+        "bulb",
+        "convex",
+        "round"
+    ],
+    "bondgenoot": [
+        "ally"
+    ],
+    "boot": [
+        "boat",
+        "craft"
+    ],
+    "bot": [
+        "bluntly",
+        "flatly",
+        "point-blank",
+        "blunt",
+        "blunt",
+        "point-blank"
+    ],
+    "breken": [
+        "break",
+        "bust",
+        "fracture",
+        "rupture",
+        "smash",
+        "fragment",
+        "snap",
+        "break",
+        "break",
+        "break",
+        "break",
+        "cushion",
+        "refract",
+        "wash"
+    ],
+    "broek": [
+        "trousers",
+        "pants",
+        "trouser-"
+    ],
+    "buitenkant": [
+        "exterior",
+        "outside"
+    ],
+    "buitenste": [
+        "exterior",
+        "outermost"
+    ],
+    "cd": [
+        "CD"
+    ],
+    "cirkel": [
+        "circle"
+    ],
+    "clip": [
+        "clip"
+    ],
+    "compenseren": [
+        "compensate",
+        "make up for",
+        "redress"
+    ],
+    "concentreren": [
+        "concentrate",
+        "channel",
+        "focus",
+        "concentrate"
+    ],
+    "conservatorium": [
+        "conservatory"
+    ],
+    "cultureel": [
+        "cultural"
+    ],
+    "data": [
+        "data"
+    ],
+    "decor": [
+        "decor",
+        "scene",
+        "set"
+    ],
+    "degene": [
+        "one"
+    ],
+    "degradatie": [
+        "demotion",
+        "relegation"
+    ],
+    "degraderen": [
+        "demote",
+        "downgrade",
+        "relegate"
+    ],
+    "dekken": [
+        "cover",
+        "cover",
+        "mark",
+        "set"
+    ],
+    "depressie": [
+        "depression",
+        "slump"
+    ],
+    "dertien": [
+        "thirteen",
+        "thirteen",
+        "a baker\u2019s dozen",
+        "thirteen-"
+    ],
+    "dienstplicht": [
+        "conscription",
+        "draft"
+    ],
+    "diepte": [
+        "depth",
+        "deepness"
+    ],
+    "dik": [
+        "thickly",
+        "thick",
+        "thick",
+        "fat",
+        "stout",
+        "podgy",
+        "gross",
+        "thick"
+    ],
+    "documenten": [
+        "paper"
+    ],
+    "donderdag": [
+        "Thursday"
+    ],
+    "driehoek": [
+        "triangle"
+    ],
+    "drinken": [
+        "drink",
+        "swig",
+        "drink"
+    ],
+    "droog": [
+        "dry",
+        "dry",
+        "dry",
+        "fine",
+        "drily, dryly"
+    ],
+    "dubbel": [
+        "double",
+        "double",
+        "double",
+        "double"
+    ],
+    "duo": [
+        "duo"
+    ],
+    "e": [
+        "E,e",
+        "E,e",
+        "e-"
+    ],
+    "echtgenoot": [
+        "husband",
+        "spouse"
+    ],
+    "echtscheiding": [
+        "divorce"
+    ],
+    "eer": [
+        "honour, honor",
+        "honour, honor",
+        "honour, honor",
+        "honour, honor",
+        "honours, honors",
+        "glory"
+    ],
+    "effecten": [
+        "effects"
+    ],
+    "elite": [
+        "elite"
+    ],
+    "erfenis": [
+        "legacy",
+        "inheritance",
+        "heritage"
+    ],
+    "erkenning": [
+        "admission",
+        "recognition"
+    ],
+    "figuur": [
+        "character",
+        "figure",
+        "figure"
+    ],
+    "fles": [
+        "bottle"
+    ],
+    "gave": [
+        "gift",
+        "offering"
+    ],
+    "gebeurtenis": [
+        "event",
+        "happening"
+    ],
+    "gebogen": [
+        "bowed",
+        "stooped"
+    ],
+    "gebruiker": [
+        "user"
+    ],
+    "gedicht": [
+        "poem"
+    ],
+    "geheim": [
+        "secret",
+        "undercover",
+        "secret",
+        "secret"
+    ],
+    "geheugen": [
+        "memory",
+        "recall",
+        "memory",
+        "memory"
+    ],
+    "geloven": [
+        "believe",
+        "believe",
+        "believe",
+        "believe in",
+        "credit",
+        "guess"
+    ],
+    "gemeentelijk": [
+        "municipal",
+        "municipally"
+    ],
+    "genre": [
+        "genre",
+        "line"
+    ],
+    "gesprek": [
+        "conversation",
+        "talk",
+        "word"
+    ],
+    "gevaar": [
+        "danger",
+        "danger",
+        "hazardousness",
+        "jeopardy",
+        "peril",
+        "threat",
+        "menace"
+    ],
+    "gevoerd": [
+        "lined"
+    ],
+    "gevuld": [
+        "filled"
+    ],
+    "gewoonlijk": [
+        "habitual",
+        "usually",
+        "normally",
+        "habitually"
+    ],
+    "gezelschap": [
+        "society",
+        "companionship",
+        "company",
+        "company",
+        "crew"
+    ],
+    "gezocht": [
+        "sought after",
+        "wanted"
+    ],
+    "god": [
+        "God",
+        "God"
+    ],
+    "godsdienst": [
+        "religion"
+    ],
+    "goedkeuring": [
+        "approbation",
+        "approval",
+        "assent",
+        "O.K., okay",
+        "sanction"
+    ],
+    "golven": [
+        "wave",
+        "ripple",
+        "waviness"
+    ],
+    "grap": [
+        "joke",
+        "joke",
+        "crack"
+    ],
+    "grijs": [
+        "grey, gray",
+        "grey, gray",
+        "grey, gray",
+        "grey, gray"
+    ],
+    "groeve": [
+        "pit"
+    ],
+    "heffen": [
+        "levy",
+        "levy"
+    ],
+    "hek": [
+        "fence",
+        "gate"
+    ],
+    "held": [
+        "hero",
+        "hero"
+    ],
+    "hertog": [
+        "duke"
+    ],
+    "hierna": [
+        "hereafter"
+    ],
+    "honderd": [
+        "hundred",
+        "hundred",
+        "hundred",
+        "hundred"
+    ],
+    "hoogtepunt": [
+        "height",
+        "highlight",
+        "peak",
+        "climax",
+        "culmination"
+    ],
+    "huid": [
+        "skin",
+        "hide"
+    ],
+    "hypothese": [
+        "hypothesis"
+    ],
+    "indien": [
+        "if"
+    ],
+    "inkomen": [
+        "income",
+        "earnings",
+        "living"
+    ],
+    "interview": [
+        "interview"
+    ],
+    "intussen": [
+        "since"
+    ],
+    "inzicht": [
+        "insight",
+        "perception"
+    ],
+    "islam": [
+        "Islam"
+    ],
+    "jury": [
+        "jury",
+        "jury"
+    ],
+    "jurylid": [
+        "judge",
+        "adjudicator",
+        "juror, juryman"
+    ],
+    "kamp": [
+        "camp",
+        "camp",
+        "camp",
+        "encampment"
+    ],
+    "kapitein": [
+        "captain",
+        "master"
+    ],
+    "kat": [
+        "cat",
+        "cat"
+    ],
+    "katalysator": [
+        "catalyst",
+        "catalyst"
+    ],
+    "keizer": [
+        "emperor"
+    ],
+    "kilogram": [
+        "kilogram, kilogramme",
+        "kg"
+    ],
+    "kinderloos": [
+        "childless"
+    ],
+    "kleren": [
+        "clothes"
+    ],
+    "klimaat": [
+        "climate",
+        "climate",
+        "climatic"
+    ],
+    "klokken": [
+        "clock",
+        "gobble",
+        "cluck"
+    ],
+    "koers": [
+        "rate of exchange",
+        "tack",
+        "vector"
+    ],
+    "koningin": [
+        "queen",
+        "queen",
+        "queen",
+        "queen",
+        "queen",
+        "queen"
+    ],
+    "koppen": [
+        "head"
+    ],
+    "koude": [
+        "cold"
+    ],
+    "kruisen": [
+        "cross",
+        "cross",
+        "cruise"
+    ],
+    "kruispunt": [
+        "intersection",
+        "crossroads",
+        "junction"
+    ],
+    "kwartfinale": [
+        "quarter-final"
+    ],
+    "kwestie": [
+        "issue",
+        "question"
+    ],
+    "leeuw": [
+        "lion",
+        "Leo",
+        "Leo"
+    ],
+    "legende": [
+        "legend"
+    ],
+    "leren": [
+        "learn",
+        "teach"
+    ],
+    "leveren": [
+        "provide"
+    ],
+    "liever": [
+        "rather",
+        "rather",
+        "soon",
+        "before"
+    ],
+    "ligging": [
+        "situation",
+        "position"
+    ],
+    "lof": [
+        "praise",
+        "commendation"
+    ],
+    "logisch": [
+        "logical",
+        "good",
+        "logically"
+    ],
+    "logistiek": [
+        "logistic",
+        "logistically",
+        "logistics",
+        "logistics",
+        "logistics"
+    ],
+    "loon": [
+        "pay",
+        "wage"
+    ],
+    "lot": [
+        "fortune",
+        "lot"
+    ],
+    "luchtvaartmaatschappij": [
+        "airline"
+    ],
+    "maandelijks": [
+        "monthly",
+        "monthly"
+    ],
+    "maat": [
+        "measure",
+        "size",
+        "measurement",
+        "fit",
+        "measure",
+        "bar",
+        "time",
+        "buddy",
+        "custom-"
+    ],
+    "maatschappelijk": [
+        "social"
+    ],
+    "management": [
+        "husbandry"
+    ],
+    "marathon": [
+        "marathon"
+    ],
+    "massa": [
+        "mass",
+        "body",
+        "mass",
+        "mass",
+        "the general public",
+        "mass"
+    ],
+    "mechanisme": [
+        "mechanics",
+        "works",
+        "action",
+        "gear"
+    ],
+    "meent": [
+        "common"
+    ],
+    "meester": [
+        "adept",
+        "master",
+        "master"
+    ],
+    "mengsel": [
+        "blend",
+        "mix",
+        "mixture",
+        "mixture"
+    ],
+    "meren": [
+        "dock"
+    ],
+    "middelste": [
+        "middle"
+    ],
+    "mij": [
+        "me"
+    ],
+    "moed": [
+        "courage",
+        "bravery",
+        "nerve",
+        "gallantry",
+        "valour, valor"
+    ],
+    "munitie": [
+        "ammo"
+    ],
+    "mythe": [
+        "myth"
+    ],
+    "nadruk": [
+        "emphasis",
+        "emphasis",
+        "emphasis"
+    ],
+    "nauw": [
+        "close",
+        "confined"
+    ],
+    "negatief": [
+        "negative",
+        "negatively",
+        "negative",
+        "negative",
+        "negative"
+    ],
+    "negende": [
+        "ninth",
+        "ninth"
+    ],
+    "noch": [
+        "nor"
+    ],
+    "objectief": [
+        "objectively",
+        "objective"
+    ],
+    "oever": [
+        "bank",
+        "riverside"
+    ],
+    "officier": [
+        "officer",
+        "district attorney",
+        "DA"
+    ],
+    "omzet": [
+        "turnover"
+    ],
+    "onafgebroken": [
+        "ceaselessly",
+        "ceaseless"
+    ],
+    "onafhankelijkheid": [
+        "independence",
+        "self-sufficiency"
+    ],
+    "oogje": [
+        "eyelet"
+    ],
+    "opzet": [
+        "design"
+    ],
+    "ordening": [
+        "sequencing"
+    ],
+    "orgel": [
+        "organ"
+    ],
+    "overnemen": [
+        "take over",
+        "take over",
+        "adopt",
+        "relieve"
+    ],
+    "pad": [
+        "path",
+        "pathway",
+        "trail",
+        "toad"
+    ],
+    "pagina": [
+        "p"
+    ],
+    "pakken": [
+        "grasp",
+        "grip",
+        "grab at",
+        "get",
+        "tackle"
+    ],
+    "particulier": [
+        "private"
+    ],
+    "perron": [
+        "platform"
+    ],
+    "plaatsvervangend": [
+        "substitute"
+    ],
+    "planeet": [
+        "planet"
+    ],
+    "planning": [
+        "planning"
+    ],
+    "plus": [
+        "plus"
+    ],
+    "pop": [
+        "doll",
+        "pupa",
+        "chrysalis",
+        "cocoon",
+        "pop",
+        "pop"
+    ],
+    "portret": [
+        "portrait",
+        "likeness"
+    ],
+    "predikant": [
+        "parson",
+        "vicar"
+    ],
+    "premier": [
+        "premier"
+    ],
+    "presentatie": [
+        "presentation"
+    ],
+    "priester": [
+        "priest",
+        "priest",
+        "clerical"
+    ],
+    "principe": [
+        "principle"
+    ],
+    "professor": [
+        "professor"
+    ],
+    "prooi": [
+        "prey",
+        "quarry",
+        "quarry"
+    ],
+    "protest": [
+        "protest",
+        "outcry",
+        "representation"
+    ],
+    "raam": [
+        "window"
+    ],
+    "recent": [
+        "up-to-date",
+        "up-to-the-minute"
+    ],
+    "renovatie": [
+        "renovation"
+    ],
+    "reorganisatie": [
+        "reorganization, (also reorganisation British)",
+        "shake-up"
+    ],
+    "restaurant": [
+        "restaurant"
+    ],
+    "rit": [
+        "ride",
+        "drive"
+    ],
+    "robot": [
+        "robot",
+        "automaton"
+    ],
+    "scenario": [
+        "screenplay"
+    ],
+    "schoonheid": [
+        "beauty",
+        "beauty",
+        "loveliness",
+        "prettiness"
+    ],
+    "schuld": [
+        "debt",
+        "guilt",
+        "guilt",
+        "guiltiness",
+        "culpability",
+        "blame",
+        "fault"
+    ],
+    "script": [
+        "playscript"
+    ],
+    "sfeer": [
+        "ambience, ambiance",
+        "atmosphere"
+    ],
+    "sluiting": [
+        "closure",
+        "fastener",
+        "fastening",
+        "fastening"
+    ],
+    "smal": [
+        "narrow"
+    ],
+    "snelweg": [
+        "motorway",
+        "expressway",
+        "freeway",
+        "superhighway"
+    ],
+    "snuit": [
+        "snout"
+    ],
+    "sociaal": [
+        "social",
+        "social"
+    ],
+    "sponsor": [
+        "sponsor",
+        "backer"
+    ],
+    "stabiliteit": [
+        "stability"
+    ],
+    "stadhuis": [
+        "town hall"
+    ],
+    "stam": [
+        "tribe",
+        "tribe",
+        "trunk",
+        "tribal"
+    ],
+    "stammen": [
+        "hail from"
+    ],
+    "stap": [
+        "step",
+        "step",
+        "step",
+        "step",
+        "pace",
+        "gradation"
+    ],
+    "stelling": [
+        "theorem",
+        "stand"
+    ],
+    "sterkte": [
+        "strength",
+        "potency",
+        "wear",
+        "stronghold"
+    ],
+    "strand": [
+        "beach"
+    ],
+    "stranden": [
+        "ground"
+    ],
+    "strategie": [
+        "strategy",
+        "strategy"
+    ],
+    "streep": [
+        "dash",
+        "bar",
+        "streak",
+        "stripe",
+        "stripe"
+    ],
+    "student": [
+        "student",
+        "undergraduate"
+    ],
+    "synoniem": [
+        "synonym",
+        "synonymous",
+        "synonymous"
+    ],
+    "tabel": [
+        "table"
+    ],
+    "tachtig": [
+        "eighty",
+        "eighty"
+    ],
+    "tafel": [
+        "table",
+        "table"
+    ],
+    "tand": [
+        "tooth",
+        "tooth",
+        "prong",
+        "cog",
+        "dental"
+    ],
+    "tank": [
+        "tank",
+        "tank"
+    ],
+    "techniek": [
+        "technique"
+    ],
+    "tegenstander": [
+        "opponent",
+        "antagonist",
+        "adversary"
+    ],
+    "teken": [
+        "sign",
+        "sign",
+        "signal",
+        "evidence",
+        "mark",
+        "mark",
+        "mark",
+        "pledge"
+    ],
+    "tekort": [
+        "shortage",
+        "deficiency",
+        "dearth",
+        "want",
+        "defect"
+    ],
+    "tenzij": [
+        "unless",
+        "unless"
+    ],
+    "tiende": [
+        "tenth",
+        "tenth"
+    ],
+    "tijdstip": [
+        "time"
+    ],
+    "toerisme": [
+        "tourism"
+    ],
+    "toets": [
+        "key",
+        "key",
+        "touch",
+        "test"
+    ],
+    "toeval": [
+        "chance",
+        "accident",
+        "luck",
+        "coincidence"
+    ],
+    "toevallig": [
+        "chance",
+        "accidental",
+        "haphazard",
+        "accidentally",
+        "haphazardly"
+    ],
+    "toezicht": [
+        "supervision",
+        "superintendence"
+    ],
+    "ton": [
+        "barrel",
+        "drum",
+        "ton",
+        "ton"
+    ],
+    "trainen": [
+        "school",
+        "work out"
+    ],
+    "treffen": [
+        "hit",
+        "strike",
+        "affect"
+    ],
+    "trouwen": [
+        "marry"
+    ],
+    "uitdaging": [
+        "challenge",
+        "dare",
+        "test"
+    ],
+    "uiterst": [
+        "all-out",
+        "extreme",
+        "outer",
+        "utmost",
+        "utmost",
+        "extremely"
+    ],
+    "uitgestorven": [
+        "extinct"
+    ],
+    "uitgeven": [
+        "publishing",
+        "edit",
+        "lay out",
+        "part with",
+        "spend"
+    ],
+    "uitmaken": [
+        "form"
+    ],
+    "uitspraak": [
+        "pronunciation",
+        "enunciation",
+        "pronouncement",
+        "findings",
+        "verdict"
+    ],
+    "uitvoeren": [
+        "export",
+        "execute",
+        "carry out",
+        "implement",
+        "perform",
+        "enact",
+        "execute"
+    ],
+    "uniek": [
+        "unique"
+    ],
+    "uniform": [
+        "uniform"
+    ],
+    "vaart": [
+        "momentum"
+    ],
+    "vak": [
+        "compartment",
+        "profession",
+        "subject",
+        "trade"
+    ],
+    "variant": [
+        "variant",
+        "variant"
+    ],
+    "variatie": [
+        "variation",
+        "variation"
+    ],
+    "vee": [
+        "livestock",
+        "stock"
+    ],
+    "verbergen": [
+        "hiding",
+        "hide",
+        "conceal",
+        "disguise",
+        "mask",
+        "secrete",
+        "shield",
+        "bury"
+    ],
+    "verbeteren": [
+        "improve",
+        "improve on",
+        "ameliorate",
+        "better",
+        "amend",
+        "edify"
+    ],
+    "verbetering": [
+        "improvement",
+        "improvement",
+        "erratum"
+    ],
+    "verblijfplaats": [
+        "whereabouts",
+        "dwelling"
+    ],
+    "verdelen": [
+        "division",
+        "divide",
+        "partition",
+        "portion out",
+        "split",
+        "separate up",
+        "share"
+    ],
+    "verdienen": [
+        "earn",
+        "earn",
+        "realize, (also realise British)",
+        "deserve",
+        "merit"
+    ],
+    "verenigen": [
+        "unite"
+    ],
+    "vergelijkbaar": [
+        "comparable"
+    ],
+    "verkrijgen": [
+        "obtain",
+        "procure",
+        "extract"
+    ],
+    "verlaat": [
+        "belated"
+    ],
+    "verlopen": [
+        "expire"
+    ],
+    "verschijning": [
+        "apparition",
+        "appearance"
+    ],
+    "verschillend": [
+        "different",
+        "separate",
+        "unlike",
+        "various",
+        "various",
+        "variously"
+    ],
+    "vertellen": [
+        "narration",
+        "tell",
+        "tell",
+        "narrate",
+        "weave"
+    ],
+    "vertonen": [
+        "show",
+        "screen"
+    ],
+    "vertrek": [
+        "departure",
+        "exit"
+    ],
+    "vervallen": [
+        "decrepit",
+        "derelict",
+        "dilapidated",
+        "ruined",
+        "lapse",
+        "mature"
+    ],
+    "verwant": [
+        "related",
+        "related",
+        "akin",
+        "kin",
+        "kindred",
+        "allied",
+        "kinsman"
+    ],
+    "verzameld": [
+        "collected"
+    ],
+    "verzamelen": [
+        "collect",
+        "rally",
+        "muster",
+        "amass"
+    ],
+    "verzameling": [
+        "collection"
+    ],
+    "verzorgd": [
+        "clean-cut"
+    ],
+    "video": [
+        "VCR"
+    ],
+    "videoclip": [
+        "clip"
+    ],
+    "vieren": [
+        "celebrate",
+        "hold"
+    ],
+    "vijand": [
+        "enemy",
+        "enemy",
+        "foe"
+    ],
+    "virus": [
+        "virus",
+        "virus",
+        "bug",
+        "virus"
+    ],
+    "vlam": [
+        "flame"
+    ],
+    "vleugel": [
+        "wing",
+        "wing",
+        "wing",
+        "wing",
+        "wing",
+        "wing",
+        "winger",
+        "grand piano"
+    ],
+    "vliegveld": [
+        "airport",
+        "airfield",
+        "aerodrome, airdrome"
+    ],
+    "volk": [
+        "nation",
+        "people",
+        "race",
+        "the people"
+    ],
+    "voormalig": [
+        "late"
+    ],
+    "vrijdag": [
+        "Friday",
+        "Fri"
+    ],
+    "vullen": [
+        "fill",
+        "fill",
+        "pad"
+    ],
+    "waard": [
+        "innkeeper",
+        "landlord",
+        "worth",
+        "worth",
+        "worthy",
+        "deserving",
+        "-worthy"
+    ],
+    "wal": [
+        "bulwark",
+        "rampart"
+    ],
+    "warm": [
+        "warmly",
+        "warm",
+        "warm",
+        "warm",
+        "mellow"
+    ],
+    "warmte": [
+        "heat",
+        "warmness",
+        "warmth",
+        "heat"
+    ],
+    "wensen": [
+        "wish",
+        "wish",
+        "wish"
+    ],
+    "werkgever": [
+        "employer"
+    ],
+    "wiens": [
+        "whose"
+    ],
+    "wij": [
+        "we"
+    ],
+    "woonplaats": [
+        "abode"
+    ],
+    "zakken": [
+        "flunk"
+    ],
+    "zaterdag": [
+        "Saturday"
+    ],
+    "zelfvertrouwen": [
+        "confidence",
+        "self-confidence"
+    ],
+    "ziel": [
+        "soul",
+        "soul",
+        "soul"
+    ],
+    "zitting": [
+        "session",
+        "sitting",
+        "seat"
+    ],
+    "zone": [
+        "zone",
+        "belt"
+    ],
+    "aankomen": [
+        "arrive",
+        "get"
+    ],
+    "aanleggen": [
+        "berth",
+        "build",
+        "lay out"
+    ],
+    "aanslag": [
+        "attempt"
+    ],
+    "aanvraag": [
+        "application"
+    ],
+    "achtervolgen": [
+        "hound"
+    ],
+    "adelstand": [
+        "peerage"
+    ],
+    "afsluiting": [
+        "seal"
+    ],
+    "afstuderen": [
+        "graduate"
+    ],
+    "afzonderlijk": [
+        "separate",
+        "individual",
+        "separately",
+        "singly",
+        "individually"
+    ],
+    "agent": [
+        "constable",
+        "agent",
+        "agent"
+    ],
+    "alcohol": [
+        "alcohol"
+    ],
+    "aldus": [
+        "thus"
+    ],
+    "aluminium": [
+        "aluminium, aluminum"
+    ],
+    "ambt": [
+        "office"
+    ],
+    "amper": [
+        "hardly",
+        "barely"
+    ],
+    "anoniem": [
+        "anonymous",
+        "nameless",
+        "anonymously"
+    ],
+    "arbeiders": [
+        "shop floor"
+    ],
+    "archeologisch": [
+        "archaeological"
+    ],
+    "arena": [
+        "arena",
+        "bullring"
+    ],
+    "argument": [
+        "case"
+    ],
+    "arts": [
+        "physician"
+    ],
+    "badkamer": [
+        "bathroom"
+    ],
+    "bak": [
+        "bin"
+    ],
+    "baksteen": [
+        "brick"
+    ],
+    "baron": [
+        "baron",
+        "baron"
+    ],
+    "bed": [
+        "bed",
+        "bed"
+    ],
+    "bedragen": [
+        "amount",
+        "total"
+    ],
+    "beeldhouwer": [
+        "sculptor"
+    ],
+    "beeldje": [
+        "figurine"
+    ],
+    "begrijpen": [
+        "understand",
+        "grasp",
+        "see",
+        "apprehend",
+        "gather",
+        "take in",
+        "understand",
+        "understand"
+    ],
+    "begrip": [
+        "understanding",
+        "comprehension",
+        "grip",
+        "grasp",
+        "apprehension",
+        "concept",
+        "conception"
+    ],
+    "begroting": [
+        "budget"
+    ],
+    "behandeling": [
+        "treatment",
+        "care",
+        "conduct"
+    ],
+    "behoren": [
+        "go with"
+    ],
+    "bekeren": [
+        "convert"
+    ],
+    "bekken": [
+        "pelvis",
+        "pelvic"
+    ],
+    "bekomen": [
+        "agree"
+    ],
+    "bende": [
+        "gang",
+        "band"
+    ],
+    "beoordelen": [
+        "assess",
+        "adjudicate",
+        "criticize, (also criticise British)"
+    ],
+    "beperken": [
+        "limit",
+        "restrict",
+        "restrict",
+        "confine",
+        "constrain"
+    ],
+    "bereid": [
+        "ready",
+        "willing",
+        "game",
+        "prepared"
+    ],
+    "bergtop": [
+        "mountain-top"
+    ],
+    "beroepshalve": [
+        "professionally"
+    ],
+    "bescheiden": [
+        "modestly",
+        "modest",
+        "modest"
+    ],
+    "bestrijden": [
+        "combat",
+        "dispute"
+    ],
+    "bestuderen": [
+        "study"
+    ],
+    "betaling": [
+        "payment"
+    ],
+    "beton": [
+        "concrete"
+    ],
+    "betreffende": [
+        "concerning",
+        "regarding",
+        "respecting"
+    ],
+    "betrokkenheid": [
+        "involvement"
+    ],
+    "bevoegdheid": [
+        "qualification",
+        "qualification",
+        "power"
+    ],
+    "bewegen": [
+        "budge",
+        "flicker",
+        "move",
+        "move",
+        "stir",
+        "travel",
+        "prompt"
+    ],
+    "bezitten": [
+        "own",
+        "possess",
+        "have"
+    ],
+    "bezorgd": [
+        "anxiously",
+        "apprehensively",
+        "worried",
+        "anxious",
+        "apprehensive",
+        "troubled"
+    ],
+    "bijdragen": [
+        "contribute",
+        "add",
+        "help",
+        "contribute",
+        "chip in"
+    ],
+    "bijlage": [
+        "enclosure"
+    ],
+    "bleken": [
+        "whiten",
+        "bleaching"
+    ],
+    "blessure": [
+        "harm"
+    ],
+    "blok": [
+        "bloc",
+        "block",
+        "block",
+        "log",
+        "cake",
+        "pad",
+        "stocks"
+    ],
+    "bloot": [
+        "bare"
+    ],
+    "bocht": [
+        "bend",
+        "loop"
+    ],
+    "boer": [
+        "farmer",
+        "peasant",
+        "jack",
+        "knave",
+        "burp",
+        "belch"
+    ],
+    "bovenaan": [
+        "head"
+    ],
+    "braken": [
+        "vomit"
+    ],
+    "buik": [
+        "belly",
+        "stomach",
+        "tummy",
+        "abdomen",
+        "paunch",
+        "abdominal"
+    ],
+    "capsule": [
+        "capsule",
+        "capsule"
+    ],
+    "cc": [
+        "cc"
+    ],
+    "cent": [
+        "cent"
+    ],
+    "chef": [
+        "head"
+    ],
+    "christelijk": [
+        "Christian"
+    ],
+    "chronisch": [
+        "chronically",
+        "chronic"
+    ],
+    "collega": [
+        "colleague",
+        "associate",
+        "workmate"
+    ],
+    "comeback": [
+        "comeback"
+    ],
+    "commissie": [
+        "committee"
+    ],
+    "communiceren": [
+        "communicate"
+    ],
+    "communisme": [
+        "communism"
+    ],
+    "contrast": [
+        "contrast",
+        "contrast",
+        "foil"
+    ],
+    "crash": [
+        "crash"
+    ],
+    "dagelijks": [
+        "daily",
+        "daily",
+        "everyday"
+    ],
+    "dans": [
+        "dance",
+        "dancing"
+    ],
+    "dansen": [
+        "dance",
+        "waltz",
+        "dancing"
+    ],
+    "debat": [
+        "debate"
+    ],
+    "debuut": [
+        "debut,d\u00e9but"
+    ],
+    "decreet": [
+        "decree"
+    ],
+    "definitieve": [
+        "finality"
+    ],
+    "dek": [
+        "deck"
+    ],
+    "delegatie": [
+        "delegation",
+        "deputation"
+    ],
+    "dergelijk": [
+        "suchlike"
+    ],
+    "dertig": [
+        "thirty",
+        "thirty",
+        "thirty-"
+    ],
+    "desondanks": [
+        "however"
+    ],
+    "detail": [
+        "detail",
+        "nicety"
+    ],
+    "dinsdag": [
+        "Tuesday"
+    ],
+    "dode": [
+        "dead"
+    ],
+    "doelwit": [
+        "target"
+    ],
+    "domein": [
+        "domain"
+    ],
+    "doorbraak": [
+        "breakthrough"
+    ],
+    "drijven": [
+        "float",
+        "drive",
+        "motivate",
+        "carry on"
+    ],
+    "drukte": [
+        "fuss",
+        "bustle",
+        "stir"
+    ],
+    "dubbele": [
+        "double"
+    ],
+    "dubbelspel": [
+        "doubles"
+    ],
+    "duif": [
+        "pigeon",
+        "dove"
+    ],
+    "duizend": [
+        "thousand",
+        "thousand",
+        "thousand",
+        "K,k",
+        "thousand-"
+    ],
+    "economisch": [
+        "economic"
+    ],
+    "eerbetoon": [
+        "tribute"
+    ],
+    "effectief": [
+        "effective",
+        "effectively"
+    ],
+    "eis": [
+        "demand",
+        "demand"
+    ],
+    "elektriciteit": [
+        "electricity",
+        "electrics"
+    ],
+    "elektronica": [
+        "electronics"
+    ],
+    "enzym": [
+        "enzyme"
+    ],
+    "erfgenaam": [
+        "heir"
+    ],
+    "ernst": [
+        "gravity",
+        "seriousness",
+        "solemnness",
+        "earnestness"
+    ],
+    "etappe": [
+        "stage",
+        "leg"
+    ],
+    "experiment": [
+        "experiment"
+    ],
+    "extreem": [
+        "extreme"
+    ],
+    "fabrikant": [
+        "manufacturer"
+    ],
+    "faculteit": [
+        "faculty"
+    ],
+    "faillissement": [
+        "bankruptcy"
+    ],
+    "fascisme": [
+        "fascism"
+    ],
+    "feitelijk": [
+        "factual",
+        "factually"
+    ],
+    "financi\u00ebn": [
+        "finance"
+    ],
+    "formatie": [
+        "formation"
+    ],
+    "fotograaf": [
+        "photographer"
+    ],
+    "fotografie": [
+        "photography"
+    ],
+    "fractie": [
+        "fraction"
+    ],
+    "galerij": [
+        "arcade"
+    ],
+    "gas": [
+        "gas",
+        "gas",
+        "gas",
+        "gas"
+    ],
+    "gat": [
+        "hole",
+        "breach",
+        "bum",
+        "gap",
+        "vent"
+    ],
+    "geassocieerd": [
+        "associate"
+    ],
+    "gedraaid": [
+        "twisted"
+    ],
+    "geestelijk": [
+        "mental",
+        "spiritual",
+        "mentally",
+        "spiritually"
+    ],
+    "geestelijke": [
+        "clergyman",
+        "parson",
+        "cleric"
+    ],
+    "geleidelijk": [
+        "gradual"
+    ],
+    "geliefde": [
+        "sweetheart",
+        "beloved"
+    ],
+    "gelijkenis": [
+        "likeness",
+        "resemblance",
+        "parallel"
+    ],
+    "geluk": [
+        "happiness",
+        "felicity",
+        "luck",
+        "mercy",
+        "godsend"
+    ],
+    "gelukkig": [
+        "happy",
+        "happy",
+        "fortunate",
+        "well-off",
+        "happily",
+        "fortunately",
+        "luckily"
+    ],
+    "gemeenschappelijk": [
+        "common",
+        "common",
+        "communal",
+        "mutual"
+    ],
+    "gemeentehuis": [
+        "hall"
+    ],
+    "geografisch": [
+        "geographic, geographical",
+        "geographically"
+    ],
+    "gerechtshof": [
+        "law court",
+        "court"
+    ],
+    "geschriften": [
+        "writings"
+    ],
+    "getuigen": [
+        "testify",
+        "testify",
+        "vouch"
+    ],
+    "gevaarlijk": [
+        "dangerous",
+        "hazardous",
+        "perilous",
+        "unhealthy",
+        "perilously",
+        "unhealthily"
+    ],
+    "gezag": [
+        "authority"
+    ],
+    "ge\u00efnspireerd": [
+        "inspired"
+    ],
+    "gitarist": [
+        "guitarist"
+    ],
+    "glad": [
+        "slippery",
+        "greasy",
+        "smooth",
+        "smooth",
+        "smooth",
+        "glib",
+        "oily",
+        "plausible",
+        "glib",
+        "slick",
+        "slickly",
+        "glibly",
+        "smoothly"
+    ],
+    "gooien": [
+        "throw",
+        "pitch",
+        "hurl",
+        "bung",
+        "chuck",
+        "send"
+    ],
+    "graf": [
+        "grave",
+        "tomb",
+        "sepulchral"
+    ],
+    "grafsteen": [
+        "gravestone",
+        "headstone",
+        "tombstone"
+    ],
+    "gratis": [
+        "gratuitously",
+        "free",
+        "gratuitous",
+        "complimentary"
+    ],
+    "gravin": [
+        "countess",
+        "countess"
+    ],
+    "groepje": [
+        "pocket"
+    ],
+    "grondwet": [
+        "constitution"
+    ],
+    "grot": [
+        "cave"
+    ],
+    "ha": [
+        "ha!"
+    ],
+    "hal": [
+        "hall",
+        "hall",
+        "lobby"
+    ],
+    "hals": [
+        "throat",
+        "neck",
+        "neck",
+        "cervix"
+    ],
+    "halverwege": [
+        "half-way",
+        "midway"
+    ],
+    "hangen": [
+        "hang",
+        "hang",
+        "hang up",
+        "sling",
+        "flop",
+        "slouch",
+        "sprawl"
+    ],
+    "hartstilstand": [
+        "heart failure"
+    ],
+    "heide": [
+        "heather",
+        "moor"
+    ],
+    "heilig": [
+        "holy",
+        "holy",
+        "sacred",
+        "sacred"
+    ],
+    "heilige": [
+        "saint"
+    ],
+    "herberg": [
+        "inn",
+        "inn",
+        "hostel"
+    ],
+    "herfst": [
+        "autumn",
+        "fall",
+        "autumnal"
+    ],
+    "herhaling": [
+        "repetition",
+        "repeat",
+        "replication",
+        "action replay",
+        "recurrence",
+        "review"
+    ],
+    "herinneren": [
+        "remind",
+        "think of"
+    ],
+    "herinnering": [
+        "memory",
+        "recollection",
+        "recollection",
+        "remembrance"
+    ],
+    "herkenbaar": [
+        "recognizably, (also recognisably British)",
+        "recognizable, (also recognisable British)"
+    ],
+    "herzien": [
+        "revise",
+        "revise"
+    ],
+    "historicus": [
+        "historian"
+    ],
+    "hitlijst": [
+        "the charts"
+    ],
+    "hoed": [
+        "hat"
+    ],
+    "honger": [
+        "hunger",
+        "hunger",
+        "hunger"
+    ],
+    "hoofdkwartier": [
+        "headquarters",
+        "HQ"
+    ],
+    "hoofdrol": [
+        "lead"
+    ],
+    "houding": [
+        "attitude",
+        "pose",
+        "position",
+        "posture",
+        "bearing",
+        "poise",
+        "carriage",
+        "stance",
+        "demeanour, demeanor",
+        "front",
+        "attention"
+    ],
+    "huishouden": [
+        "housekeeping",
+        "housework"
+    ],
+    "huur": [
+        "hire",
+        "rent",
+        "rental",
+        "rental",
+        "lease"
+    ],
+    "individueel": [
+        "individual"
+    ],
+    "infrastructuur": [
+        "infrastructure"
+    ],
+    "ingebouwd": [
+        "built-in"
+    ],
+    "inspecteur": [
+        "examiner",
+        "inspector",
+        "inspector"
+    ],
+    "inspiratie": [
+        "inspiration"
+    ],
+    "instelling": [
+        "institution"
+    ],
+    "integriteit": [
+        "integrity"
+    ],
+    "intensief": [
+        "intensively",
+        "intensive"
+    ],
+    "interessant": [
+        "interesting"
+    ],
+    "investeren": [
+        "invest",
+        "sink",
+        "investment"
+    ],
+    "inzet": [
+        "bet",
+        "stake"
+    ],
+    "isolatie": [
+        "isolation",
+        "insulation"
+    ],
+    "jegens": [
+        "towards, toward"
+    ],
+    "jurk": [
+        "dress",
+        "gown",
+        "frock"
+    ],
+    "kaap": [
+        "cape",
+        "point",
+        "promontory",
+        "headland",
+        "head"
+    ],
+    "kalender": [
+        "calendar"
+    ],
+    "kalf": [
+        "heifer",
+        "calf"
+    ],
+    "kampen": [
+        "contend"
+    ],
+    "kapitaal": [
+        "capital",
+        "principal"
+    ],
+    "kardinaal": [
+        "cardinal"
+    ],
+    "keerzijde": [
+        "reverse",
+        "tails",
+        "tails"
+    ],
+    "kelder": [
+        "cellar"
+    ],
+    "kenmerk": [
+        "feature",
+        "mark"
+    ],
+    "kiezers": [
+        "electorate"
+    ],
+    "kijker": [
+        "viewer"
+    ],
+    "kist": [
+        "case",
+        "chest",
+        "coffin"
+    ],
+    "klas": [
+        "form",
+        "class",
+        "grade"
+    ],
+    "kom": [
+        "come",
+        "there",
+        "bowl",
+        "basin",
+        "boat"
+    ],
+    "komeet": [
+        "comet"
+    ],
+    "koninklijk": [
+        "kingly",
+        "regal",
+        "royal",
+        "royal",
+        "royally",
+        "regally"
+    ],
+    "koper": [
+        "brass",
+        "copper",
+        "purchaser",
+        "shopper"
+    ],
+    "koppel": [
+        "brace"
+    ],
+    "korst": [
+        "crust",
+        "crust",
+        "rind"
+    ],
+    "kostbaarheden": [
+        "valuables"
+    ],
+    "kostschool": [
+        "boarding school"
+    ],
+    "kostuum": [
+        "suit",
+        "costume",
+        "costume",
+        "fancy dress",
+        "get-up"
+    ],
+    "kring": [
+        "circle",
+        "circle",
+        "ring",
+        "set"
+    ],
+    "kruising": [
+        "hybrid",
+        "hybrid",
+        "cross",
+        "crossbreed"
+    ],
+    "kwaad": [
+        "ticked off",
+        "ill",
+        "bad",
+        "wrong",
+        "evil",
+        "evil",
+        "ill"
+    ],
+    "kwart": [
+        "quart",
+        "quarter",
+        "quarter"
+    ],
+    "kwartet": [
+        "quartet",
+        "quartet"
+    ],
+    "kwartier": [
+        "quarter",
+        "quarter",
+        "billet",
+        "quarters"
+    ],
+    "kwetsbaar": [
+        "vulnerable"
+    ],
+    "laatst": [
+        "last",
+        "last",
+        "latter",
+        "recent",
+        "up-to-the-minute",
+        "final",
+        "ultimate"
+    ],
+    "lading": [
+        "load",
+        "load",
+        "cargo",
+        "charge"
+    ],
+    "landbouw": [
+        "agriculture",
+        "agricultural"
+    ],
+    "landgenoot": [
+        "countryman",
+        "compatriot"
+    ],
+    "langzamerhand": [
+        "gradually"
+    ],
+    "larve": [
+        "larva",
+        "grub"
+    ],
+    "las": [
+        "weld"
+    ],
+    "last": [
+        "bother",
+        "burden",
+        "burden",
+        "imposition",
+        "tax",
+        "weight"
+    ],
+    "leraar": [
+        "teacher",
+        "schoolteacher",
+        "master",
+        "schoolmaster"
+    ],
+    "lever": [
+        "liver",
+        "liver"
+    ],
+    "loods": [
+        "pilot"
+    ],
+    "loyaliteit": [
+        "allegiance"
+    ],
+    "maatregel": [
+        "measure"
+    ],
+    "manieren": [
+        "manner",
+        "ways and means"
+    ],
+    "map": [
+        "folder",
+        "file"
+    ],
+    "masker": [
+        "mask"
+    ],
+    "materieel": [
+        "material",
+        "material",
+        "physical"
+    ],
+    "melk": [
+        "milk"
+    ],
+    "mensheid": [
+        "mankind",
+        "humanity",
+        "human race"
+    ],
+    "microscoop": [
+        "microscope"
+    ],
+    "min": [
+        "shoddy",
+        "less",
+        "minus",
+        "minus",
+        "under",
+        "shoddily",
+        "wet-nurse",
+        "min",
+        "min"
+    ],
+    "minderheid": [
+        "minority"
+    ],
+    "ministerie": [
+        "ministry"
+    ],
+    "mis": [
+        "mistaken",
+        "mass",
+        "mass",
+        "mis-",
+        "mis-"
+    ],
+    "misdaad": [
+        "crime",
+        "felony",
+        "foul play"
+    ],
+    "mishandeld": [
+        "battered"
+    ],
+    "missie": [
+        "mission"
+    ],
+    "mode": [
+        "fashion",
+        "fashion",
+        "mode",
+        "style",
+        "vogue"
+    ],
+    "modern": [
+        "modern",
+        "up to date",
+        "up-to-date",
+        "newfangled"
+    ],
+    "morgen": [
+        "tomorrow"
+    ],
+    "munt": [
+        "mint",
+        "mint"
+    ],
+    "musical": [
+        "musical"
+    ],
+    "nageslacht": [
+        "posterity",
+        "progeny"
+    ],
+    "negentien": [
+        "nineteen",
+        "nineteen"
+    ],
+    "neusgat": [
+        "nostril"
+    ],
+    "nogal": [
+        "quite"
+    ],
+    "noordwesten": [
+        "north-east / north-west"
+    ],
+    "ochtend": [
+        "morning",
+        "morn"
+    ],
+    "omloop": [
+        "circuit"
+    ],
+    "omvatten": [
+        "incorporate",
+        "take in"
+    ],
+    "onderbreking": [
+        "interruption",
+        "interruption",
+        "pause",
+        "break",
+        "halt"
+    ],
+    "ondergaan": [
+        "undergo",
+        "undergo",
+        "go down",
+        "set",
+        "undergo",
+        "undergo"
+    ],
+    "ondergang": [
+        "downfall",
+        "ruin",
+        "undoing",
+        "ruin",
+        "ruination",
+        "wreck",
+        "doom"
+    ],
+    "ondergronds": [
+        "underground",
+        "underground"
+    ],
+    "onderkant": [
+        "underneath",
+        "underside"
+    ],
+    "onderscheiding": [
+        "differentiation",
+        "distinction"
+    ],
+    "ongewoon": [
+        "unfamiliarly",
+        "unusually",
+        "unusual",
+        "out of the ordinary"
+    ],
+    "onlusten": [
+        "trouble"
+    ],
+    "onschuld": [
+        "innocence",
+        "guilelessness",
+        "harmlessness"
+    ],
+    "ontkomen": [
+        "get away"
+    ],
+    "ontvangst": [
+        "reception",
+        "reception",
+        "receipt"
+    ],
+    "onvermijdelijk": [
+        "inevitably",
+        "unavoidably",
+        "inevitable",
+        "unavoidable"
+    ],
+    "onverwacht": [
+        "unexpected",
+        "snap"
+    ],
+    "oom": [
+        "uncle"
+    ],
+    "opeens": [
+        "snappily"
+    ]
+}

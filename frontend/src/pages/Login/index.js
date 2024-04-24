@@ -4,6 +4,7 @@ import './index.scss'
 // import { useStore } from "@/store"
 import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
+import {Navbar} from '../Navbar'
 
 // check backend status
 async function checkBackendStatus() {
@@ -55,7 +56,7 @@ function Login () {
   
       const data = await response.json();
       if (response.ok) {
-        // 登录成功，可以将 token 保存在本地存储或状态管理库中
+        // login sucessful, can save token 
         // loginStore.setToken(data.token);
         localStorage.setItem('token', data['token']);
         console.log('set_token:',localStorage.getItem('token'));
@@ -73,6 +74,7 @@ function Login () {
   return (
 
     <div className="login">
+      { window.location.pathname !== '/' && <Navbar/> }
       <h2>Login</h2>
       <Card title="" bordered={true}>
         <Form validateTrigger={['onBlur', 'onChange']}

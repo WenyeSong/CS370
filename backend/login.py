@@ -11,7 +11,7 @@ from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
 #CORS(app)
 
 # class User(db.Model):
-#     __tablename__ = 'users'  # Explicitly specify the table name to match your database
+#     __tablename__ = 'users'  
 #     id = db.Column(db.Integer, primary_key=True)
 #     username = db.Column(db.String(80), unique=True, nullable=False)
 #     token = db.Column(db.String(80),unique=True, nullable=False)
@@ -34,8 +34,8 @@ def login_routes(app):
         conn = psycopg2.connect(
             dbname='postgres',
             user='postgres',
-            password='cs370',  # Replace with your actual password
-            host='34.69.154.109',  # Replace with your actual host IP
+            password='cs370',  
+            host='34.69.154.109',  
         )
 
         # Cursor to execute database operations
