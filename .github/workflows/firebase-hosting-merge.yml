@@ -1,6 +1,6 @@
 name: Deploy to Firebase Hosting on merge
 
-on:
+on: # when main push, run this file
   push:
     branches:
       - main
