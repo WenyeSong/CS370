@@ -1,5 +1,94 @@
+.navbar-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; /* This spaces out the logo and navigation */
+  width: 100%;
+  padding: 0 15px; /* Adjust the horizontal padding */
+  padding-bottom: 0;
+  
+}
+
+.main-header {
+  background-color: #f4e9e9ea; /* Changed to white or any color that suits the page */
+  /* Remove the background image if it does not fit well with the design */
+  width: 100%;
+  /* Adjust padding to control the height of the navbar */
+  padding: 3px; /* Reduced padding to decrease height */
+  height: 10vh;
+  
+  display: flex; /* Enables flexbox for the header */
+  justify-content: right; 
+  align-items: center; /* Centers the content vertically */
+
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.main-page-navbar {
+  background-color: transparent;
+  display: flex; /* Enables flexbox for nav */
+  float: right;
+  align-items: center; /* Vertically centers the nav items */
+  margin-bottom: 0px;
+  
+  
+}
+.main-page-navbar ul {
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-page-navbar li {
+  
+  display: inline-block;
+  position: relative;
+  margin-left: 10px; /* Reduced spacing between items */
+  padding-top: 0px; /* Reduced padding */
+}
+
+.main-page-navbar a { /*botton*/
+  color: rgb(10, 10, 11);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.main-page-navbar a:hover { /*word color*/
+  color: #000;
+}
+
+.main-page-navbar a::before {
+  content: '';
+  display: block;
+  
+  background-color: #444;
+  height: 3px; /* Smaller indicator block */
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+.main-page-navbar a:hover::before {
+  width: 100%;
+
+}
+
+
+
+
+
+
+
 .main-content {
-  background-color: #fff; /* Set a white background for the content area */
+  background-color: white; /* Set a white background for the content area */
   color: #000; /* Set the text color to black for contrast */
   padding: 20px; /* Add some padding around the content */
   border-radius: 8px; /* Optional: Round the corners of the content box */
@@ -7,10 +96,13 @@
   width: 80%; /* Set the width of the content area */
   max-width: 960px; /* Maximum width of the content area */
   margin: 20px auto; /* Center the content area and add some margin above and below */
+
+  text-align: center;
 }
 
 .main-heading, .main-subtitle {
   color: #000; /* Ensures that the headings are also black or a dark color for contrast */
+  
 }
 
 /* Style for the links to make them stand out and readable */
@@ -19,6 +111,7 @@
   text-decoration: none; /* Remove underline from links */
   margin: 10px; /* Add margin around the links */
   display: inline-block; /* Make the links align in a line */
+  
 }
 
 .main-links a:hover {
@@ -27,4 +120,7 @@
 
 /* Additional styles for the header and footer if necessary */
 
-
+h5 {
+  text-decoration: underline;
+  font-weight: 300;
+}
