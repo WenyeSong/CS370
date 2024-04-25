@@ -45,6 +45,15 @@
     background-color: rgba(255, 255, 255, 0.7) !important; /* Add !important */
     padding: 10px;
   }
+
+  .question-text {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Add !important */
+    padding: 10px;
+  }
+
+
   
   
   /*the following few sections adress the text input animation:*/
@@ -52,7 +61,29 @@
     margin-top: 20px;
     display: flex; /* Use flexbox to center label and input */
     flex-direction: column; /* Stack label and input vertically */
+    flex-wrap: wrap;
     align-items: center; /* Center the input and label horizontally */
+  }
+  
+  .answer-button {
+    margin: 10px; /* Adjust as needed */
+    font-weight: bold;
+    padding: 10px 30px; /* Adjust padding to change button size */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+    font-family: 'Changa';
+    background-color:rgba(255, 255, 255, 0.7) ;
+    color:cadetblue;
+    font-size: 18px;
+  }
+  
+  .answer-button:hover {
+    background-color: #ddd; /* Change color on hover */
+  }
+  
+  .answer-button:active {
+    background-color: #aaa; /* Change color when clicked */
   }
   
   .input-group{
