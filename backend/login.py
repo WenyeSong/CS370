@@ -23,7 +23,7 @@ def login_routes(app):
         return jsonify({'status': 'UP'}), 200
 
 
-    @app.route('http://3.138.117.40/api/login', methods=['POST'])
+    @app.route('/api/login', methods=['POST'])
     def login():
         # Parse the JSON request to get username and password
         data = request.get_json()
