@@ -17,13 +17,13 @@ from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
 #     token = db.Column(db.String(80),unique=True, nullable=False)
 
 def login_routes(app):
-# check whether status is activate
-    @app.route('/health', methods=['GET'])
+# check whether status is activate using GET
+    @app.route('/api/health', methods=['GET'])
     def health_check():
         return jsonify({'status': 'UP'}), 200
 
 
-    @app.route('/login', methods=['POST'])
+    @app.route('/api/login', methods=['POST'])
     def login():
         # Parse the JSON request to get username and password
         data = request.get_json()

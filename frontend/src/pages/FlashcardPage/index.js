@@ -99,7 +99,7 @@ export default function FlashcardPage() {
         language_id: languageId,
       };
   
-      const response = await fetch(`http://localhost:5000/user/${token}/words`, {
+      const response = await fetch(`http://3.138.117.40/api/user/${token}/words`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
