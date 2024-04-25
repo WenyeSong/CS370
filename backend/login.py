@@ -17,7 +17,7 @@ from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
 #     token = db.Column(db.String(80),unique=True, nullable=False)
 
 def login_routes(app):
-# check whether status is activate
+# check whether status is activate using GET
     @app.route('/health', methods=['GET'])
     def health_check():
         return jsonify({'status': 'UP'}), 200
