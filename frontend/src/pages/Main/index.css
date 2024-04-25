@@ -88,11 +88,11 @@
 
 
 .main-content {
-  background-color: white; /* Set a white background for the content area */
+  background-color: transparent; /* Set a white background for the content area */
   color: #000; /* Set the text color to black for contrast */
   padding: 20px; /* Add some padding around the content */
-  border-radius: 8px; /* Optional: Round the corners of the content box */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  /* border-radius: 8px; /* Optional: Round the corners of the content box */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: Add a subtle shadow */
   width: 80%; /* Set the width of the content area */
   max-width: 960px; /* Maximum width of the content area */
   margin: 20px auto; /* Center the content area and add some margin above and below */
@@ -102,13 +102,14 @@
 
 .main-heading, .main-subtitle {
   color: #000; /* Ensures that the headings are also black or a dark color for contrast */
-  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Style for the links to make them stand out and readable */
 .main-links a {
   color: #349ad5; /* Color for the links to make them stand out */
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: underline; /* Remove underline from links */
+  /* text-shadow: 2px 2px 4px #349ad5; */
   margin: 10px; /* Add margin around the links */
   display: inline-block; /* Make the links align in a line */
   
@@ -122,5 +123,5 @@
 
 h5 {
   text-decoration: underline;
-  font-weight: 300;
+  font-weight: 400;
 }
