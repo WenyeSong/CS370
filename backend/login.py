@@ -18,7 +18,7 @@ from db import db, User, Language, ForeignTerm, EnglishTranslation, UserSaved
 
 def login_routes(app):
 # check whether status is activate using GET
-    @app.route('http://3.138.117.40/api/health', methods=['GET'])
+    @app.route('/api/health', methods=['GET'])
     def health_check():
         return jsonify({'status': 'UP'}), 200
 
