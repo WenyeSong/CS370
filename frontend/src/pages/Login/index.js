@@ -103,9 +103,9 @@ function Login () {
             <Button type="primary" htmlType='submit' size="large" >Login</Button>
           </Form.Item>
         </Form>
-        <div className="link-btn-container">
+        {/* <div className="link-btn-container">
           <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        </div>
+        </div> */}
         
       </Card>
     </div>

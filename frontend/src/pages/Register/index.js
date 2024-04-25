@@ -63,7 +63,7 @@ const Register = (props) => {
             <button type="submit">Sign Up</button>
         </form>
         <button className="login-btn" onClick={goToLoginPage}>Already have an account? Login here.</button>
-        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+        {/* <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button> */}
     </div>
     )
 

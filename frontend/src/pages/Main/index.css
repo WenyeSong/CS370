@@ -88,7 +88,7 @@
 
 
 .main-content {
-  background-color: transparent; /* Set a white background for the content area */
+  background-color: rgba(255, 255, 255, 0.5); /* Set a white background for the content area */
   color: #000; /* Set the text color to black for contrast */
   padding: 20px; /* Add some padding around the content */
   /* border-radius: 8px; /* Optional: Round the corners of the content box */

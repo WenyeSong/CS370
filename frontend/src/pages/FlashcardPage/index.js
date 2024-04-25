@@ -192,9 +192,9 @@ return (
         languageId={languageId}
       />
       </div>
-      <div className="link-btn-container">
+      {/* <div className="link-btn-container">
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-      </div>
+      </div> */}
     </>
 );
 }
