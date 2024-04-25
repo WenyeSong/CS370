@@ -290,12 +290,11 @@ function SavedList() {
                 ))}
               </select>
             </Form.Item>
-            <Form.Item style={{ display: 'flex', alignItems: 'start' }}>
+            <Form.Item style={{ display: 'flex', alignItems: 'center' }}>
               <Button 
                 type="primary" htmlType="submit"
-                style={{ width: '170px', height: '40px', lineHeight: '40px',
-                textAlign: 'center', padding: '0', justifyContent: 'center', marginTop: '-5px' }}
-              >
+                style={{ width: '140px', height: '34px', lineHeight: '34px',
+                textAlign: 'center', padding: '0 15px', justifyContent: 'center', marginTop: '-5px' }}>
                 Add New Word    
               </Button>
             </Form.Item>
@@ -311,9 +310,7 @@ function SavedList() {
         </Card>
       </Col>
     </Row> 
-    {/* <div className="link-btn-container">
-      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-    </div> */}
+    
     </>
 );
           }
