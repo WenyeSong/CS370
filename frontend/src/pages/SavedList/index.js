@@ -41,7 +41,7 @@ function SavedList() {
   const fetchWords = async (pageNum = currentPage, pageSizeParam = pageSize) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/user/${token}/words?page=${pageNum}&size=${pageSizeParam}`);
+      const response = await fetch(`http://3.138.117.40/api/user/${token}/words?page=${pageNum}&size=${pageSizeParam}`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
   
@@ -167,10 +167,10 @@ function SavedList() {
     let endpoint;
     if (record.type === 'dictionary') {
       // Use foreign_id for dictionary words
-      endpoint = `http://localhost:5000/user/${token}/words/${record.foreign_id}`; 
+      endpoint = `http://3.138.117.40/api/user/${token}/words/${record.foreign_id}`; 
     } else if (record.type === 'contribution') {
       // Use id for user contributions
-      endpoint = `http://localhost:5000/user/${token}/contributions/${record.foreign_id}`;
+      endpoint = `http://3.138.117.40/api/user/${token}/contributions/${record.foreign_id}`;
     }
   
     console.log("Constructed endpoint URL:", endpoint);
@@ -219,7 +219,7 @@ function SavedList() {
         english_translation: englishTranslation,  // It's okay to send an empty string if no translation is provided
         language_id: languageId
       };
-      const response = await fetch(`http://localhost:5000/user/${token}/words`, {
+      const response = await fetch(`http://3.138.117.40/api/user/${token}/words`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(payload)

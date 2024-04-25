@@ -43,7 +43,7 @@ function Login () {
 
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/login', { // point to flask port, 5000
+      const response = await fetch('http://3.138.117.40/api/login', { // point to flask port, 5000
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
