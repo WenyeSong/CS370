@@ -32,8 +32,7 @@ function SavedList() {
     { id: 1, name: 'French' },
     { id: 3, name: 'Spanish' },
     { id: 4, name: 'Dutch' },
-    { id: 5, name: 'German' },
-    { id: 6, name: 'Chinese' }
+    { id: 5, name: 'German' }
   ];
   
   const [languageId, setLanguageId] = useState(null);
@@ -157,19 +156,7 @@ function SavedList() {
         />
       )
     },
-    {
-      label: 'Chinese',
-      key: '6',
-      children: (
-        <Table 
-          loading={loading}
-          columns={columns}
-          dataSource={words.filter(word => word.language_id === 6)}
-          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
-          onChange={handleTableChange}
-        />
-      )
-    }
+    
   ];
 
 

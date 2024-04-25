@@ -39,15 +39,12 @@ export default function FlashcardPage() {
   useEffect(() => {
     const fetchDictionaries = async () => {
       try {
-        const responseChinese = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/chinese-english.json');
-        const chineseDictionary = await responseChinese.json();
         const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/german-english.json');
         const germanDictionary = await responseGerman.json();
         const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/french-english.json');
         const frenchDictionary = await responseFrench.json();
 
         const fetchedDictionaries = {
-          'Chinese': chineseDictionary,
           'German': germanDictionary,
           'French': frenchDictionary
         };
@@ -168,7 +165,7 @@ return (
                 setDifficultyLevel(hasDifficultyLevels(e.target.value) ? 1 : null);
               }} value={selectedDictionary}>
               <option value="">Select Language</option>
-              {['Chinese', 'German', 'French', 'Spanish', 'Dutch'].map((language) => (
+              {['German', 'French', 'Spanish', 'Dutch'].map((language) => (
                 <option key={language} value={language}>{language}</option>
               ))}
             </select>
