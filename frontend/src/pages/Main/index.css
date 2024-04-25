@@ -9,7 +9,9 @@
 }
 
 .main-header {
-  background-color: #f4e9e9ea; /* Changed to white or any color that suits the page */
+  /* background-color: #f4e9e9ea;  */
+  /* Changed to white or any color that suits the page */
+  background-color: rgb(160,228,204);
   /* Remove the background image if it does not fit well with the design */
   width: 100%;
   /* Adjust padding to control the height of the navbar */
@@ -88,15 +90,15 @@
 
 
 .main-content {
-  background-color: rgba(255, 255, 255, 0.5); /* Set a white background for the content area */
+  background-color: rgb(246, 252, 251); /* Set a white background for the content area */
   color: #000; /* Set the text color to black for contrast */
   padding: 20px; /* Add some padding around the content */
-  /* border-radius: 8px; /* Optional: Round the corners of the content box */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: Add a subtle shadow */
+  border-radius: 8px; /* Optional: Round the corners of the content box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
   width: 80%; /* Set the width of the content area */
   max-width: 960px; /* Maximum width of the content area */
   margin: 20px auto; /* Center the content area and add some margin above and below */
-
+  /* font-family: 'Times New Roman', Times, serif; */
   text-align: center;
 }
 
@@ -124,4 +126,60 @@
 h5 {
   text-decoration: underline;
   font-weight: 400;
+}
+
+.introduction {
+  background-color: rgb(246, 252, 251); /* Set a white background for the content area */
+  color: #000; /* Set the text color to black for contrast */
+  padding: 20px; /* Add some padding around the content */
+  border-radius: 8px; /* Optional: Round the corners of the content box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  width: 80%; /* Set the width of the content area */
+  max-width: 960px; /* Maximum width of the content area */
+  margin: 20px auto; /* Center the content area and add some margin above and below */
+  /* font-family:'Courier New', Courier, monospace; */
+  /* font-weight: 1334; */
+  text-align: center;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust the space between each feature item */
+  padding-top: 20px;
+}
+
+.feature-item {
+  width: 33%; /* Adjust the width as needed */
+  text-align: center; /* Center aligns the content of each feature */
+}
+
+.feature-image {
+  width: 100%; /* Makes the image responsive to the container width */
+  max-width: 200px; /* Adjust max-width as needed */
+  height: auto; /* Maintains the aspect ratio of the image */
+  margin-bottom: 10px; /* Space between image and description */
+}
+
+.feature-description {
+  font-size: 1em; /* Adjust the font size as needed */
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.topic {
+  color: #3a7377;
+  text-shadow: 1px 1px 2px rgb(160,228,204);
+}
+
+.topic-description {
+  color: #3a7377;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.my-bullet-list {
+  text-align: left;
 }

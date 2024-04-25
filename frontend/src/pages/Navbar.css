@@ -17,7 +17,8 @@ body {
 }
 
 .navhead {
-  background-color: #f4e9e9ea; /* Changed to white or any color that suits the page */
+  /* background-color: #f4e9e9ea; Changed to white or any color that suits the page */
+  background-color: rgb(160,228,204);
   /* Remove the background image if it does not fit well with the design */
   width: 100%;
   /* Adjust padding to control the height of the navbar */

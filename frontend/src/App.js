@@ -20,9 +20,9 @@ function App () {
 
   const [currentForm, setCurrentForm] = useState('login');
 
-  const appStyle = {
-    backgroundImage: 'url(../src/image-from-rawpixel-id-577697-jpeg.jpg)',
-  }
+  // const appStyle = {
+  //   backgroundImage: 'url(../src/image-from-rawpixel-id-577697-jpeg.jpg)',
+  // }
 
   const toggleForm = (formName) => {
     setCurrentForm(formName);
@@ -36,7 +36,7 @@ function App () {
   return (
     <BrowserRouter>
       <div className='App' >
-      <div style={appStyle}>
+      {/* <div style={appStyle}></div> */}
         
         <Routes>
           <Route path='/' element={<Main />}></Route>
@@ -51,7 +51,7 @@ function App () {
           <Route path="/fill-in-blank" element={<FillInBlank />} />
           <Route path="/multiple-choice" element={<MultipleChoice />} />
         </Routes>
-      </div></div>
+      </div>
     </BrowserRouter >
   )
 }

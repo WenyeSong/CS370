@@ -5,10 +5,10 @@ body {
   margin: 0;
   font-family: 'Changa';
   color: #000000;
-  background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg);
-  background-size: cover; /* Ensure the background image covers the entire viewport */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-position: center; /* Center the background image */
+  /* background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg); */
+  /* background-size: cover; Ensure the background image covers the entire viewport */
+  /* background-repeat: no-repeat; Prevent the background image from repeating */
+  /* background-position: center; Center the background image */
 }
 
 /* Header */
@@ -74,8 +74,8 @@ footer {
 
 .App { 
   /*addresses the overall syntax issues*/
-  /* background-color: white; */
-  background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg);
+  background-color: rgb(241, 241, 241);
+  /* background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg); */
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-position: center; /* Center the background image */
@@ -83,5 +83,4 @@ footer {
   height: auto;
   width: 100%; 
   min-height: 100vh;
-
 }

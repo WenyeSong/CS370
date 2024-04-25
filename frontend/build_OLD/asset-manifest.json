@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1814d64a.css",
+    "main.js": "/static/js/main.cde44638.js",
+    "static/js/453.1f4e725f.chunk.js": "/static/js/453.1f4e725f.chunk.js",
+    "static/media/VocabGrowLogo.png": "/static/media/VocabGrowLogo.e821262143893281374b.png",
+    "index.html": "/index.html",
+    "main.1814d64a.css.map": "/static/css/main.1814d64a.css.map",
+    "main.cde44638.js.map": "/static/js/main.cde44638.js.map",
+    "453.1f4e725f.chunk.js.map": "/static/js/453.1f4e725f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1814d64a.css",
+    "static/js/main.cde44638.js"
+  ]
+}
