@@ -20,7 +20,7 @@ const Register = (props) => {
     e.preventDefault();
     try {
       // send POST request to backend
-      const response = await fetch('http://127.0.0.1:5000/register', {
+      const response = await fetch('http://3.14.246.240/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const Register = (props) => {
             <button type="submit">Sign Up</button>
         </form>
         <button className="login-btn" onClick={goToLoginPage}>Already have an account? Login here.</button>
-        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+        {/* <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button> */}
     </div>
     )
 

@@ -20,12 +20,12 @@ login_routes(app)
 register_routes(app)
 
 
-app.add_url_rule('/user/<string:token>/words/<int:foreign_id>', view_func=delete_user_saved_word, methods=['DELETE'])
-app.add_url_rule('/user/<string:token>/contributions/<int:contribution_id>', view_func=delete_user_contribution, methods=['DELETE'])
-app.add_url_rule('/user/<string:token>/words', view_func=get_user_words, methods=['GET'])
-app.add_url_rule('/user/<string:token>/words', view_func=save_user_word, methods=['POST'])
-app.add_url_rule('/user/words/<string:word>', view_func=search_similar, methods=['GET'])
-app.add_url_rule('/user/words/<int:language_id>', view_func=get_random_words, methods=['GET'])
+app.add_url_rule('/api/user/<string:token>/words/<int:foreign_id>', view_func=delete_user_saved_word, methods=['DELETE'])
+app.add_url_rule('/api/user/<string:token>/contributions/<int:contribution_id>', view_func=delete_user_contribution, methods=['DELETE'])
+app.add_url_rule('/api/user/<string:token>/words', view_func=get_user_words, methods=['GET'])
+app.add_url_rule('/api/user/<string:token>/words', view_func=save_user_word, methods=['POST'])
+app.add_url_rule('/api/user/words/<string:word>', view_func=search_similar, methods=['GET'])
+app.add_url_rule('/api/user/words/<int:language_id>', view_func=get_random_words, methods=['GET'])
 
 
 if __name__ == '__main__':
@@ -33,5 +33,5 @@ if __name__ == '__main__':
         db.create_all()
 # This should be called with caution, only when needed
     #port = int(os.environ.get('PORT', 8080))
-    #app.run(host='0.0.0.0', port=port) # starts the app with deploy, with a public port, now have error
-    app.run(debug=True, port = 5000) # original test, without deploy
+    app.run(host='0.0.0.0', port=5000) # starts the app with deploy, with a public port
+    #app.run(debug=True, port = 5000) # original test, without deploy

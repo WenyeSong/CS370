@@ -39,15 +39,12 @@ export default function FlashcardPage() {
   useEffect(() => {
     const fetchDictionaries = async () => {
       try {
-        const responseChinese = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/chinese-english.json');
-        const chineseDictionary = await responseChinese.json();
         const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/german-english.json');
         const germanDictionary = await responseGerman.json();
         const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/french-english.json');
         const frenchDictionary = await responseFrench.json();
 
         const fetchedDictionaries = {
-          'Chinese': chineseDictionary,
           'German': germanDictionary,
           'French': frenchDictionary
         };
@@ -102,7 +99,7 @@ export default function FlashcardPage() {
         language_id: languageId,
       };
   
-      const response = await fetch(`http://localhost:5000/user/${token}/words`, {
+      const response = await fetch(`http://3.14.246.240/api/user/${token}/words`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -168,7 +165,7 @@ return (
                 setDifficultyLevel(hasDifficultyLevels(e.target.value) ? 1 : null);
               }} value={selectedDictionary}>
               <option value="">Select Language</option>
-              {['Chinese', 'German', 'French', 'Spanish', 'Dutch'].map((language) => (
+              {['German', 'French', 'Spanish', 'Dutch'].map((language) => (
                 <option key={language} value={language}>{language}</option>
               ))}
             </select>
@@ -195,9 +192,9 @@ return (
         languageId={languageId}
       />
       </div>
-      <div className="link-btn-container">
+      {/* <div className="link-btn-container">
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-      </div>
+      </div> */}
     </>
 );
 }

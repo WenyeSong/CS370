@@ -10,6 +10,8 @@ import SavedList from './pages/SavedList'
 import TypeGo from './pages/TypeGo'
 import Register from './pages/Register';
 import FlashcardPage from './pages/FlashcardPage';
+import FillInBlank from './pages/Voctest/FillInBlank';
+import MultipleChoice from './pages/Voctest/MultipleChoice'
 
 
 import { Navbar } from "./pages/Navbar";
@@ -46,6 +48,8 @@ function App () {
           <Route path='/error' element={<Error />} />
           <Route path='*' element={<Error />} />
           <Route path="/flashcards" element={<FlashcardPage />} />
+          <Route path="/fill-in-blank" element={<FillInBlank />} />
+          <Route path="/multiple-choice" element={<MultipleChoice />} />
         </Routes>
       </div></div>
     </BrowserRouter >

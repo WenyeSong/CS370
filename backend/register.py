@@ -9,7 +9,7 @@ from flask_cors import CORS
 
 def register_routes(app):
     # Example modified /register route using psycopg2
-    @app.route('/register', methods=['POST'])
+    @app.route('/api/register', methods=['POST'])
     def register():
         data = request.get_json()
         hashed_password = (data['password'])

@@ -14,7 +14,7 @@ const QuizResultPage = ({ correctionRate }) => {
       <h2>Quiz Result</h2>
       <p>Correction Rate: {correctionRate}%</p>
       <p>You have reached the end of the quiz!</p>
-      <button onClick={tryAgain}>Try Again</button>
+      <button className="answer-button" onClick={tryAgain}>Try Again</button>
     </div>
   );
 };

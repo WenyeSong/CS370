@@ -9,7 +9,7 @@ import {Navbar} from '../Navbar'
 // check backend status
 async function checkBackendStatus() {
   try {
-    const response = await fetch('http://127.0.0.1:5000/health');
+    const response = await fetch('http://3.14.246.240/api/health');
     return response.ok;
   } catch (error) {
     console.error('Error when checking backend status:', error);
@@ -43,7 +43,7 @@ function Login () {
 
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/login', { // point to flask port, 5000
+      const response = await fetch('http://3.14.246.240/api/login', { // point to flask port, 5000
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -103,9 +103,9 @@ function Login () {
             <Button type="primary" htmlType='submit' size="large" >Login</Button>
           </Form.Item>
         </Form>
-        <div className="link-btn-container">
+        {/* <div className="link-btn-container">
           <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        </div>
+        </div> */}
         
       </Card>
     </div>
