@@ -13,6 +13,14 @@ function  MultipleChoice() {
 
   const navigate = useNavigate();
 
+  const languageIdToDictionary = {
+    6: 'Chinese',
+    5: 'German',
+    1: 'French',
+    3: 'Spanish',
+    4: 'Dutch',
+  };
+  
   useEffect(() => {
     fetchVocabulary();
   }, []);
@@ -56,17 +64,18 @@ function  MultipleChoice() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      const language_id = 1;
       const data = await response.json();
-      var vocabulary = data.map(item => ({
-        question: item.english_translations.join(', '), // Assuming there's always at least one translation
-        correctAnswer: item.foreign_word, // Store the correct answer
+      const vocabularyWithLanguageId = data.map(item => ({
+        question: item.english_translations.join(', '), 
+        correctAnswer: item.foreign_word,
+        language_id: item.language_id, // Assuming the API provides a language_id
       }));
-      setVocabulary(vocabulary);
+      setVocabulary(vocabularyWithLanguageId);
     } catch (error) {
       console.error("Fetch error: ", error.message);
     }
   };
+  
   
   const [choices, setChoices] = useState([]);
 
@@ -120,8 +129,9 @@ function  MultipleChoice() {
               {vocabulary.length > 0 && (
                 <div className="question-section">
                   <span>{`Question ${currentQuestion + 1} / ${vocabulary.length}`}</span>
-                  <div className="question-text">
-                    {vocabulary[currentQuestion].question}  {/* Display the question from vocabulary */}
+                  {/* Display the Language ID here */}
+                  <div className="language-id-display">
+                    Language: {languageIdToDictionary[vocabulary[currentQuestion]?.language_id] || 'Unknown'}
                   </div>
                   <div className="answer-section">
                     {choices.map((choice, index) => (
@@ -130,9 +140,9 @@ function  MultipleChoice() {
                       </button>
                     ))}
                   </div>
-                  
                 </div>
               )}
+
               <div className="feedback-section">
                 <p>{feedbackText}</p>
               </div>
