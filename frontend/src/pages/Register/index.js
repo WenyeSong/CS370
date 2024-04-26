@@ -20,7 +20,7 @@ const Register = (props) => {
     e.preventDefault();
     try {
       // send POST request to backend
-      const response = await fetch('http://3.138.117.40/api/register', {
+      const response = await fetch('http://3.24.246.240/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
