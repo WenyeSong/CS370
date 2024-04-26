@@ -38,7 +38,7 @@ function  MultipleChoice() {
   };
 
   async function getrandom(language_id) {
-    const response = await fetch(`http://localhost:5000/user/words/${language_id}`, {method: 'GET'});
+    const response = await fetch(`http://3.14.246.240/user/words/${language_id}`, {method: 'GET'});
     let data = await response.json();
     return data;
   }
@@ -60,7 +60,7 @@ function  MultipleChoice() {
   const fetchVocabulary = async () => {
     try {
       var token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/user/${token}/words`);
+      const response = await fetch(`http://3.14.246.240/user/${token}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -150,7 +150,7 @@ function  MultipleChoice() {
           )}
         </header>
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        <a href="http://localhost:5000/download" download>Download Vocabulary JSON</a>
+        <a href="http://3.14.246.240/download" download>Download Vocabulary JSON</a>
       </div>
     </div>
   );
