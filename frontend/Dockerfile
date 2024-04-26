@@ -27,3 +27,22 @@ EXPOSE 8080
 
 # 使用启动脚本启动 Nginx 服务器
 CMD ["start.sh"]
+
+
+                                                                         
+# new server Zi
+ # 使用官方的 Node 作为基础镜像
+# FROM node:14 AS build
+
+# # 设置工作目录
+# WORKDIR /usr/src/app
+
+# # 复制 package.json 和 package-lock.json 并安装依赖
+# COPY package*.json ./
+# RUN npm install
+
+# # 复制源代码并构建应用程序
+# COPY . .
+
+# EXPOSE 3000
+# CMD ["sh", "-c", "HOST=0.0.0.0 npm start"]
