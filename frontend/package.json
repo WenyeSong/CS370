@@ -1,7 +1,7 @@
 {
   "name": "typing",
   "version": "0.1.0",
-  "proxy": "http://3.14.246.240",
+  "proxy": "http://3.138.117.40",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
