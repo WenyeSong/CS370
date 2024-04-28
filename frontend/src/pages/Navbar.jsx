@@ -15,7 +15,7 @@ export const Navbar = () => {
         );
       } else {
         return (
-            <li>hello {localStorage.getItem('token').split('-')[0]}!</li>
+            <li id="greeting">hello {localStorage.getItem('token').split('-')[0]}!</li>
         );
       }
     }

@@ -23,8 +23,7 @@ body {
   /* Adjust padding to control the height of the navbar */
   padding: 3px; /* Reduced padding to decrease height */
   height: 20vh;
-
-  position: relative;
+  position: abosolute;
   top: 0;
   left: 0;
   right: 0;
@@ -62,8 +61,21 @@ nav ul {
 nav li {
   display: inline-block;
   position: relative;
-  margin-left: 10px; /* Reduced spacing between items */
-  padding-top: 0px; /* Reduced padding */
+  margin-left: 10px; 
+  padding-top: 0px;
+}
+
+#greeting { 
+  margin-right: 50px;
+  position: relative;
+  top: 4px; 
+  left: 2px; 
+
+  color: #976d59; 
+  font-weight: bold; 
+  font-size: 1.5em; 
+  padding: 15px; 
+ 
 }
 
 nav a { /*botton*/
