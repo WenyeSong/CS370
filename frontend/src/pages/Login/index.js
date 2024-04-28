@@ -65,7 +65,7 @@ function Login () {
         localStorage.setItem('token', data['token']);
         console.log('set_token:',localStorage.getItem('token'));
         message.success('Login is successful!');
-        navigate('/flashcard'); 
+        navigate('/Flashcards'); 
       } else {
         // login fail, with message
         message.error(data.message || 'log in failed');
