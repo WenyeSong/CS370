@@ -1,4 +1,6 @@
-export function autocomplete(inp) {
+
+
+export function autocomplete(inp, setForeignWord) {
   
   let currentFocus; // Ensure currentFocus is defined in the correct scope
   var arr;
@@ -24,10 +26,12 @@ export function autocomplete(inp) {
         b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
         b.innerHTML += arr[i].substr(val.length);
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-        // b.addEventListener("click", function(e) {
-        //   inp.value = this.getElementsByTagName("input")[0].value;
-        //   closeAllLists(null, inp); // Pass inp to closeAllLists
-        // });
+        b.addEventListener("click", function(e) {
+          // inp.value = this.getElementsByTagName("input")[0].value;
+          // setForeignWord(inp.value);
+          alert("try and practice typing!");
+          closeAllLists(null, inp); // Pass inp to closeAllLists
+        });
         a.appendChild(b);
       }
     }

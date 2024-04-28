@@ -11,6 +11,7 @@ function SavedList() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(false);
   const [foreignWord, setForeignWord] = useState('');
+  const [language, setLanguage] = useState(1);
   const [englishTranslation, setEnglishTranslation] = useState(''); // For user contributions
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);  // 10 words each page
@@ -310,7 +311,7 @@ function SavedList() {
               total: total 
             }}
             onChange={handleTableChange} />
-          <Tabs defaultActiveKey="1" items={tabItems} />
+        <Tabs defaultActiveKey="1" items={tabItems} onChange={(activeKey) => {setLanguage(activeKey)}}/>
         </Card>
       </Col>
     </Row> 
