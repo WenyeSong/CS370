@@ -37,7 +37,7 @@ function Voctest() {
   const fetchVocabulary = async () => {
     try {
       var token = localStorage.getItem('token');
-      const response = await fetch(`http://${serverIP}/user/${token}/words`);
+      const response = await fetch(`http://${serverIP}/api/user/${token}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
