@@ -2,10 +2,13 @@ export function autocomplete(inp) {
   
   let currentFocus; // Ensure currentFocus is defined in the correct scope
   var arr;
+  const config = require('../../config.json');
+  const serverIP = config.serverIP;
+
   inp.addEventListener("input", async function(e) {
     var a, b, i, val = this.value;
     
-    arr = await fetch(`http://3.14.246.240/user/words/${val}`, {method: 'GET'})
+    arr = await fetch(`http://${serverIP}/api/user/words/${val}`, {method: 'GET'})
       .then(response => response.json())
       .then(data => data)    
     closeAllLists(null, inp); // Pass inp to closeAllLists

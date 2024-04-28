@@ -15,12 +15,13 @@ const Register = (props) => {
       navigate('/');
   };
 
-  // Wenye has changed this handleSubmit function
+  const config = require('../../config.json');
+  const serverIP = config.serverIP;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       // send POST request to backend
-      const response = await fetch('http://3.14.246.240/api/register', {
+      const response = await fetch(`http://${serverIP}/api/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

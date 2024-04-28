@@ -13,6 +13,9 @@ function Voctest() {
   const [feedbackText, setFeedbackText] = useState(''); // State to control feedback text
 
   const navigate = useNavigate();
+
+  const config = require('../../config.json');
+  const serverIP = config.serverIP;
   
   const languageIdToName = {
     6: 'Chinese',
@@ -34,7 +37,7 @@ function Voctest() {
   const fetchVocabulary = async () => {
     try {
       var token = localStorage.getItem('token');
-      const response = await fetch(`http://3.14.246.240/user/${token}/words`);
+      const response = await fetch(`http://${serverIP}/user/${token}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

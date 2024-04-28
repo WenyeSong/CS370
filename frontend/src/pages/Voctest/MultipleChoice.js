@@ -13,6 +13,9 @@ function  MultipleChoice() {
 
   const navigate = useNavigate();
 
+  const config = require('../../config.json');
+  const serverIP = config.serverIP;
+
   const languageIdToDictionary = {
     6: 'Chinese',
     5: 'German',
@@ -38,7 +41,7 @@ function  MultipleChoice() {
   };
 
   async function getrandom(language_id) {
-    const response = await fetch(`http://3.14.246.240/user/words/${language_id}`, {method: 'GET'});
+    const response = await fetch(`http://${serverIP}/user/words/${language_id}`, {method: 'GET'});
     let data = await response.json();
     return data;
   }
@@ -60,7 +63,7 @@ function  MultipleChoice() {
   const fetchVocabulary = async () => {
     try {
       var token = localStorage.getItem('token');
-      const response = await fetch(`http://3.14.246.240/user/${token}/words`);
+      const response = await fetch(`http://${serverIP}/user/${token}/words`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -150,7 +153,7 @@ function  MultipleChoice() {
           )}
         </header>
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        <a href="http://3.14.246.240/download" download>Download Vocabulary JSON</a>
+        <a href="http://${serverIP}/download" download>Download Vocabulary JSON</a>
       </div>
     </div>
   );

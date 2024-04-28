@@ -6,10 +6,13 @@ import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
 import {Navbar} from '../Navbar'
 
-// check backend status
+const config = require('../../config.json');
+const serverIP = config.serverIP;
+
 async function checkBackendStatus() {
   try {
-    const response = await fetch('http://3.14.246.240/api/health');
+    
+    const response = await fetch(`http://${serverIP}/api/health`);
     return response.ok;
   } catch (error) {
     console.error('Error when checking backend status:', error);
@@ -43,7 +46,8 @@ function Login () {
 
 
     try {
-      const response = await fetch('http://3.14.246.240/api/login', { // point to flask port, 5000
+
+      const response = await fetch(`http://${serverIP}/api/login`, { // point to flask port, 5000
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -61,7 +65,7 @@ function Login () {
         localStorage.setItem('token', data['token']);
         console.log('set_token:',localStorage.getItem('token'));
         message.success('Login is successful!');
-        navigate('/'); 
+        navigate('/flashcard'); 
       } else {
         // login fail, with message
         message.error(data.message || 'log in failed');

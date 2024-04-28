@@ -5,6 +5,10 @@ import { useNavigate } from 'react-router-dom';
 import { Navbar } from "../Navbar"; 
 
 export default function FlashcardPage() {
+
+  const config = require('../../config.json');
+  const serverIP = config.serverIP;
+
   const [flashcards, setFlashcards] = useState([]);
   const [selectedDictionary, setSelectedDictionary] = useState('');
   const [dictionaries, setDictionaries] = useState({});
@@ -99,7 +103,7 @@ export default function FlashcardPage() {
         language_id: languageId,
       };
   
-      const response = await fetch(`http://3.14.246.240/api/user/${token}/words`, {
+      const response = await fetch(`http://${serverIP}/api/user/${token}/words`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
