@@ -6,6 +6,80 @@
   height: auto;
 }
 
+
+.main-header {
+  background-color: #f4e9e9ea; /* Changed to white or any color that suits the page */
+  /* Remove the background image if it does not fit well with the design */
+  width: 100%;
+  /* Adjust padding to control the height of the navbar */
+  padding: 3px; /* Reduced padding to decrease height */
+  height: 10vh;
+  
+  display: flex; /* Enables flexbox for the header */
+  justify-content: right; 
+  align-items: center; /* Centers the content vertically */
+
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.main-page-navbar {
+  background-color: transparent;
+  display: flex; /* Enables flexbox for nav */
+  float: right;
+  align-items: center; /* Vertically centers the nav items */
+  margin-bottom: 0px;
+  
+  
+}
+.main-page-navbar ul {
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-page-navbar li {
+  
+  display: inline-block;
+  position: relative;
+  margin-left: 10px; /* Reduced spacing between items */
+  padding-top: 0px; /* Reduced padding */
+}
+
+.main-page-navbar a { /*botton*/
+  color: rgb(10, 10, 11);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.main-page-navbar a:hover { /*word color*/
+  color: #000;
+}
+
+.main-page-navbar a::before {
+  content: '';
+  display: block;
+  
+  background-color: #444;
+  height: 3px; /* Smaller indicator block */
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+.main-page-navbar a:hover::before {
+  width: 100%;
+
+}
+
 .ant-btn-primary {
   width: 100%;
   padding: 12px 20px; /* Increase padding for a nicer button appearance */

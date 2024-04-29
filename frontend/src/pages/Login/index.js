@@ -1,6 +1,7 @@
 import { Form, Input, Button, Checkbox } from "antd"
 import { Card } from 'antd'
 import './index.scss'
+import { Link } from 'react-router-dom';
 // import { useStore } from "@/store"
 import { useNavigate } from "react-router-dom"
 import { message } from 'antd'
@@ -97,6 +98,26 @@ function Login () {
   return (
 
     <div className="login">
+        <header className = "main-header">
+        {/* <div className="navbar-container"> */}
+          <nav className = "main-page-navbar">
+            <ul>
+              <li>
+                <Link to='/Login' className='main-link subtitle'>
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link to='/Register' className='main-link subtitle'>
+                  Register
+                </Link>
+              </li>
+            </ul>
+          </nav> 
+        {/* </div> */}
+      </header>
+
+      
       {/* { window.location.pathname !== '/' && <Navbar/> } */}
       <h2>Login</h2>
       <Card title="" bordered={true}>

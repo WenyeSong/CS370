@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { message } from 'antd';
 import "./index.css"
+import { Link } from 'react-router-dom';
+
 import { Navbar } from "../Navbar"; 
 
 
@@ -52,6 +54,27 @@ const Register = (props) => {
     
     return (
         <div className="auth-form-container">
+            <header className = "main-header">
+        {/* <div className="navbar-container"> */}
+          <nav className = "main-page-navbar">
+            <ul>
+              <li>
+                <Link to='/Login' className='main-link subtitle'>
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link to='/Register' className='main-link subtitle'>
+                  Register
+                </Link>
+              </li>
+            </ul>
+          </nav> 
+        {/* </div> */}
+      </header>
+
+
+
           {/* <Navbar /> */}
             <h2>Register</h2>
         <form className="register-form" onSubmit={handleSubmit}>
