@@ -37,11 +37,25 @@ const Register = (props) => {
 
       const data = await response.json();
       if (response.ok) {
-        // add: where to navigate
         message.success('Registration is successful!');
         navigate('/');
       } else {
-        message.error(data.message || 'Registration failed');
+        let errorMessage = data.message || 'Registration failed';
+        switch (response.status) {
+          case 400: 
+            if (data.errors) {
+              errorMessage = data.errors.join(' '); 
+            }
+            break;
+          case 500: 
+            errorMessage = 'Username or email already exists';
+            break;
+     
+          default:
+            errorMessage = `Unexpected error: ${errorMessage}`;
+            break;
+        }
+        message.error(errorMessage);
       }
     } catch (error) {
       message.error('Network error or server is down');
