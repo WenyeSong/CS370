@@ -21,8 +21,8 @@ def transform_data(entries):
 
 # Example usage
 if __name__ == "__main__":
-    input_filename = 'd:\\CS370\\dictionary_crawl\\french\\final_french.json'
-    output_filename = 'd:\\CS370\\dictionary_crawl\\combine\\french-english.json'
+    input_filename = 'd:\\CS370\\dictionary_crawl\\german\\final_german1.json'
+    output_filename = 'd:\\CS370\\dictionary_crawl\\combine\\german-english.json'
     
     # Load data from input file
     original_data = load_json(input_filename)
