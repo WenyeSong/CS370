@@ -11,7 +11,7 @@ function SavedList() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(false);
   const [foreignWord, setForeignWord] = useState('');
-  const [language, setLanguage] = useState(1);
+  const [language, setLanguage] = useState(3);
   const [englishTranslation, setEnglishTranslation] = useState(''); // For user contributions
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);  // 10 words each page
@@ -25,6 +25,8 @@ function SavedList() {
   const goBackToMainPage = () => {
   navigate('/'); // Navigate to the main page
   };
+
+  
 
   useEffect(() => {
     fetchWords(currentPage, pageSize);
@@ -208,7 +210,7 @@ function SavedList() {
       return;
     }
 
-    if (!foreignWord || !languageId) {
+    if (!foreignWord || !(languageId)) {
       notification.error({
         message: 'Missing Input',
         description: 'Please enter a foreign word and select a language.',
@@ -269,19 +271,20 @@ function SavedList() {
   return (
     <>
     <Navbar />
+    {/* <Button className="link-btn" onClick={()=>console.log(language)}>test</Button> */}
     <Row>
       <Col span={24}>
         <Card title="Your Saved Words" className="page_container" style={{ maxWidth: '70%', maxheight: '70%', margin: '20px auto', padding: '0 20px' }}>
           <Form layout="inline" onSubmitCapture={handleSubmit} autoComplete="off" action="/action_page.php">
             <Form.Item>
-              <SearchBar id="myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => setForeignWord(e.target.value)} />            
+              <SearchBar id="myInput" placeholder="Type a foreign word" value={foreignWord} onChange={e => {setForeignWord(e.target.value)}} />            
             </Form.Item>
             <Form.Item>
               <Input placeholder="English Translation" value={englishTranslation} onChange={e => setEnglishTranslation(e.target.value)} />
             </Form.Item>
             {/* Add Form.Item for language selection */}
             <Form.Item>
-              <select
+              {/* <select
                 value={languageId}
                 onChange={e => setLanguageId(e.target.value)}
                 style={{ width: '100%', height: '32px', padding: '4px 11px' }} // Style to match other inputs
@@ -290,7 +293,7 @@ function SavedList() {
                 {languages.map(lang => (
                   <option key={lang.id} value={lang.id}>{lang.name}</option>
                 ))}
-              </select>
+              </select> */}
             </Form.Item>
             <Form.Item style={{ display: 'flex', alignItems: 'start' }}>
               <Button 
@@ -302,14 +305,14 @@ function SavedList() {
               </Button>
             </Form.Item>
           </Form>
-          <Table loading={loading} columns={columns} dataSource={dataSource}
+          {/* <Table loading={loading} columns={columns} dataSource={dataSource}
             pagination={{ 
               current: currentPage, 
               pageSize: pageSize, 
               total: total 
             }}
-            onChange={handleTableChange} />
-        <Tabs defaultActiveKey="1" items={tabItems} onChange={(activeKey) => {setLanguage(activeKey)}}/>
+            onChange={handleTableChange} /> */}
+        <Tabs defaultActiveKey='1' activeKey={languageId} items={tabItems} onChange={(activeKey) => {setLanguageId(activeKey); localStorage.setItem("language_id", activeKey)}}/>
         </Card>
       </Col>
     </Row> 

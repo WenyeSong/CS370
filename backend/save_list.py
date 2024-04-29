@@ -89,7 +89,9 @@ def save_user_word(token):
         return jsonify({"error": "Invalid language ID"}), 400
 
     # Check if the foreign word exists in the ForeignTerm table
-    foreign_term = ForeignTerm.query.filter(func.lower(ForeignTerm.term) == func.lower(foreign_word)).first()
+    foreign_term = ForeignTerm.query.filter(ForeignTerm.language_id == language_id).filter(func.lower(ForeignTerm.term) == func.lower(foreign_word)).first()
+    if foreign_term:
+        print("foreign term exists")
     
     if foreign_term:
         # If the word exists, check if it's already saved for this user
@@ -121,8 +123,8 @@ def save_user_word(token):
     return jsonify({"message": "Word saved successfully"}), 201
 
 
-def search_similar(word):
-    foreign_terms = ForeignTerm.query.filter(ForeignTerm.term.ilike(f'{word}%')).all()
+def search_similar(word,language_id):
+    foreign_terms = ForeignTerm.query.filter(ForeignTerm.language_id == language_id).filter(ForeignTerm.term.ilike(f'{word}%')).all()
     foreign_terms = foreign_terms[:5]  # Limit the number of results to 5
     print(foreign_terms)
     return jsonify([term.term for term in foreign_terms]), 200
