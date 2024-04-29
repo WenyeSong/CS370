@@ -11,6 +11,7 @@ function Voctest() {
   const [correctCount, setCorrectCount] = useState(0);
   const [showResultPage, setShowResultPage] = useState(false);
   const [feedbackText, setFeedbackText] = useState(''); // State to control feedback text
+  const [isEmptyVocabulary, setIsEmptyVocabulary] = useState(false); // State to track empty vocabulary list
 
   const navigate = useNavigate();
 
@@ -34,37 +35,46 @@ function Voctest() {
     fetchVocabulary('default');
   }, []);
 
-  const fetchVocabulary = async () => {
-    try {
-      var token = localStorage.getItem('token');
-      const response = await fetch(`http://${serverIP}/api/user/${token}/words`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      const vocabulary = {};
-      for (const key in data) {
-        if (Object.hasOwnProperty.call(data, key)) {
-          const item = data[key];
-          // Assuming each item now includes 'language_id' along with 'foreign_word' and 'english_translations'
-          const { foreign_word, english_translations, language_id } = item;
-          // Store each term with its translations and language_id
-          vocabulary[foreign_word] = { translations: english_translations, languageId: language_id };
-        }
-      }
-      // You might need to adjust how you handle this vocabulary object further down in your application
-      const vocabArray = Object.entries(vocabulary).map(([term, details]) => ({
-        term,
-        translations: details.translations,
-        languageId: details.languageId
-      }));
-      const shuffledVocab = shuffleArray(vocabArray);
-      setVocabulary(shuffledVocab);
-    } catch (error) {
-      console.error("Fetch error: ", error.message);
+const fetchVocabulary = async () => {
+  try {
+    const token = localStorage.getItem('token');
+    const response = await fetch(`http://${serverIP}/api/user/${token}/words`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-  };
-  
+    const data = await response.json();
+    
+    // Create a vocabulary structure from the data
+    const vocabulary = {};
+    for (const key in data) {
+      if (Object.hasOwnProperty.call(data, key)) {
+        const item = data[key];
+        // Assuming each item now includes 'language_id' along with 'foreign_word' and 'english_translations'
+        const { foreign_word, english_translations, language_id } = item;
+        // Store each term with its translations and language_id
+        vocabulary[foreign_word] = { translations: english_translations, languageId: language_id };
+      }
+    }
+
+    // Convert the vocabulary object to an array and check if it's empty
+    const vocabArray = Object.entries(vocabulary).map(([term, details]) => ({
+      term,
+      translations: details.translations,
+      languageId: details.languageId
+    }));
+
+    if (vocabArray.length === 0) {
+      setIsEmptyVocabulary(true);  // Set state if no vocabulary items are present
+    } else {
+      setIsEmptyVocabulary(false); // Reset state if vocabulary items are present
+      const shuffledVocab = shuffleArray(vocabArray);
+      setVocabulary(shuffledVocab); // Update the state with the shuffled vocabulary
+    }
+  } catch (error) {
+    console.error("Fetch error: ", error.message);
+  }
+};
+
 
   const handleChoiceChange = (event) => {
     setUserChoice(event.target.value);
@@ -123,11 +133,14 @@ function Voctest() {
   return (
     <div className="voc_test_container">
       <Navbar/>
-  
       <div className="Voc_test">
         <header className="App-header">
           <h1>Vocabulary Test</h1>
-          {showResultPage ? (
+          {isEmptyVocabulary ? (
+            <div className="empty-vocabulary-alert">
+              Please save some words first in the saved list before taking the test!
+            </div>
+          ) : showResultPage ? (
             <QuizResultPage correctionRate={correctionRate} />
           ) : (
             <>
@@ -142,9 +155,9 @@ function Voctest() {
                     Definition: {vocabulary.length > 0 && vocabulary[currentQuestion] ? vocabulary[currentQuestion].translations.join(', ') : ''}
                   </div>
                   <div className="language-type">
-                  {/* Displaying the language type using the languageIdToName mapping */}
-                  Language: {vocabulary.length > 0 && vocabulary[currentQuestion] ? languageIdToName[vocabulary[currentQuestion].languageId] : ''}
-                </div>
+                    {/* Displaying the language type using the languageIdToName mapping */}
+                    Language: {vocabulary.length > 0 && vocabulary[currentQuestion] ? languageIdToName[vocabulary[currentQuestion].languageId] : ''}
+                  </div>
                 </div>
               )}
               {vocabulary.length > 0 && (
@@ -169,11 +182,10 @@ function Voctest() {
           )}
         </header>
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        <a href=" " download>Download Vocabulary JSON</a>
+        <a href={`${serverIP}/download`} download>Download Vocabulary JSON</a>
       </div>
     </div>
   );
-  
 }
 
-export default Voctest;
+  export default Voctest;  
