@@ -235,7 +235,7 @@ function SavedList() {
       }
       
       notification.success({
-        message: 'Success',
+        message: 'Word Saved Successfully!',
         duration: 4,
       });
       
