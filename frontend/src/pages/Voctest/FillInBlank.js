@@ -44,12 +44,12 @@ const fetchVocabulary = async () => {
     }
     const data = await response.json();
     
-    // Create a vocabulary structure from the data
+
     const vocabulary = {};
     for (const key in data) {
       if (Object.hasOwnProperty.call(data, key)) {
         const item = data[key];
-        // Assuming each item now includes 'language_id' along with 'foreign_word' and 'english_translations'
+
         const { foreign_word, english_translations, language_id } = item;
         // Store each term with its translations and language_id
         vocabulary[foreign_word] = { translations: english_translations, languageId: language_id };
@@ -97,15 +97,12 @@ const showAnswer = () => {
     return;
   }
 
-  // Split the correctWord by semicolons and trim whitespace from each possible answer
   const correctAnswers = correctWord.split(';').map(word => word.trim().toLowerCase());
-  // Split the user's input by semicolons, commas, or spaces to handle various user inputs
+
   const userChoices = trimmedUserChoice.split(/[\s;,]+/).map(word => word.toLowerCase());
 
-  // Check if every user entered word is in the list of correct answers
   const allChoicesCorrect = userChoices.every(choice => correctAnswers.includes(choice));
 
-  // Check if at least one user entered word is correct
   const anyChoiceCorrect = userChoices.some(choice => correctAnswers.includes(choice));
 
   if (allChoicesCorrect && anyChoiceCorrect) {
