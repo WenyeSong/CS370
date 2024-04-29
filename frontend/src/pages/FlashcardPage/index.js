@@ -1,14 +1,17 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 import { Button, Form } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { Navbar } from "../Navbar";
-import { message } from 'antd';
+import {message} from 'antd'
+
 
 export default function FlashcardPage() {
   const config = require('../../config.json');
   const serverIP = config.serverIP;
   const navigate = useNavigate();
+
 
   const [flashcards, setFlashcards] = useState([]);
   const [selectedDictionary, setSelectedDictionary] = useState('');
@@ -19,6 +22,7 @@ export default function FlashcardPage() {
   const [difficultyLevel, setDifficultyLevel] = useState(1);
   const [notification, setNotification] = useState('');
   const token = localStorage.getItem('token');
+
 
   const dictionaryToLanguageId = {
     'Chinese': 6,
@@ -36,6 +40,7 @@ export default function FlashcardPage() {
     }
   }, [selectedDictionary]);
 
+
   useEffect(() => {
     if (selectedDictionary) {
       const newLanguageId = dictionaryToLanguageId[selectedDictionary];
@@ -44,17 +49,20 @@ export default function FlashcardPage() {
     }
   }, [selectedDictionary]);
 
+
   const fetchDictionaries = async () => {
     try {
-      const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionary_crawl/combine/german-english.json');
+      const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/german-english.json');
       const germanDictionary = await responseGerman.json();
-      const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionary_crawl/combine/french-english.json');
+      const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/french-english.json');
       const frenchDictionary = await responseFrench.json();
+
 
       const fetchedDictionaries = {
         'German': germanDictionary,
         'French': frenchDictionary
       };
+
 
       const languagesWithLevels = ['Spanish', 'Dutch'];
       for (const language of languagesWithLevels) {
@@ -66,11 +74,13 @@ export default function FlashcardPage() {
         }
       }
 
+
       setDictionaries(fetchedDictionaries);
     } catch (error) {
       console.error('Error fetching dictionaries:', error);
     }
   };
+
 
   const fetchSavedFlashcards = async () => {
     try {
@@ -81,7 +91,10 @@ export default function FlashcardPage() {
       }
       const data = await response.json();
 
+
       console.log("Data structure:", data);
+
+
 
 
       const fetchedFlashcards = Object.entries(data).map(([term, details]) => {
@@ -99,9 +112,11 @@ export default function FlashcardPage() {
     }
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const amount = amountEl.current.value;
+
 
     const dictionaryKey = selectedDictionary + (difficultyLevel && hasDifficultyLevels(selectedDictionary) ? ` Level ${difficultyLevel}` : '');
     if (selectedDictionary === "Saved List") {
@@ -110,9 +125,10 @@ export default function FlashcardPage() {
     }
 
     if (!selectedDictionary || !dictionaries[dictionaryKey]) {
-      alert('Please select a valid dictionary');
+      message.warning('Please select a valid dictionary');
       return;
     }
+
 
     const dictionary = dictionaries[dictionaryKey];
     const generatedFlashcards = [];
@@ -120,27 +136,32 @@ export default function FlashcardPage() {
       return answerArray.join(', ');
     }
 
+
     for (let i = 0; i < amount; i++) {
       const randomIndex = Math.floor(Math.random() * Object.keys(dictionary).length);
       const randomKey = Object.keys(dictionary)[randomIndex];
       const question = randomKey;
       const answer = formatAnswer(dictionary[randomKey]);
 
+
       generatedFlashcards.push({ id: i, question, answer });
     }
 
+
     setFlashcards(generatedFlashcards);
   };
+
 
   const hasDifficultyLevels = (language) => {
     return ['Spanish', 'Dutch'].includes(language);
   };
 
-  const addWord = async (question, answer, languageId) => {
+
+  const addWord = async (question, answer, languageId, selectedDictionary) => {
     console.log("Attempting to add word with language ID:", languageId); // Logs current language ID
     if (!languageId) {
       console.error("Invalid language ID:", languageId);
-      alert('Invalid language selected. Please select a valid language.');
+      message.warning('Invalid language selected. Please select a valid language.');
       return;
     }
   
@@ -153,6 +174,7 @@ export default function FlashcardPage() {
       console.error("Invalid answer:", answer);
       return; // Stop the function if validation fails
     }
+
 
     
   
@@ -169,13 +191,18 @@ export default function FlashcardPage() {
         body: JSON.stringify(payload)
       });
   
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      message.success('Word added successfully!');
-      setTimeout(() => setSuccessMessage(''), 3000);
-    } catch (error) {
+      if (response.ok) {
+        message.success('Word added successfully!');
+      } else if (response.status === 409) {
+        message.warning('This word is already in your list!');
+      } else {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      } catch (error) {
       console.error("Failed to add word:", error.message);
     }
   };
+
 
   return (
     <>
@@ -226,18 +253,20 @@ export default function FlashcardPage() {
           languageId={languageId}
           setNotification={setNotification}
           notification={notification}
-          selectedDictionary={selectedDictionary}  
-         />
+          selectedDictionary={selectedDictionary}
+        />
       </div>
     </>
   );
 }
 
-function Flashcard({ flashcard, addWord, languageId,selectedDictionary }) {
+
+function Flashcard({ flashcard, addWord, languageId, selectedDictionary}) {
   const [flip, setFlip] = useState(false);
   const [height, setHeight] = useState('initial');
   const frontEl = useRef();
   const backEl = useRef();
+
 
   // Set the maximum height based on the content size
   useEffect(() => {
@@ -251,6 +280,7 @@ function Flashcard({ flashcard, addWord, languageId,selectedDictionary }) {
     return () => window.removeEventListener('resize', setMaxHeight);
   }, []);
 
+
   return (
     <div className="flashcard-container" onClick={() => setFlip(!flip)}>
       <div className={`card ${flip ? 'flip' : ''}`} style={{ height }}>
@@ -261,25 +291,29 @@ function Flashcard({ flashcard, addWord, languageId,selectedDictionary }) {
           {flashcard.answer}
         </div>
       </div>
+      
+      {selectedDictionary !== "Saved List" && (
       <button className="add-word-btn" onClick={() => {
+        console.log('Selected Dictionary:', selectedDictionary);
+
         console.log(`Adding word with Language ID: ${flashcard.question}`); // Debugging statement
         console.log(`Adding word with Language ID: ${flashcard.answer}`); // Debugging statement
         console.log(`Adding word with Language ID: ${languageId}`); // Debugging statement
         if (languageId) {
           addWord(flashcard.question, flashcard.answer, languageId);
-        } else if (selectedDictionary === "Saved List") {
-          message.warning('Words already in you list.');
         } else {
-          alert('Language not selected or not loaded yet.');
+          message.warning('Language not selected or not loaded yet.');
         }
       }}>
         Add Word
       </button>
+      )}
     </div>
   );
 }
 function FlashcardList({ flashcards, addWord, languageId, setNotification, notification, selectedDictionary }) {
   const [currentFlashcardIndex, setCurrentFlashcardIndex] = useState(0);
+
 
   const displayNotification = (message) => {
     setNotification(message);
@@ -288,10 +322,11 @@ function FlashcardList({ flashcards, addWord, languageId, setNotification, notif
     }, 2000); // Clear the notification after 2 seconds
   };
 
+
   const goToPreviousFlashcard = () => {
     setCurrentFlashcardIndex(prevIndex => {
       if (prevIndex === 0) {
-        displayNotification('Start of the list !!!');
+        message.info('Start of the list !!!');
         return prevIndex; // Stay on the first flashcard
       } else {
         return prevIndex - 1; // Move to the previous card
@@ -302,7 +337,7 @@ function FlashcardList({ flashcards, addWord, languageId, setNotification, notif
   const goToNextFlashcard = () => {
     setCurrentFlashcardIndex(prevIndex => {
       if (prevIndex === flashcards.length - 1) {
-        displayNotification('End of the list !!!');
+        message.info('End of the list !!!');
         return prevIndex; // Stay on the last flashcard
       } else {
         return prevIndex + 1; // Proceed to the next card
@@ -320,7 +355,8 @@ function FlashcardList({ flashcards, addWord, languageId, setNotification, notif
               flashcard={flashcards[currentFlashcardIndex]} 
               addWord={addWord} 
               languageId={languageId} 
-              selectedDictionary={selectedDictionary}              />
+              selectedDictionary={selectedDictionary}
+            />
           </div>
           <div className="navigation-buttons">
             <button onClick={goToPreviousFlashcard}>←</button>
