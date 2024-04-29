@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     width: 120vh;
     /* background-color: #f2f0ef;  Background color for the entire page  */
 
     /*This works to center the white background: EXTRA*/
-    min-height: 100vh; /* Minimum height to take full viewport height */
+    min-height: 90vh; /* Minimum height to take full viewport height */
     max-width: 600px; /* Set a max-width for the container */
     margin: auto; /* Centers the container horizontally */
     padding: 20px; /* Add some padding */
@@ -17,10 +17,10 @@
   
   .App-header {
     text-align: center;
-    position: absolute; /*newly added*/
+    position: absolute; 
     background-color: white; /* Set the header background color to transparent */
     border: none; /* Remove the border */
-
+    height: 50vh;
     width: 100%; /* Make it take the full width of its parent */
     max-width: 600px; /* Set a max-width */
     margin: 0 auto; /* Center it if it's not taking the full width of its parent */

@@ -10,6 +10,7 @@ function  MultipleChoice() {
   const [correctCount, setCorrectCount] = useState(0);
   const [showResultPage, setShowResultPage] = useState(false);
   const [feedbackText, setFeedbackText] = useState('');
+  const [isEmptyVocabulary, setIsEmptyVocabulary] = useState(false); // State to track empty vocabulary list
 
   const navigate = useNavigate();
 
@@ -68,12 +69,17 @@ function  MultipleChoice() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      const vocabularyWithLanguageId = data.map(item => ({
-        question: item.english_translations.join(', '), 
-        correctAnswer: item.foreign_word,
-        language_id: item.language_id, // Assuming the API provides a language_id
-      }));
-      setVocabulary(vocabularyWithLanguageId);
+      if (data.length === 0) {
+        setIsEmptyVocabulary(true); // Set the empty vocabulary notice state
+      } else {
+        const vocabularyWithLanguageId = data.map(item => ({
+          question: item.english_translations.join(', '), 
+          correctAnswer: item.foreign_word,
+          language_id: item.language_id,
+        }));
+        setVocabulary(vocabularyWithLanguageId);
+        setIsEmptyVocabulary(false);
+      }
     } catch (error) {
       console.error("Fetch error: ", error.message);
     }
@@ -125,38 +131,42 @@ function  MultipleChoice() {
       <div className="Voc_test">
         <header className="App-header">
           <h1>Vocabulary Test</h1>
-          {showResultPage ? (
-            <QuizResultPage correctionRate={`${(correctCount / vocabulary.length * 100).toFixed(2)}`} />
+          {isEmptyVocabulary ? (
+            <div>Please save some words first in the saved list before taking the test!</div>
+          ) : showResultPage ? (
+            <QuizResultPage correctionRate={`${(correctCount / vocabulary.length * 100).toFixed(2)}%`} />
           ) : (
             <>
-              {vocabulary.length > 0 && (
-                <div className="question-section">
-                  <span>{`Question ${currentQuestion + 1} / ${vocabulary.length}`}</span>
-                  {/* Display the Language ID here */}
-                  <div className="language-id-display">
-                    Language: {languageIdToDictionary[vocabulary[currentQuestion]?.language_id] || 'Unknown'}
+              {vocabulary.length > 0 ? (
+                <>
+                  <div className="question-section">
+                    <span>{`Question ${currentQuestion + 1} / ${vocabulary.length}`}</span>
+                    <div className="language-id-display">
+                      Language: {languageIdToDictionary[vocabulary[currentQuestion]?.language_id] || 'Unknown'}
+                    </div>
+                    <div className="answer-section">
+                      {choices.map((choice, index) => (
+                        <button key={index} className="answer-button" onClick={() => handleChoiceChange(choice)}>
+                          {choice}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                  <div className="answer-section">
-                    {choices.map((choice, index) => (
-                      <button key={index} className="answer-button" onClick={() => handleChoiceChange(choice)}>
-                        {choice}
-                      </button>
-                    ))}
+                  <div className="feedback-section">
+                    <p>{feedbackText}</p>
                   </div>
-                </div>
+                </>
+              ) : (
+                <div>No questions are available. Please add some words to your saved list.</div>
               )}
-
-              <div className="feedback-section">
-                <p>{feedbackText}</p>
-              </div>
             </>
           )}
         </header>
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        <a href="http://${serverIP}/download" download>Download Vocabulary JSON</a>
+        <a href={`http://${serverIP}/download`} download>Download Vocabulary JSON</a>
       </div>
     </div>
-  );
+  );  
                     }  
 
 export default MultipleChoice;

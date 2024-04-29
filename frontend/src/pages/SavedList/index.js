@@ -236,10 +236,8 @@ function SavedList() {
         throw new Error(`HTTP error! status: ${response.status}, Message: ${errorData.error || errorData.message}`);
       }
       
-      const responseData = await response.json();
       notification.success({
-        message: 'Success',
-        description: responseData.message,
+        message: 'Word Saved Successfully!',
         duration: 4,
       });
       
