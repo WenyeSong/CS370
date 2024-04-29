@@ -88,26 +88,42 @@ const fetchVocabulary = async () => {
     return array;
   };
 
-  const showAnswer = () => {
-    const correctWord = vocabulary[currentQuestion].term;
-    const trimmedUserChoice = userChoice.trim();
-    if (trimmedUserChoice === '') {
-      setFeedbackText('Please enter a word.');
-      return;
-    }
-    const isCorrect = correctWord.toLowerCase() === trimmedUserChoice.toLowerCase();
+
+const showAnswer = () => {
+  const correctWord = vocabulary[currentQuestion].term;
+  const trimmedUserChoice = userChoice.trim().toLowerCase();
+  if (trimmedUserChoice === '') {
+    setFeedbackText('Please enter a word.');
+    return;
+  }
+
+  // Split the correctWord by semicolons and trim whitespace from each possible answer
+  const correctAnswers = correctWord.split(';').map(word => word.trim().toLowerCase());
+  // Split the user's input by semicolons, commas, or spaces to handle various user inputs
+  const userChoices = trimmedUserChoice.split(/[\s;,]+/).map(word => word.toLowerCase());
+
+  // Check if every user entered word is in the list of correct answers
+  const allChoicesCorrect = userChoices.every(choice => correctAnswers.includes(choice));
+
+  // Check if at least one user entered word is correct
+  const anyChoiceCorrect = userChoices.some(choice => correctAnswers.includes(choice));
+
+  if (allChoicesCorrect && anyChoiceCorrect) {
+    setFeedbackText('Correct!');
+    setCorrectCount(prevCount => prevCount + 1);
+  } else {
+    setFeedbackText('Wrong!');
+  }
+
+  setTimeout(() => {
+    setFeedbackText('');
+    nextQuestion();
+  }, 500);
+};
+
   
-    if (isCorrect) {
-      setFeedbackText('Correct!');
-      setCorrectCount(prevCount => prevCount + 1);
-    } else {
-      setFeedbackText('Wrong!');
-    }
-    setTimeout(() => {
-      setFeedbackText('');
-      nextQuestion();
-    }, 500);
-  };
+  
+  
   
   // Update how definitions are displayed
   const renderDefinition = () => {
