@@ -1,16 +1,21 @@
-
-
-export function autocomplete(inp, setForeignWord) {
+export function Autocomplete(inp, info) {
   
   let currentFocus; // Ensure currentFocus is defined in the correct scope
   var arr;
   const config = require('../../config.json');
   const serverIP = config.serverIP;
 
+
   inp.addEventListener("input", async function(e) {
-    var a, b, i, val = this.value;
     
-    arr = await fetch(`http://${serverIP}/api/user/words/${val}`, {method: 'GET'})
+    var a, b, i, val = this.value;
+    let language_id = localStorage.getItem('language_id');
+    console.log(language_id);
+    // if (!(language_id in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) {
+    //   language_id = 1;
+    // }
+    console.log(language_id);
+    arr = await fetch(`http://${serverIP}/api/user/words/${val}/${language_id}`, {method: 'GET'})
       .then(response => response.json())
       .then(data => data)    
     closeAllLists(null, inp); // Pass inp to closeAllLists
@@ -26,10 +31,8 @@ export function autocomplete(inp, setForeignWord) {
         b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
         b.innerHTML += arr[i].substr(val.length);
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-        b.addEventListener("click", function(e) {
-          // inp.value = this.getElementsByTagName("input")[0].value;
-          // setForeignWord(inp.value);
-          alert("try and practice typing!");
+        b.addEventListener("click", ()=> {
+          info();
           closeAllLists(null, inp); // Pass inp to closeAllLists
         });
         a.appendChild(b);
