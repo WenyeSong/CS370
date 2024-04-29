@@ -31,6 +31,10 @@ function Voctest() {
     navigate('/');
   };
 
+  const goToVocTestPage = () => {
+    navigate('/Voctest');
+  };
+  
   useEffect(() => {
     fetchVocabulary('default');
   }, []);
@@ -147,6 +151,7 @@ const showAnswer = () => {
     <div className="voc_test_container">
       <Navbar/>
       <div className="Voc_test">
+      <button className="link-btn" onClick={goToVocTestPage}>Back to Vocabulary Test</button>
         <header className="App-header">
           <h1>Vocabulary Test</h1>
           {isEmptyVocabulary ? (
@@ -193,8 +198,9 @@ const showAnswer = () => {
               </div>
             </>
           )}
+          <button className="link-btn" onClick={goToVocTestPage} style={{color: '#6B4F4B'}}>Back to Choose a Test Type</button>
         </header>
-        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+        {/* <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button> */}
         <a href={`${serverIP}/download`} download>Download Vocabulary JSON</a>
       </div>
     </div>

@@ -189,10 +189,19 @@
   }
   
   button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
+    background-color: #C1A580; /* Darker blue color on hover */
   }
   
 
+  .link-btn {
+    font-family: 'Changa';
+    color: '#6B4F4B';
+  }
+
+  .link-btn:hover,
+  .link-btn:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 
 
   /*the following is added later:*/

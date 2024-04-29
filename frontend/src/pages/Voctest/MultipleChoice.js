@@ -41,6 +41,9 @@ function  MultipleChoice() {
     navigate('/');
   };
 
+  const goToVocTestPage = () => {
+    navigate('/Voctest');
+  };
   async function getrandom(language_id) {
     const response = await fetch(`http://${serverIP}/api/user/words/${language_id}`, {method: 'GET'});
     let data = await response.json();
@@ -128,7 +131,7 @@ function  MultipleChoice() {
   return (
     <div className="voc_test_container">
       <Navbar/>
-      <div className="Voc_test">
+      <div className="Voc_test">        
         <header className="App-header">
           <h1>Vocabulary Test</h1>
           {isEmptyVocabulary ? (
@@ -161,8 +164,9 @@ function  MultipleChoice() {
               )}
             </>
           )}
+          <button className="link-btn" onClick={goToVocTestPage} style={{color: '#6B4F4B'}}>Back to Choose a Test Type</button>
         </header>
-        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
+        {/* <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button> */}
         <a href={`http://${serverIP}/download`} download>Download Vocabulary JSON</a>
       </div>
     </div>
