@@ -20,8 +20,9 @@
     position: absolute; 
     background-color: white; /* Set the header background color to transparent */
     border: none; /* Remove the border */
-    height: 50vh;
+    height: auto;
     width: 100%; /* Make it take the full width of its parent */
+    min-height: 50vh;
     max-width: 600px; /* Set a max-width */
     margin: 0 auto; /* Center it if it's not taking the full width of its parent */
     /* Remove min-height if you do not want it to take the full viewport height */
