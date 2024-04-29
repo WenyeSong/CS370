@@ -18,6 +18,7 @@ export default function FlashcardPage() {
   const token = localStorage.getItem('token');
   const [successMessage, setSuccessMessage] = useState('');
   const [difficultyLevel, setDifficultyLevel] = useState(1);
+  const [notification, setNotification] = useState('');
   const dictionaryToLanguageId = {
     'Chinese': 6,
     'German': 5,
@@ -191,10 +192,12 @@ return (
       </div>
       <div className="container">
       <FlashcardList 
-        flashcards={flashcards} 
-        addWord={addWord} 
-        languageId={languageId}
-      />
+      flashcards={flashcards} 
+      addWord={addWord} 
+      languageId={languageId}
+      setNotification={setNotification} // pass setNotification as a prop
+      notification={notification} // Pass `notification` as a prop
+    />
       </div>
       {/* <div className="link-btn-container">
         <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
@@ -244,77 +247,57 @@ function Flashcard({ flashcard, addWord, languageId }) {
     </div>
   );
 }
-
-function FlashcardList({ flashcards, addWord, languageId }) {
+function FlashcardList({ flashcards, addWord, languageId, setNotification, notification }) {
   const [currentFlashcardIndex, setCurrentFlashcardIndex] = useState(0);
 
+  const displayNotification = (message) => {
+    setNotification(message);
+    setTimeout(() => {
+      setNotification('');
+    }, 2000); // Clear the notification after 2 seconds
+  };
+
   const goToPreviousFlashcard = () => {
-      setCurrentFlashcardIndex(prevIndex => Math.max(prevIndex - 1, 0));
+    setCurrentFlashcardIndex(prevIndex => {
+      if (prevIndex === 0) {
+        displayNotification('Start of the list !!!');
+        return prevIndex; // Stay on the first flashcard
+      } else {
+        return prevIndex - 1; // Move to the previous card
+      }
+    });
   };
-
+  
   const goToNextFlashcard = () => {
-      setCurrentFlashcardIndex(prevIndex => Math.min(prevIndex + 1, flashcards.length - 1));
+    setCurrentFlashcardIndex(prevIndex => {
+      if (prevIndex === flashcards.length - 1) {
+        displayNotification('End of the list !!!');
+        return prevIndex; // Stay on the last flashcard
+      } else {
+        return prevIndex + 1; // Proceed to the next card
+      }
+    });
   };
-
+  
   return (
-      <div className="flashcard-list">
-          {flashcards.length > 0 && (
-              <div className="flashcard">
-                  <div className='flashcard-container'>
-                      <Flashcard 
-                          flashcard={flashcards[currentFlashcardIndex]} 
-                          addWord={addWord} 
-                          languageId={languageId} 
-                      />
-                  </div>
-                  <div className="navigation-buttons">
-                      <button onClick={goToPreviousFlashcard} disabled={currentFlashcardIndex === 0}>←</button>
-                      <span className="flashcard-number">{currentFlashcardIndex + 1} / {flashcards.length}</span>
-                      <button onClick={goToNextFlashcard} disabled={currentFlashcardIndex === flashcards.length - 1}>→</button>
-                  </div>
-              </div>
-          )}
-      </div>
+    <div className="flashcard-list">
+      {notification && <div className="notification">{notification}</div>}
+      {flashcards.length > 0 && (
+        <div className="flashcard">
+          <div className='flashcard-container'>
+            <Flashcard 
+              flashcard={flashcards[currentFlashcardIndex]} 
+              addWord={addWord} 
+              languageId={languageId} 
+            />
+          </div>
+          <div className="navigation-buttons">
+            <button onClick={goToPreviousFlashcard}>←</button>
+            <span className="flashcard-number">{currentFlashcardIndex + 1} / {flashcards.length}</span>
+            <button onClick={goToNextFlashcard}>→</button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
-
-
-
-// function Flashcard({ flashcard, addWord }) {
-//   const [flip, setFlip] = useState(false);
-//   const [height, setHeight] = useState('initial');
-
-//   const frontEl = useRef();
-//   const backEl = useRef();
-
-//   function setMaxHeight() {
-//     const frontHeight = frontEl.current.getBoundingClientRect().height;
-//     const backHeight = backEl.current.getBoundingClientRect().height;
-//     setHeight(Math.max(frontHeight, backHeight, 100));
-//   }
-
-//   useEffect(setMaxHeight, [flashcard.question, flashcard.answer]);
-//   useEffect(() => {
-//     window.addEventListener('resize', setMaxHeight);
-//     return () => window.removeEventListener('resize', setMaxHeight);
-//   }, []);
-
-  
-//   return (
-//     <div className="flashcard-container"> {/* Added container */}
-//     <div
-//       className={`card ${flip ? 'flip' : ''}`}
-//       style={{ height: height }}
-//       onClick={() => setFlip(!flip)}
-//     >
-//       <div className="front" ref={frontEl}>
-//         {flashcard.question}
-//       </div>
-//       <div className="back" ref={backEl}>{flashcard.answer}</div> 
-//     </div>
-//     <div> {/* Added container for the button */}
-//       <button className="add-word-btn" onClick={() => addWord(flashcard.question, flashcard.answer)}>Add Word</button>
-//     </div>
-//     </div>
-//   );
-// }
