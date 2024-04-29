@@ -24,7 +24,7 @@ app.add_url_rule('/api/user/<string:token>/words/<int:foreign_id>', view_func=de
 app.add_url_rule('/api/user/<string:token>/contributions/<int:contribution_id>', view_func=delete_user_contribution, methods=['DELETE'])
 app.add_url_rule('/api/user/<string:token>/words', view_func=get_user_words, methods=['GET'])
 app.add_url_rule('/api/user/<string:token>/words', view_func=save_user_word, methods=['POST'])
-app.add_url_rule('/api/user/words/<string:word>', view_func=search_similar, methods=['GET'])
+app.add_url_rule('/api/user/words/<string:word>/<int:language_id>', view_func=search_similar, methods=['GET'])
 app.add_url_rule('/api/user/words/<int:language_id>', view_func=get_random_words, methods=['GET'])
 
 

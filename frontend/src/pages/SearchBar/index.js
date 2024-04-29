@@ -1,18 +1,18 @@
 import React from 'react';
 import './index.css';
-import { autocomplete } from './AutocompleteFunctions';
-import {Input} from 'antd'
+import { Autocomplete } from './AutocompleteFunctions';
+import {Input, message} from 'antd'
 
 class AutocompleteComponent extends React.Component {
-  async componentDidMount() {
-    // var arr = fetch(`http://${serverIP}/api/user/words/${word}`, {method: 'GET'}); // Add all countries here
-    autocomplete(document.getElementById("myInput"));
+  componentDidMount() {
+    const info = () => {
+      message.info('enter the complete word  as a practice！');
+    };
+    Autocomplete(document.getElementById("myInput"), info);
   }
 
   render() {
-    return (
-      <Input id="myInput" type="text" name="myCountry" {...this.props} />
-    );
+    return <Input id="myInput" type="text" name="myCountry" {...this.props} />;
   }
 }
 
