@@ -97,7 +97,7 @@ function Login () {
   return (
 
     <div className="login">
-      { window.location.pathname !== '/' && <Navbar/> }
+      {/* { window.location.pathname !== '/' && <Navbar/> } */}
       <h2>Login</h2>
       <Card title="" bordered={true}>
         <Form validateTrigger={['onBlur', 'onChange']}
@@ -126,9 +126,9 @@ function Login () {
             <Button type="primary" htmlType='submit' size="large" >Login</Button>
           </Form.Item>
         </Form>
-        {/* <div className="link-btn-container">
+        <div className="link-btn-container">
           <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-        </div> */}
+        </div>
         
       </Card>
     </div>

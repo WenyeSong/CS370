@@ -63,7 +63,7 @@
   
 
   .login-btn {
-    width: 80%;
+    width: auto;
     padding: 12px 20px;
     border: none;
     border-radius: 25px;
@@ -81,7 +81,7 @@
 }
 
 .link-btn {
-  width: 80%;
+  width: auto;
   padding: 12px 20px;
   border: none;
   border-radius: 25px;

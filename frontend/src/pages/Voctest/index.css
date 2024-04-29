@@ -29,7 +29,12 @@
     /* background-color: #ffffff; /Background color */
     /* background: linear-gradient(to bottom right, #efe6b5, #f8dab9, #fabfbf); */
     background: linear-gradient(to bottom right, #efe6b5, #fcd2a4, #fabfbf); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
   
   .question-section {
     margin-bottom: 20px;

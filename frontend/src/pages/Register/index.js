@@ -52,7 +52,7 @@ const Register = (props) => {
     
     return (
         <div className="auth-form-container">
-          <Navbar />
+          {/* <Navbar /> */}
             <h2>Register</h2>
         <form className="register-form" onSubmit={handleSubmit}>
             <label htmlFor="name">Full name</label>
@@ -64,7 +64,7 @@ const Register = (props) => {
             <button type="submit">Sign Up</button>
         </form>
         <button className="login-btn" onClick={goToLoginPage}>Already have an account? Login here.</button>
-        {/* <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button> */}
+        <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
     </div>
     )
 

@@ -38,11 +38,11 @@ export const Navbar = () => {
               Log out
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/Register' className='nav-links subtitle' onClick={closeMobileMenu}>
               Register
             </Link>
-          </li>
+          </li>  */}
           {/* <li>
             <Link to='/TypeGo' className='nav-links subtitle' onClick={closeMobileMenu}>
               Typing go!
