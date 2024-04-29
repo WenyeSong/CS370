@@ -284,7 +284,7 @@ function SavedList() {
             </Form.Item>
             {/* Add Form.Item for language selection */}
             <Form.Item>
-              <select
+              {/* <select
                 value={languageId}
                 onChange={e => setLanguageId(e.target.value)}
                 style={{ width: '100%', height: '32px', padding: '4px 11px' }} // Style to match other inputs
@@ -293,7 +293,7 @@ function SavedList() {
                 {languages.map(lang => (
                   <option key={lang.id} value={lang.id}>{lang.name}</option>
                 ))}
-              </select>
+              </select> */}
             </Form.Item>
             <Form.Item style={{ display: 'flex', alignItems: 'start' }}>
               <Button 
