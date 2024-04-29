@@ -271,7 +271,7 @@ function SavedList() {
   return (
     <>
     <Navbar />
-    <Button className="link-btn" onClick={()=>console.log(language)}>test</Button>
+    {/* <Button className="link-btn" onClick={()=>console.log(language)}>test</Button> */}
     <Row>
       <Col span={24}>
         <Card title="Your Saved Words" className="page_container" style={{ maxWidth: '70%', maxheight: '70%', margin: '20px auto', padding: '0 20px' }}>
