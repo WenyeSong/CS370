@@ -234,11 +234,8 @@ function SavedList() {
         throw new Error(`HTTP error! status: ${response.status}, Message: ${errorData.error || errorData.message}`);
       }
       
-      const responseData = await response.json();
-      const languageName = languages.find(lang => lang.id.toString() === languageId.toString())?.name;
       notification.success({
         message: 'Success',
-        description: `This is a ${languageName} word, added to the ${languageName} dictionary.`,
         duration: 4,
       });
       
