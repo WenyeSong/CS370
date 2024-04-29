@@ -235,9 +235,10 @@ function SavedList() {
       }
       
       const responseData = await response.json();
+      const languageName = languages.find(lang => lang.id.toString() === languageId.toString())?.name;
       notification.success({
         message: 'Success',
-        description: responseData.message,
+        description: `This is a ${languageName} word, added to the ${languageName} dictionary.`,
         duration: 4,
       });
       
