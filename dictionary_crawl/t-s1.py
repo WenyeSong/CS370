@@ -39,13 +39,13 @@ from hanziconv import HanziConv
 #         json.dump(words_list, json_file, ensure_ascii=False, indent=4)
 
 # # Example usage with a placeholder path
-# input_txt_file = 'd:\\CS370\\dictionary_crawl\\chinese\\test.txt'  # Adjust to your actual file path
-# output_json_file = 'd:\\CS370\\dictionary_crawl\\chinese\\test1231231414515151515.json'  # Adjust to your desired output path
+# input_txt_file = 'd:\\CS370\\dictionary_crawl\\chinese\\test.txt'  
+# output_json_file = 'd:\\CS370\\dictionary_crawl\\chinese\\test1231231414515151515.json'  
 
-# # Uncomment the following line to execute the function with your actual file paths
+
 # # txt_to_json(input_txt_file, output_json_file)
 
-# # Note: Replace the placeholder paths with your actual file paths and uncomment the last line to execute the function.
+
 
 
 import re
@@ -81,11 +81,11 @@ def txt_to_json(input_txt_file, output_json_file):
     #     json.dump(words_list, json_file, ensure_ascii=False, indent=4)
 
 
-# Uncomment the following line to execute with your file paths
+
 # txt_to_json(input_txt_file, output_json_file)
 
-input_txt_file = 'd:\\CS370\\dictionary_crawl\\chinese\\zho_wikipedia_2018_10K-words.txt'  # Adjust to your actual file path
-output_json_file = 'd:\\CS370\\dictionary_crawl\\chinese\\test1231231414515151515.json'  # Adjust to your desired output path
+input_txt_file = 'd:\\CS370\\dictionary_crawl\\chinese\\zho_wikipedia_2018_10K-words.txt'  
+output_json_file = 'd:\\CS370\\dictionary_crawl\\chinese\\test1231231414515151515.json'  
 
-# Uncomment the following line to execute the function with your actual file paths
+
 txt_to_json(input_txt_file, output_json_file)

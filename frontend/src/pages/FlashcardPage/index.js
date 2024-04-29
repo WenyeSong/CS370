@@ -3,6 +3,8 @@ import './index.css';
 import { Button, Form } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { Navbar } from "../Navbar";
+import { message } from 'antd';
+
 
 export default function FlashcardPage() {
   const config = require('../../config.json');
@@ -84,9 +86,13 @@ export default function FlashcardPage() {
     const amount = amountEl.current.value;
 
     const dictionaryKey = selectedDictionary + (difficultyLevel && hasDifficultyLevels(selectedDictionary) ? ` Level ${difficultyLevel}` : '');
-
+    
+    if (selectedDictionary === "Saved List") {
+      message.success('Words already generated automatically!');
+      return; 
+    }
     if (!selectedDictionary || !dictionaries[dictionaryKey]) {
-      alert('Please select a valid dictionary');
+      message.warning('Please select a valid dictionary');
       return;
     }
 
@@ -202,13 +208,14 @@ export default function FlashcardPage() {
           languageId={languageId}
           setNotification={setNotification}
           notification={notification}
+          selectedDictionary={selectedDictionary}
         />
       </div>
     </>
   );
 }
 
-function Flashcard({ flashcard, addWord, languageId }) {
+function Flashcard({ flashcard, addWord, languageId,selectedDictionary }) {
   const [flip, setFlip] = useState(false);
   const [height, setHeight] = useState('initial');
   const frontEl = useRef();
@@ -240,8 +247,10 @@ function Flashcard({ flashcard, addWord, languageId }) {
         console.log(`Adding word with Language ID: ${languageId}`); // Debugging statement
         if (languageId) {
           addWord(flashcard.question, flashcard.answer, languageId);
-        } else {
-          alert('Language not selected or not loaded yet.');
+        } else if (selectedDictionary === "Saved List") {
+          message.warning('Words already in you list.');
+        } else{
+          message.warning('Language not selected or not loaded yet.');
         }
       }}>
         Add Word
@@ -249,7 +258,7 @@ function Flashcard({ flashcard, addWord, languageId }) {
     </div>
   );
 }
-function FlashcardList({ flashcards, addWord, languageId, setNotification, notification }) {
+function FlashcardList({ flashcards, addWord, languageId, setNotification, notification, selectedDictionary}) {
   const [currentFlashcardIndex, setCurrentFlashcardIndex] = useState(0);
 
   const displayNotification = (message) => {
@@ -291,6 +300,7 @@ function FlashcardList({ flashcards, addWord, languageId, setNotification, notif
               flashcard={flashcards[currentFlashcardIndex]} 
               addWord={addWord} 
               languageId={languageId} 
+              selectedDictionary={selectedDictionary}
             />
           </div>
           <div className="navigation-buttons">
