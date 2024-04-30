@@ -1,19 +1,19 @@
 .Voc_test {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    width: 120vh;
-    /* background-color: #f2f0ef;  Background color for the entire page  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120vh; /* Keep the width as is or adjust to 100% if you want it to be full width */
+  height: auto; /* Adjust the height to auto to cover the content */
+  min-height: 100vh; /* Minimum height to cover at least the viewport height */
+  margin: auto; /* Centers the container horizontally */
+  padding: 20px; /* Adjust padding as needed */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Box shadow as needed */
+  background-size: cover; /* Make the background cover the full area */
+  background-repeat: no-repeat; /* Adjust as needed to repeat or no-repeat */
+  /* Add other background properties as needed */
+}
 
-    /*This works to center the white background: EXTRA*/
-    min-height: 90vh; /* Minimum height to take full viewport height */
-    max-width: 600px; /* Set a max-width for the container */
-    margin: auto; /* Centers the container horizontally */
-    padding: 20px; /* Add some padding */
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
-  }
   
   .App-header {
     text-align: center;
