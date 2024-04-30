@@ -131,7 +131,7 @@ function  MultipleChoice() {
   return (
     <div className="voc_test_container">
       <Navbar/>
-      <div className="Voc_test">        
+      <div className="Voc_test">
         <header className="App-header">
           <h1>Vocabulary Test</h1>
           {isEmptyVocabulary ? (
@@ -144,6 +144,7 @@ function  MultipleChoice() {
                 <>
                   <div className="question-section">
                     <span>{`Question ${currentQuestion + 1} / ${vocabulary.length}`}</span>
+                    <div className="question-text">Definition: {vocabulary[currentQuestion].question}</div>
                     <div className="language-id-display">
                       Language: {languageIdToDictionary[vocabulary[currentQuestion]?.language_id] || 'Unknown'}
                     </div>
@@ -171,6 +172,8 @@ function  MultipleChoice() {
       </div>
     </div>
   );  
+
+
                     }  
 
 export default MultipleChoice;
