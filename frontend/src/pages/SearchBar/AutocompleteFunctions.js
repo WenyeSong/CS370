@@ -1,6 +1,6 @@
 export function Autocomplete(inp, info) {
   
-  let currentFocus; // Ensure currentFocus is defined in the correct scope
+  let currentFocus; 
   var arr;
   const config = require('../../config.json');
   const serverIP = config.serverIP;

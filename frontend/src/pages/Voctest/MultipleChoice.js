@@ -93,7 +93,7 @@ function  MultipleChoice() {
 
   useEffect(() => {
     if (vocabulary.length > 0) {
-      getchoices(vocabulary[currentQuestion].correctAnswer, 1); // Assuming language_id is 1 for example
+      getchoices(vocabulary[currentQuestion].correctAnswer, 1); 
     }
   }, [currentQuestion, vocabulary]);
 

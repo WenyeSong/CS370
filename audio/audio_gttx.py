@@ -1,7 +1,7 @@
 from gtts import gTTS
 import os
 
-# The text you want to convert to audio
+
 text_to_say = "Hello, this is a demonstration of text to speech conversion."
 
 # Choosing the language, English in this case

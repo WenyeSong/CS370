@@ -18,7 +18,6 @@
 #     if page_word is None or page_word.get_text(strip=True).lower() != word.lower():
 #         return None 
 
-#     # Assuming you're trying to get a definition or similar as 'real_word'
 #     real_word_elements = soup.select("div.def-body.ddef_b.ddef_b-t")
 #     real_word_texts = [element.get_text(strip=True) for element in real_word_elements]
 
@@ -119,7 +118,6 @@
 #     real_word_elements = soup.select("div.def-body.ddef_b.ddef_b-t")
 #     real_word_texts = [element.get_text(strip=True) for element in real_word_elements if '[' in element.get_text()]
 
-#     # Collect only required information
 #     data = {
 #         "word": word,
 #         "real_word": real_word_texts if real_word_texts else None  # Ensure null values are handled correctly
@@ -277,7 +275,6 @@ def crawl_words(words):
     print("Initializing thread pool...")
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = []
-        #you can change the number in words[;] to change the number you want to crawl!
         for i, word in enumerate(words[:6772], start=1): 
             word = word.split()[0]  
             print(f"Submitting task {i}/{len(words)}")

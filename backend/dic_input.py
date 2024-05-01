@@ -23,7 +23,6 @@ def insert_data_from_json(json_file_path):
     )
     cur = conn.cursor()
 
-    # Assuming "French" and "English" language IDs are pre-inserted in the Languages table
     french_id = get_language_id('French', cur)
     english_id = get_language_id('English', cur)
 

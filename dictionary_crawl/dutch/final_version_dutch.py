@@ -53,7 +53,7 @@ def modify_json(data):
         entry['language_id'] = 4  # Directly set language ID for each entry
         for item in entry['real_word']:
             split_index = item.find('[')
-            if split_index != -1:  # Ensure that there is a bracket to split on
+            if split_index != -1:  
                 real_word_part = item[:split_index].strip()
                 explanation_part = item[split_index:].strip()
                 new_real_word.append(real_word_part)

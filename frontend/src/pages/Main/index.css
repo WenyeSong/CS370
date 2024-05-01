@@ -101,7 +101,7 @@
 }
 
 .main-heading, .main-subtitle {
-  color: #000; /* Ensures that the headings are also black or a dark color for contrast */
+  color: #000; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 

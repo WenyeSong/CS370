@@ -129,7 +129,7 @@ body {
 .add-word-btn {
     background-color: hsl(200, 100%, 50%);
     color: white;
-    padding: 10px 20px; /* Adjust padding of the button */
+    padding: 10px 20px; 
     border-radius: 5px;
     margin-top: 20px;
     border: none;
@@ -144,11 +144,11 @@ body {
 .navigation-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust the top margin as needed */
+    margin-top: 20px; 
   }
   
   .navigation-buttons button {
-    margin: 0 50px; /* Add margin between the buttons */
+    margin: 0 50px;
   }
 
   .feedback-section{
