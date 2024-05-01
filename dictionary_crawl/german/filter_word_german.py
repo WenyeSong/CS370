@@ -5,7 +5,6 @@ file_path = 'd:\\CS370\\dictionary_crawl\\german\\deu-de_web-public_2019_10K-wor
 df = pd.read_csv(file_path, sep="\t", header=None, names=["Number", "Word", "Frequency"])
 
 def is_german_word(word):
-    # Check if word is a string, return False if not
     if not isinstance(word, str):
         return False
     
