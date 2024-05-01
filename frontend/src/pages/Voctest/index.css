@@ -17,8 +17,8 @@
   .App-header {
     text-align: center;
     position: absolute; 
-    background-color: white; /* Set the header background color to transparent */
-    border: none; /* Remove the border */
+    background-color: white; 
+    border: none; 
     height: auto;
     width: 100%; /* Make it take the full width of its parent */
     min-height: 50vh;
@@ -203,6 +203,4 @@
   }
 
 
-  /*the following is added later:*/
 
-  /* Input styles */

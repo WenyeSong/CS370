@@ -9,11 +9,9 @@
 }
 
 .main-header {
-  background-color: #f4e9e9ea; /* Changed to white or any color that suits the page */
-  /* Remove the background image if it does not fit well with the design */
+  background-color: #f4e9e9ea; 
   width: 100%;
-  /* Adjust padding to control the height of the navbar */
-  padding: 3px; /* Reduced padding to decrease height */
+  padding: 3px; 
   height: 10vh;
   
   display: flex; /* Enables flexbox for the header */
@@ -47,8 +45,8 @@
   
   display: inline-block;
   position: relative;
-  margin-left: 10px; /* Reduced spacing between items */
-  padding-top: 0px; /* Reduced padding */
+  margin-left: 10px; 
+  padding-top: 0px; 
 }
 
 .main-page-navbar a { /*botton*/

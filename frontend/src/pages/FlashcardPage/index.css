@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Changa'; /* Added font family for better cross-browser compatibility */
+    font-family: 'Changa'; /* font family for better cross-browser compatibility */
 }
 .flashcard-form-container {
     display: flex;
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     align-items: center; /* Center contents horizontally */
     justify-content: center;
-    text-align: center; /* Center text */
+    text-align: center; 
     max-width: 900px;
     margin: 1rem auto; /* Center the container horizontally */
     justify-content: center;
@@ -23,10 +23,10 @@ body {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increase the minmax value */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 1rem;
-    padding: 1rem; /* Add padding to the card grid */
-    margin: 0; /* Remove margin */
+    padding: 1rem; 
+    margin: 0; 
     margin: auto; /* center */
     justify-content: center; 
     align-items: center;
@@ -57,7 +57,7 @@ body {
     position: absolute;
     padding: 1rem;
     backface-visibility: hidden;
-    color: #333; /* Change the color of the text */
+    color: #333;
     text-align: center; /* Center-align the text */
     font-family: 'Changa';
 }
@@ -111,13 +111,13 @@ body {
 
 .btn {
     width: 100%;
-    padding: 12px 20px; /* Increase padding for a nicer button appearance */
+    padding: 12px 20px; 
     border: none;
-    border-radius: 25px; /* Adjust border-radius for a rounded button */
+    border-radius: 25px; 
     background-color: #007bff;
     color: #fff;
-    font-size: 16px; /* Increase font size for better readability */
-    font-weight: bold; /* Apply bold font weight for emphasis */
+    font-size: 16px;
+    font-weight: bold; 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

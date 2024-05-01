@@ -6,9 +6,9 @@ body {
   font-family: 'Changa';
   color: #000000;
   background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg);
-  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-size: cover; 
   background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-position: center; /* Center the background image */
+  background-position: center; 
 }
 
 /* Header */
@@ -19,8 +19,8 @@ header {
 
 /* Footer */
 footer {
-  background-color: #000; /* Black footer */
-  color: #fff; /* White text color for footer */
+  background-color: #000; 
+  color: #fff; 
   padding: 20px 0;
   text-align: center;
 }
@@ -33,7 +33,7 @@ footer {
   width: 100%;
   margin: 20px;
   padding: 20px;
-  background-color: #fff; /* White background color for main content */
+  background-color: #fff; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -76,9 +76,9 @@ footer {
   /*addresses the overall syntax issues*/
   /* background-color: white; */
   background-image: url(../src/image-from-rawpixel-id-577697-jpeg.jpg);
-  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-size: cover; 
   background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-position: center; /* Center the background image */
+  background-position: center; 
   position: absolute;
   height: auto;
   width: 100%; 
