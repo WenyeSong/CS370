@@ -6502,5 +6502,41 @@
     ],
     "excusa": [
         "excuse"
+    ],
+        "uno": [
+        "one"
+    ],
+    "dos": [
+        "two"
+    ],
+    "tres": [
+        "three"
+    ],
+    "cuatro": [
+        "four"
+    ],
+    "cinco": [
+        "five"
+    ],
+    "seis": [
+        "six"
+    ],
+    "hola": [
+        "hello"
+    ],
+    "adiós": [
+        "bye"
+    ],
+    "gracias": [
+        "thank you"
+    ],
+    "por favor": [
+        "please"
+    ],
+    "sí": [
+        "yes"
+    ],
+    "no": [
+        "no"
     ]
 }

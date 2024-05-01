@@ -1,0 +1,125 @@
+[ {
+        "word": "uno",
+        "english_term": [
+            "one"
+        ],
+        "word_number": 7873,
+        "language_id": 5,
+        "explanation": [
+            "[noun] one."
+        ]
+    },
+        {
+        "word": "dos",
+        "english_term": [
+            "two"
+        ],
+        "word_number": 7873,
+        "language_id": 5,
+        "explanation": [
+            "[noun] two."
+        ]
+    },
+            {
+        "word": "tres",
+        "english_term": [
+            "three"
+        ],
+        "word_number": 7874,
+        "language_id": 5,
+        "explanation": [
+            "[noun] three."
+        ]
+    },        {
+        "word": "cuatro",
+        "english_term": [
+            "four"
+        ],
+        "word_number": 7875,
+        "language_id": 5,
+        "explanation": [
+            "[noun] four."
+        ]
+    },        {
+        "word": "cinco",
+        "english_term": [
+            "five"
+        ],
+        "word_number": 7876,
+        "language_id": 5,
+        "explanation": [
+            "[noun] five."
+        ]
+    },        {
+        "word": "seis",
+        "english_term": [
+            "six"
+        ],
+        "word_number": 7877,
+        "language_id": 5,
+        "explanation": [
+            "[noun] six."
+        ]
+    },        {
+        "word": "hola",
+        "english_term": [
+            "hello"
+        ],
+        "word_number": 7878,
+        "language_id": 5,
+        "explanation": [
+            "[noun] hello."
+        ]
+    },        {
+        "word": "adiós",
+        "english_term": [
+            "bye"
+        ],
+        "word_number": 7873,
+        "language_id": 5,
+        "explanation": [
+            "[noun] bye."
+        ]
+    },        {
+        "word": "gracias",
+        "english_term": [
+            "thank you"
+        ],
+        "word_number": 7874,
+        "language_id": 5,
+        "explanation": [
+            "[noun] thank you."
+        ]
+    },        {
+        "word": "por favor",
+        "english_term": [
+            "please"
+        ],
+        "word_number": 7873,
+        "language_id": 5,
+        "explanation": [
+            "[noun] plese."
+        ]
+    },{
+        "word": "sí",
+        "english_term": [
+            "yes"
+        ],
+        "word_number": 7873,
+        "language_id": 5,
+        "explanation": [
+            "[noun] yes."
+        ]
+    },{
+        "word": "no",
+        "english_term": [
+            "no"
+        ],
+        "word_number": 7873,
+        "language_id": 5,
+        "explanation": [
+            "[noun] no."
+        ]
+    }
+
+]

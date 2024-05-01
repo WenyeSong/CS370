@@ -26,11 +26,11 @@ def write_json(data, filename):
     with open(filename, 'w') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-input_filename = 'd:\\CS370\\dictionary_crawl\\french\\french_dict1.json' 
-output_filename = 'd:\\CS370\\dictionary_crawl\\french\\modified_data.json'  
+input_filename = 'd:\\CS370\\dictionary_crawl\\french\\french_dict2.json' 
+output_filename = 'd:\\CS370\\dictionary_crawl\\french\\final_french2.json'  
 
 
-original_data = read_json('d:\\CS370\\dictionary_crawl\\french\\french_dict1.json')
+original_data = read_json('d:\\CS370\\dictionary_crawl\\french\\french_dict2.json')
 
 
 modified_data = modify_json(original_data)
