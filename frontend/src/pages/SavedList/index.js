@@ -63,9 +63,9 @@ function SavedList() {
         setWords([]);
       }
       
-      setTotal(data.length || 0);  // Assuming 'data' array length as total, adjust if actual 'total' is provided differently
-      setCurrentPage(pageNum);
+      setTotal(data.length || 0);  
       setPageSize(pageSizeParam);
+      setCurrentPage(pageNum);
     } catch (error) {
       console.error("Fetch error:", error.message);
       setWords([]);  // Reset words state in case of an error

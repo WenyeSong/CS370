@@ -29,15 +29,6 @@ function Login () {
     navigate('/');
 };
   const onFinish = async values => {
-    // const { mobile, code } = values
-    // console.log(mobile, code)
-    // try {
-    //   await loginStore.login({ mobile, code })
-    //   navigate('/')
-    // } catch (e) {
-    //   message.error(e.response?.data?.message || 'log in failed')
-    // }
-    
       // fisrt check whether the request can acheive backend
       const isBackendReachable = await checkBackendStatus();
       if (!isBackendReachable) {

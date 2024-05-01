@@ -11,16 +11,15 @@ def connect_to_database():
         user='postgres',
         password='cs370',  
         host='34.69.154.109',  
-        sslmode='disable'  # SSL mode is disabled for this example, adjust as necessary
+        sslmode='disable'  
         )
 
-# Example function to fetch words from the database
+
 def fetch_words_from_database():
     try:
         connection = connect_to_database()
         cursor = connection.cursor(dictionary=True)
         
-        # Modified SQL query to fetch words and definitions using a JOIN operation
         cursor.execute("""
            SELECT term, english_term FROM user_saved JOIN english_translations ON user_saved.foreign_ID = english_translations.foreign_ID JOIN foreign_terms ON user_saved.foreign_ID = foreign_terms.foreign_ID WHERE USER_ID = 7;
         """)

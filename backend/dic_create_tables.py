@@ -6,11 +6,11 @@ def create_tables():
         user='postgres',
         password='cs370',  
         host='34.69.154.109',  
-        sslmode='disable'  # SSL mode is disabled for this example, adjust as necessary
+        sslmode='disable'  
     )
     cur = conn.cursor()
 
-    # Commands to create the tables
+  
     commands = [
         '''
         CREATE TABLE french_terms (
