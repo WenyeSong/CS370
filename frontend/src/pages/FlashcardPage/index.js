@@ -52,9 +52,9 @@ export default function FlashcardPage() {
 
   const fetchDictionaries = async () => {
     try {
-      const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/german-english.json');
+      const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionry_crawl/combine/german-english.json');
       const germanDictionary = await responseGerman.json();
-      const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/french-english.json');
+      const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionary_crawl/combine/french-english.json');
       const frenchDictionary = await responseFrench.json();
 
 
@@ -67,7 +67,7 @@ export default function FlashcardPage() {
       const languagesWithLevels = ['Spanish', 'Dutch'];
       for (const language of languagesWithLevels) {
         for (let level = 1; level <= 3; level++) {
-          const response = await fetch(`https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/${language.toLowerCase()}_part_${level}.json`);
+          const response = await fetch(`https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionary_crawl/combine/${language.toLowerCase()}_part_${level}.json`);
           if (!response.ok) throw new Error(`Failed to fetch ${language} level ${level}`);
           const dictionary = await response.json();
           fetchedDictionaries[`${language} Level ${level}`] = dictionary;
