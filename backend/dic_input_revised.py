@@ -67,5 +67,5 @@ def insert_data_from_json(json_file_path):
         if conn:
             conn.close()
 
-insert_data_from_json('d:\\CS370\\dictionary_crawl\\chinese\\final_chinese.json')
+insert_data_from_json('d:\\CS370\\dictionary_crawl\\french\\final_french.json')
 
