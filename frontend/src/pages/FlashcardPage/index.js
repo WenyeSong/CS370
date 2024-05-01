@@ -52,7 +52,8 @@ export default function FlashcardPage() {
 
   const fetchDictionaries = async () => {
     try {
-      const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionry_crawl/combine/german-english.json');
+      const responseGerman = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionary_crawl/combine/german-english.json');
+      
       const germanDictionary = await responseGerman.json();
       const responseFrench = await fetch('https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionary_crawl/combine/french-english.json');
       const frenchDictionary = await responseFrench.json();
