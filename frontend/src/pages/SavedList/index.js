@@ -316,7 +316,6 @@ function SavedList() {
       </Col>
     </Row> 
     <div className="link-btn-container">
-      <button className="link-btn" onClick={()=>console.log(tabItems)}>Back to Main Page</button>
     </div>
 
 
