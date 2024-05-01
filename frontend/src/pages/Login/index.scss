@@ -8,29 +8,26 @@
 
 
 .main-header {
-  background-color: #f4e9e9ea; /* Changed to white or any color that suits the page */
-  /* Remove the background image if it does not fit well with the design */
+  background-color: #f4e9e9ea; 
   width: 100%;
-  /* Adjust padding to control the height of the navbar */
-  padding: 3px; /* Reduced padding to decrease height */
+  padding: 3px;
   height: 10vh;
-  
-  display: flex; /* Enables flexbox for the header */
+  display: flex; 
   justify-content: right; 
-  align-items: center; /* Centers the content vertically */
+  align-items: center; 
 
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensure it stays above other content */
+  z-index: 1000; 
 }
 
 .main-page-navbar {
   background-color: transparent;
-  display: flex; /* Enables flexbox for nav */
+  display: flex; 
   float: right;
-  align-items: center; /* Vertically centers the nav items */
+  align-items: center; 
   margin-bottom: 0px;
   
   
@@ -46,8 +43,8 @@
   
   display: inline-block;
   position: relative;
-  margin-left: 10px; /* Reduced spacing between items */
-  padding-top: 0px; /* Reduced padding */
+  margin-left: 10px; 
+  padding-top: 0px;
 }
 
 .main-page-navbar a { /*botton*/
@@ -82,33 +79,33 @@
 
 .ant-btn-primary {
   width: 100%;
-  padding: 12px 20px; /* Increase padding for a nicer button appearance */
+  padding: 12px 20px;
   border: none;
-  border-radius: 25px; /* Adjust border-radius for a rounded button */
+  border-radius: 25px; 
   background-color: #007bff;
   color: #fff;
-  font-size: 16px; /* Increase font size for better readability */
-  font-weight: bold; /* Apply bold font weight for emphasis */
+  font-size: 16px; 
+  font-weight: bold; 
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.link-btn-container { // If the button is inside a container
+.link-btn-container { 
   width: 100%; // Use 100% width to stretch across the parent
-  display: flex; // Apply flexbox
+  display: flex; 
   justify-content: center; // Center horizontally in the flex container
 }
 
 .link-btn {
   width: 100%;
-  padding: 12px 20px; /* Increase padding for a nicer button appearance */
+  padding: 12px 20px;
   border: none;
-  border-radius: 25px; /* Adjust border-radius for a rounded button */
-  background-color: transparent; /* Transparent background */
+  border-radius: 25px; 
+  background-color: transparent; 
   color: #ffcc00;
-  font-size: 14px; /* Adjust font size */
-  font-weight: bold; /* Apply bold font weight for emphasis */
-  text-align: center; /* Center align text */
+  font-size: 14px; 
+  font-weight: bold; 
+  text-align: center;
   cursor: pointer;
   transition: color 0.3s ease;
 }

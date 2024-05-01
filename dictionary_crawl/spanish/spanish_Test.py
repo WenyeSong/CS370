@@ -38,7 +38,6 @@ def crawl_words(words):
     print("Initializing thread pool...")
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = []
-        #you can change the number in words[;] to change the number you want to crawl!
         for i, word in enumerate(words[:7400], start=1):  
             word = word.split()[0]  
             print(f"Submitting task {i}/{len(words)}")

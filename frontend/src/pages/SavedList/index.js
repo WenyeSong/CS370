@@ -169,7 +169,6 @@ function SavedList() {
   const deleteWord = async (record) => {
     console.log("Deleting word with record:", record);
   
-    // Ensure the correct identification of the record based on its type
     let endpoint;
     if (record.type === 'dictionary') {
       // Use foreign_id for dictionary words
@@ -260,8 +259,8 @@ function SavedList() {
   const dataSource = words.map(word => ({
     key: word.type === 'contribution' ? `contribution-${word.foreign_id}` : `dictionary-${word.foreign_id}`,
     ...word,
-    id: word.id, // Ensure this exists for contributions
-    foreign_id: word.foreign_id // Ensure this exists for dictionary words
+    id: word.id, 
+    foreign_id: word.foreign_id 
   }));
 
 
