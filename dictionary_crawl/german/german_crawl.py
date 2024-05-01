@@ -38,7 +38,7 @@ def crawl_words(words):
     print("Initializing thread pool...")
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = []
-        for i, word in enumerate(words[:10000], start=1): 
+        for i, word in enumerate(words[:40], start=1): 
             word = word.split()[0] 
             print(f"Submitting task {i}/{len(words)}")
             futures.append(executor.submit(get_word_data, word))

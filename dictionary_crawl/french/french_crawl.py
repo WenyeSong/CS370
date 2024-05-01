@@ -235,6 +235,8 @@
 #         print(f"Data saved to french_dict.json with {len(results_with_data)} entries.")
 #     else:
 #         print("No valid entries to save. The output JSON file will not be created.")
+import re
+import string
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -256,9 +258,12 @@ def get_word_data(word):
     real_word_texts = []
     for element in real_word_elements:
         sentences = element.get_text(strip=True).split(". ")
-        filtered_sentences = [sentence for sentence in sentences if '[' in sentence]
-        if filtered_sentences:
-            real_word_texts.append(". ".join(filtered_sentences) + ".")
+        filtered_sentences = [sentence for sentence in sentences if re.search(r'\[(\w*)\]', sentence)]
+        if len(filtered_sentences) > 0:
+            text = ". ".join(filtered_sentences)
+            if text[-1] not in string.punctuation:
+                text += '.'
+            real_word_texts.append(text)
 
     if not real_word_texts:
         return None  
@@ -273,13 +278,13 @@ def crawl_words(words):
     error = 0
     word_number = 0  
     print("Initializing thread pool...")
-    with ThreadPoolExecutor(max_workers=4) as executor:
+    with ThreadPoolExecutor(max_workers=16) as executor:
         futures = []
-        for i, word in enumerate(words[:6772], start=1): 
+        for i, word in enumerate(words[:], start=1): 
             word = word.split()[0]  
             print(f"Submitting task {i}/{len(words)}")
             futures.append(executor.submit(get_word_data, word))
-            sleep(random() + 0.2)
+            # sleep(0.0001)
 
         print("All tasks submitted. Waiting for results...")
         for i, future in enumerate(futures, start=1):
@@ -289,21 +294,22 @@ def crawl_words(words):
                     word_number += 1  
                     data['word_number'] = word_number  
                     results.append(data)
+                    print(f'{i}/{len(words)}: Completed {words[i]}, No. {word_number}')
             except Exception as e:
                 print(f"Error processing word '{words[i-1]}': {str(e)}")
                 error += 1
-            print(f'{i}/{len(words)}: Completed')
+                print(f'{i}/{len(words)}: Failed {words[i]}')
 
     print("Crawling finished")
     print(f"Error count: {error}")
     return results
 
 if __name__ == "__main__":
-    with open("d:\\CS370\\dictionary_crawl\\french\\filtered_words1.txt", "r", encoding="utf-8") as f:
+    with open("d:\\CS370\\dictionary_crawl\\french\\filtered_f131.txt", "r", encoding="utf-8") as f:
         words = f.read().splitlines()
     results = crawl_words(words)
     if results:
-        with open("d:\\CS370\\dictionary_crawl\\french\\french_dict1.json", "w", encoding="utf-8") as f:
+        with open("d:\\CS370\\dictionary_crawl\\french\\french_dict2.json", "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=4)
     else:
         print("No valid entries to save.")

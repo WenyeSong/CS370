@@ -11,10 +11,11 @@ def modify_json(data):
             real_word_part = item[:split_index]
             explanation_part = item[split_index:]
             new_real_word.append(real_word_part.strip())
-            explanations.append(explanation_part.strip())    
+            explanations.append(explanation_part.strip())
+            
         entry['real_word'] = new_real_word
         entry['explanation'] = explanations
-       
+        
     return data
 
 def read_json(filename):
@@ -28,7 +29,9 @@ def write_json(data, filename):
 input_filename = 'd:\\CS370\\dictionary_crawl\\french\\french_dict1.json' 
 output_filename = 'd:\\CS370\\dictionary_crawl\\french\\modified_data.json'  
 
+
 original_data = read_json('d:\\CS370\\dictionary_crawl\\french\\french_dict1.json')
+
 
 modified_data = modify_json(original_data)
 
