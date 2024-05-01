@@ -30,6 +30,7 @@ graph TD;
   B -->|useState| R[Flashcard]
   B -->|useState| S[goToPreviousFlashcard]
   B -->|useState| T[goToNextFlashcard]
+```
 
 #### Major Components
 
@@ -64,17 +65,12 @@ graph TD;
 
 #### **Architecture Diagram**
 
-[mermaid(\"]{.mark}
-
-[graph TD;]{.mark}
-
+```mermaid
 graph TD;
+  A(Voctest) -->|useState| B(useNavigate)
+  A -->|useState| C(Navbar)
+```
 
-A\[Voctest\] \--\>\|useState\| B\[useNavigate\];
-
-A \--\>\|useState\| C\[Navbar\];
-
-[\")]{.mark}
 
 #### **Major Components**
 
@@ -134,6 +130,7 @@ graph TD;
   G -.->|GET Request| K
   H -.->|POST Request| K
   I -.->|GET Request| L[VocabTest Multiple Choice Component]
+```
 
 #### Major Components
 
