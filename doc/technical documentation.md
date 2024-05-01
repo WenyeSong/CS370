@@ -74,42 +74,29 @@ graph TD;
 
 #### **Major Components**
 
-1.  Voctest: React component responsible for rendering the vocabulary
-    > test page UI. Contains buttons to navigate to the Fill in the
-    > Blank and Multiple Choice test pages.
+1.  Voctest: React component responsible for rendering the vocabulary test page UI. Contains buttons to navigate to the Fill in the Blank and Multiple Choice test pages.
 
-2.  Navbar: React component responsible for rendering the navigation
-    > bar.
+2.  Navbar: React component responsible for rendering the navigation bar.
 
 #### **Code Organization**
 
--   The code is organized into functional components for clarity and
-    > modularity.
+-   The code is organized into functional components for clarity and modularity.
 
--   React Router\'s useNavigate hook is used to enable programmatic
-    > navigation.
+-   React Router\'s useNavigate hook is used to enable programmatic navigation.
 
--   The handleFillInBlankClick and handleMultipleChoiceClick functions
-    > handle navigation to the respective test pages.
+-   The handleFillInBlankClick and handleMultipleChoiceClick functions handle navigation to the respective test pages.
 
--   The page layout is structured using HTML elements and styled with
-    > CSS classes.
+-   The page layout is structured using HTML elements and styled with CSS classes.
 
 #### **Page Layout**
 
--   .Voc_test: decides the overall layout of the entire page, including
-    > the arrangement of the background image and sub-elements
+-   .Voc_test: decides the overall layout of the entire page, including the arrangement of the background image and sub-elements
 
--   .App-header: handles the header that contains the main title and the
-    > two buttons; it makes sure that all elements are located at the
-    > center of the header; the size of the header will readjust itself
-    > when new contents of questions are loaded into the page
+-   .App-header: handles the header that contains the main title and the two buttons; it makes sure that all elements are located at the center of the header; the size of the header will readjust itself when new contents of questions are loaded into the page
 
--   .question and .answer, and .input: handles the font and position of
-    > each question and answer (multiple choice buttons and
-    > fill-in-the-blank input boxes).
+-   .question and .answer, and .input: handles the font and position of each question and answer (multiple choice buttons and fill-in-the-blank input boxes).
 
-## ***[Saved Word List]{.underline}***
+## ***[Saved Word List]***
 
 #### **Architecture Diagram**
 
