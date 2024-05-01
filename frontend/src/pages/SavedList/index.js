@@ -118,7 +118,7 @@ function SavedList() {
           loading={loading}
           columns={columns}
           dataSource={words.filter(word => word.language_id === 1)}
-          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          // pagination={{ current: currentPage, pageSize: pageSize, total: total }}
           onChange={handleTableChange}
         />
       )
@@ -131,7 +131,7 @@ function SavedList() {
           loading={loading}
           columns={columns}
           dataSource={words.filter(word => word.language_id === 3)}
-          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          // pagination={{ current: currentPage, pageSize: pageSize, total: total }}
           onChange={handleTableChange}
         />
       )
@@ -144,7 +144,7 @@ function SavedList() {
           loading={loading}
           columns={columns}
           dataSource={words.filter(word => word.language_id === 4)}
-          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          // pagination={{ current: currentPage, pageSize: pageSize, total: total }}
           onChange={handleTableChange}
         />
       )
@@ -157,7 +157,7 @@ function SavedList() {
           loading={loading}
           columns={columns}
           dataSource={words.filter(word => word.language_id === 5)}
-          pagination={{ current: currentPage, pageSize: pageSize, total: total }}
+          // pagination={{ current: currentPage, pageSize: pageSize, total: total }}
           onChange={handleTableChange}
         />
       )
@@ -305,19 +305,21 @@ function SavedList() {
             </Form.Item>
           </Form>
           {/* <Table loading={loading} columns={columns} dataSource={dataSource}
-            pagination={{ 
-              current: currentPage, 
-              pageSize: pageSize, 
-              total: total 
-            }}
+            // pagination={{ 
+            //   current: currentPage, 
+            //   pageSize: pageSize, 
+            //   total: total 
+            // }}
             onChange={handleTableChange} /> */}
         <Tabs defaultActiveKey='1' activeKey={languageId} items={tabItems} onChange={(activeKey) => {setLanguageId(activeKey); localStorage.setItem("language_id", activeKey)}}/>
         </Card>
       </Col>
     </Row> 
-    {/* <div className="link-btn-container">
-      <button className="link-btn" onClick={goBackToMainPage}>Back to Main Page</button>
-    </div> */}
+    <div className="link-btn-container">
+      <button className="link-btn" onClick={()=>console.log(tabItems)}>Back to Main Page</button>
+    </div>
+
+
     </>
 );
           }
