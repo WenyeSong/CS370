@@ -67,7 +67,7 @@ export default function FlashcardPage() {
       const languagesWithLevels = ['Spanish', 'Dutch'];
       for (const language of languagesWithLevels) {
         for (let level = 1; level <= 3; level++) {
-          const response = await fetch(`https://raw.githubusercontent.com/WenyeSong/CS370/main/dictionary_crawl/combine/${language.toLowerCase()}_part_${level}.json`);
+          const response = await fetch(`https://raw.githubusercontent.com/WenyeSong/CS370/main/dict/${language.toLowerCase()}_part_${level}.json`);
           if (!response.ok) throw new Error(`Failed to fetch ${language} level ${level}`);
           const dictionary = await response.json();
           fetchedDictionaries[`${language} Level ${level}`] = dictionary;
