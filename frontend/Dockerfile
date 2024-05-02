@@ -28,9 +28,7 @@
 # # 使用启动脚本启动 Nginx 服务器
 # CMD ["start.sh"]
 
-
-                                                                         
-#new Zi
+                                                                
 #使用官方的 Node 作为基础镜像
 FROM node:14 AS build
 
